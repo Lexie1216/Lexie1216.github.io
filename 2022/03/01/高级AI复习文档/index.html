@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="高级AI复习文档一、概述图灵测试：要求测出来智能体只是“表现上”像人，行动上像人。到底是否是真的与人一样会思考，无人知道。“和人一样思考、行动”。 二、搜索2.1 搜索问题 搜索问题构成 状态空间 后继函数 初始状态和目标测试   解是一个行动序列（一系列后继函数），将初始状态转换成目标状态 状态数量问题分析 状态空间的表示 状态空间图：每个状态只会出现一次，每个状态通过行动（后继函数）进行连接。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2022/03/01/%E9%AB%98%E7%BA%A7AI%E5%A4%8D%E4%B9%A0%E6%96%87%E6%A1%A3/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="高级AI复习文档一、概述图灵测试：要求测出来智能体只是“表现上”像人，行动上像人。到底是否是真的与人一样会思考，无人知道。“和人一样思考、行动”。 二、搜索2.1 搜索问题 搜索问题构成 状态空间 后继函数 初始状态和目标测试   解是一个行动序列（一系列后继函数），将初始状态转换成目标状态 状态数量问题分析 状态空间的表示 状态空间图：每个状态只会出现一次，每个状态通过行动（后继函数）进行连接。">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/Users/Lexie/Library/Application%20Support/typora-user-images/image-20211222104955895.png">
+<meta property="og:image" content="http://example.com/Users/Lexie/Library/Application%20Support/typora-user-images/image-20211222105126201.png">
+<meta property="og:image" content="http://example.com/Users/Lexie/Library/Application%20Support/typora-user-images/image-20211219174647300.png">
+<meta property="og:image" content="http://example.com/Users/Lexie/Library/Application%20Support/typora-user-images/image-20211222112819008.png">
+<meta property="og:image" content="http://example.com/Users/Lexie/Library/Application%20Support/typora-user-images/image-20211219174742460.png">
+<meta property="og:image" content="http://example.com/Users/Lexie/Library/Application%20Support/typora-user-images/image-20211219141921887.png">
+<meta property="og:image" content="http://example.com/Users/Lexie/Library/Application%20Support/typora-user-images/image-20211219141934793.png">
+<meta property="og:image" content="http://example.com/Users/Lexie/Library/Application%20Support/typora-user-images/image-20211219141950218.png">
+<meta property="og:image" content="http://example.com/Users/Lexie/Library/Application%20Support/typora-user-images/image-20211219173931001.png">
+<meta property="og:image" content="http://example.com/Users/Lexie/Library/Application%20Support/typora-user-images/image-20211219173950752.png">
+<meta property="og:image" content="http://example.com/Users/Lexie/Library/Application%20Support/typora-user-images/image-20220102111535600.png">
+<meta property="og:image" content="http://example.com/Users/Lexie/Library/Application%20Support/typora-user-images/image-20220102111649019.png">
+<meta property="og:image" content="http://example.com/Users/Lexie/Library/Application%20Support/typora-user-images/image-20220102112014572.png">
+<meta property="og:image" content="http://example.com/Users/Lexie/Library/Application%20Support/typora-user-images/image-20211219174448697.png">
+<meta property="og:image" content="http://example.com/Users/Lexie/Library/Application%20Support/typora-user-images/image-20211218180039194.png">
+<meta property="og:image" content="http://example.com/Users/Lexie/Library/Application%20Support/typora-user-images/image-20211218175642752.png">
+<meta property="og:image" content="http://example.com/Users/Lexie/Library/Application%20Support/typora-user-images/image-20211214150357240.png">
+<meta property="og:image" content="http://example.com/Users/Lexie/Library/Application%20Support/typora-user-images/image-20211222111715426.png">
+<meta property="og:image" content="http://example.com/Users/Lexie/Library/Application%20Support/typora-user-images/image-20211222112154959.png">
+<meta property="og:image" content="http://example.com/Users/Lexie/Library/Application%20Support/typora-user-images/image-20211222112542512.png">
+<meta property="article:published_time" content="2022-03-01T06:31:38.188Z">
+<meta property="article:modified_time" content="2022-03-01T06:31:39.111Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/Users/Lexie/Library/Application%20Support/typora-user-images/image-20211222104955895.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-高级AI复习文档" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/03/01/%E9%AB%98%E7%BA%A7AI%E5%A4%8D%E4%B9%A0%E6%96%87%E6%A1%A3/" class="article-date">
+  <time class="dt-published" datetime="2022-03-01T06:31:38.188Z" itemprop="datePublished">2022-03-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="高级AI复习文档"><a href="#高级AI复习文档" class="headerlink" title="高级AI复习文档"></a>高级AI复习文档</h1><h2 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h2><p>图灵测试：要求测出来<strong>智能体只是“表现上”像人</strong>，行动上像人。到底是否是真的与人一样会思考，无人知道。“和人一样思考、行动”。</p>
+<h2 id="二、搜索"><a href="#二、搜索" class="headerlink" title="二、搜索"></a>二、搜索</h2><h3 id="2-1-搜索问题"><a href="#2-1-搜索问题" class="headerlink" title="2.1 搜索问题"></a>2.1 搜索问题</h3><ul>
+<li>搜索问题构成<ul>
+<li>状态空间</li>
+<li>后继函数</li>
+<li>初始状态和目标测试</li>
+</ul>
+</li>
+<li>解是一个行动序列（一系列后继函数），将初始状态转换成目标状态</li>
+<li>状态数量问题分析</li>
+<li>状态空间的表示<ul>
+<li>状态空间图：<strong>每个状态只会出现一次</strong>，每个状态通过行动（后继函数）进行连接。</li>
+<li>搜索树：每一个节点是一个完整的路径（表示一个序列的行动），<strong>状态可能会重复</strong>。</li>
+</ul>
+</li>
+<li>搜索算法特性<ul>
+<li>完备性：当问题有解时，保证能找到<strong>一个解</strong></li>
+<li>最优性：保证能找到<strong>最优解</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="2-2-无信息搜索-Uniformed-Search"><a href="#2-2-无信息搜索-Uniformed-Search" class="headerlink" title="2.2 无信息搜索 Uniformed Search"></a>2.2 无信息搜索 Uniformed Search</h3><ul>
+<li><p>深度优先搜索 DFS</p>
+<ul>
+<li>栈</li>
+</ul>
+</li>
+<li><p>广度优先搜索 BFS</p>
+<ul>
+<li>队列</li>
+<li>当每一步代价相同时，是最优的</li>
+</ul>
+</li>
+<li><p>迭代深入搜索 Iterative Deepening</p>
+<ul>
+<li>结合DFS的空间优势和BFS的时间优势</li>
+</ul>
+</li>
+<li><p>代价敏感搜索 Cost- Sensitive Search</p>
+</li>
+<li><p>代价一致搜索 UCS</p>
+<ul>
+<li>优先扩展代价最小的节点</li>
+</ul>
+</li>
+<li><p>DFS vs BFS</p>
+</li>
+<li><p>特性对比</p>
+<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211222104955895.png" alt="image-20211222104955895" style="zoom:50%;" /></li>
+</ul>
+<h3 id="2-3-启发式搜索-Informed-Search"><a href="#2-3-启发式搜索-Informed-Search" class="headerlink" title="2.3 启发式搜索 Informed Search"></a>2.3 启发式搜索 Informed Search</h3><ul>
+<li><p>启发策略：估计一个状态到目标距离的函数</p>
+</li>
+<li><p>启发函数：</p>
+</li>
+<li><p>贪婪搜索：</p>
+<ul>
+<li>扩展离目标最近的节点</li>
+<li>只用到了最简单的启发式函数<strong>f(n)&#x3D;h(n)</strong></li>
+<li>通常情况：最佳优先是你很快到达目标</li>
+<li>最坏情况：类似DFS</li>
+</ul>
+</li>
+<li><p>A*搜索：结合UCS（向后实际cost）和Greedy（向前估计cost）</p>
+<ul>
+<li><p>A*算法可以看到到达此节点已经花费的代价（ g(x) ），**A*搜索的启发式函数变为了f(n)&#x3D;g(n)+h(n)**。</p>
+</li>
+<li><p>可采纳的启发函数：</p>
+<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211222105126201.png" alt="image-20211222105126201" style="zoom:50%;" />
+</li>
+<li><p><strong>最优性证明</strong></p>
+<p>![image-20211219174601410](&#x2F;Users&#x2F;Lexie&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20211219174601410.png)</p>
+<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211219174647300.png" alt="image-20211219174647300" style="zoom:50%;" />
+</li>
+<li><p>UCS vs A*</p>
+<ul>
+<li>UCS在所有方向上等可能的扩展</li>
+<li>A*主要朝着目标扩展，能够保证最优性，且搜索效率高</li>
+</ul>
+</li>
+<li><p>八数码游戏</p>
+</li>
+<li><p>图搜索</p>
+<ul>
+<li>主要思想：不要扩展一个状态两次</li>
+<li>完备yes，最优no</li>
+</ul>
+</li>
+<li><p>A*图搜索</p>
+<ul>
+<li><p>启发式的一致性</p>
+<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211222112819008.png" alt="image-20211222112819008" style="zoom:30%;" /></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-4-局部搜索-Local-Search"><a href="#2-4-局部搜索-Local-Search" class="headerlink" title="2.4 局部搜索 Local Search"></a>2.4 局部搜索 Local Search</h3><ul>
+<li><p>爬山法</p>
+<ul>
+<li><p>可在任意位置起始</p>
+</li>
+<li><p>重复: 移动到最好的相邻状态，不允许向山下移动</p>
+</li>
+<li><p>如果没有比当前更好的相邻状态，结束</p>
+<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211219174742460.png" alt="image-20211219174742460" style="zoom:50%;" /></li>
+</ul>
+</li>
+<li><p>模拟退火搜索</p>
+</li>
+<li><p>遗传算法</p>
+<ul>
+<li>基于<strong>适应度函数</strong>，在每步中保留 N 个最好状态</li>
+<li>配对杂交操作</li>
+<li>产生可选的变异</li>
+<li>问题的目标函数天然的可作为遗传算法的适应度函数</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-5-传教士和野人问题-The-Missionaries-and-Cannibals-Problem"><a href="#2-5-传教士和野人问题-The-Missionaries-and-Cannibals-Problem" class="headerlink" title="2.5 传教士和野人问题 The Missionaries and Cannibals Problem"></a>2.5 传教士和野人问题 The Missionaries and Cannibals Problem</h3><ul>
+<li><p>状态空间：${(M,C,B)}$ </p>
+<p>​					M：左岸传教士数量</p>
+<p>​					C： 左岸野人数量</p>
+<p>​					B：1-船在左岸，0-船在右岸</p>
+</li>
+<li><p>后继函数：${P_{01},P_{10},P_{02},P_{20},P_{11},Q_{01},Q_{10},Q_{02},Q_{20},Q_{11}}$</p>
+<p>​					P：左-&gt;右</p>
+<p>​					Q：右-&gt;左</p>
+<p>​					下标：穿上传教士、野人数</p>
+</li>
+<li><p>初始状态：（3，3，1）</p>
+</li>
+<li><p>目标状态：（0，0，0）</p>
+</li>
+<li><p>解？</p>
+</li>
+<li><p>往年试题：</p>
+<p>传教士和野人问题通常描述如下:三个传教士和三个野人在河的一边，还有一条能载一个人或者两个人的船。</p>
+<p>找到一个办法让所有的人能渡到河的另一岸，要求在任何地方野人数都不能多于传教士的人数。</p>
+<p> a.精确地形式化该问题，只描述确保该问题有解所必需的特性。画出该问题的完全状态空间。</p>
+<p> b.用一个合适的搜索算法实现和最优地求解该问题，检查重复状态是个好主意吗?</p>
+<p> c.这个问题的状态空间如此简单，你认为为什么求解它却很困难?</p>
+<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211219141921887.png" alt="image-20211219141921887" style="zoom:50%;" />
+
+<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211219141934793.png" alt="image-20211219141934793" style="zoom:50%;" />
+
+<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211219141950218.png" alt="image-20211219141950218" style="zoom:30%;" />
+
+<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211219173931001.png" alt="image-20211219173931001" style="zoom:50%;" />
+
+<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211219173950752.png" alt="image-20211219173950752" style="zoom:50%;" /></li>
+</ul>
+<h2 id="三、联结主义（神经网络）数据驱动的不确定性智能"><a href="#三、联结主义（神经网络）数据驱动的不确定性智能" class="headerlink" title="三、联结主义（神经网络）数据驱动的不确定性智能"></a>三、联结主义（神经网络）数据驱动的不确定性智能</h2><h3 id="3-1-人工神经网络和深度学习基础"><a href="#3-1-人工神经网络和深度学习基础" class="headerlink" title="3.1 人工神经网络和深度学习基础"></a>3.1 人工神经网络和深度学习基础</h3><ul>
+<li><p>人工神经元</p>
+<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20220102111535600.png" alt="image-20220102111535600" style="zoom:30%;" />
+
+<p>组合函数：加权和、径向距离</p>
+<p>激活函数：（作用是将可能的无限域变换到指定的有限范围内进行输出）</p>
+<p>​					非线性、连续可导、单调性</p>
+<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20220102111649019.png" alt="image-20220102111649019" style="zoom:30%;" />
+</li>
+<li><p>ANN结构：前馈（无循环、静态）、反馈（循环、动态）</p>
+</li>
+<li><p>感知机</p>
+<ul>
+<li><p>实质：一种神经元模型</p>
+</li>
+<li><p>单层</p>
+</li>
+<li><p>多层：3层（所有连续函数）、4层（所有函数）、实现异或（2层）</p>
+</li>
+<li><p>学习：B-P算法，梯度下降，权值更新</p>
+</li>
+<li><p>优点：很强的表达能力，容易执行</p>
+</li>
+<li><p>缺点：收敛速度慢、过拟合、局部极小、噪声（不可分情况）、泛化性</p>
+</li>
+<li><p>BP算法的问题：梯度消失、局部极小、需要带标签训练数据</p>
+<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20220102112014572.png" alt="image-20220102112014572" style="zoom:30%;" /></li>
+</ul>
+</li>
+<li><p>深度学习</p>
+<ul>
+<li><p>why go deep</p>
+<ul>
+<li>深层结构能够有效被表达</li>
+<li>深层结构可产生层次化特征表达</li>
+<li>多层隐变量允许统计上的组合共享</li>
+<li>深层结构有效</li>
+</ul>
+</li>
+<li><p>深度模型是手段，特征学习是目的</p>
+</li>
+<li><p>低层关注局部，高层关注全局（更具有语义化）</p>
+</li>
+<li><p>训练：</p>
+<ul>
+<li>自下而上的非监督学习（greedy layer-wise training）</li>
+<li>自顶向下的监督学习（误差自顶向下传输，对网络进行微调）</li>
+</ul>
+</li>
+<li><p>克服BP的限制：对输入的结构建模，产生输入的生成式模型，使生成式模型的概率最大</p>
+</li>
+<li><p>端到端学习</p>
+</li>
+</ul>
+</li>
+<li><p>常用模型</p>
+<ul>
+<li><p>AutoEncoder自动编码器：输入无标签数据，调整编码器和解码器的参数，使得重构误差最小</p>
+</li>
+<li><p>Hopfield Network：单层全互连，对称权值</p>
+</li>
+<li><p>Boltzmann Machine 波尔兹曼机：具有隐单元（不与外部相连）</p>
+<ul>
+<li>网络结构复杂，训练代价大，局部极小</li>
+</ul>
+</li>
+<li><p>Restricted Boltzmann Machine 受限波尔兹曼机：层内无连接</p>
+<ul>
+<li><p>训练：<a target="_blank" rel="noopener" href="https://blog.csdn.net/zhihua_oba/article/details/69487730?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~default-1.no_search_link&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~default-1.no_search_link">（来源：CSDN博客）</a></p>
+<ul>
+<li><p>状态初始化：</p>
+<p>![image-20211213145838002](&#x2F;Users&#x2F;Lexie&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20211213145838002.png)</p>
+</li>
+<li><p>对比散度CD算法：</p>
+</li>
+</ul>
+<p>![image-20211213145240650](&#x2F;Users&#x2F;Lexie&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20211213145240650.png)</p>
+<ul>
+<li><p>Gibbs采样：<a target="_blank" rel="noopener" href="https://blog.csdn.net/yujianmin1990/article/details/76723999">（来源：CSDN博客）</a></p>
+<p>![image-20211213151529541](&#x2F;Users&#x2F;Lexie&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20211213151529541.png)</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Deep Belief Networks （DBN）</strong>：最高一层是RBM（无向&#x2F;双向），低层是贝叶斯置信网络（有向）</p>
+<ul>
+<li><p>使用层叠RBM组成深度神经网络</p>
+</li>
+<li><p>经典的DBN网络结构：由若干层 RBM 和一层 BP 组成的一种深层神经网络</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/lujiandong1/article/details/44347973">训练：</a></p>
+<p>1.Greedy training：（逐层贪婪训练）</p>
+<p>分别单独无监督地训练每一层 RBM 网络，确保特征向量映射到不同特征空间时，都尽可能多地保留特征信息</p>
+<p>2.Fine tuning：</p>
+<p>在 DBN 的最后一层设置 BP 网络，接收 RBM 的输出特征向量作为它的输入特征向量，有监督地训练实体关系分类器。</p>
+<p>而且每一层 RBM 网络只能确保自身层内的权值对该层特征向量映射达到最优，并不是对整个 DBN 的特征向量映射达到最优，所以反向传播网络还将错误信息自顶向下传播至每一层 RBM，微调整个 DBN 网络。</p>
+<p>RBM 网络训练模型的过程可以看作对一个深层 BP 网络权值参数的初始化，使DBN 克服了 BP 网络因随机初始化权值参数而容易陷入局部最优和训练时间长的缺点</p>
+</li>
+</ul>
+</li>
+<li><p><strong>Deep Boltzmann Machines （DBM）</strong>：所有层间无向连接，同层神经元间无连接（RBM）</p>
+<ul>
+<li><p>高层表示由无标注数据建立（？），标注数据仅用来微调网络</p>
+</li>
+<li><p>训练：（和DBN一样，但在训练时采用双方向（上下两层），整个网络相当于一个马尔科夫随机场模型，能量模型与RBM不一样）</p>
+<p>1.Pre-training：预训练一系列RBM</p>
+<p>2.Generative fine-tuning：极大似然的近似算法（？）</p>
+<p>3.Discriminative fine-tuning：BP</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-2-序列数据的深度学习模型"><a href="#3-2-序列数据的深度学习模型" class="headerlink" title="3.2 序列数据的深度学习模型"></a>3.2 序列数据的深度学习模型</h3><p>预测序列的下一项，模糊了监督学习与非监督学习的差别</p>
+<ul>
+<li>循环神经网络RNN<ul>
+<li>可以看作权值共享的多层、前向网络</li>
+<li>训练：权值一致的BP算法</li>
+</ul>
+</li>
+<li>长序列的循环神经网络<ul>
+<li>GRU（Gated Recurrent Unit）</li>
+<li>LSTM</li>
+<li>BRNN（Bidirectional RNN）双向循环神经网络</li>
+<li>Deep RNNs</li>
+</ul>
+</li>
+<li>序列模型（sequence to sequence）<ul>
+<li>注意力模型</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-3-图像数据的深度学习模型"><a href="#3-3-图像数据的深度学习模型" class="headerlink" title="3.3 图像数据的深度学习模型"></a>3.3 图像数据的深度学习模型</h3><ul>
+<li><p>卷积神经网络CNN</p>
+<ul>
+<li>局部连接</li>
+<li>权重共享</li>
+</ul>
+</li>
+<li><p>CNN实例</p>
+<p>ImageNet CNN（AlexNet）、VGG Net、Residual Network、Inception网络、GoogleLeNet</p>
+</li>
+<li><p>图像数据应用</p>
+<ul>
+<li>目标定位</li>
+<li>特征点检测</li>
+<li>目标检测</li>
+<li>人脸识别</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-4-生成式对抗网络GAN"><a href="#3-4-生成式对抗网络GAN" class="headerlink" title="3.4 生成式对抗网络GAN"></a>3.4 生成式对抗网络GAN</h3><ul>
+<li>GAN的理论与实现模型<ul>
+<li>基本原理：一个生成器Generator和一个判别器Discriminator</li>
+</ul>
+</li>
+<li>不同类型GAN<ul>
+<li>Typical</li>
+<li>Conditional</li>
+<li>Unsupervised Conditional</li>
+</ul>
+</li>
+<li>对抗学习</li>
+</ul>
+<h3 id="3-5-图卷积神经网络GCN"><a href="#3-5-图卷积神经网络GCN" class="headerlink" title="3.5 图卷积神经网络GCN"></a>3.5 图卷积神经网络GCN</h3><ul>
+<li>基于谱的</li>
+<li>基于空间的</li>
+</ul>
+<h2 id="四、符号主义（知识智能）规则驱动的确定性智能"><a href="#四、符号主义（知识智能）规则驱动的确定性智能" class="headerlink" title="四、符号主义（知识智能）规则驱动的确定性智能"></a>四、符号主义（知识智能）规则驱动的确定性智能</h2><h3 id="4-1-命题逻辑"><a href="#4-1-命题逻辑" class="headerlink" title="4.1 命题逻辑"></a>4.1 命题逻辑</h3><h3 id="4-2-谓词逻辑"><a href="#4-2-谓词逻辑" class="headerlink" title="4.2 谓词逻辑"></a>4.2 谓词逻辑</h3><h3 id="4-3-模糊逻辑"><a href="#4-3-模糊逻辑" class="headerlink" title="4.3 模糊逻辑"></a>4.3 模糊逻辑</h3><h3 id="4-4-往年试题"><a href="#4-4-往年试题" class="headerlink" title="4.4 往年试题"></a>4.4 往年试题</h3><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211219174448697.png" alt="image-20211219174448697" style="zoom:50%;" />
+
+<ul>
+<li><p>2019:</p>
+<ul>
+<li><p><strong>不到长城非好汉</strong></p>
+<p>很少有成绩好的学生特别喜欢玩游戏（模糊）</p>
+<p><strong>KB归结</strong></p>
+</li>
+<li><p><strong>forward chain证明7&lt;3+9</strong></p>
+<p><strong>设计A*启发式算法使归结次数最少</strong></p>
+</li>
+</ul>
+</li>
+<li><p>2018:</p>
+<ul>
+<li><p>一阶谓词：胜者为王败者为寇</p>
+<p>很少有成绩好的学生特别喜欢玩游戏（模糊）</p>
+<p><strong>KB归结</strong></p>
+</li>
+<li><p>一阶谓词逻辑转化为CNF</p>
+<p>构造一个一阶谓词逻辑的知识库KB和句子a，使得KB到a的归结过程永远不会停止</p>
+<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211218180039194.png" alt="image-20211218180039194" style="zoom:50%;" /></li>
+</ul>
+</li>
+<li><p>2016:</p>
+<ul>
+<li><p><strong>使用语义网络表达事实</strong></p>
+<p>一阶谓词：胜者为王败者为寇</p>
+<p>很少有成绩好的学生特别喜欢玩游戏（模糊）</p>
+<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211218175642752.png" alt="image-20211218175642752" style="zoom:50%;" /></li>
+</ul>
+</li>
+</ul>
+<h2 id="五、行为主义（群体智能）交互驱动的涌现智能"><a href="#五、行为主义（群体智能）交互驱动的涌现智能" class="headerlink" title="五、行为主义（群体智能）交互驱动的涌现智能"></a>五、行为主义（群体智能）交互驱动的涌现智能</h2><h3 id="5-1-演化计算"><a href="#5-1-演化计算" class="headerlink" title="5.1 演化计算"></a>5.1 演化计算</h3><ul>
+<li><p>群体智能：无智能或仅具有相对简单智能的主体通过合作涌现出更高智能行为的特性</p>
+<ul>
+<li><p>集群智能：众多无智能的个体，通过相互之间的简单合作所表现出来的智能行为</p>
+<p>特点：分布式、随机性、自适应、正反馈、自发涌现</p>
+<ul>
+<li><p>蚁群优化算法（Ant Colony Optimization，ACO）<strong>（基本原理、算法过程、适用范围）</strong></p>
+<p>思想：局部随机搜索+自增强</p>
+<p>缺点：收敛速度慢、容易陷入局部最优、<strong>对于解空间为连续的优化问题不适用</strong></p>
+<p><strong>旅行商问题的蚁群优化算法求解</strong></p>
+</li>
+<li><p>粒子群优化算法（Particle Swarm Optimization，PSO）<strong>（基本原理、算法过程、适用范围）</strong></p>
+<p>基于种群寻优的启发式搜索算法</p>
+<p>优点：易于实现、可调参数较少、所需种群或微粒群规模较小、计算效率高、收敛速度快</p>
+<p>缺点：和其他演化计算算法类似，不保证收敛到全局最优解</p>
+<p><strong>适用于求解连续空间的优化问题</strong></p>
+</li>
+</ul>
+</li>
+<li><p>博弈：具备一定智能的理性个体，按照某种机制行动，在群体层面体现出的智能</p>
+</li>
+<li><p>众包：设计合适的机制，激励个体参与，从而实现单个个体不具备的社会智能</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-2-强化学习"><a href="#5-2-强化学习" class="headerlink" title="5.2 强化学习"></a>5.2 强化学习</h3><ul>
+<li><p>强化学习</p>
+<ul>
+<li><p>区别于监督学习：</p>
+<ul>
+<li>监督学习是从<strong>标注</strong>中学习，使用的是<strong>指导性反馈</strong>（直接给出某个状态下的正确行为）</li>
+<li>强化学习是从<strong>交互</strong>中学习，使用的是<strong>评价性反馈</strong>（当智能体采取某个行为时给出一个评价）</li>
+</ul>
+</li>
+<li><p>两大特性（用于判断一个问题是否适用于RL求解）：试错搜索&amp;延迟奖励</p>
+</li>
+<li><p>主体：智能体&amp;环境</p>
+<p>状态、行为、奖励</p>
+<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211214150357240.png" alt="image-20211214150357240" style="zoom:30%;" />
+</li>
+<li><p>要素：</p>
+<ul>
+<li>策略（状态到行为的映射）</li>
+<li>奖励（关于状态和行为的函数）</li>
+<li>价值（累积奖励）</li>
+<li>环境模型（刻画环境对行为的反馈）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>多臂赌博机（<strong>无状态</strong>的学习）</p>
+<ul>
+<li><p>固定次数获得期望累积奖励最大</p>
+</li>
+<li><p>利用和探索的balance</p>
+</li>
+<li><p>贪心策略和$\epsilon$ 贪心策略</p>
+</li>
+<li><p>行为估值方法</p>
+<ul>
+<li><p>根据历史观测样本的均值对$q_{*}(a)$ 进行估计</p>
+<p>$Q_t(a)&#x3D;\frac{\sum_{i&#x3D;1}^{t-1}R_i\cdot\mathbb{1}<em>{A_i&#x3D;a}}{\sum</em>{i&#x3D;1}^{t-1}\mathbb{1}_{A_i&#x3D;a}}$</p>
+<p>约定：当分母等于0时，$Q_t(a)&#x3D;0$</p>
+<p>​			当分母趋于无穷大时，$Q_t(a)$ 收敛到$q_{*}(a)$ </p>
+</li>
+<li><p>增量实现</p>
+<p>​	$Q_{n+1}&#x3D;Q_n+\frac{1}{n}[R_n-Q_n]$</p>
+</li>
+<li><p>更一般公式</p>
+<p>$NewEstimate \leftarrow OldEstimate + StepSize[ Target-OldEstimate]$</p>
+</li>
+<li><p>非平稳情形下（$q_{<em>}(a)$ 是关于时间的函数）的行为估值：*<em>指数带权平均</em></em></p>
+<p>$Q_{n+1} &#x3D; (1-\alpha)^nQ_1+\sum_{i&#x3D;1}^n\alpha(1-\alpha)^{n-i}R_i$</p>
+</li>
+<li><p>更新步长的选择</p>
+<p>收敛条件：</p>
+<p>$\sum_{n&#x3D;1}^\infin \alpha_n(a)&#x3D;\infin$ 和 $\sum_{n&#x3D;1}^\infin \alpha_n^2(a)\lt\infin$</p>
+</li>
+</ul>
+</li>
+<li><p>行为选择策略</p>
+<ul>
+<li><p>乐观初值法</p>
+<p>根据非平稳情形下的行为估值公式可以看出：估值一定程度上受到初始值$Q_1$的影响，统计学中，这叫做被初值偏置了。初始预估值可以用来根据先验信息提供奖励的期望标准。此外，如果将初始值调高，还有着鼓励模型在早期更多地进行探索的作用。以贪心策略为例，一个很高的初始预期值（称为乐观初值），会诱使模型去选择这个 action ，然而事实上 reward 要比估计值差很多，误差值$ [R_n-Q_n]$ 会是一个较大的负数，导致模型对这个 action “失望”，评价降低，下一次，模型就会去主动尝试其他 action 。通过这一方法，达到了鼓励模型在早期多做探索的作用。</p>
+<p>但是乐观初值法的适用面很窄，它仅适用于固定分布的问题。我们知道模型只会在早期多做探索，后期基本上仍是以 Exploiting 为主，对于非稳定的情况，必然需要时刻探索收集信息，此时乐观初值法就不再适用。</p>
+</li>
+<li><p>UCB行为选择策略（Upper Confidence Bound置信区间上限）</p>
+<p>如果重复执行某个 action ，一直返回一个低回报，那么必须要动态调整探索策略，适当调低再探索这个 action 的概率，而要尽可能多去探索<strong>“潜力”</strong>更高的 action 。<br>$$<br>A_t&#x3D;\arg\max_a\left[Q_t(a)+c\sqrt\frac{\ln t}{N_t(a)}\right]<br>$$<br>其中，$N_t(a)$ 为第 t 步之前 action a 被选中的次数，新加入的 $c\sqrt\frac{\ln t}{N_t(a)}$ 反应对于估值的不确定性。更广义地讲，其意义为方差。</p>
+<p>对于更一般的强化学习问题，UCB 算法会遇到一些难点，不再那么适用，比如非稳定问题、大状态空间问题等。</p>
+</li>
+<li><p>梯度赌博机算法<br>$$<br>\Pr{A_t&#x3D;a}&#x3D;\frac{e^{H_t(a)}}{\sum_{b&#x3D;1}^ke^{H_t(b)}}&#x3D;\pi_t(a)<br>$$<br>其中，$H_t(a)$ 是action a的偏好值，使用随机梯度上升法更新偏好值</p>
+<p>$H_{t+1}(A_t)&#x3D;H_t(A_t)+\alpha(R_t-\overline{R_t})(1-\pi_t(A_t))$</p>
+<p>$H_{t+1}(a)&#x3D;H_t(a)-\alpha(R_t-\overline{R_t})\pi_t(a),\quad\forall a \neq A_t$</p>
+<p>更一般通式：</p>
+<p>$H_{t+1}(a)&#x3D;H_t(a)+\alpha(R_t-)(\mathbf{1}_{a&#x3D;A_t}-\pi_t(A_t))$</p>
+<p>优化目标：第t轮的期望奖励大小</p>
+<p>$\mathbb{E}[R_t]&#x3D;\sum_{b}\pi_t(b)q_*(b)$</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/48315705">证明随机梯度上升的等价性：</a></p>
+<p>![image-20211214171114346](&#x2F;Users&#x2F;Lexie&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20211214171114346.png)</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>马尔可夫决策过程</p>
+</li>
+<li><p>策略学习</p>
+<ul>
+<li><p>动态规划方法</p>
+</li>
+<li><p>蒙特卡洛方法</p>
+</li>
+<li><p>时序差分方法</p>
+</li>
+<li><p>参数近似方法</p>
+<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211222111715426.png" alt="image-20211222111715426" style="zoom:50%;" /></li>
+</ul>
+</li>
+</ul>
+<h3 id="5-3-博弈基础"><a href="#5-3-博弈基础" class="headerlink" title="5.3 博弈基础"></a>5.3 博弈基础</h3><ul>
+<li><p>局中人Player：在博弈中有权决定自己<strong>行动方案</strong>的博弈参加者</p>
+</li>
+<li><p>策略：博弈中可供局中人选择的<strong>行动方案</strong></p>
+</li>
+<li><p>策略集合Strategy Set：参加博弈的局中人$i$ 的策略集合$A_i$</p>
+</li>
+<li><p>局势：所有局中人的策略形成的策略组，记作$S	$ </p>
+<ul>
+<li>多人博弈中，假定有$n$ 个局中人，每个局中人从自己的策略集合$A_i$ 中选择一个策略$s_i$ ，这样就形成了	一个局势$S&#x3D;{s_1,s_2,…,s_n}$</li>
+</ul>
+</li>
+<li><p>效用函数Payoff：</p>
+<ul>
+<li>通常用$U$ 表示</li>
+<li>每个参与博弈的局中人，都有一个相应的效用函数</li>
+<li>静态博弈中，一般是局势的函数</li>
+<li>动态博弈中，可能受其他因素影响，如：时间</li>
+</ul>
+</li>
+<li><p>纳什均衡</p>
+<ul>
+<li><p>最佳应对：</p>
+<p><strong>针对</strong>局中人2的策略$t$，若局中人1用策略$s$产生的收益大于或等于其任何其他策略，</p>
+<p>则称策略$s$是局中人1对局中人2的策略的$t$的最佳应对</p>
+</li>
+<li><p>占优策略：</p>
+<p>如果一个局中人的某个策略<strong>对其他局中人</strong>的<strong>任何策略</strong>都是最佳应对，</p>
+<p>那么这个策略就是该局中人的占优策略</p>
+</li>
+<li><p>纳什均衡（僵局，谁动谁吃亏）（石头剪刀布没有<strong>纯</strong>策略的纳什均衡，但有混合）</p>
+<p>如果一个局势下，<strong>每个</strong>局中人的策略都是相对其他局中人<strong>当前策略</strong>的最佳应对，</p>
+<p>则称该局势是一个纳什均衡</p>
+</li>
+<li><p>混合策略</p>
+<p>每个局中人以某个<strong>概率分布</strong>在其策略集合中选择策略</p>
+</li>
+<li><p>混合策论下的纳什均衡</p>
+<p>必要条件：给定其他局中人的策略选择概率分布的情况下，当前局中人选择任意一个（纯）策略获得的期望效用相等</p>
+</li>
+<li><p>纳什定理</p>
+<p>任何<strong>有限</strong>博弈都至少存在一个纳什均衡（不一定是纯策略的）（寻找博弈的纳什均衡是困难的）</p>
+</li>
+<li><p>帕累托最优</p>
+<ul>
+<li>对于一组策略选择（局势）</li>
+<li>若不存在其他策略选择使<strong>所有</strong>参与者得到至少和目前一样高的回报，且<strong>至少一个</strong>参与者会得到严格<strong>较高</strong>的回报 </li>
+<li>则这组策略选择为帕累托最优</li>
+</ul>
+</li>
+<li><p>社会最优</p>
+<p>使参与者的回报之和最大的策略选择（局势）</p>
+</li>
+</ul>
+</li>
+<li><p>机制设计</p>
+<p>设计一个博弈，使其达到预期结果（比如实现社会最优）</p>
+</li>
+<li><p>案例：田忌赛马</p>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th>第一场</th>
+<th>第二场</th>
+<th>第三场</th>
+<th>获胜方</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">齐王</td>
+<td>上</td>
+<td>中</td>
+<td>下</td>
+<td></td>
+</tr>
+<tr>
+<td align="left">田忌1</td>
+<td>上</td>
+<td>中</td>
+<td>下</td>
+<td>齐王</td>
+</tr>
+<tr>
+<td align="left">田忌2</td>
+<td>上</td>
+<td>下</td>
+<td>中</td>
+<td>齐王</td>
+</tr>
+<tr>
+<td align="left">田忌3</td>
+<td>中</td>
+<td>上</td>
+<td>下</td>
+<td>齐王</td>
+</tr>
+<tr>
+<td align="left">田忌4</td>
+<td>中</td>
+<td>下</td>
+<td>上</td>
+<td>齐王</td>
+</tr>
+<tr>
+<td align="left"><strong>田忌5</strong></td>
+<td><strong>下</strong></td>
+<td><strong>上</strong></td>
+<td><strong>中</strong></td>
+<td><strong>田忌</strong></td>
+</tr>
+<tr>
+<td align="left">田忌6</td>
+<td>下</td>
+<td>中</td>
+<td>上</td>
+<td>齐王</td>
+</tr>
+</tbody></table>
+<ul>
+<li><p>局中人：田忌、齐王</p>
+</li>
+<li><p>策略集合：田忌的策略集合$A_田&#x3D;{上中下、上下中、中上下、中下上、下上中、下中上}$</p>
+<p>​					齐王的策略集合$A_齐&#x3D;{上中下、上下中、中上下、中下上、下上中、下中上}$</p>
+</li>
+<li><p>效用矩阵</p>
+<p>田忌</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>上中下</th>
+<th>上下中</th>
+<th>中上下</th>
+<th>中下上</th>
+<th>下上中</th>
+<th>下中上</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>上中下</td>
+<td>3，-3</td>
+<td>1，-1</td>
+<td>1，-1</td>
+<td>1，-1</td>
+<td>-1，1</td>
+<td>1，-1</td>
+</tr>
+<tr>
+<td>上下中</td>
+<td>1，-1</td>
+<td>3，-3</td>
+<td>1，-1</td>
+<td>1，-1</td>
+<td>1，-1</td>
+<td>-1，1</td>
+</tr>
+<tr>
+<td>中上下</td>
+<td>1，-1</td>
+<td>-1，1</td>
+<td>3，-3</td>
+<td>1，-1</td>
+<td>1，-1</td>
+<td>1，-1</td>
+</tr>
+<tr>
+<td>中下上</td>
+<td>-1，1</td>
+<td>1，-1</td>
+<td>1，-1</td>
+<td>3，-3</td>
+<td>1，-1</td>
+<td>1，-1</td>
+</tr>
+<tr>
+<td>下上中</td>
+<td>1，-1</td>
+<td>1，-1</td>
+<td>1，-1</td>
+<td>-1，1</td>
+<td>3，-3</td>
+<td>1，-1</td>
+</tr>
+<tr>
+<td>下中上</td>
+<td>1，-1</td>
+<td>1，-1</td>
+<td>-1，1</td>
+<td>1，-1</td>
+<td>1，-1</td>
+<td>3，-3</td>
+</tr>
+</tbody></table>
+</li>
+<li><p>混合策略纳什均衡解&amp;期望得分</p>
+<p>假设齐王选择上述六个策略的概率依次为：$p_1,p_2,p_3,p_4,p_5,p_6$</p>
+<p>​		田忌选择上述六个策略的概率依次为：$q_1,q_2,q_3,q_4,q_5,q_6$</p>
+<p>假设齐王的策略分布不变，田忌策略选择的效用为：</p>
+<p>​		上中下：$-3\times p_1 -1\times p_2 -1\times p_3 +1\times p_4 -1\times p_5 -1\times p_6$</p>
+<p>​		上下中：$-1\times p_1 -3\times p_2 +1\times p_3 -1\times p_4 -1\times p_5 -1\times p_6$</p>
+<p>​		中上下：$-1\times p_1 -1\times p_2 -3\times p_3 -1\times p_4 -1\times p_5 +1\times p_6$</p>
+<p>​		中下上：$-1\times p_1 -1\times p_2 -1\times p_3 -3\times p_4 +1\times p_5 -1\times p_6$</p>
+<p>​		下上中：$1\times p_1 -1\times p_2 -1\times p_3 -1\times p_4 -3\times p_5 -1\times p_6$</p>
+<p>​		下中上：$-1\times p_1 +1\times p_2 -1\times p_3 -1\times p_4 -1\times p_5 -3\times p_6$</p>
+<p>令田忌的各个策略的效用相等，且$p_1+p_2+p_3+p_4+p_5+p_6&#x3D;1$</p>
+<p>得到<br>$$<br>\begin{bmatrix}<br>p_1\<br>p_2\<br>p_3\<br>p_4\<br>p_5\<br>p_6<br>\end{bmatrix}&#x3D;<br>p_1<br>\begin{bmatrix}<br>1\<br>-1\<br>-1\<br>1\<br>1\<br>-1<br>\end{bmatrix}+<br>\frac{1}{3}<br>\begin{bmatrix}<br>0\<br>1\<br>1\<br>0\<br>0\<br>1<br>\end{bmatrix}<br>$$<br>同理可得<br>$$<br>\begin{bmatrix}q_1\q_2\q_3\q_4\q_5\q_6\end{bmatrix}<br>&#x3D;q_1\begin{bmatrix}1\-1\-1\1\1\-1\end{bmatrix}<br>+\frac{1}{3}\begin{bmatrix}0\1\1\0\0\1\end{bmatrix}<br>$$</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>将$P、Q$ 代入效用的六个式子中任意一个，得到田忌、齐王期望得分分别为-1、1。		</p>
+<ul>
+<li><p>两个经济学的应用</p>
+<ul>
+<li><p>拍卖Bargaining：多个卖家、一个买家</p>
+<ul>
+<li><p>增价拍卖（英式）</p>
+</li>
+<li><p>减价拍卖（荷式）</p>
+</li>
+<li><p>首价密封报价拍卖</p>
+<p>纳什均衡：每个竞拍者的报价低于其对商品的估价</p>
+<p>​					最优报价低于估价</p>
+<p>​					竞拍者越多，报价越接近于估价</p>
+</li>
+<li><p>次价密封报价拍卖</p>
+<p>纳什均衡：每个竞拍者会倾向于采用其对商品的估价进行报价</p>
+</li>
+<li><p>双方出价</p>
+</li>
+</ul>
+</li>
+<li><p>讨价Auction：一个卖家、多个买家</p>
+<ul>
+<li>讨价的对象：双方对商品估价之差</li>
+<li>take-it-or-leave-it</li>
+<li>take-it-or-counteroffer</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>海盗分金币</p>
+</li>
+</ul>
+<h3 id="5-4-博弈应用"><a href="#5-4-博弈应用" class="headerlink" title="5.4 博弈应用"></a>5.4 博弈应用</h3><ul>
+<li><p>maxmin策略</p>
+<p>最大化自己最坏情况时的效用<br>$$<br>\arg\max_{s_i}\min_{s_{-i}} u_i(s_i,s_{-i})<br>$$<br>最小化损失，控制风险，预防其他局中人的不理性给自己带来损失，把对方往坏了想</p>
+</li>
+<li><p>minmax策略</p>
+<p>最小化对手的最大收益<br>$$<br>\arg\min_{s_i}\max_{s_j} u_j(s_i,s_j)<br>$$</p>
+</li>
+<li><p>零和博弈$\sum 收益 &#x3D;0$ 情况下：</p>
+<ul>
+<li>minmax和maxmin是对偶的</li>
+<li>minmax策略和maxmin策略等价于纳什均衡策略</li>
+</ul>
+</li>
+<li><p>匹配市场</p>
+<ul>
+<li><p>完全匹配</p>
+</li>
+<li><p>受限集</p>
+<p>设$S$ 为二部图某部节点集的子集，</p>
+<p>$N(S)$ 是$S$ 的邻居节点集合（来自另一部）</p>
+<p>如果$|N(S)|&lt;|S|$ ，则称$S$ 为受限集</p>
+<p>受限集总是成对出现</p>
+</li>
+<li><p>匹配定理</p>
+<p>对于左右两部节点数相同的二部图，如果其不存在完全匹配，那么该二部图一定包含一个受限集</p>
+</li>
+<li><p>最优匹配</p>
+<ul>
+<li>匹配的效用：成功匹配的估价之和</li>
+<li>最优匹配：效用最大的匹配</li>
+</ul>
+</li>
+<li><p>市场结清价格</p>
+<ul>
+<li><p>给定买方报价的情况下</p>
+<p>如果卖方的某种价格使得对应的买方偏好图中存在<strong>完全匹配</strong>（无受限集）</p>
+<p>则称<strong>卖方</strong>的这组价格为市场结清价格</p>
+</li>
+<li><p>寻找市场结清价格的过程：找一个买方受限集$S$，让$N(S)$中的每个卖家价格+1</p>
+</li>
+<li><p>价格能够引导市场优化配置</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>中介市场</p>
+<ul>
+<li><strong>中介与中介的博弈</strong></li>
+<li>均衡态<ul>
+<li>竞争不充分：中介垄断价格</li>
+<li>竞争充分：中介收益趋近于0</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>议价权</p>
+<ul>
+<li><p>找朋友游戏</p>
+</li>
+<li><p>稳定结局</p>
+<p>未参与配对的边两端获得的收益之和大于等于1</p>
+</li>
+<li><p>纳什议价解</p>
+<ul>
+<li><p>剩余价值$s&#x3D;1-x-y$</p>
+</li>
+<li><p>A的收益：$x+\frac{s}{2}&#x3D;\frac{1+x-y}{2}$</p>
+</li>
+<li><p>B的收益：$y+\frac{s}{2}&#x3D;\frac{1+y-x}{2}$</p>
+</li>
+</ul>
+</li>
+<li><p>均衡结局</p>
+<ul>
+<li><p>参与配对的边都满足纳什议价解</p>
+</li>
+<li><p>均衡结局一定是稳定结局</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="六、统计中的因果推断"><a href="#六、统计中的因果推断" class="headerlink" title="六、统计中的因果推断"></a>六、统计中的因果推断</h2><h3 id="6-1-基础知识"><a href="#6-1-基础知识" class="headerlink" title="6.1 基础知识"></a>6.1 基础知识</h3><ul>
+<li><p>辛普森悖论：</p>
+<ul>
+<li><p>总体数据上得出的统计结论和分组数据上的统计结论相反</p>
+</li>
+<li><p>原因：数据背后的<strong>产生机制</strong>不同</p>
+</li>
+</ul>
+</li>
+<li><p>结构因果模型SCM：Structural Causal Model 用于描述<strong>数据的产生机制</strong></p>
+<ul>
+<li><p>外生变量集合:𝑼，不依赖于其他变量</p>
+</li>
+<li><p>内生变量集合:𝑽，至少依赖一个变量</p>
+</li>
+<li><p>确定内生变量取值的函数集合:𝑭</p>
+<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211222112154959.png" alt="image-20211222112154959" style="zoom:30%;" /></li>
+</ul>
+</li>
+<li><p>因果模型图</p>
+<ul>
+<li><p>有向无环图DAG，节点：变量，边：变量之间的依赖关系</p>
+</li>
+<li><p>刻画了变量间的关系，但没有给出依赖关系的具体形式$f_Z$</p>
+</li>
+<li><p>乘积分解法则：$P(x_1,x_2,…,x_n)&#x3D;\prod_iP(x_i|pa_i)$，其中$pa_i$ 表示变量$x_i$ 的所有父节点</p>
+<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211222112542512.png" alt="image-20211222112542512" style="zoom:30%;" />
+</li>
+<li><p>独立性</p>
+<ul>
+<li>链结构</li>
+<li>分叉结构</li>
+<li>对撞结构</li>
+</ul>
+</li>
+<li><p>d-分离：用于确定因果模型图中任意一对节点是否独立</p>
+<p>一条路径p会被一组节点Z阻断，当且仅当：</p>
+<ul>
+<li>路径p包含链结构$A\rightarrow B \rightarrow C$ 或分叉结构$A\leftarrow B \rightarrow C$，且中间节点B在Z中</li>
+<li><strong>或</strong>路径p包含一个对撞结构$A\rightarrow B \leftarrow C$ ，且对撞节点B及其子孙都不在Z中</li>
+</ul>
+<p>如果一组节点Z阻断了X和Y间的<strong>每一条路径</strong>，则X和Y在Z的条件下是d-分离的，即$X\perp Y \vert Z$</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="6-2-干预"><a href="#6-2-干预" class="headerlink" title="6.2 干预"></a>6.2 干预</h3><ul>
+<li><p>干预与校正公式</p>
+<ul>
+<li><p>将变量固定为某个值，限制该变量随其他变量变化的自然趋势，记为 $do(X&#x3D;x)$ ，在因果模型图中取消所有指向X的边</p>
+</li>
+<li><p>校正公式（从观测数据中直接估计干预效果）<strong>（Z是X父节点）</strong><br>$$<br>\begin{align}<br>P(Y&#x3D;y\vert do(X&#x3D;x))&amp;&#x3D;P_m(Y&#x3D;y\vert X&#x3D;x)<br>\<br>&amp;&#x3D;\sum_ZP_m(Y&#x3D;y\vert X&#x3D;x,Z&#x3D;z)P_m(Z&#x3D;z\vert X&#x3D;x)<br>\<br>&amp;&#x3D;\sum_ZP_m(Y&#x3D;y\vert X&#x3D;x,Z&#x3D;z)P_m(Z&#x3D;z)<br>\<br>&amp;&#x3D;\sum_ZP(Y&#x3D;y\vert X&#x3D;x,Z&#x3D;z)P(Z&#x3D;z)</p>
+<p>\end{align}<br>$$</p>
+</li>
+<li><p>因果效应规则：舍变量X得父节点集合为PA，则X对Y的因果效应为（上式将Z换成PA）</p>
+</li>
+</ul>
+</li>
+<li><p>后门准则（父节点变量不可观测时）</p>
+<ul>
+<li><p>给定因果模型图中一对有序变量（X，Y），若变量集合Z满足：</p>
+<ul>
+<li>Z阻断了X与Y之间的每条含有<strong>指向X</strong>的路径</li>
+<li>Z中没有X的后代节点</li>
+</ul>
+<p>则称Z满足关于（X，Y）的后门准则</p>
+</li>
+<li><p>后门校正<strong>（Z是后门）</strong><br>$$<br>P(Y&#x3D;y \vert do(X&#x3D;x))&#x3D;\sum_ZP(Y&#x3D;y\vert X&#x3D;x,Z&#x3D;z)P(Z&#x3D;z)<br>$$</p>
+</li>
+</ul>
+</li>
+<li><p>前门准则（后门准则也不满足时）</p>
+<ul>
+<li><p>给定因果模型图中一对有序变量（X，Y），若变量集合Z满足：</p>
+<ul>
+<li>Z阻断了所有X到Y的有向路径</li>
+<li>X到Z没有后门路径</li>
+<li>所有Z到Y的后门路径都被X阻断</li>
+</ul>
+<p>则称Z满足关于（X，Y）的前门准则</p>
+</li>
+<li><p>前门校正<br>$$<br>P(Y&#x3D;y\vert do(X&#x3D;x))&#x3D;\sum_ZP(Z&#x3D;z\vert X&#x3D;x)\sum_{x’}P(Y&#x3D;y\vert X&#x3D;x’)P(X&#x3D;x’)<br>$$</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="6-3-反事实"><a href="#6-3-反事实" class="headerlink" title="6.3 反事实"></a>6.3 反事实</h3><ul>
+<li><p>确定性反事实计算</p>
+<p>给定观测$E&#x3D;e$ ，反事实$Y_{X&#x3D;x}$ 的三步法计算：</p>
+<ul>
+<li>溯因：用观测$E&#x3D;e$ <strong>（内生变量）</strong>确定当前个体&#x2F;环境，即$U$ 的值<strong>（外生变量）</strong></li>
+<li>作用：修改结构因果模型$M$，移除变量$X$出现在左边的方程，并用$X&#x3D;x$ 来替换它们，从而获得修正的模型$M_x$ </li>
+<li>预测：使用修正后的模型$M_x$ 和$U$ 的值来计算$Y$ 的值，即反事实结果</li>
+</ul>
+</li>
+<li><p>非确定性反事实计算</p>
+<p>给定观测$E&#x3D;e$ ，反事实$E(Y_{X&#x3D;x}\vert E&#x3D;e)$ 的三步法计算：</p>
+<ul>
+<li>溯因：用观测$E&#x3D;e$ <strong>（内生变量）</strong>更新$P(U)$，获得$P(U \vert E&#x3D;e)$<strong>（外生变量）</strong></li>
+<li>作用：修改结构因果模型$M$，移除变量$X$出现在左边的方程，并用$X&#x3D;x$ 来替换它们，从而获得修正的模型$M_x$ </li>
+<li>预测：使用修正后的模型$M_x$ 和 $P(U \vert E&#x3D;e)$的值来计算$Y$ 的期望，即反事实结果</li>
+</ul>
+</li>
+<li><p>后门的反事实定理</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/03/01/%E9%AB%98%E7%BA%A7AI%E5%A4%8D%E4%B9%A0%E6%96%87%E6%A1%A3/" data-id="cldbisx4j0005hejhf6vvhwl1" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/03/08/SEIR%E6%A8%A1%E5%9E%8B/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/03/01/%E6%A8%A1%E5%BC%8F%E8%AF%86%E5%88%AB%E5%A4%8D%E4%B9%A0%E6%96%87%E6%A1%A3/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/01/25/firstBlog/">firstBlog</a>
+          </li>
+        
+          <li>
+            <a href="/2023/01/25/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/20/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/20/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/08/SEIR%E6%A8%A1%E5%9E%8B/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

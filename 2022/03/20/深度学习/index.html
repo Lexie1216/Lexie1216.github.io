@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="1.Introduction1.1 AI、ML、DL人工智能：研究、开发用于模拟、延伸和扩展人的智能的理论、方法、技术及应用系统的一门新兴学科   机器学习：让计算机具有像人一样的学习和思考能力的技术的总称。具体来说是从已知数据中获得规律，并利用规律对未知数据进行预测的技术  有监督：分类&#x2F;回归 无监督：聚类&#x2F;降维    1.2 DL起源和发展1.3 DL研究机构和科学家1.4">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2022/03/20/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1.Introduction1.1 AI、ML、DL人工智能：研究、开发用于模拟、延伸和扩展人的智能的理论、方法、技术及应用系统的一门新兴学科   机器学习：让计算机具有像人一样的学习和思考能力的技术的总称。具体来说是从已知数据中获得规律，并利用规律对未知数据进行预测的技术  有监督：分类&#x2F;回归 无监督：聚类&#x2F;降维    1.2 DL起源和发展1.3 DL研究机构和科学家1.4">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220503131847862.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220503131909022.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220503131938933.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220503132818786.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220503133031966.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220503133232831.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220503133637956.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220503134912664.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220503135022417.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220503135521585.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220503140400710.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220503135106653.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190117185815250.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hlbGxvd3V4aWE=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20190117185302437.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hlbGxvd3V4aWE=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220503134036971.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220503141923827.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220503142110735.png">
+<meta property="og:image" content="https://pic3.zhimg.com/80/v2-8dbbdd54cd3f8f2eb18daaff968b294a_1440w.jpg">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220531143336688.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220531143304712.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220531143923247.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220531143939320.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220531144009257.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220531144406947.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220531144513972.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220531144947356.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220531144234431.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220531144146763.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220531144157984.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220531163109012.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220531163101734.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/20210121165257957.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdHRsbGVfeWFu,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://pic3.zhimg.com/80/v2-eb93e97a5bdd030b125ad3fea66e7832_1440w.jpg">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220531150003098.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220531162724628.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220531162915321.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220531164149448.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2019102714070227.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xhbmdzaW1pbmc=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2019011810431060.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hlbGxvd3V4aWE=,size_16,color_FFFFFF,t_70">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220531160535066.png">
+<meta property="article:published_time" content="2022-03-20T09:22:45.923Z">
+<meta property="article:modified_time" content="2022-05-31T10:53:24.415Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220503131847862.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-深度学习" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/03/20/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" class="article-date">
+  <time class="dt-published" datetime="2022-03-20T09:22:45.923Z" itemprop="datePublished">2022-03-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1.Introduction"></a>1.Introduction</h2><h3 id="1-1-AI、ML、DL"><a href="#1-1-AI、ML、DL" class="headerlink" title="1.1 AI、ML、DL"></a>1.1 AI、ML、DL</h3><p>人工智能：研究、开发用于模拟、延伸和扩展人的智能的理论、方法、技术及应用系统的一门新兴学科</p>
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503131847862.png" alt="image-20220503131847862" style="zoom:33%;" />
+
+<p>机器学习：让计算机具有像人一样的学习和思考能力的技术的总称。具体来说是从已知数据中获得规律，并利用规律对未知数据进行预测的技术</p>
+<ul>
+<li>有监督：分类&#x2F;回归</li>
+<li>无监督：聚类&#x2F;降维</li>
+</ul>
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503131909022.png" alt="image-20220503131909022" style="zoom:33%;" />
+
+<h3 id="1-2-DL起源和发展"><a href="#1-2-DL起源和发展" class="headerlink" title="1.2 DL起源和发展"></a>1.2 DL起源和发展</h3><h3 id="1-3-DL研究机构和科学家"><a href="#1-3-DL研究机构和科学家" class="headerlink" title="1.3 DL研究机构和科学家"></a>1.3 DL研究机构和科学家</h3><h3 id="1-4-DL定义、理论和方法"><a href="#1-4-DL定义、理论和方法" class="headerlink" title="1.4 DL定义、理论和方法"></a>1.4 DL定义、理论和方法</h3><p>深度学习：一般是指通过训练多层网络结构对未知数据进行分类或回归</p>
+<ul>
+<li><p>有监督学习方法（深度判别模型）：深度前馈网络、卷积神经网络、循环神经网络等</p>
+<ul>
+<li><p>深度前馈网络（<strong>Deep Feedforward Neural Network, D-FNN</strong>）</p>
+</li>
+<li><p>卷积神经网络（<strong>Convolutional Neural Network, CNN</strong>）</p>
+</li>
+<li><p>循环神经网络（<strong>Recurrent Neural Network, RNN</strong>）</p>
+</li>
+<li><p>胶囊网络（<strong>CapsuleNet</strong>）</p>
+</li>
+<li><p>深度森林（<strong>Deep Forest</strong>）</p>
+</li>
+</ul>
+</li>
+<li><p>无监督学习方法（深度生成模型）：深度信念网、深度玻尔兹曼机，深度自编码器等</p>
+<ul>
+<li>深度信念网络（<strong>Deep Belief Network, DBN</strong>）</li>
+<li>深度玻尔兹曼机（<strong>Deep Boltzmann Machine, DBM</strong>）</li>
+<li>深度自编码器（<strong>Deep Auto-Encoder, DAE</strong>）</li>
+<li>栈式自编码器（<strong>Stacked Auto-Encoder, SAE</strong>）</li>
+<li>生成对抗网络（<strong>Generative Adversarial Networks</strong>，<strong>GAN</strong>）</li>
+<li>非参数贝叶斯网络（<strong>Non-parametric Bayesian networks</strong>）</li>
+</ul>
+</li>
+</ul>
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503131938933.png" alt="image-20220503131938933" style="zoom:30%;" />
+
+<p>ML是基于手工特征的，而DL可以自动提取特征</p>
+<h3 id="1-5-DL主要应用"><a href="#1-5-DL主要应用" class="headerlink" title="1.5 DL主要应用"></a>1.5 DL主要应用</h3><p>图像处理</p>
+<p>语音识别</p>
+<p>自然语言处理</p>
+<p>综合应用</p>
+<p>![image-20220531143801180](&#x2F;Users&#x2F;lexie&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20220531143801180.png)</p>
+<h2 id="2-Foundations"><a href="#2-Foundations" class="headerlink" title="2.Foundations"></a>2.Foundations</h2><h3 id="2-1-数学基础"><a href="#2-1-数学基础" class="headerlink" title="2.1 数学基础"></a>2.1 数学基础</h3><p>线性代数：标量、向量、矩阵、张量Tensor</p>
+<p>概率和统计：随机变量、常见概率分布、多个随机变量概率分布</p>
+<p>信息论：熵、互信息、KL散度</p>
+<p>常见统计量：期望、方差</p>
+<p>最优化估计方法：最小二乘</p>
+<h3 id="2-2-ML基础"><a href="#2-2-ML基础" class="headerlink" title="2.2 ML基础"></a>2.2 ML基础</h3><p>数据集（训练集、验证集、测试集）</p>
+<p>误差分析</p>
+<ul>
+<li><p>误差：训练误差、泛化误差、测试误差</p>
+</li>
+<li><p>过拟合、合适、欠拟合</p>
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503132818786.png" alt="image-20220503132818786" style="zoom:33%;" />
+</li>
+<li><p>泛化误差分析</p>
+</li>
+<li><p>交叉验证</p>
+</li>
+</ul>
+<h3 id="2-3-神经元模型"><a href="#2-3-神经元模型" class="headerlink" title="2.3 神经元模型"></a>2.3 神经元模型</h3><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503133031966.png" alt="image-20220503133031966" style="zoom:33%;" />
+
+<h3 id="2-4-感知器及MLP（多层感知器-x2F-前馈网络-x2F-正向传播网络）"><a href="#2-4-感知器及MLP（多层感知器-x2F-前馈网络-x2F-正向传播网络）" class="headerlink" title="2.4 感知器及MLP（多层感知器&#x2F;前馈网络&#x2F;正向传播网络）"></a>2.4 感知器及MLP（多层感知器&#x2F;前馈网络&#x2F;正向传播网络）</h3><p>与M-P 模型需要人为确定参数不同，感知器能够通过训练自动确定参数。训练方式为有监督学习，即需要设定训练样本和期望输出，然后调整实际输出和期望输出之差的方式（误差修正学习）</p>
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503133232831.png" alt="image-20220503133232831" style="zoom:33%;" />
+
+<p>单层感知器只能解决<strong>线性可分</strong>问题，而不能解决线性不可分问题，为了解决线性不可分问题，我们需要使用多层感知器</p>
+<h3 id="2-5-BP算法"><a href="#2-5-BP算法" class="headerlink" title="2.5 BP算法"></a>2.5 BP算法</h3><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503133637956.png" alt="image-20220503133637956" style="zoom:40%;" />
+
+<h2 id="3-CNN"><a href="#3-CNN" class="headerlink" title="3.CNN"></a>3.CNN</h2><p>卷积神经网络与普通神经网络的区别在于，卷积神经网络包含了一个由卷积层和子采样层（池化层）构成的特征抽取器。在卷积神经网络的卷积层中，一个神经元只与部分邻层神经元连接。在CNN的一个卷积层中，通常包含若干个特征图(featureMap)，每个特征图由一些矩形排列的的神经元组成，同一特征图的神经元共享权值，这里共享的权值就是卷积核。卷积核一般以随机小数矩阵的形式初始化，在网络的训练过程中卷积核将学习得到合理的权值。共享权值（卷积核）带来的直接好处是减少网络各层之间的连接，同时又降低了过拟合的风险。子采样也叫做池化（pooling），通常有均值子采样（mean pooling）和最大值子采样（max pooling）两种形式。子采样可以看作一种特殊的卷积过程。卷积和子采样大大简化了模型复杂度，减少了模型的参数。<br>————————————————<br>版权声明：本文为CSDN博主「CharlesOAO」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_42570457/article/details/81458077">https://blog.csdn.net/qq_42570457/article/details/81458077</a></p>
+<h3 id="3-1-卷积的基本概念"><a href="#3-1-卷积的基本概念" class="headerlink" title="3.1 卷积的基本概念"></a>3.1 卷积的基本概念</h3><h3 id="3-2-Hubel-Weisel实验-x2F-神经认知机"><a href="#3-2-Hubel-Weisel实验-x2F-神经认知机" class="headerlink" title="3.2 Hubel-Weisel实验&#x2F;神经认知机"></a>3.2 Hubel-Weisel实验&#x2F;神经认知机</h3><p>感受野</p>
+<h3 id="3-3-CNN基本原理"><a href="#3-3-CNN基本原理" class="headerlink" title="3.3 CNN基本原理"></a>3.3 CNN基本原理</h3><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503134912664.png" alt="image-20220503134912664" style="zoom:40%;" />
+
+<p>基本结构：</p>
+<ul>
+<li><p>卷积层</p>
+<ul>
+<li>卷积的<strong>步长(stride)</strong>: 卷积核移动的步长</li>
+<li>卷积的模式：<strong>Full</strong>, <strong>Same</strong>和<strong>Valid</strong></li>
+</ul>
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503135022417.png" alt="image-20220503135022417" style="zoom:40%;" />
+
+<ul>
+<li><p>数据填充</p>
+</li>
+<li><p>输出维度</p>
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503135521585.png" alt="image-20220503135521585" style="zoom:40%;" />
+</li>
+<li><p><strong>感受野计算</strong></p>
+</li>
+<li><p>卷积层的深度（卷积核个数）</p>
+</li>
+<li><p>特征图</p>
+<ul>
+<li>浅层卷积层：提取的是<strong>图像基本特征</strong>，如边缘、方向和纹理等特征</li>
+<li>深层卷积层：提取的是<strong>图像高阶特征</strong>，出现了高层语义模式，如“车轮”、“人脸”等特征</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>激活函数</p>
+<ul>
+<li><p>激活函数是用来加入<strong>非线性因素</strong>，提高网络表达能力</p>
+</li>
+<li><p>卷积神经网络中最常用的是ReLU（使用较小的学习率防止神经元死亡），Sigmoid使用较少（sigmoid和tanh会梯度消失）</p>
+</li>
+<li><p>常见激活函数总结：</p>
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503140400710.png" alt="image-20220503140400710" style="zoom:33%;" />
+</li>
+<li><p>ReLU失效时，可考虑Leaky ReLU、PReLU、ELU或Maxout</p>
+</li>
+<li><p>ReLU的优点：</p>
+<ul>
+<li>计算速度快，ReLU函数只有线性关系，比Sigmoid和Tanh要快很多</li>
+<li>输入为正数的时候，不存在梯度消失问题</li>
+</ul>
+</li>
+<li><p>ReLU的缺点：</p>
+<ul>
+<li>强制性把负值置为0，可能丢掉一些特征</li>
+<li>当输入为负数时，权重无法更新，导致“神经元死亡”（学习率不要太大）</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>池化层</p>
+<ul>
+<li>池化操作使用某位置<strong>相邻</strong>输出的总体<strong>统计特征</strong>作为该位置的输出，常用最大池化**(max-pooling)<strong>和均值池化</strong>(average-pooling)**</li>
+<li>池化层不包含需要训练学习的参数，仅需指定池化操作的<strong>核大小</strong>、操作<strong>步幅</strong>以及<strong>池化类型</strong></li>
+<li>作用：<ul>
+<li>减少网络中的参数计算量，从而<strong>遏制过拟合</strong></li>
+<li>增强网络对输入图像中的小变形、扭曲、平移的<strong>鲁棒性</strong>(输入里的微小扭曲不会改变池化输出——因为我们在局部邻域已经取了最大值&#x2F;平均值)</li>
+<li>帮助我们获得<strong>不因尺寸而改变的等效图片表征</strong>。这非常有用，因为这样我们就可以探测到图片里的物体，不管它在哪个位置</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>全连接层</p>
+</li>
+<li><p>输出层</p>
+</li>
+</ul>
+<h3 id="3-4-经典CNN"><a href="#3-4-经典CNN" class="headerlink" title="3.4 经典CNN"></a>3.4 经典CNN</h3><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503135106653.png" alt="image-20220503135106653" style="zoom:40%;" />
+
+
+
+<h3 id="3-5-CNN主要应用"><a href="#3-5-CNN主要应用" class="headerlink" title="3.5 CNN主要应用"></a>3.5 CNN主要应用</h3><p>CV：图像分类、物体检测、图像分割、图像回归</p>
+<p>语音识别</p>
+<p>NLP：情感分析</p>
+<h2 id="4-RNN"><a href="#4-RNN" class="headerlink" title="4.RNN"></a>4.RNN</h2><p><img src="https://img-blog.csdnimg.cn/20190117185815250.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hlbGxvd3V4aWE=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<p><img src="https://img-blog.csdnimg.cn/20190117185302437.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hlbGxvd3V4aWE=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="4-1-计算图"><a href="#4-1-计算图" class="headerlink" title="4.1 计算图"></a>4.1 计算图</h3><p>计算图：描述计算结构的一种图</p>
+<p>元素：节点（变量）、边（操作&#x2F;函数）</p>
+<p>链式法则</p>
+<p>参数共享</p>
+<h3 id="4-2-RNN（序列数据建模）"><a href="#4-2-RNN（序列数据建模）" class="headerlink" title="4.2 RNN（序列数据建模）"></a>4.2 RNN（序列数据建模）</h3><p>文本、语音、视频、时态数据</p>
+<p>RNN定义：循环神经网络是一种人工神经网络，它的节点间的连接形成一个<strong>遵循时间序列的有向图</strong></p>
+<p>RNN一般结构</p>
+<p>RNN示例</p>
+<p>训练算法：BPTT（BP Through Time）</p>
+<h3 id="4-3-LSTM"><a href="#4-3-LSTM" class="headerlink" title="4.3 LSTM"></a>4.3 LSTM</h3><p>RNN的<strong>梯度消失</strong>问题</p>
+<p>原因：BPTT算法，激活函数Tanh</p>
+<p>解决方案：ReLU函数、门控RNN（LSTM）</p>
+<h3 id="4-4-其他典型RNN"><a href="#4-4-其他典型RNN" class="headerlink" title="4.4 其他典型RNN"></a>4.4 其他典型RNN</h3><ul>
+<li><p>GRU</p>
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503134036971.png" alt="image-20220503134036971" style="zoom:40%;" />
+</li>
+<li><p>Peephole LSTM等LSTM变种</p>
+</li>
+<li><p>双向RNN</p>
+</li>
+<li><p>Continuous Time RNN</p>
+</li>
+</ul>
+<h3 id="4-5-RNN主要应用"><a href="#4-5-RNN主要应用" class="headerlink" title="4.5 RNN主要应用"></a>4.5 RNN主要应用</h3><p>语言模型、语音识别、自动作曲、机器翻译、自动摘要、自动写作、图像描述</p>
+<h2 id="5-DGN"><a href="#5-DGN" class="headerlink" title="5.DGN"></a>5.DGN</h2><h3 id="5-1-深度生成模型概述"><a href="#5-1-深度生成模型概述" class="headerlink" title="5.1 深度生成模型概述"></a>5.1 深度生成模型概述</h3><h3 id="5-2-Hopfield神经网络"><a href="#5-2-Hopfield神经网络" class="headerlink" title="5.2 Hopfield神经网络"></a>5.2 Hopfield神经网络</h3><p>神经网络分类：</p>
+<ul>
+<li><p>多层神经网络：模式识别</p>
+</li>
+<li><p>相互连接型网络：通过<strong>联想记忆</strong>去除数据中的噪声（<strong>Hopfield</strong>神经网络是最典型的相互连结型网络）</p>
+</li>
+</ul>
+<p>Hopfield网络的优点：</p>
+<ul>
+<li>单元之间的连接权重对称（𝑤𝑖𝑗&#x3D;𝑤𝑗𝑖）</li>
+<li>每个单元没有到自身的连接（𝑤𝑖𝑖&#x3D;0）</li>
+<li>单元的状态采用<strong>随机异步更新方式</strong>，每次只有一个单元改变状态</li>
+<li><em>n</em>个二值单元做成的二值神经网络，每个单元的输出只能是0或1的两个值</li>
+</ul>
+<p>联想记忆：当输入模式为某种状态时，输出端要给出与之相应的输出模式（自联想记忆&#x2F;异联想记忆）</p>
+<p>Hopfield神经网络计算</p>
+<p>串扰：相互干扰、不能准确记忆的情况</p>
+<p>Hopfield神经网络能够记忆的模式数量有限，大约是网络单元数的**15%**左右，为了防止串扰，可以采用先把模式正交化再进行记忆等方法</p>
+<h3 id="5-3-玻尔兹曼机BM和受限玻尔兹曼机RBM"><a href="#5-3-玻尔兹曼机BM和受限玻尔兹曼机RBM" class="headerlink" title="5.3 玻尔兹曼机BM和受限玻尔兹曼机RBM"></a>5.3 玻尔兹曼机BM和受限玻尔兹曼机RBM</h3><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503141923827.png" alt="image-20220503141923827" style="zoom:50%;" />
+
+<p>BM：可以通过让每个单元按照一定的概率分布发生状态变化，来避免陷入局部最优解</p>
+<p>保持了Hopfield神经网络的假设：</p>
+<ul>
+<li>权重对称</li>
+<li>自身无连接</li>
+<li>二值输出</li>
+</ul>
+<p>模拟退火算法</p>
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503142110735.png" alt="image-20220503142110735" style="zoom:43%;" />
+
+<p>BM训练过程</p>
+<p>RBM由可见单元和<strong>隐藏单元</strong>共同构成</p>
+<ul>
+<li>由可见层和隐藏层构成</li>
+<li>层内单元之间无连接</li>
+<li>信息可双向流动</li>
+</ul>
+<p>Gibbs采样</p>
+<p>对比散度算法</p>
+<h3 id="5-4-深度玻尔兹曼机DBM和深度信念网络DBN"><a href="#5-4-深度玻尔兹曼机DBM和深度信念网络DBN" class="headerlink" title="5.4 深度玻尔兹曼机DBM和深度信念网络DBN"></a>5.4 深度玻尔兹曼机DBM和深度信念网络DBN</h3><p>深度玻尔兹曼机DBM（由受限玻尔兹曼机RBM堆叠组成）</p>
+<ul>
+<li>采用对比散度算法训练，逐层调整连接权重和偏置（与多层神经网络不同）</li>
+<li>既可以当作生成模型又可以当成判别模型（顶层加softmax实现分类）</li>
+</ul>
+<p>深度信念网络DBN（RBM+最底层directed）</p>
+<p>完全非监督？</p>
+<h3 id="5-5-自编码器及其变种"><a href="#5-5-自编码器及其变种" class="headerlink" title="5.5 自编码器及其变种"></a>5.5 自编码器及其变种</h3><p>AutoEncoder</p>
+<ul>
+<li>是一种有效的数据维度压缩算法，主要应用：<ul>
+<li>构建一种能够<strong>重构输入</strong>样本并进行特征表达的神经网络</li>
+<li>训练多层神经网络时，通过自编码器训练样本得到<strong>参数初始值</strong></li>
+</ul>
+</li>
+<li>是一种基于无监督学习的神经网络，目的在于通过不断调整参数，重构经过维度压缩的输入样本</li>
+<li>训练：<ul>
+<li>权值共享，目的：尽可能重构输入</li>
+<li>BP，误差：最小二乘误差&#x2F;交叉熵代价</li>
+</ul>
+</li>
+</ul>
+<p>降噪自编码器</p>
+<ul>
+<li>降噪自编码器把通过向训练样本中<strong>加入随机噪声</strong>得到的样本$\tilde{x}&#x3D;x+\epsilon$输入给输入层</li>
+<li>保持输入样本不变的条件下，能够更好地反映样本属性的特征</li>
+<li>消除输入样本中包含的噪声</li>
+</ul>
+<p>稀疏自编码器</p>
+<ul>
+<li>在多层自编码器中，中间层的单元数太少会导致神经网络很难重构输入样本，而单元数太多又会产生单元冗余，降低压缩效率。为了解决这个问题，人们将稀疏正则化引入到自编码器中，提出了稀疏自编码器（<strong>Sparse Autoencoder</strong>）</li>
+<li>通过增加正则化项，大部分单元的输出都变成了0，就能利用少数单元完成压缩或重构</li>
+<li>平均激活度</li>
+</ul>
+<p>栈式自编码器（无监督的pre-training+有监督的fine tuning）逐层训练：</p>
+<ul>
+<li>首先训练第一个自编码器，然后保留第一个自编码器的编码器部分</li>
+<li>把第一个自编码器的中间层作为第二个自编码器的输入层进行训练</li>
+<li>反复地把前一个自编码器的中间层作为后一个编码器的输入层，进行迭代训练</li>
+</ul>
+<h2 id="6-others"><a href="#6-others" class="headerlink" title="6.others"></a>6.others</h2><h3 id="6-1-生成对抗网络GAN"><a href="#6-1-生成对抗网络GAN" class="headerlink" title="6.1 生成对抗网络GAN"></a>6.1 生成对抗网络GAN</h3><h3 id="6-2-胶囊网络"><a href="#6-2-胶囊网络" class="headerlink" title="6.2 胶囊网络"></a>6.2 胶囊网络</h3><p>CNN现存问题：池化操作提供了<strong>局部不变性</strong>，错误解决了需要解决的<strong>等变性问题</strong>，从而丢失了位置等信息</p>
+<p>平移等变性：对于一个函数，如果对其输入施加的变换也会<strong>同样反应在输出上</strong>，那么这个函数就对该变换具有等变性</p>
+<p>平移不变性：对于一个函数，如果对其输入施加的某种操作丝毫<strong>不会影响到输出</strong>，那么这个函数就对该变换具有不变性</p>
+<p>CapsNet：</p>
+<h3 id="6-3-注意力机制Attention"><a href="#6-3-注意力机制Attention" class="headerlink" title="6.3 注意力机制Attention"></a>6.3 注意力机制Attention</h3><h3 id="6-4-记忆网络"><a href="#6-4-记忆网络" class="headerlink" title="6.4 记忆网络"></a>6.4 记忆网络</h3><h3 id="6-5-深度强化学习DRL"><a href="#6-5-深度强化学习DRL" class="headerlink" title="6.5 深度强化学习DRL"></a>6.5 深度强化学习DRL</h3><h3 id="6-6-深度森林"><a href="#6-6-深度森林" class="headerlink" title="6.6 深度森林"></a>6.6 深度森林</h3><h2 id="7-Generalization"><a href="#7-Generalization" class="headerlink" title="7.Generalization"></a>7.Generalization</h2><h3 id="7-1-正则化方法概述"><a href="#7-1-正则化方法概述" class="headerlink" title="7.1 正则化方法概述"></a>7.1 正则化方法概述</h3><h3 id="7-2-参数范数正则化"><a href="#7-2-参数范数正则化" class="headerlink" title="7.2 参数范数正则化"></a>7.2 参数范数正则化</h3><h3 id="7-3-数据增强"><a href="#7-3-数据增强" class="headerlink" title="7.3 数据增强"></a>7.3 数据增强</h3><h3 id="7-4-Batch-Normalization"><a href="#7-4-Batch-Normalization" class="headerlink" title="7.4 Batch Normalization"></a>7.4 Batch Normalization</h3><h3 id="7-5-Bagging"><a href="#7-5-Bagging" class="headerlink" title="7.5 Bagging"></a>7.5 Bagging</h3><h3 id="7-6-Dropout和DropConnect"><a href="#7-6-Dropout和DropConnect" class="headerlink" title="7.6 Dropout和DropConnect"></a>7.6 Dropout和DropConnect</h3><h3 id="7-7-提前终止"><a href="#7-7-提前终止" class="headerlink" title="7.7 提前终止"></a>7.7 提前终止</h3><h2 id="8-tools"><a href="#8-tools" class="headerlink" title="8.tools"></a>8.tools</h2><h3 id="8-1-深度学习平台概览"><a href="#8-1-深度学习平台概览" class="headerlink" title="8.1 深度学习平台概览"></a>8.1 深度学习平台概览</h3><h3 id="8-2-Tensorflow"><a href="#8-2-Tensorflow" class="headerlink" title="8.2 Tensorflow"></a>8.2 Tensorflow</h3><h3 id="8-3-PyTorch"><a href="#8-3-PyTorch" class="headerlink" title="8.3 PyTorch"></a>8.3 PyTorch</h3><h3 id="8-4-Keras"><a href="#8-4-Keras" class="headerlink" title="8.4 Keras"></a>8.4 Keras</h3><h3 id="8-5-PaddlePaddle"><a href="#8-5-PaddlePaddle" class="headerlink" title="8.5 PaddlePaddle"></a>8.5 PaddlePaddle</h3><h3 id="8-6-Huawei平台"><a href="#8-6-Huawei平台" class="headerlink" title="8.6 Huawei平台"></a>8.6 Huawei平台</h3><h2 id="9-Applications-in-CV"><a href="#9-Applications-in-CV" class="headerlink" title="9.Applications in CV"></a>9.Applications in CV</h2><h3 id="9-1-图像-x2F-视频处理"><a href="#9-1-图像-x2F-视频处理" class="headerlink" title="9.1 图像&#x2F;视频处理"></a>9.1 图像&#x2F;视频处理</h3><h3 id="9-2-图像-x2F-视频压缩"><a href="#9-2-图像-x2F-视频压缩" class="headerlink" title="9.2 图像&#x2F;视频压缩"></a>9.2 图像&#x2F;视频压缩</h3><h3 id="9-3-传统的计算机视觉处理"><a href="#9-3-传统的计算机视觉处理" class="headerlink" title="9.3 传统的计算机视觉处理"></a>9.3 传统的计算机视觉处理</h3><h3 id="9-4-图像分类"><a href="#9-4-图像分类" class="headerlink" title="9.4 图像分类"></a>9.4 图像分类</h3><h3 id="9-5-目标检测"><a href="#9-5-目标检测" class="headerlink" title="9.5 目标检测"></a>9.5 目标检测</h3><h3 id="9-6-图像分割"><a href="#9-6-图像分割" class="headerlink" title="9.6 图像分割"></a>9.6 图像分割</h3><h3 id="9-7-图像回归"><a href="#9-7-图像回归" class="headerlink" title="9.7 图像回归"></a>9.7 图像回归</h3><h2 id="2021试题"><a href="#2021试题" class="headerlink" title="2021试题"></a>2021试题</h2><p><img src="https://pic3.zhimg.com/80/v2-8dbbdd54cd3f8f2eb18daaff968b294a_1440w.jpg" alt="img"></p>
+<h2 id="一、名词解释"><a href="#一、名词解释" class="headerlink" title="一、名词解释"></a>一、名词解释</h2><h3 id="2021"><a href="#2021" class="headerlink" title="2021"></a>2021</h3><h4 id="1-CNN"><a href="#1-CNN" class="headerlink" title="1.CNN"></a>1.CNN</h4><p>卷积神经网络是一类包含卷积计算且具有深度结构的前馈神经网络，是深度学习的代表算法之一 。卷积神经网络具有表征学习能力，能够按其阶层结构对输入信息进行平移不变分类，因此也被称为“平移不变人工神经网络” </p>
+<h4 id="2-RNN"><a href="#2-RNN" class="headerlink" title="2.RNN"></a>2.RNN</h4><p>循环神经网络是一类以序列数据为输入，在序列的演进方向进行递归且所有节点（循环单元）按链式连接的递归神经网络。</p>
+<h4 id="3-SVD"><a href="#3-SVD" class="headerlink" title="3.SVD"></a>3.SVD</h4><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531143336688.png" alt="image-20220531143336688" style="zoom:30%;" />
+
+<p>奇异值分解是线性代数中一种重要的矩阵分解，也是在机器学习领域广泛应用的算法，可用于降维算法中的特征分解、推荐系统和NLP领域</p>
+<h4 id="4-Cross-Entropy"><a href="#4-Cross-Entropy" class="headerlink" title="4.Cross Entropy"></a>4.Cross Entropy</h4><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531143304712.png" alt="image-20220531143304712" style="zoom:30%;" />
+
+<p>交叉熵（Cross Entropy）是Shannon信息论中一个重要概念，主要用于度量两个概率分布间的差异性信息。</p>
+<h4 id="5-DBN"><a href="#5-DBN" class="headerlink" title="5.DBN"></a>5.DBN</h4><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531143923247.png" alt="image-20220531143923247" style="zoom:30%;" />
+
+
+
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531143939320.png" alt="image-20220531143939320" style="zoom:30%;" />
+
+<h3 id="2020"><a href="#2020" class="headerlink" title="2020"></a>2020</h3><h4 id="1-DL"><a href="#1-DL" class="headerlink" title="1.DL"></a>1.DL</h4><p>深度学习是实现人工智能的一个工具或者技术手段</p>
+<p>深度学习：一般是指通过训练多层网络结构对未知数据进行分类或回归</p>
+<h4 id="2-稀疏自编码器（L5"><a href="#2-稀疏自编码器（L5" class="headerlink" title="2.稀疏自编码器（L5"></a>2.稀疏自编码器（L5</h4><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531144009257.png" alt="image-20220531144009257" style="zoom:30%;" />
+
+<h4 id="3-正则化"><a href="#3-正则化" class="headerlink" title="3.正则化"></a>3.正则化</h4><p>广泛应用于机器学习和深度学习中的技术</p>
+<p>可以改善过拟合，降低结构风险，提高模型的泛化能力</p>
+<p>在经验风险项后面加上正则罚项，使得通过最小化经验风险求解模型参数转变为通过最小化结构风险求解模型参数，进而选择经验风险小并且简单的模型</p>
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531144406947.png" alt="image-20220531144406947" style="zoom:40%;" />
+
+<h4 id="4-集成学习"><a href="#4-集成学习" class="headerlink" title="4.集成学习"></a>4.集成学习</h4><p><strong>集成学习（ensemble learning）</strong>，并不是一个单独的机器学习算法，而是通过构建并结合多个机器学习器（<strong>基学习器，Base learner</strong>）来完成学习任务。集成学习往往被视为一种<strong>元算法（meta-algorithm）</strong>。</p>
+<p>对于训练集数据，我们通过训练若干个个体<strong>弱学习器（weak learner）</strong>，通过一定的结合策略，就可以最终形成一个<strong>强学习器（strong learner）</strong>，以达到博采众长的目的。</p>
+<h4 id="5-Dropout"><a href="#5-Dropout" class="headerlink" title="5.Dropout"></a>5.Dropout</h4><p>Dropout可以比较有效的缓解过拟合的发生，在一定程度上达到正则化的效果</p>
+<p>在每个训练批次中，通过忽略一半的特征检测器（让一半的隐层节点值为0），可以明显地减少过拟合现象。</p>
+<p>这种方式可以减少特征检测器（隐层节点）间的相互作用，检测器相互作用是指某些检测器依赖其他检测器才能发挥作用。</p>
+<p>Dropout说的简单一点就是：我们在前向传播的时候，让某个神经元的激活值以一定的概率p停止工作，这样可以使模型泛化性更强，因为它不会太依赖某些局部的特征，如图1所示。</p>
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531144513972.png" alt="image-20220531144513972" style="zoom:30%;" />
+
+<h2 id="二、简答"><a href="#二、简答" class="headerlink" title="二、简答"></a>二、简答</h2><h3 id="2021-1"><a href="#2021-1" class="headerlink" title="2021"></a>2021</h3><h4 id="1-BP，图-amp-公式（L2"><a href="#1-BP，图-amp-公式（L2" class="headerlink" title="1.BP，图&amp;公式（L2"></a>1.<strong>BP</strong>，图&amp;公式（L2</h4><p>BP算法就是通过比较实际输出和期望输出得到误差信号，把误差信号从输出层逐层向前传播得到各层的误差信号，再通过调整各层的连接权重以减小误差。权重的调整主要使用梯度下降法</p>
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531144947356.png" alt="image-20220531144947356" style="zoom:50%;" />
+
+
+
+<h4 id="2-过拟合-amp-欠拟合，解决（L2"><a href="#2-过拟合-amp-欠拟合，解决（L2" class="headerlink" title="2**.过拟合**&amp;欠拟合，解决（L2"></a>2**.过拟合**&amp;欠拟合，解决（L2</h4><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531144234431.png" alt="image-20220531144234431" style="zoom:30%;" />
+
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531144146763.png" alt="image-20220531144146763" style="zoom:30%;" />
+
+
+
+
+
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531144157984.png" alt="image-20220531144157984" style="zoom:30%;" />
+
+<h4 id="3-Yolo"><a href="#3-Yolo" class="headerlink" title="3.Yolo"></a>3.Yolo</h4><p>YOLO算法的朴素思想：特征图的每个元素也是对应原始图片的一个小方块，然后用每个元素来可以预测那些中心点在该小方格内的目标。</p>
+<p>YOLO算法处理步骤：</p>
+<p>第一步，输入图像</p>
+<p>第二步，YOLO将图像划分为SxS的网格</p>
+<p>第三步，对每个网格应用图像分类和定位处理，获得预测对象的Bounding box及其对应的类概率</p>
+<h4 id="4-GRU，图-amp-公式"><a href="#4-GRU，图-amp-公式" class="headerlink" title="4.GRU，图&amp;公式"></a>4.GRU，图&amp;公式</h4><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531163109012.png" alt="image-20220531163109012" style="zoom:50%;" />
+
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531163101734.png" alt="image-20220531163101734" style="zoom:50%;" />
+
+<h4 id="5-胶囊网络，图-amp-公式"><a href="#5-胶囊网络，图-amp-公式" class="headerlink" title="5.胶囊网络，图&amp;公式"></a>5.<strong>胶囊网络</strong>，图&amp;公式</h4><p>胶囊网络是为了解决CNN存在的问题而提出的。不同于CNN用标量记录局部信息，胶囊网络使用向量特征状态的重要信息。</p>
+<img src="https://img-blog.csdnimg.cn/20210121165257957.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdHRsbGVfeWFu,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" style="zoom:70%;" />
+
+
+
+<img src="https://pic3.zhimg.com/80/v2-eb93e97a5bdd030b125ad3fea66e7832_1440w.jpg" alt="img" style="zoom:50%;" />
+
+
+
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531150003098.png" alt="image-20220531150003098" style="zoom:50%;" />
+
+
+
+<p>![image-20220531150020477](&#x2F;Users&#x2F;lexie&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20220531150020477.png)</p>
+<h4 id="6-GAN，公式"><a href="#6-GAN，公式" class="headerlink" title="6.GAN，公式"></a>6.<strong>GAN</strong>，公式</h4><p>![image-20220531162847298](&#x2F;Users&#x2F;lexie&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20220531162847298.png)</p>
+<p>generator 和 discriminator相互博弈：</p>
+<ul>
+<li>discrimiator最大化真实样例与generator样例之间的差异</li>
+<li>generator根据discriminator“反馈的指导信息”，更新参数，生成“更靠谱”的样例，减小与真实样例的差异</li>
+</ul>
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531162724628.png" alt="image-20220531162724628" style="zoom:50%;" />
+
+
+
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531162915321.png" alt="image-20220531162915321" style="zoom:50%;" />
+
+<h3 id="2020-1"><a href="#2020-1" class="headerlink" title="2020"></a>2020</h3><h4 id="1-BP（L2"><a href="#1-BP（L2" class="headerlink" title="1.BP（L2"></a>1.<strong>BP（L2</strong></h4><h4 id="2-CNN主要结构模块及功能"><a href="#2-CNN主要结构模块及功能" class="headerlink" title="2.CNN主要结构模块及功能"></a>2.CNN主要结构模块及功能</h4><p>**输入层(INPUT)**：用于数据的输入。模型需要输入的进行预处理操作，常见的输入层中预处理方式有：去均值、归一化、PCA&#x2F;SVD降维等。</p>
+<p>**卷积层(CONV)**：使用卷积核进行特征提取和特征映射。</p>
+<ol>
+<li>提取图像的特征，并且卷积核的权重是可以学习的，由此可以猜测，在高层神经网络中，卷积操作能突破传统滤波器的限制，根据目标函数提取出想要的特征。</li>
+<li>“局部感知，参数共享”的特点大大降低了网络参数，保证了网络的稀疏性，防止过拟合，之所以可以“参数共享”，是因为样本存在局部相关的特性。</li>
+</ol>
+<p>**激励函数(RELU)**：由于卷积也是一种线性运算，因此需要增加非线性映射。</p>
+<p>如果不用激励函数（其实就相当于激励函数是f(x)&#x3D;x），这种情况下，每一层的输出都是上一层输入的线性函数。容易得出，无论有多少神经网络层，输出都是输入的线性组合，与没有隐层的效果是一样的，这就是最原始的感知机了。</p>
+<p>**池化层(POOL)**：进行下采样，对特征图稀疏处理，减少数据运算量。<br>池化，也称为欠采样或下采样。要用于特征降维，压缩数据和参数的数量，减小过拟合，同时提高模型的容错性。</p>
+<p>根据计算出来的值不一样就分为均值池化层与最大值池化层，<strong>一般常见的多为最大值池化层</strong>。池化的时候同样需要提供filter的大小、步长。</p>
+<p>pooling池化的作用则体现在降采样：保留显著特征、降低特征维度，增大kernel的感受野。另外一点值得注意：pooling也可以提供一些旋转不变性。</p>
+<p>池化层可对提取到的特征信息进行降维，一方面使特征图变小，简化网络计算复杂度并在一定程度上避免过拟合的出现；一方面进行特征压缩，提取主要特征。</p>
+<p>**全连接层(FC)**：也称它为输出层，用于输出卷积计算后的结果。<br>经过前面若干次卷积+激励+池化后，终于来到了输出层，模型会将学到的一个高质量的特征图片全连接层。其实在全连接层之前，如果神经元数目过大，学习能力强，有可能出现过拟合。因此，可以引入dropout操作，来随机删除神经网络中的部分神经元，来解决此问题。还可以进行局部归一化（LRN）、数据增强等操作，来增加鲁棒性。</p>
+<h4 id="3-LSTM，为什么能够解决长时依赖问题"><a href="#3-LSTM，为什么能够解决长时依赖问题" class="headerlink" title="3.LSTM，为什么能够解决长时依赖问题"></a>3.LSTM，为什么能够解决长时依赖问题</h4><p><strong>LSTM</strong>依靠贯穿隐藏层的细胞状态实现隐藏单元之间的信息传递，其中只有少量的线性操作</p>
+<p><strong>LSTM</strong>引入了“门”机制对细胞状态信息进行添加或删除，由此实现长程记忆</p>
+<h4 id="4-DL中常见避免过拟合的方法（L2"><a href="#4-DL中常见避免过拟合的方法（L2" class="headerlink" title="4.DL中常见避免过拟合的方法（L2"></a>4.DL中常见避免<strong>过拟合</strong>的方法（L2</h4><h4 id="5-GAN及其训练过程"><a href="#5-GAN及其训练过程" class="headerlink" title="5.GAN及其训练过程"></a>5.<strong>GAN</strong>及其训练过程</h4><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531164149448.png" alt="image-20220531164149448" style="zoom:50%;" />
+
+
+
+<img src="https://img-blog.csdnimg.cn/2019102714070227.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xhbmdzaW1pbmc=,size_16,color_FFFFFF,t_70" alt="img" style="zoom:50%;" />
+
+<h4 id="6-胶囊网络"><a href="#6-胶囊网络" class="headerlink" title="6.胶囊网络"></a>6.<strong>胶囊网络</strong></h4><h2 id="三、计算"><a href="#三、计算" class="headerlink" title="三、计算"></a>三、计算</h2><h2 id="四、设计"><a href="#四、设计" class="headerlink" title="四、设计"></a>四、设计</h2><h3 id="2021-2"><a href="#2021-2" class="headerlink" title="2021"></a>2021</h3><p>姿态估计</p>
+<p>图像描述</p>
+<h3 id="2020-2"><a href="#2020-2" class="headerlink" title="2020"></a>2020</h3><p>机器阅读理解</p>
+<p>对大量图像进行目标检测</p>
+<p><strong>循环神经网络的Dropout：</strong></p>
+<p>通过dropout可以让卷积神经网络更加健壮。类似，再循环神经网络中使用dropout也有同样的功能。</p>
+<p>如果模型的<strong>参数太多，而训练样本又太少</strong>，训练出来的模型很容易产生过拟合的现象。Dropout可以<strong>有效的缓解过拟合</strong>的发生，在一定程度上达到正则化的效果。</p>
+<p>Dropout可以作为训练深度神经网络的一种trick供选择。<strong>在每个训练批次中，通过忽略一半的特征检测器（让一半的隐层节点值为0）</strong>，可以明显地减少过拟合现象。这种方式可以<strong>减少隐层结点间的相互作用</strong>，<strong>隐层节点相互作用是指某些隐层结点依赖其他隐层结点才能发挥作用</strong>。</p>
+<p>Dropout通俗讲，即：在前向传播的时候，<strong>让某个神经元的激活值以一定的概率p停止工作</strong>，这样可以使模型泛化性更强，因为它不会太依赖某些局部的特征，</p>
+<p>类似卷积神经网络只在全连接层中使用dropout，循环神经网络一般只在<strong>不同层循环体结构之间使用dropout</strong>，<strong>不在同一层循环结构之间使用</strong>。即：<strong>从时刻t-1传递到时刻t，循环神经网络不会进行状态的dropout</strong>；而在<strong>同一时刻t中，不同层循环体之间会使用dropout</strong>。<br><img src="https://img-blog.csdnimg.cn/2019011810431060.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hlbGxvd3V4aWE=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
+<h3 id="CNN参数计算："><a href="#CNN参数计算：" class="headerlink" title="CNN参数计算："></a>CNN参数计算：</h3><h4 id="一、卷积层"><a href="#一、卷积层" class="headerlink" title="一、卷积层"></a>一、卷积层</h4><p>CNN中，每一层都有两种参数：权重和偏差</p>
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531160535066.png" alt="image-20220531160535066" style="zoom:50%;" />
+
+<h4 id="二、最大池化层"><a href="#二、最大池化层" class="headerlink" title="二、最大池化层"></a>二、最大池化层</h4><p>没有与最大池化层相关联的参数。池的大小、步长和填充都是超参数。</p>
+<h4 id="三、全连接（FC）层"><a href="#三、全连接（FC）层" class="headerlink" title="三、全连接（FC）层"></a>三、全连接（FC）层</h4><p>在CNN中有两种完全连接的层。</p>
+<p>第一种是该全连接层的前面连接着最后一个卷积层（Conv-FC）</p>
+<p>![image-20220531160918231](&#x2F;Users&#x2F;lexie&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20220531160918231.png)</p>
+<p>第二种是该全连接层的前面连接着其他全连接层（FC-FC）</p>
+<p>![image-20220531160930274](&#x2F;Users&#x2F;lexie&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20220531160930274.png)</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/03/20/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" data-id="cldbisx4j0004hejh8rxj13rf" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2022/04/20/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/03/08/SEIR%E6%A8%A1%E5%9E%8B/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/01/25/firstBlog/">firstBlog</a>
+          </li>
+        
+          <li>
+            <a href="/2023/01/25/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/20/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/20/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/08/SEIR%E6%A8%A1%E5%9E%8B/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>

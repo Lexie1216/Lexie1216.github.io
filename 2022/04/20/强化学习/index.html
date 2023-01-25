@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="强化学习一、强化学习概述实验1（20%）+实验2（30%）+考试（50%） 1. 强化学习过程 也称试错法trial and error 通过间接的奖励信号反应完成目标的情况  2. 强化学习与其他机器学习的不同 监督学习的training signal：target outputs 识别或估计观测的内容（感知）  强化学习的traning signal：rewards 根据观测做出行为（决策）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2022/04/20/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="强化学习一、强化学习概述实验1（20%）+实验2（30%）+考试（50%） 1. 强化学习过程 也称试错法trial and error 通过间接的奖励信号反应完成目标的情况  2. 强化学习与其他机器学习的不同 监督学习的training signal：target outputs 识别或估计观测的内容（感知）  强化学习的traning signal：rewards 根据观测做出行为（决策）">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220420081232873.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220420083943711.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220420083913210.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220420083924387.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220420151651635.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220420151713793.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220420151857286.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220420151941493.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220420152234908.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220422092800158.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220422111316998.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220422111840633.png">
+<meta property="og:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220422112353892.png">
+<meta property="article:published_time" content="2022-04-20T00:09:57.251Z">
+<meta property="article:modified_time" content="2022-09-22T08:52:51.536Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/Users/lexie/Library/Application%20Support/typora-user-images/image-20220420081232873.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-强化学习" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/04/20/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/" class="article-date">
+  <time class="dt-published" datetime="2022-04-20T00:09:57.251Z" itemprop="datePublished">2022-04-20</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="强化学习"><a href="#强化学习" class="headerlink" title="强化学习"></a>强化学习</h1><h2 id="一、强化学习概述"><a href="#一、强化学习概述" class="headerlink" title="一、强化学习概述"></a>一、强化学习概述</h2><p>实验1（20%）+实验2（30%）+考试（50%）</p>
+<h3 id="1-强化学习过程"><a href="#1-强化学习过程" class="headerlink" title="1. 强化学习过程"></a>1. 强化学习过程</h3><ul>
+<li>也称试错法trial and error</li>
+<li>通过<strong>间接的奖励信号</strong>反应完成目标的情况</li>
+</ul>
+<h3 id="2-强化学习与其他机器学习的不同"><a href="#2-强化学习与其他机器学习的不同" class="headerlink" title="2. 强化学习与其他机器学习的不同"></a>2. 强化学习与其他机器学习的不同</h3><ul>
+<li><p>监督学习的training signal：target outputs 识别或估计观测的内容（感知）</p>
+</li>
+<li><p>强化学习的traning signal：rewards 根据观测做出行为（决策）</p>
+</li>
+</ul>
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420081232873.png" alt="image-20220420081232873" style="zoom:30%;" />
+
+<h3 id="3-强化学习发展历史"><a href="#3-强化学习发展历史" class="headerlink" title="3. 强化学习发展历史"></a>3. 强化学习发展历史</h3><ul>
+<li>强化学习和马尔可夫决策过程：个体未来的状态只与当前时刻的状态有关</li>
+<li>动态规划1957</li>
+<li>策略迭代&#x2F;值迭代</li>
+<li>蒙特卡洛算法和时间差分学习算法</li>
+<li>无模型学习控制：Sarsa和Q学习</li>
+<li>函数逼近</li>
+<li>TD-Gammon：1992年,IBM的研究员 Gerald Tesauro 开发了一个结合时间差分学习 (TD Learning)和神经网络的算法，给它取名 <em>TD-Gammon</em>, 专攻双陆棋</li>
+<li>策略梯度<ul>
+<li>REINFORCE</li>
+<li>Q Actor-Critic</li>
+<li>Advantage Actor-Critic</li>
+<li>TD Actor-Critic</li>
+<li>TD($\lambda$) Actor-Critic</li>
+<li>Natural Actor-Critic</li>
+</ul>
+</li>
+<li>博弈强化学习</li>
+<li>逆强化学习</li>
+<li>DQN</li>
+<li>AlphaGo</li>
+</ul>
+<h3 id="4-强化学习典型应用"><a href="#4-强化学习典型应用" class="headerlink" title="4. 强化学习典型应用"></a>4. 强化学习典型应用</h3><p>游戏AI、电梯调度、机器人、智能驾驶、交通信号控制、智慧城市、芯片设计、智慧医疗、量化金融</p>
+<h3 id="5-强化学习基本元素"><a href="#5-强化学习基本元素" class="headerlink" title="5. 强化学习基本元素"></a>5. 强化学习基本元素</h3><h4 id="5-1-状态State"><a href="#5-1-状态State" class="headerlink" title="5.1 状态State"></a>5.1 状态State</h4><p>描述当前agent位置、姿态等信息变量</p>
+<p><strong>状态集State Space</strong>：agent所有可能states的集合<strong>S</strong>（离散&#x2F;连续）</p>
+<h4 id="5-2-动作Action"><a href="#5-2-动作Action" class="headerlink" title="5.2 动作Action"></a>5.2 动作Action</h4><p>agent能够执行，改变当前state的变量</p>
+<p><strong>动作集Action Space</strong>：agent所有可行的action集合<strong>A</strong>（离散&#x2F;连续）</p>
+<h4 id="5-3-策略Policy"><a href="#5-3-策略Policy" class="headerlink" title="5.3 策略Policy"></a>5.3 策略Policy</h4><p><strong>状态空间</strong>到<strong>动作空间</strong>的映射<br>$$<br>\pi:S \rightarrow A<br>$$<br>确定策略deterministic: (基于脚本&#x2F;规则树，每次行为都一样，完全没有变化，容易被对方利用exploitable)<br>$$<br>a_t&#x3D;\pi(s_t)<br>$$<br>随机策略stochastic:<br>$$<br>a_t \sim \pi(s_t)<br>\<br>\pi(a_t|s_t)&#x3D;P(a_t|s_t)<br>$$</p>
+<h4 id="5-4-状态转移State-Transition（环境-x2F-模型）"><a href="#5-4-状态转移State-Transition（环境-x2F-模型）" class="headerlink" title="5.4 状态转移State Transition（环境&#x2F;模型）"></a>5.4 状态转移State Transition（环境&#x2F;模型）</h4><p>描述agent在给定action下state的变化</p>
+<ul>
+<li>离散时间：$(s_t,a_t)\rightarrow s_{t+1}$<ul>
+<li>确定型：$s_{t+1}&#x3D;f(s_t,a_t)$ 由$s_t$ 和 $a_t$ 唯一决定</li>
+<li>随机型：$s_{t+1} \sim P(s_t,a_t)$ 满足一个和$s_t$ 、$a_t$ 相关的概率分布</li>
+</ul>
+</li>
+<li>连续时间：$\dot{x}(t)&#x3D;f(x(t),u(t))$</li>
+</ul>
+<h4 id="5-5-奖励Reward"><a href="#5-5-奖励Reward" class="headerlink" title="5.5 奖励Reward"></a>5.5 奖励Reward</h4><p>环境（算法）对agent<strong>当前的</strong>state&#x2F;action好坏程度的反馈</p>
+<p>是一个标量的反馈信号</p>
+<p>agent的任务就是要<strong>最大化累加reward</strong><br>$$<br>r_{t+1} &#x3D; R (s_t,a_t)<br>\<br>r_{t+1} \sim R (s_t,a_t)<br>$$<br>某一时刻的<strong>瞬时</strong>奖励<strong>不能完全反映</strong>最终目标完成的情况，需要考虑<strong>未来</strong>奖励的变化</p>
+<h4 id="5-6-回报Return"><a href="#5-6-回报Return" class="headerlink" title="5.6 回报Return"></a>5.6 回报Return</h4><p>agent从某一初始state出发，在policy下产生的轨迹上的<strong>奖励累加和</strong>（sum of rewards）<br>$$<br>G_t&#x3D;r_{t+1}+\gamma r_{t+1} + …&#x3D;\sum_{k&#x3D;1}^\infin \gamma^k r_{t+k+1}<br>$$<br>所有的目标都可以通过<strong>最大化期望累加奖励</strong>实现</p>
+<h4 id="5-7-价值Value（期望回报）"><a href="#5-7-价值Value（期望回报）" class="headerlink" title="5.7 价值Value（期望回报）"></a>5.7 价值Value（期望回报）</h4><p>agent在当前state下return的期望V<br>$$<br>V(s_t)&#x3D;E[G_t]&#x3D;E[r_{t+1}+\gamma r_{t+2}+…]<br>\<br>s_{k+1} \sim P(s_k,a_k),\quad a_k \sim \pi(s_k)<br>$$</p>
+<h4 id="5-8-最优策略和最优价值"><a href="#5-8-最优策略和最优价值" class="headerlink" title="5.8 最优策略和最优价值"></a>5.8 最优策略和最优价值</h4><p>最优价值optimal value：agent在每个state下能获得的最高价值<br>$$<br>V^*(s)&#x3D;max V(s)&#x3D;max E[r_{t+1}+\gamma r_{t+1}+…]<br>$$<br>最优策略optimal policy：能够使agent活的最高价值的策略$\pi^*$<br>$$<br>\begin{align}<br>V^*(s_t)&amp;&#x3D;E[\sum_{k&#x3D;0}^\infin \gamma^k r_{t+k+1}|a_k \sim \pi(s_k^*)]<br>\<br>&amp; \geq E[\sum_{k&#x3D;0}^\infin \gamma^k r_{t+k+1}|a_k \sim \pi(s_k)],\forall \pi<br>\end{align}<br>$$</p>
+<p>对每个马尔可夫决策问题，最优价值有且只有一个，最优策略不一定是唯一的</p>
+<h3 id="6-强化学习算法分类"><a href="#6-强化学习算法分类" class="headerlink" title="6. 强化学习算法分类"></a>6. 强化学习算法分类</h3><h4 id="6-1-基于价值-x2F-基于策略-x2F-规划"><a href="#6-1-基于价值-x2F-基于策略-x2F-规划" class="headerlink" title="6.1 基于价值&#x2F;基于策略&#x2F;规划"></a>6.1 基于价值&#x2F;基于策略&#x2F;规划</h4><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420083943711.png" alt="image-20220420083943711" style="zoom:30%;" />
+
+<h4 id="6-2-在线-x2F-离线学习"><a href="#6-2-在线-x2F-离线学习" class="headerlink" title="6.2 在线&#x2F;离线学习"></a>6.2 在线&#x2F;离线学习</h4><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420083913210.png" alt="image-20220420083913210" style="zoom:30%;" />
+
+<h4 id="6-3-基于模型-x2F-不基于模型"><a href="#6-3-基于模型-x2F-不基于模型" class="headerlink" title="6.3 基于模型&#x2F;不基于模型"></a>6.3 基于模型&#x2F;不基于模型</h4><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420083924387.png" alt="image-20220420083924387" style="zoom:30%;" />
+
+<h2 id="二、马尔可夫决策过程"><a href="#二、马尔可夫决策过程" class="headerlink" title="二、马尔可夫决策过程"></a>二、马尔可夫决策过程</h2><h3 id="1-马尔可夫性"><a href="#1-马尔可夫性" class="headerlink" title="1. 马尔可夫性"></a>1. 马尔可夫性</h3><ul>
+<li><p>马尔可夫性</p>
+<p>在给定现在state及过去所有states下，agent未来state的条件概率分布<strong>仅依赖于当前state</strong>	</p>
+<p>给定现在state时，未来state与过去state是<strong>条件独立的</strong><br>$$<br>P[s_{t+1}|s_1,…,s_t]&#x3D;P[s_{t+1}|s_t]<br>$$</p>
+</li>
+<li><p>全观测&#x2F;部分可观测</p>
+<p>有时agent不能完全获得环境&#x2F;模型的全部state信息，只能通过观测获得<strong>观测量</strong>observation</p>
+<p>全观测full observable：$s_t&#x3D;o_t$</p>
+<p>部分可观测partial obserbale：$s_t \neq o_t$</p>
+<p>有些场景下，根据observation可以推出state，将部分可观测问题转化为全观测问题</p>
+</li>
+<li><p>状态转移矩阵</p>
+<p>从所有状态$s$到所有后继状态$s’$的转移概率</p>
+<p>矩阵每行元素的和等于1</p>
+</li>
+</ul>
+<h3 id="2-马尔可夫过程（马尔可夫链）MP（state）"><a href="#2-马尔可夫过程（马尔可夫链）MP（state）" class="headerlink" title="2. 马尔可夫过程（马尔可夫链）MP（state）"></a>2. 马尔可夫过程（马尔可夫链）MP（state）</h3><ul>
+<li>无记忆的随机过程</li>
+<li>一组具有马尔可夫性的随机状态序列$s_1,s_2,…$</li>
+<li>用一组$&lt;S,P&gt;$表示<ul>
+<li>$S$是（有限）状态集</li>
+<li>$P$是状态转移概率矩阵，$P_{ss’}&#x3D;P[s_{t+1}&#x3D;s’|s_t&#x3D;s]$</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-马尔可夫奖励过程MRP（state-reward）"><a href="#3-马尔可夫奖励过程MRP（state-reward）" class="headerlink" title="3. 马尔可夫奖励过程MRP（state+reward）"></a>3. 马尔可夫奖励过程MRP（state+reward）</h3><ul>
+<li><p>一个马尔可夫链MP+奖励reward</p>
+</li>
+<li><p>由一组$&lt;S,P,R,\gamma&gt;$构成</p>
+<ul>
+<li>$S$是一组有限状态集</li>
+<li>$P$是状态转移概率矩阵，$P_{ss’}&#x3D;P[s_{t+1}&#x3D;s’|s_t&#x3D;s]$</li>
+<li>$R$是奖励函数，$R_s&#x3D;R(s)&#x3D;E[r_{t+1}|s_t&#x3D;s]$</li>
+<li>$\gamma$是折扣因子，$\gamma \in [0,1]$</li>
+</ul>
+</li>
+<li><p>回报Return：$G_t$代表在 $t$ 时刻<strong>之后轨迹的累加奖励</strong>（对应的是某一具体的轨迹）<br>$$<br>G_t&#x3D;r_{t+1}+\gamma r_{t+1}+…&#x3D;\sum_{k&#x3D;0}^\infin \gamma^kr_{t+k+1}<br>$$</p>
+</li>
+<li><p>价值Value：一个MRP的价值 $V$ 等于从状态 $s$ 出发的<strong>期望回报</strong>（代表的是所有轨迹的期望）<br>$$<br>V(s)&#x3D;E[G_t|s_t&#x3D;s]<br>$$</p>
+</li>
+<li><p>折扣因子$\gamma$：在连续MDPs问题中可以避免无穷回报，重视近期奖励</p>
+</li>
+<li><p>MRPs的贝尔曼方程Bellman equation</p>
+<p>将价值函数拆成两部分：瞬时奖励$r_{t+1}$和后继状态的折扣价值$\gamma V(s_{t+1})$<br>$$<br>V(s)&#x3D;E[r_{t+1}+\gamma V(s_{t+1}|s_t&#x3D;s)]<br>\<br>V(s)&#x3D;R(s)+\gamma \sum_{s’\in S}P_{ss’}V(s’)<br>\<br>V&#x3D;R+\gamma P V<br>$$<br>（推导略，公式2和上学期高级AI格子游戏的一样）</p>
+<p>求解贝尔曼方程（线性方程：</p>
+<ul>
+<li>（状态空间小）直接求解：$V&#x3D;(I-\gamma P)^{-1}R$</li>
+<li>（大规模MRPs问题）迭代&#x2F;基于数据的方法：动态规划、蒙特卡洛估计、时间差分学习</li>
+</ul>
+</li>
+</ul>
+<h3 id="4-马尔可夫决策过程MDP（state-reward-action）"><a href="#4-马尔可夫决策过程MDP（state-reward-action）" class="headerlink" title="4. 马尔可夫决策过程MDP（state+reward+action）"></a>4. 马尔可夫决策过程MDP（state+reward+action）</h3><ul>
+<li><p>马尔可夫奖励过程MRP+智能体的决策action</p>
+</li>
+<li><p>由$&lt;S,A,P,R,\gamma&gt;$组成</p>
+<ul>
+<li><p>$S$是有限状态集</p>
+</li>
+<li><p>$A$是有限动作集</p>
+</li>
+<li><p>$P$是状态转移概率矩阵，$P_{ss’}^a&#x3D;P[s_{t+1}&#x3D;s’|s_t&#x3D;s,a_t&#x3D;a]$</p>
+</li>
+<li><p>$R$是奖励函数，$R_s^a&#x3D;R(s)&#x3D;E[r_{t+1}|s_t&#x3D;s,a_t&#x3D;a]$</p>
+</li>
+<li><p>$\gamma$是折扣因子，$\gamma \in [0,1]$</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-策略与价值"><a href="#5-策略与价值" class="headerlink" title="5. 策略与价值"></a>5. 策略与价值</h3><h4 id="5-1-策略"><a href="#5-1-策略" class="headerlink" title="5.1 策略"></a>5.1 策略</h4><p>策略 $\pi$ 是状态state到动作action的一种分布<br>$$<br>\pi(a|s)&#x3D;P[a_t&#x3D;a|s_t&#x3D;s]<br>$$<br>确定性&#x2F;随机性</p>
+<p>MDP问题动作的选择只取决于<strong>当前</strong>状态：$a_t \sim \pi(s_t)$ （与历史无关，<strong>马尔可夫性</strong>）</p>
+<ul>
+<li>$\pi(s)$ 表示状态$s$ 下动作的概率分布</li>
+<li>$\pi(s,a)$ 或$\pi(a|s)$表示状态$s$下选择动作$a$的概率</li>
+</ul>
+<p>给定一个<strong>MDP</strong>问题$M&#x3D;&lt;S,A,P,R,\gamma&gt;$和<strong>策略$\pi$</strong></p>
+<ul>
+<li>agent的state轨迹$s_1,s_2,…$是一个马尔可夫过程<strong>MP</strong>$&lt;S,P^\pi&gt;$</li>
+<li>agent的state和reward轨迹$s_1,r_2,s_2,r_3,…$是一个马尔可夫奖励过程<strong>MRP</strong>$&lt;S,P^\pi,R^\pi,\gamma&gt;$</li>
+</ul>
+<h4 id="5-2-价值"><a href="#5-2-价值" class="headerlink" title="5.2 价值"></a>5.2 价值</h4><p>根据某种策略决策的，状态价值V和动作价值Q</p>
+<ul>
+<li><p>MDP的（状态）价值$V_\pi(s)$：<strong>从状态 $s$ 出发</strong>，在策略 $\pi$ 作用下的<strong>期望回报</strong><br>$$<br>V_\pi(s)&#x3D;E_\pi[G_t|s_t&#x3D;s]<br>$$</p>
+</li>
+<li><p>动作-价值 $Q_\pi(s,a)$：智能体从状态 $s$ 出发，<strong>首先执行动作 $a$</strong> ，然后按照策略 $\pi$ 的<strong>期望回报</strong><br>$$<br>Q_\pi(s,a)&#x3D;E_\pi[G_t|s_t&#x3D;s,a_t&#x3D;a]<br>$$</p>
+</li>
+<li></li>
+</ul>
+<p>$$<br>V_\pi(s)&#x3D;\sum_{a\in A}\pi(a|s)Q_\pi(s,a)<br>$$</p>
+<h4 id="5-3-贝尔曼期望方程Bellman-Expectation-E-q-，-V-pi-，-Q-pi"><a href="#5-3-贝尔曼期望方程Bellman-Expectation-E-q-，-V-pi-，-Q-pi" class="headerlink" title="5.3 贝尔曼期望方程Bellman Expectation$E_q$ ， $V_\pi$，$Q_\pi$"></a>5.3 贝尔曼期望方程Bellman Expectation$E_q$ ， $V_\pi$，$Q_\pi$</h4><p>$$<br>V_\pi(s)&#x3D;\sum_{a\in A}\pi(a|s)(R_s^a+\gamma\sum_{s’\in S}P_{ss’}^aV_\pi(s’))<br>\<br>Q_\pi(s,a)&#x3D;R_s^a+\gamma\sum_{s’ \in S}P_{ss’}^a\sum_{a’\in A}\pi(a’|s’)Q_\pi(s’,a’)<br>\<br>V_\pi&#x3D;R^\pi+\gamma P^\pi(V_\pi)<br>$$</p>
+<h4 id="5-4-最优价值Optimal-value"><a href="#5-4-最优价值Optimal-value" class="headerlink" title="5.4 最优价值Optimal value"></a>5.4 最优价值Optimal value</h4><p>最优价值代表了agent获得的<strong>最大期望累加奖励&#x2F;回报</strong></p>
+<h4 id="5-5-最优策略"><a href="#5-5-最优策略" class="headerlink" title="5.5 最优策略"></a>5.5 最优策略</h4><p>所有的最优策略的 价值&#x2F;动作-价值都是相通的，等于最优价值&#x2F;动作-价值</p>
+<h3 id="6-最优化原理"><a href="#6-最优化原理" class="headerlink" title="6. 最优化原理"></a>6. 最优化原理</h3><h4 id="6-1-贝尔曼最优化原理"><a href="#6-1-贝尔曼最优化原理" class="headerlink" title="6.1 贝尔曼最优化原理"></a>6.1 贝尔曼最优化原理</h4><p>最优策略具有如下性质：不论初始状态和初始决策如何，余下的决策依然是余下问题的最优策略</p>
+<h4 id="6-2-贝尔曼最优方程"><a href="#6-2-贝尔曼最优方程" class="headerlink" title="6.2 贝尔曼最优方程"></a>6.2 贝尔曼最优方程</h4><p>$$<br>V_*(s)&#x3D;\max_a(R_s^a+\gamma \sum_{s’ \in S}P_{ss’}^aV_*(s’))<br>\<br>Q_*(s,a)&#x3D;R_s^a+\gamma \sum_{s’\in S} P_{ss’}^a V_*(s’)<br>\<br>V_*(s)&#x3D;\max_aQ_*(s,a)<br>\<br>Q_*(s,a)&#x3D;R_s^a+\gamma \sum_{s’\in S} P_{ss’}^a \max_{a’}Q_*(s’,a’)<br>$$</p>
+<h4 id="6-3-寻找最优策略"><a href="#6-3-寻找最优策略" class="headerlink" title="6.3 寻找最优策略"></a>6.3 寻找最优策略</h4><p>$$<br>\begin{align}<br>V_*(s)&amp;&#x3D;\max_a(R_s^a+\gamma \sum_{s’ \in S}P_{ss’}^aV_*(s’))<br>\<br>&amp;\geq R_s^b+\gamma \sum_{s’ \in S}P_{ss’}^bV_*(s’),\forall b \in A<br>\end{align}<br>$$</p>
+<p>最优策略可以基于$V_*$和模型计算最优动作<br>$$<br>\pi_*(s)&#x3D;\arg\max_a(R_s^a+\gamma \sum_{s’ \in S}P_{ss’}^aV_*(s’))<br>$$<br>也可以直接最大化$Q_*(s,a)$得到最优策略<br>$$<br>\pi_*(s)&#x3D;\arg\max_a Q_*(s,a)<br>$$<br>确定性最优策略</p>
+<p>求解贝尔曼最优方程需要：</p>
+<ul>
+<li>求解非线性算子max</li>
+<li>模型已知</li>
+<li>足够的计算空间</li>
+</ul>
+<h3 id="7-MDPs扩展"><a href="#7-MDPs扩展" class="headerlink" title="7. MDPs扩展"></a>7. MDPs扩展</h3><p>MDP用5个元素表示$&lt;S,A,P,R,\gamma&gt;$</p>
+<h4 id="7-1-不同类型-从基本元素考虑"><a href="#7-1-不同类型-从基本元素考虑" class="headerlink" title="7.1 不同类型(从基本元素考虑)"></a>7.1 不同类型(从基本元素考虑)</h4><ul>
+<li>连续状态&#x2F;动作 vs 离散状态&#x2F;动作</li>
+<li>确定模型 vs 随机模型</li>
+<li>连续时间 vs 离散时间</li>
+</ul>
+<h4 id="7-2-奖励vs惩罚"><a href="#7-2-奖励vs惩罚" class="headerlink" title="7.2 奖励vs惩罚"></a>7.2 奖励vs惩罚</h4><h4 id="7-3-不同形式回报"><a href="#7-3-不同形式回报" class="headerlink" title="7.3 不同形式回报"></a>7.3 不同形式回报</h4><ul>
+<li>无限时域的累加奖励</li>
+<li>无限时域的平均奖励</li>
+<li>有限时域的累加奖励和</li>
+<li>有限时域的平均奖励</li>
+</ul>
+<h2 id="三、动态规划"><a href="#三、动态规划" class="headerlink" title="三、动态规划"></a>三、动态规划</h2><h3 id="1-动态规划"><a href="#1-动态规划" class="headerlink" title="1. 动态规划"></a>1. 动态规划</h3><p>动态规划：通过把原问题分解为<strong>相对简单的子问题</strong>来求解复杂问题的方法</p>
+<p>两个适用条件：</p>
+<ul>
+<li>最优子结构性质：问题最优解包含的子问题的解也是子问题的最优解</li>
+<li>子问题重叠性质：使用<strong>递归</strong>算法<strong>自顶向下</strong>对问题进行求解，每次产生的子问题并不总是新问题</li>
+</ul>
+<p>MDP满足以上两个性质：</p>
+<ul>
+<li>贝尔曼方程具有递归形式</li>
+<li>价值函数可以保存和重复利用</li>
+</ul>
+<h3 id="2-价值迭代Value-Iteration-VI"><a href="#2-价值迭代Value-Iteration-VI" class="headerlink" title="2. 价值迭代Value Iteration, VI"></a>2. 价值迭代Value Iteration, VI</h3><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420151651635.png" alt="image-20220420151651635" style="zoom:30%;" />
+
+
+
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420151713793.png" alt="image-20220420151713793" style="zoom:30%;" />
+
+<p>价值迭代算子 $\Gamma$ </p>
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420151857286.png" alt="image-20220420151857286" style="zoom:30%;" />
+
+
+
+<p>收缩算子</p>
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420151941493.png" alt="image-20220420151941493" style="zoom:30%;" />
+
+<p>例子：扫地机器人</p>
+<p>迭代价值函数，最优策略从收敛的价值函数题去</p>
+<h3 id="3-策略迭代"><a href="#3-策略迭代" class="headerlink" title="3. 策略迭代"></a>3. 策略迭代</h3><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420152234908.png" alt="image-20220420152234908" style="zoom:30%;" />
+
+
+
+<h4 id="3-1-提升策略"><a href="#3-1-提升策略" class="headerlink" title="3.1 提升策略"></a>3.1 提升策略</h4><h4 id="3-2-策略迭代"><a href="#3-2-策略迭代" class="headerlink" title="3.2 策略迭代"></a>3.2 策略迭代</h4><h4 id="3-3-动态规划总结"><a href="#3-3-动态规划总结" class="headerlink" title="3.3 动态规划总结"></a>3.3 动态规划总结</h4><h3 id="4-迭代策略评估"><a href="#4-迭代策略评估" class="headerlink" title="4. 迭代策略评估"></a>4. 迭代策略评估</h3><h3 id="5-广义策略迭代"><a href="#5-广义策略迭代" class="headerlink" title="5. 广义策略迭代"></a>5. 广义策略迭代</h3><h3 id="6-维数灾"><a href="#6-维数灾" class="headerlink" title="6. 维数灾"></a>6. 维数灾</h3><h2 id="四、无模型预测学习"><a href="#四、无模型预测学习" class="headerlink" title="四、无模型预测学习"></a>四、无模型预测学习</h2><h3 id="0-策略评估"><a href="#0-策略评估" class="headerlink" title="0. 策略评估"></a>0. 策略评估</h3><h3 id="1-蒙特卡洛方法"><a href="#1-蒙特卡洛方法" class="headerlink" title="1. 蒙特卡洛方法"></a>1. 蒙特卡洛方法</h3><h3 id="2-时间差分学习"><a href="#2-时间差分学习" class="headerlink" title="2. 时间差分学习"></a>2. 时间差分学习</h3><h3 id="3-n-步回报"><a href="#3-n-步回报" class="headerlink" title="3. n-步回报"></a>3. n-步回报</h3><h3 id="4-TD-lambda"><a href="#4-TD-lambda" class="headerlink" title="4. TD($\lambda$)"></a>4. TD($\lambda$)</h3><h3 id="5-资格迹"><a href="#5-资格迹" class="headerlink" title="5. 资格迹"></a>5. 资格迹</h3><h2 id="五、无模型控制学习"><a href="#五、无模型控制学习" class="headerlink" title="五、无模型控制学习"></a>五、无模型控制学习</h2><h3 id="0-预测-vs-控制"><a href="#0-预测-vs-控制" class="headerlink" title="0. 预测 vs 控制"></a>0. 预测 vs 控制</h3><p><strong>预测问题：</strong>计算MDP<strong>某一策略</strong>的价值函数</p>
+<ul>
+<li>输入：MDP 和策略</li>
+<li>输出：状态值函数 或者状态动作值函数</li>
+</ul>
+<p><strong>控制问题：</strong>计算MDP<strong>最优策略</strong>&#x2F;最优价值函数</p>
+<ul>
+<li>输入：MDP</li>
+<li>输出：最优状态值函数 或者最优状态动作值函数 ，和最优策略</li>
+</ul>
+<p>无模型控制学习：</p>
+<ul>
+<li>要么MDP本身的模型未知，只能根据观测的经验数据学习（参数未知的机械臂）</li>
+<li>要么MDP太复杂，状态空间过大，根据在线样本训练更有效（围棋）</li>
+</ul>
+<h3 id="1-蒙特卡洛控制"><a href="#1-蒙特卡洛控制" class="headerlink" title="1. 蒙特卡洛控制"></a>1. 蒙特卡洛控制</h3><h3 id="2-Sarsa"><a href="#2-Sarsa" class="headerlink" title="2. Sarsa"></a>2. Sarsa</h3><h3 id="3-重要性采样"><a href="#3-重要性采样" class="headerlink" title="3. 重要性采样"></a>3. 重要性采样</h3><h3 id="4-Q-学习"><a href="#4-Q-学习" class="headerlink" title="4. Q-学习"></a>4. Q-学习</h3><h3 id="5-Double-Q-学习"><a href="#5-Double-Q-学习" class="headerlink" title="5. Double Q 学习"></a>5. Double Q 学习</h3><h3 id="6-探索与利用"><a href="#6-探索与利用" class="headerlink" title="6. 探索与利用"></a>6. 探索与利用</h3><h2 id="六、价值函数逼近VFA"><a href="#六、价值函数逼近VFA" class="headerlink" title="六、价值函数逼近VFA"></a>六、价值函数逼近VFA</h2><h3 id="1-函数逼近器"><a href="#1-函数逼近器" class="headerlink" title="1. 函数逼近器"></a>1. 函数逼近器</h3><h3 id="2-线性函数逼近"><a href="#2-线性函数逼近" class="headerlink" title="2. 线性函数逼近"></a>2. 线性函数逼近</h3><h3 id="3-常见的特征表示方法"><a href="#3-常见的特征表示方法" class="headerlink" title="3. 常见的特征表示方法"></a>3. 常见的特征表示方法</h3><p>查表法</p>
+<p>离散化法：将连续的空间划分成非重叠的，相邻的子空间</p>
+<p>粗糙编码coarse coding：特征可以重叠</p>
+<p>径向基函数RBF：粗糙编码向连续性特征表示的泛化</p>
+<h3 id="4-价值迭代-离散化方法"><a href="#4-价值迭代-离散化方法" class="headerlink" title="4. 价值迭代+离散化方法"></a>4. 价值迭代+离散化方法</h3><h3 id="5-Fitted-Q-Iteration"><a href="#5-Fitted-Q-Iteration" class="headerlink" title="5. Fitted Q Iteration"></a>5. Fitted Q Iteration</h3><h3 id="6-策略迭代-最小二乘"><a href="#6-策略迭代-最小二乘" class="headerlink" title="6. 策略迭代+最小二乘"></a>6. 策略迭代+最小二乘</h3><h3 id="7-预测学习-随机梯度下降法"><a href="#7-预测学习-随机梯度下降法" class="headerlink" title="7. 预测学习+随机梯度下降法"></a>7. 预测学习+随机梯度下降法</h3><p>梯度下降MC预测算法</p>
+<p>梯度下降TD预测学习</p>
+<p>​	梯度下降$TD(\lambda)$ 算法</p>
+<p>基于逼近器的预测学习算法收敛性</p>
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220422092800158.png" alt="image-20220422092800158" style="zoom:30%;" />
+
+<p>MC 可以看成 $\lambda &#x3D; 1$ 的特例</p>
+<h3 id="8-控制学习-随机梯度下降法"><a href="#8-控制学习-随机梯度下降法" class="headerlink" title="8. 控制学习+随机梯度下降法"></a>8. 控制学习+随机梯度下降法</h3><p>控制&#x3D;预测（策略评估）+策略提升</p>
+<ul>
+<li>评估：定义Q函数逼近器，使用预测学习进行梯度下降训练（w，Q）</li>
+<li>提升：定义具有一定探索性的策略</li>
+</ul>
+<h4 id="8-1-梯度下降MC控制算法"><a href="#8-1-梯度下降MC控制算法" class="headerlink" title="8.1 梯度下降MC控制算法"></a>8.1 梯度下降MC控制算法</h4><h4 id="8-2-梯度下降Sarsa算法"><a href="#8-2-梯度下降Sarsa算法" class="headerlink" title="8.2 梯度下降Sarsa算法"></a>8.2 梯度下降Sarsa算法</h4><h4 id="8-3-梯度下降Q学习算法"><a href="#8-3-梯度下降Q学习算法" class="headerlink" title="8.3 梯度下降Q学习算法"></a>8.3 梯度下降Q学习算法</h4><h2 id="七、策略梯度"><a href="#七、策略梯度" class="headerlink" title="七、策略梯度"></a>七、策略梯度</h2><h3 id="1-基于策略的强化学习"><a href="#1-基于策略的强化学习" class="headerlink" title="1. 基于策略的强化学习"></a>1. 基于策略的强化学习</h3><h4 id="1-1-基于价值的RL（定义价值逼近器，隐式的策略）"><a href="#1-1-基于价值的RL（定义价值逼近器，隐式的策略）" class="headerlink" title="1.1 基于价值的RL（定义价值逼近器，隐式的策略）"></a>1.1 基于价值的RL（定义价值逼近器，隐式的策略）</h4><ul>
+<li><p>特点：</p>
+<ul>
+<li><p>学习价值函数逼近器</p>
+</li>
+<li><p>策略由价值逼近器提取</p>
+</li>
+<li><p>适用于有限动作集的MDPs问题</p>
+</li>
+</ul>
+</li>
+<li><p>缺点：</p>
+<ul>
+<li>策略是确定型的（greedy&#x2F;e-greedy），无法表示随机策略</li>
+<li>价值函数逼近器的误差往往会导致贪心策略和最优策略之间更大的误差</li>
+<li>难以应对大规模动作集或连续动作空间</li>
+</ul>
+</li>
+</ul>
+<h4 id="1-2-基于策略的RL（定义策略逼近器，没有价值函数）"><a href="#1-2-基于策略的RL（定义策略逼近器，没有价值函数）" class="headerlink" title="1.2 基于策略的RL（定义策略逼近器，没有价值函数）"></a>1.2 基于策略的RL（定义策略逼近器，没有价值函数）</h4><ul>
+<li>好处：<ul>
+<li>更好的收敛性</li>
+<li>有效解决大规模动作集或连续动作空间问题</li>
+<li>能够学习随机策略</li>
+</ul>
+</li>
+<li>缺点：<ul>
+<li>通常只能收敛到局部最优解</li>
+<li>对一个策略评估时会费时费力，而且方差较大</li>
+</ul>
+</li>
+</ul>
+<h4 id="1-3-Actor-Critic-（价值逼近器辅助策略逼近器训练）"><a href="#1-3-Actor-Critic-（价值逼近器辅助策略逼近器训练）" class="headerlink" title="1.3 Actor-Critic （价值逼近器辅助策略逼近器训练）"></a>1.3 Actor-Critic （价值逼近器辅助策略逼近器训练）</h4><h4 id="1-4-策略逼近器-pi-theta"><a href="#1-4-策略逼近器-pi-theta" class="headerlink" title="1.4 策略逼近器$\pi(\theta)$"></a>1.4 策略逼近器$\pi(\theta)$</h4><p>与价值函数一样，用参数化的逼近器近似策略</p>
+<ul>
+<li><p>对有限动作集</p>
+<p>表示给定状态下选择某一动作的概率<br>$$<br>p(a|s)&#x3D;\pi(a|s,\theta)<br>$$</p>
+<ul>
+<li><p>softmax策略，<strong>基于特征的线性组合</strong>表示每个动作被选择的概率<br>$$<br>\pi(a|s,\theta) \propto e^{\phi^T(s,a)\theta}<br>$$</p>
+</li>
+<li><p>非线性逼近器（NN的input对应s，output对应a的softmax</p>
+</li>
+</ul>
+</li>
+<li><p>对连续动作空间</p>
+<ul>
+<li><p>表示给定状态下选择动作的<strong>概率分布</strong>，常见是高斯分布<br>$$<br>a \sim N(\mu(s,\theta),\Sigma) \quad 固定方差<br>\<br>a \sim N(\mu(s,\theta),\Sigma(s,\theta)) \quad 参数化方差<br>$$</p>
+<ul>
+<li>用状态特征的线性组合表示均值</li>
+</ul>
+<p>$$<br>\mu(s,\theta)&#x3D;\phi^T(s)\theta<br>$$</p>
+<ul>
+<li>也可以用非线性逼近器输出$\mu$</li>
+</ul>
+</li>
+<li><p>表示给定状态下<strong>确定性的</strong>动作<br>$$<br>a&#x3D;\pi(s,\theta)<br>$$</p>
+<ul>
+<li><p>特征线性组合	<br>$$<br>\pi(s,\theta)&#x3D;\phi^T(s)\theta<br>$$</p>
+</li>
+<li><p>非线性（神经网络）</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="1-5-策略优化目标-J-theta"><a href="#1-5-策略优化目标-J-theta" class="headerlink" title="1.5 策略优化目标$J(\theta)$"></a>1.5 策略优化目标$J(\theta)$</h4><p>不同场景对应不同的优化目标</p>
+<ul>
+<li>episodic场景：代表整个轨迹的奖励和（单一重复的机械臂任务）</li>
+<li>连续运行场景<ul>
+<li>状态空间上的平均回报（绕地卫星的控制）</li>
+<li>每步的平均奖励（德州扑克）</li>
+</ul>
+</li>
+</ul>
+<h4 id="1-6-策略优化"><a href="#1-6-策略优化" class="headerlink" title="1.6 策略优化"></a>1.6 策略优化</h4><ul>
+<li>无梯度的优化算法<ul>
+<li>爬山算法，单纯型算法，遗传算法，交叉熵算法，协方差矩阵自适应算法</li>
+<li>优势：适用于任何形式的策略逼近器甚至是不可微的逼近器，很容易实现并行计算加快学习速度</li>
+<li>缺陷：计算量大，数据利用率低，把问题看成黑箱没有考虑MDPs问题的时间连贯特性</li>
+</ul>
+</li>
+<li><strong>基于梯度的优化算法</strong><ul>
+<li>梯度下降法，共轭梯度法，拟牛顿法</li>
+<li>优势：数据利用率高，有效利用MDPs的<strong>时间连贯特性</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="2-有限差分策略梯度"><a href="#2-有限差分策略梯度" class="headerlink" title="2. 有限差分策略梯度"></a>2. 有限差分策略梯度</h3><p>不适用梯度公式, 直接使用梯度的定义来计算梯度</p>
+<p>策略梯度算法根据<strong>梯度上升方向</strong>调整 $\theta$ 找到 $J(\theta)$ 的局部最大点</p>
+<p>有限差分法Finite Difference</p>
+<h3 id="3-解析法策略梯度"><a href="#3-解析法策略梯度" class="headerlink" title="3. 解析法策略梯度"></a>3. 解析法策略梯度</h3><p>无偏、方差大</p>
+<p>提高实用性：</p>
+<ul>
+<li>时间连贯特性 temporal structure ➡️REINFORCE算法</li>
+<li>价值函数 value function ➡️Actor-Critic</li>
+<li>优势函数 advantage function ➡️Advantage Actor-Critic算法</li>
+<li>自然梯度 natural gradient ➡️Natural Actor-Critic</li>
+</ul>
+<h3 id="4-REINFORCE算法（蒙特卡洛策略梯度算法）"><a href="#4-REINFORCE算法（蒙特卡洛策略梯度算法）" class="headerlink" title="4. REINFORCE算法（蒙特卡洛策略梯度算法）"></a>4. REINFORCE算法（蒙特卡洛策略梯度算法）</h3><p>时间连贯特性：</p>
+<p>$t’ \lt t$ 时刻之前的奖励与t时刻的策略不管，所以对t时刻的梯度更新也没有任何影响</p>
+<p>当前时刻的策略梯度 使用 当前时刻的回报 $G_t&#x3D;\sum_{t’&#x3D;t}^{T-1}r_{t’+1}$</p>
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220422111316998.png" alt="image-20220422111316998" style="zoom:33%;" />
+
+<h3 id="5-Actor-Critic"><a href="#5-Actor-Critic" class="headerlink" title="5. Actor-Critic"></a>5. Actor-Critic</h3><p>估计的回报G具有明显的高方差，使用更<strong>稳定的Q函数</strong>降低策略梯度的方差</p>
+<p>Critic：定义一个Q函数逼近器$Q_w(s,a)$ </p>
+<p> Actor：相应的策略逼近器$\pi_\theta(s,a)$</p>
+<p>训练Crtic对Actor进行评估，同时基于Critic训练Actor</p>
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220422111840633.png" alt="image-20220422111840633" style="zoom:33%;" />
+
+<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220422112353892.png" alt="image-20220422112353892" style="zoom:33%;" />
+
+<h3 id="6-策略梯度引入基准"><a href="#6-策略梯度引入基准" class="headerlink" title="6. 策略梯度引入基准"></a>6. 策略梯度引入基准</h3><h3 id="7-自然梯度"><a href="#7-自然梯度" class="headerlink" title="7. 自然梯度"></a>7. 自然梯度</h3><h3 id="8-确定型Actor-Critic"><a href="#8-确定型Actor-Critic" class="headerlink" title="8. 确定型Actor-Critic"></a>8. 确定型Actor-Critic</h3><h2 id="八、基于博弈理论的强化学习"><a href="#八、基于博弈理论的强化学习" class="headerlink" title="八、基于博弈理论的强化学习"></a>八、基于博弈理论的强化学习</h2><h3 id="1-多智能体强化学习"><a href="#1-多智能体强化学习" class="headerlink" title="1. 多智能体强化学习"></a>1. 多智能体强化学习</h3><h3 id="2-基于价值的博弈理论强化学习"><a href="#2-基于价值的博弈理论强化学习" class="headerlink" title="2. 基于价值的博弈理论强化学习"></a>2. 基于价值的博弈理论强化学习</h3><h3 id="3-基于策略的博弈理论强化学习"><a href="#3-基于策略的博弈理论强化学习" class="headerlink" title="3. 基于策略的博弈理论强化学习"></a>3. 基于策略的博弈理论强化学习</h3>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/04/20/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/" data-id="cldbisx4i0002hejhg55zdtxi" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2023/01/25/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2022/03/20/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/01/">January 2023</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/04/">April 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/01/25/firstBlog/">firstBlog</a>
+          </li>
+        
+          <li>
+            <a href="/2023/01/25/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2022/04/20/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/20/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2022/03/08/SEIR%E6%A8%A1%E5%9E%8B/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
