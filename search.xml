@@ -2937,9 +2937,9 @@ class="math inline">\(L_1,L_2,..,L_T\)</span>，第一层的输出作为第二�
       </categories>
   </entry>
   <entry>
-    <title>A/B Test</title>
+    <title>A/B-Test</title>
     <url>/2023/01/27/ABtest/</url>
-    <content><![CDATA[<p>AB</p>
+    <content><![CDATA[<p>A/B-test是为<strong>同一个目标</strong>制定两个方案，<strong>在同一时间维度</strong>，分别让组成成分相同（相似）的用户群组<strong>随机</strong>的使用一个方案，收集各群组的用户体验数据和业务数据，最后<strong>根据显著性检验</strong>分析评估出最好版本正式采用。</p>
 ]]></content>
       <categories>
         <category>数据分析</category>
@@ -2965,10 +2965,7 @@ class="math inline">\(L_1,L_2,..,L_T\)</span>，第一层的输出作为第二�
 <p>即有多少观众在你的视频中留了下来。</p>
 <p>其实，“播放完成率”也是“用户留存率”中的一种，即在视频最后一秒留下的用户占比。</p>
 <p>将视频按时间线进行切割，甚至可以得到视频每秒的“用户留存率”</p>
-<figure>
-<img src="/.io//image-20230127012107232.png" alt="image-20230127012107232">
-<figcaption aria-hidden="true">image-20230127012107232</figcaption>
-</figure>
+<p><img src="/.io//image-20230127012107232.png"></p>
 <p><strong>10%用户留存：在视频的前10%进度中，每秒流失的用户会达到最高值，10%处将成为决定整个视频获得的自然播放量的重要影响因素之一。</strong>在经历10%秒左右的自然下滑后，如果在视频中后期出现骤然下滑的情况，一定代表视频内容出现了问题，比如广告植入、话题提前结束、有偏激观点等。</p>
 <h3 id="粉赞比">6. 粉赞比</h3>
 <p>粉丝赞比可以直观地反映账号的粉丝粘性。如果粉丝赞比太低，说明账号的粉丝粘性低，吸引观众的内容只停留在视频层面，没有上升到博主和账号层面。粉赞比大于1:6。认为账号的粉丝粘性高，粉丝准确。如果低于1:6，认为有一定的优化空间。</p>
@@ -2977,5 +2974,11 @@ class="math inline">\(L_1,L_2,..,L_T\)</span>，第一层的输出作为第二�
       <categories>
         <category>数据分析</category>
       </categories>
+  </entry>
+  <entry>
+    <title>电商数据分析</title>
+    <url>/2023/01/27/%E7%94%B5%E5%95%86%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/</url>
+    <content><![CDATA[
+]]></content>
   </entry>
 </search>
