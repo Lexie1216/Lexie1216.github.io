@@ -3,199 +3,375 @@
   <entry>
     <title>SEIR模型</title>
     <url>/2022/03/01/SEIR%E6%A8%A1%E5%9E%8B/</url>
-    <content><![CDATA[<h2 id="SEIR模型"><a href="#SEIR模型" class="headerlink" title="SEIR模型"></a>SEIR模型</h2><h4 id="一、CSDN-seir模型-SEIR模型到底是什么？五分钟带你理解并代码实现-202012"><a href="#一、CSDN-seir模型-SEIR模型到底是什么？五分钟带你理解并代码实现-202012" class="headerlink" title="一、CSDN-seir模型_SEIR模型到底是什么？五分钟带你理解并代码实现-202012"></a>一、CSDN-seir模型_SEIR模型到底是什么？五分钟带你理解并代码实现-202012</h4><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220308104913464.png" alt="image-20220308104913464" style="zoom:40%;" />
-
-
-
-
-
-<h4 id="二、CSDN-基于python的新冠肺炎SEIR简易模型-202006"><a href="#二、CSDN-基于python的新冠肺炎SEIR简易模型-202006" class="headerlink" title="二、CSDN-基于python的新冠肺炎SEIR简易模型-202006"></a>二、CSDN-基于python的新冠肺炎SEIR简易模型-202006</h4><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220308104927443.png" alt="image-20220308104927443" style="zoom:40%;" />
-
-
-
+    <content><![CDATA[<h2 id="seir模型">SEIR模型</h2>
+<h4
+id="一csdn-seir模型_seir模型到底是什么五分钟带你理解并代码实现-202012">一、CSDN-seir模型_SEIR模型到底是什么？五分钟带你理解并代码实现-202012</h4>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220308104913464.png" alt="image-20220308104913464" style="zoom:40%;" /></p>
+<h4
+id="二csdn-基于python的新冠肺炎seir简易模型-202006">二、CSDN-基于python的新冠肺炎SEIR简易模型-202006</h4>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220308104927443.png" alt="image-20220308104927443" style="zoom:40%;" /></p>
 ]]></content>
+      <tags>
+        <tag>传染病建模</tag>
+      </tags>
   </entry>
   <entry>
-    <title>强化学习复习</title>
+    <title>强化学习</title>
     <url>/2022/04/20/%E5%BC%BA%E5%8C%96%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h1 id="强化学习"><a href="#强化学习" class="headerlink" title="强化学习"></a>强化学习</h1><h2 id="一、强化学习概述"><a href="#一、强化学习概述" class="headerlink" title="一、强化学习概述"></a>一、强化学习概述</h2><p>实验1（20%）+实验2（30%）+考试（50%）</p>
-<h3 id="1-强化学习过程"><a href="#1-强化学习过程" class="headerlink" title="1. 强化学习过程"></a>1. 强化学习过程</h3><ul>
+    <content><![CDATA[<h1 id="强化学习复习">强化学习复习</h1>
+<h2 id="一强化学习概述">一、强化学习概述</h2>
+<p>实验1（20%）+实验2（30%）+考试（50%）</p>
+<h3 id="强化学习过程">1. 强化学习过程</h3>
+<ul>
 <li>也称试错法trial and error</li>
 <li>通过<strong>间接的奖励信号</strong>反应完成目标的情况</li>
 </ul>
-<h3 id="2-强化学习与其他机器学习的不同"><a href="#2-强化学习与其他机器学习的不同" class="headerlink" title="2. 强化学习与其他机器学习的不同"></a>2. 强化学习与其他机器学习的不同</h3><ul>
-<li><p>监督学习的training signal：target outputs 识别或估计观测的内容（感知）</p>
-</li>
-<li><p>强化学习的traning signal：rewards 根据观测做出行为（决策）</p>
-</li>
+<h3 id="强化学习与其他机器学习的不同">2.
+强化学习与其他机器学习的不同</h3>
+<ul>
+<li><p>监督学习的training signal：target outputs
+识别或估计观测的内容（感知）</p></li>
+<li><p>强化学习的traning signal：rewards
+根据观测做出行为（决策）</p></li>
 </ul>
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420081232873.png" alt="image-20220420081232873" style="zoom:30%;" />
-
-<h3 id="3-强化学习发展历史"><a href="#3-强化学习发展历史" class="headerlink" title="3. 强化学习发展历史"></a>3. 强化学习发展历史</h3><ul>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420081232873.png" alt="image-20220420081232873" style="zoom:30%;" /></p>
+<h3 id="强化学习发展历史">3. 强化学习发展历史</h3>
+<ul>
 <li>强化学习和马尔可夫决策过程：个体未来的状态只与当前时刻的状态有关</li>
 <li>动态规划1957</li>
-<li>策略迭代&#x2F;值迭代</li>
+<li>策略迭代/值迭代</li>
 <li>蒙特卡洛算法和时间差分学习算法</li>
 <li>无模型学习控制：Sarsa和Q学习</li>
 <li>函数逼近</li>
-<li>TD-Gammon：1992年,IBM的研究员 Gerald Tesauro 开发了一个结合时间差分学习 (TD Learning)和神经网络的算法，给它取名 <em>TD-Gammon</em>, 专攻双陆棋</li>
-<li>策略梯度<ul>
+<li>TD-Gammon：1992年,IBM的研究员 Gerald Tesauro
+开发了一个结合时间差分学习 (TD Learning)和神经网络的算法，给它取名
+<em>TD-Gammon</em>, 专攻双陆棋</li>
+<li>策略梯度
+<ul>
 <li>REINFORCE</li>
 <li>Q Actor-Critic</li>
 <li>Advantage Actor-Critic</li>
 <li>TD Actor-Critic</li>
-<li>TD($\lambda$) Actor-Critic</li>
+<li>TD(<span class="math inline">\(\lambda\)</span>) Actor-Critic</li>
 <li>Natural Actor-Critic</li>
-</ul>
-</li>
+</ul></li>
 <li>博弈强化学习</li>
 <li>逆强化学习</li>
 <li>DQN</li>
 <li>AlphaGo</li>
 </ul>
-<h3 id="4-强化学习典型应用"><a href="#4-强化学习典型应用" class="headerlink" title="4. 强化学习典型应用"></a>4. 强化学习典型应用</h3><p>游戏AI、电梯调度、机器人、智能驾驶、交通信号控制、智慧城市、芯片设计、智慧医疗、量化金融</p>
-<h3 id="5-强化学习基本元素"><a href="#5-强化学习基本元素" class="headerlink" title="5. 强化学习基本元素"></a>5. 强化学习基本元素</h3><h4 id="5-1-状态State"><a href="#5-1-状态State" class="headerlink" title="5.1 状态State"></a>5.1 状态State</h4><p>描述当前agent位置、姿态等信息变量</p>
-<p><strong>状态集State Space</strong>：agent所有可能states的集合<strong>S</strong>（离散&#x2F;连续）</p>
-<h4 id="5-2-动作Action"><a href="#5-2-动作Action" class="headerlink" title="5.2 动作Action"></a>5.2 动作Action</h4><p>agent能够执行，改变当前state的变量</p>
-<p><strong>动作集Action Space</strong>：agent所有可行的action集合<strong>A</strong>（离散&#x2F;连续）</p>
-<h4 id="5-3-策略Policy"><a href="#5-3-策略Policy" class="headerlink" title="5.3 策略Policy"></a>5.3 策略Policy</h4><p><strong>状态空间</strong>到<strong>动作空间</strong>的映射<br>$$<br>\pi:S \rightarrow A<br>$$<br>确定策略deterministic: (基于脚本&#x2F;规则树，每次行为都一样，完全没有变化，容易被对方利用exploitable)<br>$$<br>a_t&#x3D;\pi(s_t)<br>$$<br>随机策略stochastic:<br>$$<br>a_t \sim \pi(s_t)<br>\<br>\pi(a_t|s_t)&#x3D;P(a_t|s_t)<br>$$</p>
-<h4 id="5-4-状态转移State-Transition（环境-x2F-模型）"><a href="#5-4-状态转移State-Transition（环境-x2F-模型）" class="headerlink" title="5.4 状态转移State Transition（环境&#x2F;模型）"></a>5.4 状态转移State Transition（环境&#x2F;模型）</h4><p>描述agent在给定action下state的变化</p>
+<h3 id="强化学习典型应用">4. 强化学习典型应用</h3>
+<p>游戏AI、电梯调度、机器人、智能驾驶、交通信号控制、智慧城市、芯片设计、智慧医疗、量化金融</p>
+<h3 id="强化学习基本元素">5. 强化学习基本元素</h3>
+<h4 id="状态state">5.1 状态State</h4>
+<p>描述当前agent位置、姿态等信息变量</p>
+<p><strong>状态集State
+Space</strong>：agent所有可能states的集合<strong>S</strong>（离散/连续）</p>
+<h4 id="动作action">5.2 动作Action</h4>
+<p>agent能够执行，改变当前state的变量</p>
+<p><strong>动作集Action
+Space</strong>：agent所有可行的action集合<strong>A</strong>（离散/连续）</p>
+<h4 id="策略policy">5.3 策略Policy</h4>
+<p><strong>状态空间</strong>到<strong>动作空间</strong>的映射 <span
+class="math display">\[
+\pi:S \rightarrow A
+\]</span> 确定策略deterministic:
+(基于脚本/规则树，每次行为都一样，完全没有变化，容易被对方利用exploitable)
+<span class="math display">\[
+a_t=\pi(s_t)
+\]</span> 随机策略stochastic: <span class="math display">\[
+a_t \sim \pi(s_t)
+\\
+\pi(a_t|s_t)=P(a_t|s_t)
+\]</span></p>
+<h4 id="状态转移state-transition环境模型">5.4 状态转移State
+Transition（环境/模型）</h4>
+<p>描述agent在给定action下state的变化</p>
 <ul>
-<li>离散时间：$(s_t,a_t)\rightarrow s_{t+1}$<ul>
-<li>确定型：$s_{t+1}&#x3D;f(s_t,a_t)$ 由$s_t$ 和 $a_t$ 唯一决定</li>
-<li>随机型：$s_{t+1} \sim P(s_t,a_t)$ 满足一个和$s_t$ 、$a_t$ 相关的概率分布</li>
+<li>离散时间：<span class="math inline">\((s_t,a_t)\rightarrow
+s_{t+1}\)</span>
+<ul>
+<li>确定型：<span class="math inline">\(s_{t+1}=f(s_t,a_t)\)</span>
+由<span class="math inline">\(s_t\)</span> 和 <span
+class="math inline">\(a_t\)</span> 唯一决定</li>
+<li>随机型：<span class="math inline">\(s_{t+1} \sim P(s_t,a_t)\)</span>
+满足一个和<span class="math inline">\(s_t\)</span> 、<span
+class="math inline">\(a_t\)</span> 相关的概率分布</li>
+</ul></li>
+<li>连续时间：<span
+class="math inline">\(\dot{x}(t)=f(x(t),u(t))\)</span></li>
 </ul>
-</li>
-<li>连续时间：$\dot{x}(t)&#x3D;f(x(t),u(t))$</li>
-</ul>
-<h4 id="5-5-奖励Reward"><a href="#5-5-奖励Reward" class="headerlink" title="5.5 奖励Reward"></a>5.5 奖励Reward</h4><p>环境（算法）对agent<strong>当前的</strong>state&#x2F;action好坏程度的反馈</p>
+<h4 id="奖励reward">5.5 奖励Reward</h4>
+<p>环境（算法）对agent<strong>当前的</strong>state/action好坏程度的反馈</p>
 <p>是一个标量的反馈信号</p>
-<p>agent的任务就是要<strong>最大化累加reward</strong><br>$$<br>r_{t+1} &#x3D; R (s_t,a_t)<br>\<br>r_{t+1} \sim R (s_t,a_t)<br>$$<br>某一时刻的<strong>瞬时</strong>奖励<strong>不能完全反映</strong>最终目标完成的情况，需要考虑<strong>未来</strong>奖励的变化</p>
-<h4 id="5-6-回报Return"><a href="#5-6-回报Return" class="headerlink" title="5.6 回报Return"></a>5.6 回报Return</h4><p>agent从某一初始state出发，在policy下产生的轨迹上的<strong>奖励累加和</strong>（sum of rewards）<br>$$<br>G_t&#x3D;r_{t+1}+\gamma r_{t+1} + …&#x3D;\sum_{k&#x3D;1}^\infin \gamma^k r_{t+k+1}<br>$$<br>所有的目标都可以通过<strong>最大化期望累加奖励</strong>实现</p>
-<h4 id="5-7-价值Value（期望回报）"><a href="#5-7-价值Value（期望回报）" class="headerlink" title="5.7 价值Value（期望回报）"></a>5.7 价值Value（期望回报）</h4><p>agent在当前state下return的期望V<br>$$<br>V(s_t)&#x3D;E[G_t]&#x3D;E[r_{t+1}+\gamma r_{t+2}+…]<br>\<br>s_{k+1} \sim P(s_k,a_k),\quad a_k \sim \pi(s_k)<br>$$</p>
-<h4 id="5-8-最优策略和最优价值"><a href="#5-8-最优策略和最优价值" class="headerlink" title="5.8 最优策略和最优价值"></a>5.8 最优策略和最优价值</h4><p>最优价值optimal value：agent在每个state下能获得的最高价值<br>$$<br>V^*(s)&#x3D;max V(s)&#x3D;max E[r_{t+1}+\gamma r_{t+1}+…]<br>$$<br>最优策略optimal policy：能够使agent活的最高价值的策略$\pi^*$<br>$$<br>\begin{align}<br>V^*(s_t)&amp;&#x3D;E[\sum_{k&#x3D;0}^\infin \gamma^k r_{t+k+1}|a_k \sim \pi(s_k^*)]<br>\<br>&amp; \geq E[\sum_{k&#x3D;0}^\infin \gamma^k r_{t+k+1}|a_k \sim \pi(s_k)],\forall \pi<br>\end{align}<br>$$</p>
+<p>agent的任务就是要<strong>最大化累加reward</strong> <span
+class="math display">\[
+r_{t+1} = R (s_t,a_t)
+\\
+r_{t+1} \sim R (s_t,a_t)
+\]</span>
+某一时刻的<strong>瞬时</strong>奖励<strong>不能完全反映</strong>最终目标完成的情况，需要考虑<strong>未来</strong>奖励的变化</p>
+<h4 id="回报return">5.6 回报Return</h4>
+<p>agent从某一初始state出发，在policy下产生的轨迹上的<strong>奖励累加和</strong>（sum
+of rewards） <span class="math display">\[
+G_t=r_{t+1}+\gamma r_{t+1} + ...=\sum_{k=1}^\infin \gamma^k r_{t+k+1}
+\]</span>
+所有的目标都可以通过<strong>最大化期望累加奖励</strong>实现</p>
+<h4 id="价值value期望回报">5.7 价值Value（期望回报）</h4>
+<p>agent在当前state下return的期望V <span class="math display">\[
+V(s_t)=E[G_t]=E[r_{t+1}+\gamma r_{t+2}+...]
+\\
+s_{k+1} \sim P(s_k,a_k),\quad a_k \sim \pi(s_k)
+\]</span></p>
+<h4 id="最优策略和最优价值">5.8 最优策略和最优价值</h4>
+<p>最优价值optimal value：agent在每个state下能获得的最高价值 <span
+class="math display">\[
+V^*(s)=max V(s)=max E[r_{t+1}+\gamma r_{t+1}+...]
+\]</span> 最优策略optimal policy：能够使agent活的最高价值的策略<span
+class="math inline">\(\pi^*\)</span> <span class="math display">\[
+\begin{align}
+V^*(s_t)&amp;=E[\sum_{k=0}^\infin \gamma^k r_{t+k+1}|a_k \sim
+\pi(s_k^*)]
+\\
+&amp; \geq E[\sum_{k=0}^\infin \gamma^k r_{t+k+1}|a_k \sim
+\pi(s_k)],\forall \pi
+\end{align}
+\]</span></p>
 <p>对每个马尔可夫决策问题，最优价值有且只有一个，最优策略不一定是唯一的</p>
-<h3 id="6-强化学习算法分类"><a href="#6-强化学习算法分类" class="headerlink" title="6. 强化学习算法分类"></a>6. 强化学习算法分类</h3><h4 id="6-1-基于价值-x2F-基于策略-x2F-规划"><a href="#6-1-基于价值-x2F-基于策略-x2F-规划" class="headerlink" title="6.1 基于价值&#x2F;基于策略&#x2F;规划"></a>6.1 基于价值&#x2F;基于策略&#x2F;规划</h4><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420083943711.png" alt="image-20220420083943711" style="zoom:30%;" />
-
-<h4 id="6-2-在线-x2F-离线学习"><a href="#6-2-在线-x2F-离线学习" class="headerlink" title="6.2 在线&#x2F;离线学习"></a>6.2 在线&#x2F;离线学习</h4><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420083913210.png" alt="image-20220420083913210" style="zoom:30%;" />
-
-<h4 id="6-3-基于模型-x2F-不基于模型"><a href="#6-3-基于模型-x2F-不基于模型" class="headerlink" title="6.3 基于模型&#x2F;不基于模型"></a>6.3 基于模型&#x2F;不基于模型</h4><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420083924387.png" alt="image-20220420083924387" style="zoom:30%;" />
-
-<h2 id="二、马尔可夫决策过程"><a href="#二、马尔可夫决策过程" class="headerlink" title="二、马尔可夫决策过程"></a>二、马尔可夫决策过程</h2><h3 id="1-马尔可夫性"><a href="#1-马尔可夫性" class="headerlink" title="1. 马尔可夫性"></a>1. 马尔可夫性</h3><ul>
-<li><p>马尔可夫性</p>
-<p>在给定现在state及过去所有states下，agent未来state的条件概率分布<strong>仅依赖于当前state</strong>	</p>
-<p>给定现在state时，未来state与过去state是<strong>条件独立的</strong><br>$$<br>P[s_{t+1}|s_1,…,s_t]&#x3D;P[s_{t+1}|s_t]<br>$$</p>
-</li>
-<li><p>全观测&#x2F;部分可观测</p>
-<p>有时agent不能完全获得环境&#x2F;模型的全部state信息，只能通过观测获得<strong>观测量</strong>observation</p>
-<p>全观测full observable：$s_t&#x3D;o_t$</p>
-<p>部分可观测partial obserbale：$s_t \neq o_t$</p>
-<p>有些场景下，根据observation可以推出state，将部分可观测问题转化为全观测问题</p>
-</li>
-<li><p>状态转移矩阵</p>
-<p>从所有状态$s$到所有后继状态$s’$的转移概率</p>
-<p>矩阵每行元素的和等于1</p>
-</li>
-</ul>
-<h3 id="2-马尔可夫过程（马尔可夫链）MP（state）"><a href="#2-马尔可夫过程（马尔可夫链）MP（state）" class="headerlink" title="2. 马尔可夫过程（马尔可夫链）MP（state）"></a>2. 马尔可夫过程（马尔可夫链）MP（state）</h3><ul>
-<li>无记忆的随机过程</li>
-<li>一组具有马尔可夫性的随机状态序列$s_1,s_2,…$</li>
-<li>用一组$&lt;S,P&gt;$表示<ul>
-<li>$S$是（有限）状态集</li>
-<li>$P$是状态转移概率矩阵，$P_{ss’}&#x3D;P[s_{t+1}&#x3D;s’|s_t&#x3D;s]$</li>
-</ul>
-</li>
-</ul>
-<h3 id="3-马尔可夫奖励过程MRP（state-reward）"><a href="#3-马尔可夫奖励过程MRP（state-reward）" class="headerlink" title="3. 马尔可夫奖励过程MRP（state+reward）"></a>3. 马尔可夫奖励过程MRP（state+reward）</h3><ul>
-<li><p>一个马尔可夫链MP+奖励reward</p>
-</li>
-<li><p>由一组$&lt;S,P,R,\gamma&gt;$构成</p>
+<h3 id="强化学习算法分类">6. 强化学习算法分类</h3>
+<h4 id="基于价值基于策略规划">6.1 基于价值/基于策略/规划</h4>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420083943711.png" alt="image-20220420083943711" style="zoom:30%;" /></p>
+<h4 id="在线离线学习">6.2 在线/离线学习</h4>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420083913210.png" alt="image-20220420083913210" style="zoom:30%;" /></p>
+<h4 id="基于模型不基于模型">6.3 基于模型/不基于模型</h4>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420083924387.png" alt="image-20220420083924387" style="zoom:30%;" /></p>
+<h2 id="二马尔可夫决策过程">二、马尔可夫决策过程</h2>
+<h3 id="马尔可夫性">1. 马尔可夫性</h3>
 <ul>
-<li>$S$是一组有限状态集</li>
-<li>$P$是状态转移概率矩阵，$P_{ss’}&#x3D;P[s_{t+1}&#x3D;s’|s_t&#x3D;s]$</li>
-<li>$R$是奖励函数，$R_s&#x3D;R(s)&#x3D;E[r_{t+1}|s_t&#x3D;s]$</li>
-<li>$\gamma$是折扣因子，$\gamma \in [0,1]$</li>
+<li><p>马尔可夫性</p>
+<p>在给定现在state及过去所有states下，agent未来state的条件概率分布<strong>仅依赖于当前state</strong></p>
+<p>给定现在state时，未来state与过去state是<strong>条件独立的</strong>
+<span class="math display">\[
+P[s_{t+1}|s_1,...,s_t]=P[s_{t+1}|s_t]
+\]</span></p></li>
+<li><p>全观测/部分可观测</p>
+<p>有时agent不能完全获得环境/模型的全部state信息，只能通过观测获得<strong>观测量</strong>observation</p>
+<p>全观测full observable：<span
+class="math inline">\(s_t=o_t\)</span></p>
+<p>部分可观测partial obserbale：<span class="math inline">\(s_t \neq
+o_t\)</span></p>
+<p>有些场景下，根据observation可以推出state，将部分可观测问题转化为全观测问题</p></li>
+<li><p>状态转移矩阵</p>
+<p>从所有状态<span class="math inline">\(s\)</span>到所有后继状态<span
+class="math inline">\(s&#39;\)</span>的转移概率</p>
+<p>矩阵每行元素的和等于1</p></li>
 </ul>
-</li>
-<li><p>回报Return：$G_t$代表在 $t$ 时刻<strong>之后轨迹的累加奖励</strong>（对应的是某一具体的轨迹）<br>$$<br>G_t&#x3D;r_{t+1}+\gamma r_{t+1}+…&#x3D;\sum_{k&#x3D;0}^\infin \gamma^kr_{t+k+1}<br>$$</p>
-</li>
-<li><p>价值Value：一个MRP的价值 $V$ 等于从状态 $s$ 出发的<strong>期望回报</strong>（代表的是所有轨迹的期望）<br>$$<br>V(s)&#x3D;E[G_t|s_t&#x3D;s]<br>$$</p>
-</li>
-<li><p>折扣因子$\gamma$：在连续MDPs问题中可以避免无穷回报，重视近期奖励</p>
-</li>
+<h3 id="马尔可夫过程马尔可夫链mpstate">2.
+马尔可夫过程（马尔可夫链）MP（state）</h3>
+<ul>
+<li>无记忆的随机过程</li>
+<li>一组具有马尔可夫性的随机状态序列<span
+class="math inline">\(s_1,s_2,...\)</span></li>
+<li>用一组<span class="math inline">\(&lt;S,P&gt;\)</span>表示
+<ul>
+<li><span class="math inline">\(S\)</span>是（有限）状态集</li>
+<li><span class="math inline">\(P\)</span>是状态转移概率矩阵，<span
+class="math inline">\(P_{ss&#39;}=P[s_{t+1}=s&#39;|s_t=s]\)</span></li>
+</ul></li>
+</ul>
+<h3 id="马尔可夫奖励过程mrpstatereward">3.
+马尔可夫奖励过程MRP（state+reward）</h3>
+<ul>
+<li><p>一个马尔可夫链MP+奖励reward</p></li>
+<li><p>由一组<span
+class="math inline">\(&lt;S,P,R,\gamma&gt;\)</span>构成</p>
+<ul>
+<li><span class="math inline">\(S\)</span>是一组有限状态集</li>
+<li><span class="math inline">\(P\)</span>是状态转移概率矩阵，<span
+class="math inline">\(P_{ss&#39;}=P[s_{t+1}=s&#39;|s_t=s]\)</span></li>
+<li><span class="math inline">\(R\)</span>是奖励函数，<span
+class="math inline">\(R_s=R(s)=E[r_{t+1}|s_t=s]\)</span></li>
+<li><span class="math inline">\(\gamma\)</span>是折扣因子，<span
+class="math inline">\(\gamma \in [0,1]\)</span></li>
+</ul></li>
+<li><p>回报Return：<span class="math inline">\(G_t\)</span>代表在 <span
+class="math inline">\(t\)</span>
+时刻<strong>之后轨迹的累加奖励</strong>（对应的是某一具体的轨迹） <span
+class="math display">\[
+G_t=r_{t+1}+\gamma r_{t+1}+...=\sum_{k=0}^\infin \gamma^kr_{t+k+1}
+\]</span></p></li>
+<li><p>价值Value：一个MRP的价值 <span class="math inline">\(V\)</span>
+等于从状态 <span class="math inline">\(s\)</span>
+出发的<strong>期望回报</strong>（代表的是所有轨迹的期望） <span
+class="math display">\[
+V(s)=E[G_t|s_t=s]
+\]</span></p></li>
+<li><p>折扣因子<span
+class="math inline">\(\gamma\)</span>：在连续MDPs问题中可以避免无穷回报，重视近期奖励</p></li>
 <li><p>MRPs的贝尔曼方程Bellman equation</p>
-<p>将价值函数拆成两部分：瞬时奖励$r_{t+1}$和后继状态的折扣价值$\gamma V(s_{t+1})$<br>$$<br>V(s)&#x3D;E[r_{t+1}+\gamma V(s_{t+1}|s_t&#x3D;s)]<br>\<br>V(s)&#x3D;R(s)+\gamma \sum_{s’\in S}P_{ss’}V(s’)<br>\<br>V&#x3D;R+\gamma P V<br>$$<br>（推导略，公式2和上学期高级AI格子游戏的一样）</p>
+<p>将价值函数拆成两部分：瞬时奖励<span
+class="math inline">\(r_{t+1}\)</span>和后继状态的折扣价值<span
+class="math inline">\(\gamma V(s_{t+1})\)</span> <span
+class="math display">\[
+V(s)=E[r_{t+1}+\gamma V(s_{t+1}|s_t=s)]
+\\
+V(s)=R(s)+\gamma \sum_{s&#39;\in S}P_{ss&#39;}V(s&#39;)
+\\
+V=R+\gamma P V
+\]</span> （推导略，公式2和上学期高级AI格子游戏的一样）</p>
 <p>求解贝尔曼方程（线性方程：</p>
 <ul>
-<li>（状态空间小）直接求解：$V&#x3D;(I-\gamma P)^{-1}R$</li>
-<li>（大规模MRPs问题）迭代&#x2F;基于数据的方法：动态规划、蒙特卡洛估计、时间差分学习</li>
+<li>（状态空间小）直接求解：<span class="math inline">\(V=(I-\gamma
+P)^{-1}R\)</span></li>
+<li>（大规模MRPs问题）迭代/基于数据的方法：动态规划、蒙特卡洛估计、时间差分学习</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h3 id="4-马尔可夫决策过程MDP（state-reward-action）"><a href="#4-马尔可夫决策过程MDP（state-reward-action）" class="headerlink" title="4. 马尔可夫决策过程MDP（state+reward+action）"></a>4. 马尔可夫决策过程MDP（state+reward+action）</h3><ul>
-<li><p>马尔可夫奖励过程MRP+智能体的决策action</p>
-</li>
-<li><p>由$&lt;S,A,P,R,\gamma&gt;$组成</p>
+<h3 id="马尔可夫决策过程mdpstaterewardaction">4.
+马尔可夫决策过程MDP（state+reward+action）</h3>
 <ul>
-<li><p>$S$是有限状态集</p>
-</li>
-<li><p>$A$是有限动作集</p>
-</li>
-<li><p>$P$是状态转移概率矩阵，$P_{ss’}^a&#x3D;P[s_{t+1}&#x3D;s’|s_t&#x3D;s,a_t&#x3D;a]$</p>
-</li>
-<li><p>$R$是奖励函数，$R_s^a&#x3D;R(s)&#x3D;E[r_{t+1}|s_t&#x3D;s,a_t&#x3D;a]$</p>
-</li>
-<li><p>$\gamma$是折扣因子，$\gamma \in [0,1]$</p>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="5-策略与价值"><a href="#5-策略与价值" class="headerlink" title="5. 策略与价值"></a>5. 策略与价值</h3><h4 id="5-1-策略"><a href="#5-1-策略" class="headerlink" title="5.1 策略"></a>5.1 策略</h4><p>策略 $\pi$ 是状态state到动作action的一种分布<br>$$<br>\pi(a|s)&#x3D;P[a_t&#x3D;a|s_t&#x3D;s]<br>$$<br>确定性&#x2F;随机性</p>
-<p>MDP问题动作的选择只取决于<strong>当前</strong>状态：$a_t \sim \pi(s_t)$ （与历史无关，<strong>马尔可夫性</strong>）</p>
+<li><p>马尔可夫奖励过程MRP+智能体的决策action</p></li>
+<li><p>由<span
+class="math inline">\(&lt;S,A,P,R,\gamma&gt;\)</span>组成</p>
 <ul>
-<li>$\pi(s)$ 表示状态$s$ 下动作的概率分布</li>
-<li>$\pi(s,a)$ 或$\pi(a|s)$表示状态$s$下选择动作$a$的概率</li>
+<li><p><span class="math inline">\(S\)</span>是有限状态集</p></li>
+<li><p><span class="math inline">\(A\)</span>是有限动作集</p></li>
+<li><p><span class="math inline">\(P\)</span>是状态转移概率矩阵，<span
+class="math inline">\(P_{ss&#39;}^a=P[s_{t+1}=s&#39;|s_t=s,a_t=a]\)</span></p></li>
+<li><p><span class="math inline">\(R\)</span>是奖励函数，<span
+class="math inline">\(R_s^a=R(s)=E[r_{t+1}|s_t=s,a_t=a]\)</span></p></li>
+<li><p><span class="math inline">\(\gamma\)</span>是折扣因子，<span
+class="math inline">\(\gamma \in [0,1]\)</span></p></li>
+</ul></li>
 </ul>
-<p>给定一个<strong>MDP</strong>问题$M&#x3D;&lt;S,A,P,R,\gamma&gt;$和<strong>策略$\pi$</strong></p>
+<h3 id="策略与价值">5. 策略与价值</h3>
+<h4 id="策略">5.1 策略</h4>
+<p>策略 <span class="math inline">\(\pi\)</span>
+是状态state到动作action的一种分布 <span class="math display">\[
+\pi(a|s)=P[a_t=a|s_t=s]
+\]</span> 确定性/随机性</p>
+<p>MDP问题动作的选择只取决于<strong>当前</strong>状态：<span
+class="math inline">\(a_t \sim \pi(s_t)\)</span>
+（与历史无关，<strong>马尔可夫性</strong>）</p>
 <ul>
-<li>agent的state轨迹$s_1,s_2,…$是一个马尔可夫过程<strong>MP</strong>$&lt;S,P^\pi&gt;$</li>
-<li>agent的state和reward轨迹$s_1,r_2,s_2,r_3,…$是一个马尔可夫奖励过程<strong>MRP</strong>$&lt;S,P^\pi,R^\pi,\gamma&gt;$</li>
+<li><span class="math inline">\(\pi(s)\)</span> 表示状态<span
+class="math inline">\(s\)</span> 下动作的概率分布</li>
+<li><span class="math inline">\(\pi(s,a)\)</span> 或<span
+class="math inline">\(\pi(a|s)\)</span>表示状态<span
+class="math inline">\(s\)</span>下选择动作<span
+class="math inline">\(a\)</span>的概率</li>
 </ul>
-<h4 id="5-2-价值"><a href="#5-2-价值" class="headerlink" title="5.2 价值"></a>5.2 价值</h4><p>根据某种策略决策的，状态价值V和动作价值Q</p>
+<p>给定一个<strong>MDP</strong>问题<span
+class="math inline">\(M=&lt;S,A,P,R,\gamma&gt;\)</span>和<strong>策略<span
+class="math inline">\(\pi\)</span></strong></p>
 <ul>
-<li><p>MDP的（状态）价值$V_\pi(s)$：<strong>从状态 $s$ 出发</strong>，在策略 $\pi$ 作用下的<strong>期望回报</strong><br>$$<br>V_\pi(s)&#x3D;E_\pi[G_t|s_t&#x3D;s]<br>$$</p>
-</li>
-<li><p>动作-价值 $Q_\pi(s,a)$：智能体从状态 $s$ 出发，<strong>首先执行动作 $a$</strong> ，然后按照策略 $\pi$ 的<strong>期望回报</strong><br>$$<br>Q_\pi(s,a)&#x3D;E_\pi[G_t|s_t&#x3D;s,a_t&#x3D;a]<br>$$</p>
-</li>
+<li>agent的state轨迹<span
+class="math inline">\(s_1,s_2,...\)</span>是一个马尔可夫过程<strong>MP</strong><span
+class="math inline">\(&lt;S,P^\pi&gt;\)</span></li>
+<li>agent的state和reward轨迹<span
+class="math inline">\(s_1,r_2,s_2,r_3,...\)</span>是一个马尔可夫奖励过程<strong>MRP</strong><span
+class="math inline">\(&lt;S,P^\pi,R^\pi,\gamma&gt;\)</span></li>
+</ul>
+<h4 id="价值">5.2 价值</h4>
+<p>根据某种策略决策的，状态价值V和动作价值Q</p>
+<ul>
+<li><p>MDP的（状态）价值<span
+class="math inline">\(V_\pi(s)\)</span>：<strong>从状态 <span
+class="math inline">\(s\)</span> 出发</strong>，在策略 <span
+class="math inline">\(\pi\)</span> 作用下的<strong>期望回报</strong>
+<span class="math display">\[
+V_\pi(s)=E_\pi[G_t|s_t=s]
+\]</span></p></li>
+<li><p>动作-价值 <span
+class="math inline">\(Q_\pi(s,a)\)</span>：智能体从状态 <span
+class="math inline">\(s\)</span> 出发，<strong>首先执行动作 <span
+class="math inline">\(a\)</span></strong> ，然后按照策略 <span
+class="math inline">\(\pi\)</span> 的<strong>期望回报</strong> <span
+class="math display">\[
+Q_\pi(s,a)=E_\pi[G_t|s_t=s,a_t=a]
+\]</span></p></li>
 <li></li>
 </ul>
-<p>$$<br>V_\pi(s)&#x3D;\sum_{a\in A}\pi(a|s)Q_\pi(s,a)<br>$$</p>
-<h4 id="5-3-贝尔曼期望方程Bellman-Expectation-E-q-，-V-pi-，-Q-pi"><a href="#5-3-贝尔曼期望方程Bellman-Expectation-E-q-，-V-pi-，-Q-pi" class="headerlink" title="5.3 贝尔曼期望方程Bellman Expectation$E_q$ ， $V_\pi$，$Q_\pi$"></a>5.3 贝尔曼期望方程Bellman Expectation$E_q$ ， $V_\pi$，$Q_\pi$</h4><p>$$<br>V_\pi(s)&#x3D;\sum_{a\in A}\pi(a|s)(R_s^a+\gamma\sum_{s’\in S}P_{ss’}^aV_\pi(s’))<br>\<br>Q_\pi(s,a)&#x3D;R_s^a+\gamma\sum_{s’ \in S}P_{ss’}^a\sum_{a’\in A}\pi(a’|s’)Q_\pi(s’,a’)<br>\<br>V_\pi&#x3D;R^\pi+\gamma P^\pi(V_\pi)<br>$$</p>
-<h4 id="5-4-最优价值Optimal-value"><a href="#5-4-最优价值Optimal-value" class="headerlink" title="5.4 最优价值Optimal value"></a>5.4 最优价值Optimal value</h4><p>最优价值代表了agent获得的<strong>最大期望累加奖励&#x2F;回报</strong></p>
-<h4 id="5-5-最优策略"><a href="#5-5-最优策略" class="headerlink" title="5.5 最优策略"></a>5.5 最优策略</h4><p>所有的最优策略的 价值&#x2F;动作-价值都是相通的，等于最优价值&#x2F;动作-价值</p>
-<h3 id="6-最优化原理"><a href="#6-最优化原理" class="headerlink" title="6. 最优化原理"></a>6. 最优化原理</h3><h4 id="6-1-贝尔曼最优化原理"><a href="#6-1-贝尔曼最优化原理" class="headerlink" title="6.1 贝尔曼最优化原理"></a>6.1 贝尔曼最优化原理</h4><p>最优策略具有如下性质：不论初始状态和初始决策如何，余下的决策依然是余下问题的最优策略</p>
-<h4 id="6-2-贝尔曼最优方程"><a href="#6-2-贝尔曼最优方程" class="headerlink" title="6.2 贝尔曼最优方程"></a>6.2 贝尔曼最优方程</h4><p>$$<br>V_*(s)&#x3D;\max_a(R_s^a+\gamma \sum_{s’ \in S}P_{ss’}^aV_*(s’))<br>\<br>Q_*(s,a)&#x3D;R_s^a+\gamma \sum_{s’\in S} P_{ss’}^a V_*(s’)<br>\<br>V_*(s)&#x3D;\max_aQ_*(s,a)<br>\<br>Q_*(s,a)&#x3D;R_s^a+\gamma \sum_{s’\in S} P_{ss’}^a \max_{a’}Q_*(s’,a’)<br>$$</p>
-<h4 id="6-3-寻找最优策略"><a href="#6-3-寻找最优策略" class="headerlink" title="6.3 寻找最优策略"></a>6.3 寻找最优策略</h4><p>$$<br>\begin{align}<br>V_*(s)&amp;&#x3D;\max_a(R_s^a+\gamma \sum_{s’ \in S}P_{ss’}^aV_*(s’))<br>\<br>&amp;\geq R_s^b+\gamma \sum_{s’ \in S}P_{ss’}^bV_*(s’),\forall b \in A<br>\end{align}<br>$$</p>
-<p>最优策略可以基于$V_*$和模型计算最优动作<br>$$<br>\pi_*(s)&#x3D;\arg\max_a(R_s^a+\gamma \sum_{s’ \in S}P_{ss’}^aV_*(s’))<br>$$<br>也可以直接最大化$Q_*(s,a)$得到最优策略<br>$$<br>\pi_*(s)&#x3D;\arg\max_a Q_*(s,a)<br>$$<br>确定性最优策略</p>
+<p><span class="math display">\[
+V_\pi(s)=\sum_{a\in A}\pi(a|s)Q_\pi(s,a)
+\]</span></p>
+<h4 id="贝尔曼期望方程bellman-expectatione_q-v_piq_pi">5.3
+贝尔曼期望方程Bellman Expectation<span
+class="math inline">\(E_q\)</span> ， <span
+class="math inline">\(V_\pi\)</span>，<span
+class="math inline">\(Q_\pi\)</span></h4>
+<p><span class="math display">\[
+V_\pi(s)=\sum_{a\in A}\pi(a|s)(R_s^a+\gamma\sum_{s&#39;\in
+S}P_{ss&#39;}^aV_\pi(s&#39;))
+\\
+Q_\pi(s,a)=R_s^a+\gamma\sum_{s&#39; \in S}P_{ss&#39;}^a\sum_{a&#39;\in
+A}\pi(a&#39;|s&#39;)Q_\pi(s&#39;,a&#39;)
+\\
+V_\pi=R^\pi+\gamma P^\pi(V_\pi)
+\]</span></p>
+<h4 id="最优价值optimal-value">5.4 最优价值Optimal value</h4>
+<p>最优价值代表了agent获得的<strong>最大期望累加奖励/回报</strong></p>
+<h4 id="最优策略">5.5 最优策略</h4>
+<p>所有的最优策略的 价值/动作-价值都是相通的，等于最优价值/动作-价值</p>
+<h3 id="最优化原理">6. 最优化原理</h3>
+<h4 id="贝尔曼最优化原理">6.1 贝尔曼最优化原理</h4>
+<p>最优策略具有如下性质：不论初始状态和初始决策如何，余下的决策依然是余下问题的最优策略</p>
+<h4 id="贝尔曼最优方程">6.2 贝尔曼最优方程</h4>
+<p><span class="math display">\[
+V_*(s)=\max_a(R_s^a+\gamma \sum_{s&#39; \in S}P_{ss&#39;}^aV_*(s&#39;))
+\\
+Q_*(s,a)=R_s^a+\gamma \sum_{s&#39;\in S} P_{ss&#39;}^a V_*(s&#39;)
+\\
+V_*(s)=\max_aQ_*(s,a)
+\\
+Q_*(s,a)=R_s^a+\gamma \sum_{s&#39;\in S} P_{ss&#39;}^a
+\max_{a&#39;}Q_*(s&#39;,a&#39;)
+\]</span></p>
+<h4 id="寻找最优策略">6.3 寻找最优策略</h4>
+<p><span class="math display">\[
+\begin{align}
+V_*(s)&amp;=\max_a(R_s^a+\gamma \sum_{s&#39; \in
+S}P_{ss&#39;}^aV_*(s&#39;))
+\\
+&amp;\geq R_s^b+\gamma \sum_{s&#39; \in
+S}P_{ss&#39;}^bV_*(s&#39;),\forall b \in A
+\end{align}
+\]</span></p>
+<p>最优策略可以基于<span
+class="math inline">\(V_*\)</span>和模型计算最优动作 <span
+class="math display">\[
+\pi_*(s)=\arg\max_a(R_s^a+\gamma \sum_{s&#39; \in
+S}P_{ss&#39;}^aV_*(s&#39;))
+\]</span> 也可以直接最大化<span
+class="math inline">\(Q_*(s,a)\)</span>得到最优策略 <span
+class="math display">\[
+\pi_*(s)=\arg\max_a Q_*(s,a)
+\]</span> 确定性最优策略</p>
 <p>求解贝尔曼最优方程需要：</p>
 <ul>
 <li>求解非线性算子max</li>
 <li>模型已知</li>
 <li>足够的计算空间</li>
 </ul>
-<h3 id="7-MDPs扩展"><a href="#7-MDPs扩展" class="headerlink" title="7. MDPs扩展"></a>7. MDPs扩展</h3><p>MDP用5个元素表示$&lt;S,A,P,R,\gamma&gt;$</p>
-<h4 id="7-1-不同类型-从基本元素考虑"><a href="#7-1-不同类型-从基本元素考虑" class="headerlink" title="7.1 不同类型(从基本元素考虑)"></a>7.1 不同类型(从基本元素考虑)</h4><ul>
-<li>连续状态&#x2F;动作 vs 离散状态&#x2F;动作</li>
+<h3 id="mdps扩展">7. MDPs扩展</h3>
+<p>MDP用5个元素表示<span
+class="math inline">\(&lt;S,A,P,R,\gamma&gt;\)</span></p>
+<h4 id="不同类型从基本元素考虑">7.1 不同类型(从基本元素考虑)</h4>
+<ul>
+<li>连续状态/动作 vs 离散状态/动作</li>
 <li>确定模型 vs 随机模型</li>
 <li>连续时间 vs 离散时间</li>
 </ul>
-<h4 id="7-2-奖励vs惩罚"><a href="#7-2-奖励vs惩罚" class="headerlink" title="7.2 奖励vs惩罚"></a>7.2 奖励vs惩罚</h4><h4 id="7-3-不同形式回报"><a href="#7-3-不同形式回报" class="headerlink" title="7.3 不同形式回报"></a>7.3 不同形式回报</h4><ul>
+<h4 id="奖励vs惩罚">7.2 奖励vs惩罚</h4>
+<h4 id="不同形式回报">7.3 不同形式回报</h4>
+<ul>
 <li>无限时域的累加奖励</li>
 <li>无限时域的平均奖励</li>
 <li>有限时域的累加奖励和</li>
 <li>有限时域的平均奖励</li>
 </ul>
-<h2 id="三、动态规划"><a href="#三、动态规划" class="headerlink" title="三、动态规划"></a>三、动态规划</h2><h3 id="1-动态规划"><a href="#1-动态规划" class="headerlink" title="1. 动态规划"></a>1. 动态规划</h3><p>动态规划：通过把原问题分解为<strong>相对简单的子问题</strong>来求解复杂问题的方法</p>
+<h2 id="三动态规划">三、动态规划</h2>
+<h3 id="动态规划">1. 动态规划</h3>
+<p>动态规划：通过把原问题分解为<strong>相对简单的子问题</strong>来求解复杂问题的方法</p>
 <p>两个适用条件：</p>
 <ul>
 <li>最优子结构性质：问题最优解包含的子问题的解也是子问题的最优解</li>
@@ -206,32 +382,39 @@
 <li>贝尔曼方程具有递归形式</li>
 <li>价值函数可以保存和重复利用</li>
 </ul>
-<h3 id="2-价值迭代Value-Iteration-VI"><a href="#2-价值迭代Value-Iteration-VI" class="headerlink" title="2. 价值迭代Value Iteration, VI"></a>2. 价值迭代Value Iteration, VI</h3><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420151651635.png" alt="image-20220420151651635" style="zoom:30%;" />
-
-
-
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420151713793.png" alt="image-20220420151713793" style="zoom:30%;" />
-
-<p>价值迭代算子 $\Gamma$ </p>
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420151857286.png" alt="image-20220420151857286" style="zoom:30%;" />
-
-
-
+<h3 id="价值迭代value-iteration-vi">2. 价值迭代Value Iteration, VI</h3>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420151651635.png" alt="image-20220420151651635" style="zoom:30%;" /></p>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420151713793.png" alt="image-20220420151713793" style="zoom:30%;" /></p>
+<p>价值迭代算子 <span class="math inline">\(\Gamma\)</span></p>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420151857286.png" alt="image-20220420151857286" style="zoom:30%;" /></p>
 <p>收缩算子</p>
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420151941493.png" alt="image-20220420151941493" style="zoom:30%;" />
-
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420151941493.png" alt="image-20220420151941493" style="zoom:30%;" /></p>
 <p>例子：扫地机器人</p>
 <p>迭代价值函数，最优策略从收敛的价值函数题去</p>
-<h3 id="3-策略迭代"><a href="#3-策略迭代" class="headerlink" title="3. 策略迭代"></a>3. 策略迭代</h3><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420152234908.png" alt="image-20220420152234908" style="zoom:30%;" />
-
-
-
-<h4 id="3-1-提升策略"><a href="#3-1-提升策略" class="headerlink" title="3.1 提升策略"></a>3.1 提升策略</h4><h4 id="3-2-策略迭代"><a href="#3-2-策略迭代" class="headerlink" title="3.2 策略迭代"></a>3.2 策略迭代</h4><h4 id="3-3-动态规划总结"><a href="#3-3-动态规划总结" class="headerlink" title="3.3 动态规划总结"></a>3.3 动态规划总结</h4><h3 id="4-迭代策略评估"><a href="#4-迭代策略评估" class="headerlink" title="4. 迭代策略评估"></a>4. 迭代策略评估</h3><h3 id="5-广义策略迭代"><a href="#5-广义策略迭代" class="headerlink" title="5. 广义策略迭代"></a>5. 广义策略迭代</h3><h3 id="6-维数灾"><a href="#6-维数灾" class="headerlink" title="6. 维数灾"></a>6. 维数灾</h3><h2 id="四、无模型预测学习"><a href="#四、无模型预测学习" class="headerlink" title="四、无模型预测学习"></a>四、无模型预测学习</h2><h3 id="0-策略评估"><a href="#0-策略评估" class="headerlink" title="0. 策略评估"></a>0. 策略评估</h3><h3 id="1-蒙特卡洛方法"><a href="#1-蒙特卡洛方法" class="headerlink" title="1. 蒙特卡洛方法"></a>1. 蒙特卡洛方法</h3><h3 id="2-时间差分学习"><a href="#2-时间差分学习" class="headerlink" title="2. 时间差分学习"></a>2. 时间差分学习</h3><h3 id="3-n-步回报"><a href="#3-n-步回报" class="headerlink" title="3. n-步回报"></a>3. n-步回报</h3><h3 id="4-TD-lambda"><a href="#4-TD-lambda" class="headerlink" title="4. TD($\lambda$)"></a>4. TD($\lambda$)</h3><h3 id="5-资格迹"><a href="#5-资格迹" class="headerlink" title="5. 资格迹"></a>5. 资格迹</h3><h2 id="五、无模型控制学习"><a href="#五、无模型控制学习" class="headerlink" title="五、无模型控制学习"></a>五、无模型控制学习</h2><h3 id="0-预测-vs-控制"><a href="#0-预测-vs-控制" class="headerlink" title="0. 预测 vs 控制"></a>0. 预测 vs 控制</h3><p><strong>预测问题：</strong>计算MDP<strong>某一策略</strong>的价值函数</p>
+<h3 id="策略迭代">3. 策略迭代</h3>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220420152234908.png" alt="image-20220420152234908" style="zoom:30%;" /></p>
+<h4 id="提升策略">3.1 提升策略</h4>
+<h4 id="策略迭代-1">3.2 策略迭代</h4>
+<h4 id="动态规划总结">3.3 动态规划总结</h4>
+<h3 id="迭代策略评估">4. 迭代策略评估</h3>
+<h3 id="广义策略迭代">5. 广义策略迭代</h3>
+<h3 id="维数灾">6. 维数灾</h3>
+<h2 id="四无模型预测学习">四、无模型预测学习</h2>
+<h3 id="策略评估">0. 策略评估</h3>
+<h3 id="蒙特卡洛方法">1. 蒙特卡洛方法</h3>
+<h3 id="时间差分学习">2. 时间差分学习</h3>
+<h3 id="n-步回报">3. n-步回报</h3>
+<h3 id="tdlambda">4. TD(<span
+class="math inline">\(\lambda\)</span>)</h3>
+<h3 id="资格迹">5. 资格迹</h3>
+<h2 id="五无模型控制学习">五、无模型控制学习</h2>
+<h3 id="预测-vs-控制">0. 预测 vs 控制</h3>
+<p><strong>预测问题：</strong>计算MDP<strong>某一策略</strong>的价值函数</p>
 <ul>
 <li>输入：MDP 和策略</li>
 <li>输出：状态值函数 或者状态动作值函数</li>
 </ul>
-<p><strong>控制问题：</strong>计算MDP<strong>最优策略</strong>&#x2F;最优价值函数</p>
+<p><strong>控制问题：</strong>计算MDP<strong>最优策略</strong>/最优价值函数</p>
 <ul>
 <li>输入：MDP</li>
 <li>输出：最优状态值函数 或者最优状态动作值函数 ，和最优策略</li>
@@ -241,113 +424,154 @@
 <li>要么MDP本身的模型未知，只能根据观测的经验数据学习（参数未知的机械臂）</li>
 <li>要么MDP太复杂，状态空间过大，根据在线样本训练更有效（围棋）</li>
 </ul>
-<h3 id="1-蒙特卡洛控制"><a href="#1-蒙特卡洛控制" class="headerlink" title="1. 蒙特卡洛控制"></a>1. 蒙特卡洛控制</h3><h3 id="2-Sarsa"><a href="#2-Sarsa" class="headerlink" title="2. Sarsa"></a>2. Sarsa</h3><h3 id="3-重要性采样"><a href="#3-重要性采样" class="headerlink" title="3. 重要性采样"></a>3. 重要性采样</h3><h3 id="4-Q-学习"><a href="#4-Q-学习" class="headerlink" title="4. Q-学习"></a>4. Q-学习</h3><h3 id="5-Double-Q-学习"><a href="#5-Double-Q-学习" class="headerlink" title="5. Double Q 学习"></a>5. Double Q 学习</h3><h3 id="6-探索与利用"><a href="#6-探索与利用" class="headerlink" title="6. 探索与利用"></a>6. 探索与利用</h3><h2 id="六、价值函数逼近VFA"><a href="#六、价值函数逼近VFA" class="headerlink" title="六、价值函数逼近VFA"></a>六、价值函数逼近VFA</h2><h3 id="1-函数逼近器"><a href="#1-函数逼近器" class="headerlink" title="1. 函数逼近器"></a>1. 函数逼近器</h3><h3 id="2-线性函数逼近"><a href="#2-线性函数逼近" class="headerlink" title="2. 线性函数逼近"></a>2. 线性函数逼近</h3><h3 id="3-常见的特征表示方法"><a href="#3-常见的特征表示方法" class="headerlink" title="3. 常见的特征表示方法"></a>3. 常见的特征表示方法</h3><p>查表法</p>
+<h3 id="蒙特卡洛控制">1. 蒙特卡洛控制</h3>
+<h3 id="sarsa">2. Sarsa</h3>
+<h3 id="重要性采样">3. 重要性采样</h3>
+<h3 id="q-学习">4. Q-学习</h3>
+<h3 id="double-q-学习">5. Double Q 学习</h3>
+<h3 id="探索与利用">6. 探索与利用</h3>
+<h2 id="六价值函数逼近vfa">六、价值函数逼近VFA</h2>
+<h3 id="函数逼近器">1. 函数逼近器</h3>
+<h3 id="线性函数逼近">2. 线性函数逼近</h3>
+<h3 id="常见的特征表示方法">3. 常见的特征表示方法</h3>
+<p>查表法</p>
 <p>离散化法：将连续的空间划分成非重叠的，相邻的子空间</p>
 <p>粗糙编码coarse coding：特征可以重叠</p>
 <p>径向基函数RBF：粗糙编码向连续性特征表示的泛化</p>
-<h3 id="4-价值迭代-离散化方法"><a href="#4-价值迭代-离散化方法" class="headerlink" title="4. 价值迭代+离散化方法"></a>4. 价值迭代+离散化方法</h3><h3 id="5-Fitted-Q-Iteration"><a href="#5-Fitted-Q-Iteration" class="headerlink" title="5. Fitted Q Iteration"></a>5. Fitted Q Iteration</h3><h3 id="6-策略迭代-最小二乘"><a href="#6-策略迭代-最小二乘" class="headerlink" title="6. 策略迭代+最小二乘"></a>6. 策略迭代+最小二乘</h3><h3 id="7-预测学习-随机梯度下降法"><a href="#7-预测学习-随机梯度下降法" class="headerlink" title="7. 预测学习+随机梯度下降法"></a>7. 预测学习+随机梯度下降法</h3><p>梯度下降MC预测算法</p>
+<h3 id="价值迭代离散化方法">4. 价值迭代+离散化方法</h3>
+<h3 id="fitted-q-iteration">5. Fitted Q Iteration</h3>
+<h3 id="策略迭代最小二乘">6. 策略迭代+最小二乘</h3>
+<h3 id="预测学习随机梯度下降法">7. 预测学习+随机梯度下降法</h3>
+<p>梯度下降MC预测算法</p>
 <p>梯度下降TD预测学习</p>
-<p>​	梯度下降$TD(\lambda)$ 算法</p>
+<p>​ 梯度下降<span class="math inline">\(TD(\lambda)\)</span> 算法</p>
 <p>基于逼近器的预测学习算法收敛性</p>
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220422092800158.png" alt="image-20220422092800158" style="zoom:30%;" />
-
-<p>MC 可以看成 $\lambda &#x3D; 1$ 的特例</p>
-<h3 id="8-控制学习-随机梯度下降法"><a href="#8-控制学习-随机梯度下降法" class="headerlink" title="8. 控制学习+随机梯度下降法"></a>8. 控制学习+随机梯度下降法</h3><p>控制&#x3D;预测（策略评估）+策略提升</p>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220422092800158.png" alt="image-20220422092800158" style="zoom:30%;" /></p>
+<p>MC 可以看成 <span class="math inline">\(\lambda = 1\)</span>
+的特例</p>
+<h3 id="控制学习随机梯度下降法">8. 控制学习+随机梯度下降法</h3>
+<p>控制=预测（策略评估）+策略提升</p>
 <ul>
 <li>评估：定义Q函数逼近器，使用预测学习进行梯度下降训练（w，Q）</li>
 <li>提升：定义具有一定探索性的策略</li>
 </ul>
-<h4 id="8-1-梯度下降MC控制算法"><a href="#8-1-梯度下降MC控制算法" class="headerlink" title="8.1 梯度下降MC控制算法"></a>8.1 梯度下降MC控制算法</h4><h4 id="8-2-梯度下降Sarsa算法"><a href="#8-2-梯度下降Sarsa算法" class="headerlink" title="8.2 梯度下降Sarsa算法"></a>8.2 梯度下降Sarsa算法</h4><h4 id="8-3-梯度下降Q学习算法"><a href="#8-3-梯度下降Q学习算法" class="headerlink" title="8.3 梯度下降Q学习算法"></a>8.3 梯度下降Q学习算法</h4><h2 id="七、策略梯度"><a href="#七、策略梯度" class="headerlink" title="七、策略梯度"></a>七、策略梯度</h2><h3 id="1-基于策略的强化学习"><a href="#1-基于策略的强化学习" class="headerlink" title="1. 基于策略的强化学习"></a>1. 基于策略的强化学习</h3><h4 id="1-1-基于价值的RL（定义价值逼近器，隐式的策略）"><a href="#1-1-基于价值的RL（定义价值逼近器，隐式的策略）" class="headerlink" title="1.1 基于价值的RL（定义价值逼近器，隐式的策略）"></a>1.1 基于价值的RL（定义价值逼近器，隐式的策略）</h4><ul>
+<h4 id="梯度下降mc控制算法">8.1 梯度下降MC控制算法</h4>
+<h4 id="梯度下降sarsa算法">8.2 梯度下降Sarsa算法</h4>
+<h4 id="梯度下降q学习算法">8.3 梯度下降Q学习算法</h4>
+<h2 id="七策略梯度">七、策略梯度</h2>
+<h3 id="基于策略的强化学习">1. 基于策略的强化学习</h3>
+<h4 id="基于价值的rl定义价值逼近器隐式的策略">1.1
+基于价值的RL（定义价值逼近器，隐式的策略）</h4>
+<ul>
 <li><p>特点：</p>
 <ul>
-<li><p>学习价值函数逼近器</p>
-</li>
-<li><p>策略由价值逼近器提取</p>
-</li>
-<li><p>适用于有限动作集的MDPs问题</p>
-</li>
-</ul>
-</li>
+<li><p>学习价值函数逼近器</p></li>
+<li><p>策略由价值逼近器提取</p></li>
+<li><p>适用于有限动作集的MDPs问题</p></li>
+</ul></li>
 <li><p>缺点：</p>
 <ul>
-<li>策略是确定型的（greedy&#x2F;e-greedy），无法表示随机策略</li>
+<li>策略是确定型的（greedy/e-greedy），无法表示随机策略</li>
 <li>价值函数逼近器的误差往往会导致贪心策略和最优策略之间更大的误差</li>
 <li>难以应对大规模动作集或连续动作空间</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h4 id="1-2-基于策略的RL（定义策略逼近器，没有价值函数）"><a href="#1-2-基于策略的RL（定义策略逼近器，没有价值函数）" class="headerlink" title="1.2 基于策略的RL（定义策略逼近器，没有价值函数）"></a>1.2 基于策略的RL（定义策略逼近器，没有价值函数）</h4><ul>
-<li>好处：<ul>
+<h4 id="基于策略的rl定义策略逼近器没有价值函数">1.2
+基于策略的RL（定义策略逼近器，没有价值函数）</h4>
+<ul>
+<li>好处：
+<ul>
 <li>更好的收敛性</li>
 <li>有效解决大规模动作集或连续动作空间问题</li>
 <li>能够学习随机策略</li>
-</ul>
-</li>
-<li>缺点：<ul>
+</ul></li>
+<li>缺点：
+<ul>
 <li>通常只能收敛到局部最优解</li>
 <li>对一个策略评估时会费时费力，而且方差较大</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h4 id="1-3-Actor-Critic-（价值逼近器辅助策略逼近器训练）"><a href="#1-3-Actor-Critic-（价值逼近器辅助策略逼近器训练）" class="headerlink" title="1.3 Actor-Critic （价值逼近器辅助策略逼近器训练）"></a>1.3 Actor-Critic （价值逼近器辅助策略逼近器训练）</h4><h4 id="1-4-策略逼近器-pi-theta"><a href="#1-4-策略逼近器-pi-theta" class="headerlink" title="1.4 策略逼近器$\pi(\theta)$"></a>1.4 策略逼近器$\pi(\theta)$</h4><p>与价值函数一样，用参数化的逼近器近似策略</p>
+<h4 id="actor-critic-价值逼近器辅助策略逼近器训练">1.3 Actor-Critic
+（价值逼近器辅助策略逼近器训练）</h4>
+<h4 id="策略逼近器pitheta">1.4 策略逼近器<span
+class="math inline">\(\pi(\theta)\)</span></h4>
+<p>与价值函数一样，用参数化的逼近器近似策略</p>
 <ul>
 <li><p>对有限动作集</p>
-<p>表示给定状态下选择某一动作的概率<br>$$<br>p(a|s)&#x3D;\pi(a|s,\theta)<br>$$</p>
+<p>表示给定状态下选择某一动作的概率 <span class="math display">\[
+p(a|s)=\pi(a|s,\theta)
+\]</span></p>
 <ul>
-<li><p>softmax策略，<strong>基于特征的线性组合</strong>表示每个动作被选择的概率<br>$$<br>\pi(a|s,\theta) \propto e^{\phi^T(s,a)\theta}<br>$$</p>
-</li>
-<li><p>非线性逼近器（NN的input对应s，output对应a的softmax</p>
-</li>
-</ul>
-</li>
+<li><p>softmax策略，<strong>基于特征的线性组合</strong>表示每个动作被选择的概率
+<span class="math display">\[
+\pi(a|s,\theta) \propto e^{\phi^T(s,a)\theta}
+\]</span></p></li>
+<li><p>非线性逼近器（NN的input对应s，output对应a的softmax</p></li>
+</ul></li>
 <li><p>对连续动作空间</p>
 <ul>
-<li><p>表示给定状态下选择动作的<strong>概率分布</strong>，常见是高斯分布<br>$$<br>a \sim N(\mu(s,\theta),\Sigma) \quad 固定方差<br>\<br>a \sim N(\mu(s,\theta),\Sigma(s,\theta)) \quad 参数化方差<br>$$</p>
+<li><p>表示给定状态下选择动作的<strong>概率分布</strong>，常见是高斯分布
+<span class="math display">\[
+a \sim N(\mu(s,\theta),\Sigma) \quad 固定方差
+\\
+a \sim N(\mu(s,\theta),\Sigma(s,\theta)) \quad 参数化方差
+\]</span></p>
 <ul>
 <li>用状态特征的线性组合表示均值</li>
 </ul>
-<p>$$<br>\mu(s,\theta)&#x3D;\phi^T(s)\theta<br>$$</p>
+<p><span class="math display">\[
+\mu(s,\theta)=\phi^T(s)\theta
+\]</span></p>
 <ul>
-<li>也可以用非线性逼近器输出$\mu$</li>
-</ul>
-</li>
-<li><p>表示给定状态下<strong>确定性的</strong>动作<br>$$<br>a&#x3D;\pi(s,\theta)<br>$$</p>
+<li>也可以用非线性逼近器输出<span
+class="math inline">\(\mu\)</span></li>
+</ul></li>
+<li><p>表示给定状态下<strong>确定性的</strong>动作 <span
+class="math display">\[
+a=\pi(s,\theta)
+\]</span></p>
 <ul>
-<li><p>特征线性组合	<br>$$<br>\pi(s,\theta)&#x3D;\phi^T(s)\theta<br>$$</p>
-</li>
-<li><p>非线性（神经网络）</p>
-</li>
+<li><p>特征线性组合<br />
+<span class="math display">\[
+\pi(s,\theta)=\phi^T(s)\theta
+\]</span></p></li>
+<li><p>非线性（神经网络）</p></li>
+</ul></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-<h4 id="1-5-策略优化目标-J-theta"><a href="#1-5-策略优化目标-J-theta" class="headerlink" title="1.5 策略优化目标$J(\theta)$"></a>1.5 策略优化目标$J(\theta)$</h4><p>不同场景对应不同的优化目标</p>
+<h4 id="策略优化目标jtheta">1.5 策略优化目标<span
+class="math inline">\(J(\theta)\)</span></h4>
+<p>不同场景对应不同的优化目标</p>
 <ul>
 <li>episodic场景：代表整个轨迹的奖励和（单一重复的机械臂任务）</li>
-<li>连续运行场景<ul>
+<li>连续运行场景
+<ul>
 <li>状态空间上的平均回报（绕地卫星的控制）</li>
 <li>每步的平均奖励（德州扑克）</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h4 id="1-6-策略优化"><a href="#1-6-策略优化" class="headerlink" title="1.6 策略优化"></a>1.6 策略优化</h4><ul>
-<li>无梯度的优化算法<ul>
+<h4 id="策略优化">1.6 策略优化</h4>
+<ul>
+<li>无梯度的优化算法
+<ul>
 <li>爬山算法，单纯型算法，遗传算法，交叉熵算法，协方差矩阵自适应算法</li>
 <li>优势：适用于任何形式的策略逼近器甚至是不可微的逼近器，很容易实现并行计算加快学习速度</li>
 <li>缺陷：计算量大，数据利用率低，把问题看成黑箱没有考虑MDPs问题的时间连贯特性</li>
-</ul>
-</li>
-<li><strong>基于梯度的优化算法</strong><ul>
+</ul></li>
+<li><strong>基于梯度的优化算法</strong>
+<ul>
 <li>梯度下降法，共轭梯度法，拟牛顿法</li>
 <li>优势：数据利用率高，有效利用MDPs的<strong>时间连贯特性</strong></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h3 id="2-有限差分策略梯度"><a href="#2-有限差分策略梯度" class="headerlink" title="2. 有限差分策略梯度"></a>2. 有限差分策略梯度</h3><p>不适用梯度公式, 直接使用梯度的定义来计算梯度</p>
-<p>策略梯度算法根据<strong>梯度上升方向</strong>调整 $\theta$ 找到 $J(\theta)$ 的局部最大点</p>
+<h3 id="有限差分策略梯度">2. 有限差分策略梯度</h3>
+<p>不适用梯度公式, 直接使用梯度的定义来计算梯度</p>
+<p>策略梯度算法根据<strong>梯度上升方向</strong>调整 <span
+class="math inline">\(\theta\)</span> 找到 <span
+class="math inline">\(J(\theta)\)</span> 的局部最大点</p>
 <p>有限差分法Finite Difference</p>
-<h3 id="3-解析法策略梯度"><a href="#3-解析法策略梯度" class="headerlink" title="3. 解析法策略梯度"></a>3. 解析法策略梯度</h3><p>无偏、方差大</p>
+<h3 id="解析法策略梯度">3. 解析法策略梯度</h3>
+<p>无偏、方差大</p>
 <p>提高实用性：</p>
 <ul>
 <li>时间连贯特性 temporal structure ➡️REINFORCE算法</li>
@@ -355,630 +579,645 @@
 <li>优势函数 advantage function ➡️Advantage Actor-Critic算法</li>
 <li>自然梯度 natural gradient ➡️Natural Actor-Critic</li>
 </ul>
-<h3 id="4-REINFORCE算法（蒙特卡洛策略梯度算法）"><a href="#4-REINFORCE算法（蒙特卡洛策略梯度算法）" class="headerlink" title="4. REINFORCE算法（蒙特卡洛策略梯度算法）"></a>4. REINFORCE算法（蒙特卡洛策略梯度算法）</h3><p>时间连贯特性：</p>
-<p>$t’ \lt t$ 时刻之前的奖励与t时刻的策略不管，所以对t时刻的梯度更新也没有任何影响</p>
-<p>当前时刻的策略梯度 使用 当前时刻的回报 $G_t&#x3D;\sum_{t’&#x3D;t}^{T-1}r_{t’+1}$</p>
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220422111316998.png" alt="image-20220422111316998" style="zoom:33%;" />
-
-<h3 id="5-Actor-Critic"><a href="#5-Actor-Critic" class="headerlink" title="5. Actor-Critic"></a>5. Actor-Critic</h3><p>估计的回报G具有明显的高方差，使用更<strong>稳定的Q函数</strong>降低策略梯度的方差</p>
-<p>Critic：定义一个Q函数逼近器$Q_w(s,a)$ </p>
-<p> Actor：相应的策略逼近器$\pi_\theta(s,a)$</p>
+<h3 id="reinforce算法蒙特卡洛策略梯度算法">4.
+REINFORCE算法（蒙特卡洛策略梯度算法）</h3>
+<p>时间连贯特性：</p>
+<p><span class="math inline">\(t&#39; \lt t\)</span>
+时刻之前的奖励与t时刻的策略不管，所以对t时刻的梯度更新也没有任何影响</p>
+<p>当前时刻的策略梯度 使用 当前时刻的回报 <span
+class="math inline">\(G_t=\sum_{t&#39;=t}^{T-1}r_{t&#39;+1}\)</span></p>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220422111316998.png" alt="image-20220422111316998" style="zoom:33%;" /></p>
+<h3 id="actor-critic">5. Actor-Critic</h3>
+<p>估计的回报G具有明显的高方差，使用更<strong>稳定的Q函数</strong>降低策略梯度的方差</p>
+<p>Critic：定义一个Q函数逼近器<span
+class="math inline">\(Q_w(s,a)\)</span></p>
+<p>Actor：相应的策略逼近器<span
+class="math inline">\(\pi_\theta(s,a)\)</span></p>
 <p>训练Crtic对Actor进行评估，同时基于Critic训练Actor</p>
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220422111840633.png" alt="image-20220422111840633" style="zoom:33%;" />
-
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220422112353892.png" alt="image-20220422112353892" style="zoom:33%;" />
-
-<h3 id="6-策略梯度引入基准"><a href="#6-策略梯度引入基准" class="headerlink" title="6. 策略梯度引入基准"></a>6. 策略梯度引入基准</h3><h3 id="7-自然梯度"><a href="#7-自然梯度" class="headerlink" title="7. 自然梯度"></a>7. 自然梯度</h3><h3 id="8-确定型Actor-Critic"><a href="#8-确定型Actor-Critic" class="headerlink" title="8. 确定型Actor-Critic"></a>8. 确定型Actor-Critic</h3><h2 id="八、基于博弈理论的强化学习"><a href="#八、基于博弈理论的强化学习" class="headerlink" title="八、基于博弈理论的强化学习"></a>八、基于博弈理论的强化学习</h2><h3 id="1-多智能体强化学习"><a href="#1-多智能体强化学习" class="headerlink" title="1. 多智能体强化学习"></a>1. 多智能体强化学习</h3><h3 id="2-基于价值的博弈理论强化学习"><a href="#2-基于价值的博弈理论强化学习" class="headerlink" title="2. 基于价值的博弈理论强化学习"></a>2. 基于价值的博弈理论强化学习</h3><h3 id="3-基于策略的博弈理论强化学习"><a href="#3-基于策略的博弈理论强化学习" class="headerlink" title="3. 基于策略的博弈理论强化学习"></a>3. 基于策略的博弈理论强化学习</h3>]]></content>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220422111840633.png" alt="image-20220422111840633" style="zoom:33%;" /></p>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220422112353892.png" alt="image-20220422112353892" style="zoom:33%;" /></p>
+<h3 id="策略梯度引入基准">6. 策略梯度引入基准</h3>
+<h3 id="自然梯度">7. 自然梯度</h3>
+<h3 id="确定型actor-critic">8. 确定型Actor-Critic</h3>
+<h2 id="八基于博弈理论的强化学习">八、基于博弈理论的强化学习</h2>
+<h3 id="多智能体强化学习">1. 多智能体强化学习</h3>
+<h3 id="基于价值的博弈理论强化学习">2. 基于价值的博弈理论强化学习</h3>
+<h3 id="基于策略的博弈理论强化学习">3. 基于策略的博弈理论强化学习</h3>
+]]></content>
+      <tags>
+        <tag>UCAS课程复习</tag>
+      </tags>
   </entry>
   <entry>
-    <title>高级AI复习</title>
-    <url>/2022/03/01/%E9%AB%98%E7%BA%A7AI%E5%A4%8D%E4%B9%A0%E6%96%87%E6%A1%A3/</url>
-    <content><![CDATA[<h1 id="高级AI复习文档"><a href="#高级AI复习文档" class="headerlink" title="高级AI复习文档"></a>高级AI复习文档</h1><h2 id="一、概述"><a href="#一、概述" class="headerlink" title="一、概述"></a>一、概述</h2><p>图灵测试：要求测出来<strong>智能体只是“表现上”像人</strong>，行动上像人。到底是否是真的与人一样会思考，无人知道。“和人一样思考、行动”。</p>
-<h2 id="二、搜索"><a href="#二、搜索" class="headerlink" title="二、搜索"></a>二、搜索</h2><h3 id="2-1-搜索问题"><a href="#2-1-搜索问题" class="headerlink" title="2.1 搜索问题"></a>2.1 搜索问题</h3><ul>
-<li>搜索问题构成<ul>
+    <title>高级人工智能</title>
+    <url>/2021/12/01/%E9%AB%98%E7%BA%A7AI%E5%A4%8D%E4%B9%A0%E6%96%87%E6%A1%A3/</url>
+    <content><![CDATA[<h1 id="高级ai复习">高级AI复习</h1>
+<h2 id="一概述">一、概述</h2>
+<p>图灵测试：要求测出来<strong>智能体只是“表现上”像人</strong>，行动上像人。到底是否是真的与人一样会思考，无人知道。“和人一样思考、行动”。</p>
+<h2 id="二搜索">二、搜索</h2>
+<h3 id="搜索问题">2.1 搜索问题</h3>
+<ul>
+<li>搜索问题构成
+<ul>
 <li>状态空间</li>
 <li>后继函数</li>
 <li>初始状态和目标测试</li>
-</ul>
-</li>
+</ul></li>
 <li>解是一个行动序列（一系列后继函数），将初始状态转换成目标状态</li>
 <li>状态数量问题分析</li>
-<li>状态空间的表示<ul>
+<li>状态空间的表示
+<ul>
 <li>状态空间图：<strong>每个状态只会出现一次</strong>，每个状态通过行动（后继函数）进行连接。</li>
 <li>搜索树：每一个节点是一个完整的路径（表示一个序列的行动），<strong>状态可能会重复</strong>。</li>
-</ul>
-</li>
-<li>搜索算法特性<ul>
+</ul></li>
+<li>搜索算法特性
+<ul>
 <li>完备性：当问题有解时，保证能找到<strong>一个解</strong></li>
 <li>最优性：保证能找到<strong>最优解</strong></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h3 id="2-2-无信息搜索-Uniformed-Search"><a href="#2-2-无信息搜索-Uniformed-Search" class="headerlink" title="2.2 无信息搜索 Uniformed Search"></a>2.2 无信息搜索 Uniformed Search</h3><ul>
+<h3 id="无信息搜索-uniformed-search">2.2 无信息搜索 Uniformed
+Search</h3>
+<ul>
 <li><p>深度优先搜索 DFS</p>
 <ul>
 <li>栈</li>
-</ul>
-</li>
+</ul></li>
 <li><p>广度优先搜索 BFS</p>
 <ul>
 <li>队列</li>
 <li>当每一步代价相同时，是最优的</li>
-</ul>
-</li>
+</ul></li>
 <li><p>迭代深入搜索 Iterative Deepening</p>
 <ul>
 <li>结合DFS的空间优势和BFS的时间优势</li>
-</ul>
-</li>
-<li><p>代价敏感搜索 Cost- Sensitive Search</p>
-</li>
+</ul></li>
+<li><p>代价敏感搜索 Cost- Sensitive Search</p></li>
 <li><p>代价一致搜索 UCS</p>
 <ul>
 <li>优先扩展代价最小的节点</li>
-</ul>
-</li>
-<li><p>DFS vs BFS</p>
-</li>
+</ul></li>
+<li><p>DFS vs BFS</p></li>
 <li><p>特性对比</p>
-<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211222104955895.png" alt="image-20211222104955895" style="zoom:50%;" /></li>
+<p><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211222104955895.png" alt="image-20211222104955895" style="zoom:50%;" /></p></li>
 </ul>
-<h3 id="2-3-启发式搜索-Informed-Search"><a href="#2-3-启发式搜索-Informed-Search" class="headerlink" title="2.3 启发式搜索 Informed Search"></a>2.3 启发式搜索 Informed Search</h3><ul>
-<li><p>启发策略：估计一个状态到目标距离的函数</p>
-</li>
-<li><p>启发函数：</p>
-</li>
+<h3 id="启发式搜索-informed-search">2.3 启发式搜索 Informed Search</h3>
+<ul>
+<li><p>启发策略：估计一个状态到目标距离的函数</p></li>
+<li><p>启发函数：</p></li>
 <li><p>贪婪搜索：</p>
 <ul>
 <li>扩展离目标最近的节点</li>
-<li>只用到了最简单的启发式函数<strong>f(n)&#x3D;h(n)</strong></li>
+<li>只用到了最简单的启发式函数<strong>f(n)=h(n)</strong></li>
 <li>通常情况：最佳优先是你很快到达目标</li>
 <li>最坏情况：类似DFS</li>
-</ul>
-</li>
+</ul></li>
 <li><p>A*搜索：结合UCS（向后实际cost）和Greedy（向前估计cost）</p>
 <ul>
-<li><p>A*算法可以看到到达此节点已经花费的代价（ g(x) ），**A*搜索的启发式函数变为了f(n)&#x3D;g(n)+h(n)**。</p>
-</li>
+<li><p>A*算法可以看到到达此节点已经花费的代价（ g(x)
+），<strong>A*搜索的启发式函数变为了f(n)=g(n)+h(n)</strong>。</p></li>
 <li><p>可采纳的启发函数：</p>
-<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211222105126201.png" alt="image-20211222105126201" style="zoom:50%;" />
-</li>
+<p><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211222105126201.png" alt="image-20211222105126201" style="zoom:50%;" /></p></li>
 <li><p><strong>最优性证明</strong></p>
-<p>![image-20211219174601410](&#x2F;Users&#x2F;Lexie&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20211219174601410.png)</p>
-<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211219174647300.png" alt="image-20211219174647300" style="zoom:50%;" />
-</li>
+<figure>
+<img
+src="/Users/Lexie/Library/Application%20Support/typora-user-images/image-20211219174601410.png"
+alt="image-20211219174601410" />
+<figcaption aria-hidden="true">image-20211219174601410</figcaption>
+</figure>
+<p><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211219174647300.png" alt="image-20211219174647300" style="zoom:50%;" /></p></li>
 <li><p>UCS vs A*</p>
 <ul>
 <li>UCS在所有方向上等可能的扩展</li>
 <li>A*主要朝着目标扩展，能够保证最优性，且搜索效率高</li>
-</ul>
-</li>
-<li><p>八数码游戏</p>
-</li>
+</ul></li>
+<li><p>八数码游戏</p></li>
 <li><p>图搜索</p>
 <ul>
 <li>主要思想：不要扩展一个状态两次</li>
 <li>完备yes，最优no</li>
-</ul>
-</li>
+</ul></li>
 <li><p>A*图搜索</p>
 <ul>
 <li><p>启发式的一致性</p>
-<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211222112819008.png" alt="image-20211222112819008" style="zoom:30%;" /></li>
+<p><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211222112819008.png" alt="image-20211222112819008" style="zoom:30%;" /></p></li>
+</ul></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="2-4-局部搜索-Local-Search"><a href="#2-4-局部搜索-Local-Search" class="headerlink" title="2.4 局部搜索 Local Search"></a>2.4 局部搜索 Local Search</h3><ul>
+<h3 id="局部搜索-local-search">2.4 局部搜索 Local Search</h3>
+<ul>
 <li><p>爬山法</p>
 <ul>
-<li><p>可在任意位置起始</p>
-</li>
-<li><p>重复: 移动到最好的相邻状态，不允许向山下移动</p>
-</li>
+<li><p>可在任意位置起始</p></li>
+<li><p>重复: 移动到最好的相邻状态，不允许向山下移动</p></li>
 <li><p>如果没有比当前更好的相邻状态，结束</p>
-<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211219174742460.png" alt="image-20211219174742460" style="zoom:50%;" /></li>
-</ul>
-</li>
-<li><p>模拟退火搜索</p>
-</li>
+<p><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211219174742460.png" alt="image-20211219174742460" style="zoom:50%;" /></p></li>
+</ul></li>
+<li><p>模拟退火搜索</p></li>
 <li><p>遗传算法</p>
 <ul>
 <li>基于<strong>适应度函数</strong>，在每步中保留 N 个最好状态</li>
 <li>配对杂交操作</li>
 <li>产生可选的变异</li>
 <li>问题的目标函数天然的可作为遗传算法的适应度函数</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h3 id="2-5-传教士和野人问题-The-Missionaries-and-Cannibals-Problem"><a href="#2-5-传教士和野人问题-The-Missionaries-and-Cannibals-Problem" class="headerlink" title="2.5 传教士和野人问题 The Missionaries and Cannibals Problem"></a>2.5 传教士和野人问题 The Missionaries and Cannibals Problem</h3><ul>
-<li><p>状态空间：${(M,C,B)}$ </p>
-<p>​					M：左岸传教士数量</p>
-<p>​					C： 左岸野人数量</p>
-<p>​					B：1-船在左岸，0-船在右岸</p>
-</li>
-<li><p>后继函数：${P_{01},P_{10},P_{02},P_{20},P_{11},Q_{01},Q_{10},Q_{02},Q_{20},Q_{11}}$</p>
-<p>​					P：左-&gt;右</p>
-<p>​					Q：右-&gt;左</p>
-<p>​					下标：穿上传教士、野人数</p>
-</li>
-<li><p>初始状态：（3，3，1）</p>
-</li>
-<li><p>目标状态：（0，0，0）</p>
-</li>
-<li><p>解？</p>
-</li>
+<h3 id="传教士和野人问题-the-missionaries-and-cannibals-problem">2.5
+传教士和野人问题 The Missionaries and Cannibals Problem</h3>
+<ul>
+<li><p>状态空间：<span class="math inline">\(\{(M,C,B)\}\)</span></p>
+<p>​ M：左岸传教士数量</p>
+<p>​ C： 左岸野人数量</p>
+<p>​ B：1-船在左岸，0-船在右岸</p></li>
+<li><p>后继函数：<span
+class="math inline">\(\{P_{01},P_{10},P_{02},P_{20},P_{11},Q_{01},Q_{10},Q_{02},Q_{20},Q_{11}\}\)</span></p>
+<p>​ P：左-&gt;右</p>
+<p>​ Q：右-&gt;左</p>
+<p>​ 下标：穿上传教士、野人数</p></li>
+<li><p>初始状态：（3，3，1）</p></li>
+<li><p>目标状态：（0，0，0）</p></li>
+<li><p>解？</p></li>
 <li><p>往年试题：</p>
 <p>传教士和野人问题通常描述如下:三个传教士和三个野人在河的一边，还有一条能载一个人或者两个人的船。</p>
 <p>找到一个办法让所有的人能渡到河的另一岸，要求在任何地方野人数都不能多于传教士的人数。</p>
-<p> a.精确地形式化该问题，只描述确保该问题有解所必需的特性。画出该问题的完全状态空间。</p>
-<p> b.用一个合适的搜索算法实现和最优地求解该问题，检查重复状态是个好主意吗?</p>
-<p> c.这个问题的状态空间如此简单，你认为为什么求解它却很困难?</p>
-<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211219141921887.png" alt="image-20211219141921887" style="zoom:50%;" />
-
-<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211219141934793.png" alt="image-20211219141934793" style="zoom:50%;" />
-
-<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211219141950218.png" alt="image-20211219141950218" style="zoom:30%;" />
-
-<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211219173931001.png" alt="image-20211219173931001" style="zoom:50%;" />
-
-<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211219173950752.png" alt="image-20211219173950752" style="zoom:50%;" /></li>
+<p>a.精确地形式化该问题，只描述确保该问题有解所必需的特性。画出该问题的完全状态空间。</p>
+<p>b.用一个合适的搜索算法实现和最优地求解该问题，检查重复状态是个好主意吗?</p>
+<p>c.这个问题的状态空间如此简单，你认为为什么求解它却很困难?</p>
+<p><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211219141921887.png" alt="image-20211219141921887" style="zoom:50%;" /></p>
+<p><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211219141934793.png" alt="image-20211219141934793" style="zoom:50%;" /></p>
+<p><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211219141950218.png" alt="image-20211219141950218" style="zoom:30%;" /></p>
+<p><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211219173931001.png" alt="image-20211219173931001" style="zoom:50%;" /></p>
+<p><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211219173950752.png" alt="image-20211219173950752" style="zoom:50%;" /></p></li>
 </ul>
-<h2 id="三、联结主义（神经网络）数据驱动的不确定性智能"><a href="#三、联结主义（神经网络）数据驱动的不确定性智能" class="headerlink" title="三、联结主义（神经网络）数据驱动的不确定性智能"></a>三、联结主义（神经网络）数据驱动的不确定性智能</h2><h3 id="3-1-人工神经网络和深度学习基础"><a href="#3-1-人工神经网络和深度学习基础" class="headerlink" title="3.1 人工神经网络和深度学习基础"></a>3.1 人工神经网络和深度学习基础</h3><ul>
+<h2
+id="三联结主义神经网络数据驱动的不确定性智能">三、联结主义（神经网络）数据驱动的不确定性智能</h2>
+<h3 id="人工神经网络和深度学习基础">3.1 人工神经网络和深度学习基础</h3>
+<ul>
 <li><p>人工神经元</p>
-<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20220102111535600.png" alt="image-20220102111535600" style="zoom:30%;" />
-
+<p><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20220102111535600.png" alt="image-20220102111535600" style="zoom:30%;" /></p>
 <p>组合函数：加权和、径向距离</p>
 <p>激活函数：（作用是将可能的无限域变换到指定的有限范围内进行输出）</p>
-<p>​					非线性、连续可导、单调性</p>
-<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20220102111649019.png" alt="image-20220102111649019" style="zoom:30%;" />
-</li>
-<li><p>ANN结构：前馈（无循环、静态）、反馈（循环、动态）</p>
-</li>
+<p>​ 非线性、连续可导、单调性</p>
+<p><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20220102111649019.png" alt="image-20220102111649019" style="zoom:30%;" /></p></li>
+<li><p>ANN结构：前馈（无循环、静态）、反馈（循环、动态）</p></li>
 <li><p>感知机</p>
 <ul>
-<li><p>实质：一种神经元模型</p>
-</li>
-<li><p>单层</p>
-</li>
-<li><p>多层：3层（所有连续函数）、4层（所有函数）、实现异或（2层）</p>
-</li>
-<li><p>学习：B-P算法，梯度下降，权值更新</p>
-</li>
-<li><p>优点：很强的表达能力，容易执行</p>
-</li>
-<li><p>缺点：收敛速度慢、过拟合、局部极小、噪声（不可分情况）、泛化性</p>
-</li>
+<li><p>实质：一种神经元模型</p></li>
+<li><p>单层</p></li>
+<li><p>多层：3层（所有连续函数）、4层（所有函数）、实现异或（2层）</p></li>
+<li><p>学习：B-P算法，梯度下降，权值更新</p></li>
+<li><p>优点：很强的表达能力，容易执行</p></li>
+<li><p>缺点：收敛速度慢、过拟合、局部极小、噪声（不可分情况）、泛化性</p></li>
 <li><p>BP算法的问题：梯度消失、局部极小、需要带标签训练数据</p>
-<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20220102112014572.png" alt="image-20220102112014572" style="zoom:30%;" /></li>
-</ul>
-</li>
+<p><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20220102112014572.png" alt="image-20220102112014572" style="zoom:30%;" /></p></li>
+</ul></li>
 <li><p>深度学习</p>
 <ul>
-<li><p>why go deep</p>
+<li>why go deep
 <ul>
 <li>深层结构能够有效被表达</li>
 <li>深层结构可产生层次化特征表达</li>
 <li>多层隐变量允许统计上的组合共享</li>
 <li>深层结构有效</li>
-</ul>
-</li>
-<li><p>深度模型是手段，特征学习是目的</p>
-</li>
-<li><p>低层关注局部，高层关注全局（更具有语义化）</p>
-</li>
-<li><p>训练：</p>
+</ul></li>
+<li>深度模型是手段，特征学习是目的</li>
+<li>低层关注局部，高层关注全局（更具有语义化）</li>
+<li>训练：
 <ul>
 <li>自下而上的非监督学习（greedy layer-wise training）</li>
 <li>自顶向下的监督学习（误差自顶向下传输，对网络进行微调）</li>
-</ul>
-</li>
-<li><p>克服BP的限制：对输入的结构建模，产生输入的生成式模型，使生成式模型的概率最大</p>
-</li>
-<li><p>端到端学习</p>
-</li>
-</ul>
-</li>
+</ul></li>
+<li>克服BP的限制：对输入的结构建模，产生输入的生成式模型，使生成式模型的概率最大</li>
+<li>端到端学习</li>
+</ul></li>
 <li><p>常用模型</p>
 <ul>
-<li><p>AutoEncoder自动编码器：输入无标签数据，调整编码器和解码器的参数，使得重构误差最小</p>
-</li>
-<li><p>Hopfield Network：单层全互连，对称权值</p>
-</li>
+<li><p>AutoEncoder自动编码器：输入无标签数据，调整编码器和解码器的参数，使得重构误差最小</p></li>
+<li><p>Hopfield Network：单层全互连，对称权值</p></li>
 <li><p>Boltzmann Machine 波尔兹曼机：具有隐单元（不与外部相连）</p>
 <ul>
 <li>网络结构复杂，训练代价大，局部极小</li>
-</ul>
-</li>
+</ul></li>
 <li><p>Restricted Boltzmann Machine 受限波尔兹曼机：层内无连接</p>
 <ul>
-<li><p>训练：<a href="https://blog.csdn.net/zhihua_oba/article/details/69487730?spm=1001.2101.3001.6650.1&utm_medium=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~default-1.no_search_link&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2~default~CTRLIST~default-1.no_search_link">（来源：CSDN博客）</a></p>
+<li><p>训练：<a
+href="https://blog.csdn.net/zhihua_oba/article/details/69487730?spm=1001.2101.3001.6650.1&amp;utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link&amp;depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7ECTRLIST%7Edefault-1.no_search_link">（来源：CSDN博客）</a></p>
 <ul>
 <li><p>状态初始化：</p>
-<p>![image-20211213145838002](&#x2F;Users&#x2F;Lexie&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20211213145838002.png)</p>
-</li>
-<li><p>对比散度CD算法：</p>
-</li>
+<figure>
+<img
+src="/Users/Lexie/Library/Application%20Support/typora-user-images/image-20211213145838002.png"
+alt="image-20211213145838002" />
+<figcaption aria-hidden="true">image-20211213145838002</figcaption>
+</figure></li>
+<li><p>对比散度CD算法：</p></li>
 </ul>
-<p>![image-20211213145240650](&#x2F;Users&#x2F;Lexie&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20211213145240650.png)</p>
+<figure>
+<img
+src="/Users/Lexie/Library/Application%20Support/typora-user-images/image-20211213145240650.png"
+alt="image-20211213145240650" />
+<figcaption aria-hidden="true">image-20211213145240650</figcaption>
+</figure>
 <ul>
-<li><p>Gibbs采样：<a href="https://blog.csdn.net/yujianmin1990/article/details/76723999">（来源：CSDN博客）</a></p>
-<p>![image-20211213151529541](&#x2F;Users&#x2F;Lexie&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20211213151529541.png)</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p><strong>Deep Belief Networks （DBN）</strong>：最高一层是RBM（无向&#x2F;双向），低层是贝叶斯置信网络（有向）</p>
+<li><p>Gibbs采样：<a
+href="https://blog.csdn.net/yujianmin1990/article/details/76723999">（来源：CSDN博客）</a></p>
+<figure>
+<img
+src="/Users/Lexie/Library/Application%20Support/typora-user-images/image-20211213151529541.png"
+alt="image-20211213151529541" />
+<figcaption aria-hidden="true">image-20211213151529541</figcaption>
+</figure></li>
+</ul></li>
+</ul></li>
+<li><p><strong>Deep Belief Networks
+（DBN）</strong>：最高一层是RBM（无向/双向），低层是贝叶斯置信网络（有向）</p>
 <ul>
-<li><p>使用层叠RBM组成深度神经网络</p>
-</li>
-<li><p>经典的DBN网络结构：由若干层 RBM 和一层 BP 组成的一种深层神经网络</p>
-</li>
-<li><p><a href="https://blog.csdn.net/lujiandong1/article/details/44347973">训练：</a></p>
+<li><p>使用层叠RBM组成深度神经网络</p></li>
+<li><p>经典的DBN网络结构：由若干层 RBM 和一层 BP
+组成的一种深层神经网络</p></li>
+<li><p><a
+href="https://blog.csdn.net/lujiandong1/article/details/44347973">训练：</a></p>
 <p>1.Greedy training：（逐层贪婪训练）</p>
-<p>分别单独无监督地训练每一层 RBM 网络，确保特征向量映射到不同特征空间时，都尽可能多地保留特征信息</p>
+<p>分别单独无监督地训练每一层 RBM
+网络，确保特征向量映射到不同特征空间时，都尽可能多地保留特征信息</p>
 <p>2.Fine tuning：</p>
-<p>在 DBN 的最后一层设置 BP 网络，接收 RBM 的输出特征向量作为它的输入特征向量，有监督地训练实体关系分类器。</p>
-<p>而且每一层 RBM 网络只能确保自身层内的权值对该层特征向量映射达到最优，并不是对整个 DBN 的特征向量映射达到最优，所以反向传播网络还将错误信息自顶向下传播至每一层 RBM，微调整个 DBN 网络。</p>
-<p>RBM 网络训练模型的过程可以看作对一个深层 BP 网络权值参数的初始化，使DBN 克服了 BP 网络因随机初始化权值参数而容易陷入局部最优和训练时间长的缺点</p>
-</li>
-</ul>
-</li>
-<li><p><strong>Deep Boltzmann Machines （DBM）</strong>：所有层间无向连接，同层神经元间无连接（RBM）</p>
+<p>在 DBN 的最后一层设置 BP 网络，接收 RBM
+的输出特征向量作为它的输入特征向量，有监督地训练实体关系分类器。</p>
+<p>而且每一层 RBM
+网络只能确保自身层内的权值对该层特征向量映射达到最优，并不是对整个 DBN
+的特征向量映射达到最优，所以反向传播网络还将错误信息自顶向下传播至每一层
+RBM，微调整个 DBN 网络。</p>
+<p>RBM 网络训练模型的过程可以看作对一个深层 BP
+网络权值参数的初始化，使DBN 克服了 BP
+网络因随机初始化权值参数而容易陷入局部最优和训练时间长的缺点</p></li>
+</ul></li>
+<li><p><strong>Deep Boltzmann Machines
+（DBM）</strong>：所有层间无向连接，同层神经元间无连接（RBM）</p>
 <ul>
-<li><p>高层表示由无标注数据建立（？），标注数据仅用来微调网络</p>
-</li>
+<li><p>高层表示由无标注数据建立（？），标注数据仅用来微调网络</p></li>
 <li><p>训练：（和DBN一样，但在训练时采用双方向（上下两层），整个网络相当于一个马尔科夫随机场模型，能量模型与RBM不一样）</p>
 <p>1.Pre-training：预训练一系列RBM</p>
 <p>2.Generative fine-tuning：极大似然的近似算法（？）</p>
-<p>3.Discriminative fine-tuning：BP</p>
-</li>
+<p>3.Discriminative fine-tuning：BP</p></li>
+</ul></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="3-2-序列数据的深度学习模型"><a href="#3-2-序列数据的深度学习模型" class="headerlink" title="3.2 序列数据的深度学习模型"></a>3.2 序列数据的深度学习模型</h3><p>预测序列的下一项，模糊了监督学习与非监督学习的差别</p>
+<h3 id="序列数据的深度学习模型">3.2 序列数据的深度学习模型</h3>
+<p>预测序列的下一项，模糊了监督学习与非监督学习的差别</p>
 <ul>
-<li>循环神经网络RNN<ul>
+<li>循环神经网络RNN
+<ul>
 <li>可以看作权值共享的多层、前向网络</li>
 <li>训练：权值一致的BP算法</li>
-</ul>
-</li>
-<li>长序列的循环神经网络<ul>
+</ul></li>
+<li>长序列的循环神经网络
+<ul>
 <li>GRU（Gated Recurrent Unit）</li>
 <li>LSTM</li>
 <li>BRNN（Bidirectional RNN）双向循环神经网络</li>
 <li>Deep RNNs</li>
-</ul>
-</li>
-<li>序列模型（sequence to sequence）<ul>
+</ul></li>
+<li>序列模型（sequence to sequence）
+<ul>
 <li>注意力模型</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h3 id="3-3-图像数据的深度学习模型"><a href="#3-3-图像数据的深度学习模型" class="headerlink" title="3.3 图像数据的深度学习模型"></a>3.3 图像数据的深度学习模型</h3><ul>
+<h3 id="图像数据的深度学习模型">3.3 图像数据的深度学习模型</h3>
+<ul>
 <li><p>卷积神经网络CNN</p>
 <ul>
 <li>局部连接</li>
 <li>权重共享</li>
-</ul>
-</li>
+</ul></li>
 <li><p>CNN实例</p>
-<p>ImageNet CNN（AlexNet）、VGG Net、Residual Network、Inception网络、GoogleLeNet</p>
-</li>
+<p>ImageNet CNN（AlexNet）、VGG Net、Residual
+Network、Inception网络、GoogleLeNet</p></li>
 <li><p>图像数据应用</p>
 <ul>
 <li>目标定位</li>
 <li>特征点检测</li>
 <li>目标检测</li>
 <li>人脸识别</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h3 id="3-4-生成式对抗网络GAN"><a href="#3-4-生成式对抗网络GAN" class="headerlink" title="3.4 生成式对抗网络GAN"></a>3.4 生成式对抗网络GAN</h3><ul>
-<li>GAN的理论与实现模型<ul>
+<h3 id="生成式对抗网络gan">3.4 生成式对抗网络GAN</h3>
+<ul>
+<li>GAN的理论与实现模型
+<ul>
 <li>基本原理：一个生成器Generator和一个判别器Discriminator</li>
-</ul>
-</li>
-<li>不同类型GAN<ul>
+</ul></li>
+<li>不同类型GAN
+<ul>
 <li>Typical</li>
 <li>Conditional</li>
 <li>Unsupervised Conditional</li>
-</ul>
-</li>
+</ul></li>
 <li>对抗学习</li>
 </ul>
-<h3 id="3-5-图卷积神经网络GCN"><a href="#3-5-图卷积神经网络GCN" class="headerlink" title="3.5 图卷积神经网络GCN"></a>3.5 图卷积神经网络GCN</h3><ul>
+<h3 id="图卷积神经网络gcn">3.5 图卷积神经网络GCN</h3>
+<ul>
 <li>基于谱的</li>
 <li>基于空间的</li>
 </ul>
-<h2 id="四、符号主义（知识智能）规则驱动的确定性智能"><a href="#四、符号主义（知识智能）规则驱动的确定性智能" class="headerlink" title="四、符号主义（知识智能）规则驱动的确定性智能"></a>四、符号主义（知识智能）规则驱动的确定性智能</h2><h3 id="4-1-命题逻辑"><a href="#4-1-命题逻辑" class="headerlink" title="4.1 命题逻辑"></a>4.1 命题逻辑</h3><h3 id="4-2-谓词逻辑"><a href="#4-2-谓词逻辑" class="headerlink" title="4.2 谓词逻辑"></a>4.2 谓词逻辑</h3><h3 id="4-3-模糊逻辑"><a href="#4-3-模糊逻辑" class="headerlink" title="4.3 模糊逻辑"></a>4.3 模糊逻辑</h3><h3 id="4-4-往年试题"><a href="#4-4-往年试题" class="headerlink" title="4.4 往年试题"></a>4.4 往年试题</h3><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211219174448697.png" alt="image-20211219174448697" style="zoom:50%;" />
-
+<h2
+id="四符号主义知识智能规则驱动的确定性智能">四、符号主义（知识智能）规则驱动的确定性智能</h2>
+<h3 id="命题逻辑">4.1 命题逻辑</h3>
+<h3 id="谓词逻辑">4.2 谓词逻辑</h3>
+<h3 id="模糊逻辑">4.3 模糊逻辑</h3>
+<h3 id="往年试题">4.4 往年试题</h3>
+<p><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211219174448697.png" alt="image-20211219174448697" style="zoom:50%;" /></p>
 <ul>
 <li><p>2019:</p>
 <ul>
 <li><p><strong>不到长城非好汉</strong></p>
 <p>很少有成绩好的学生特别喜欢玩游戏（模糊）</p>
-<p><strong>KB归结</strong></p>
-</li>
+<p><strong>KB归结</strong></p></li>
 <li><p><strong>forward chain证明7&lt;3+9</strong></p>
-<p><strong>设计A*启发式算法使归结次数最少</strong></p>
-</li>
-</ul>
-</li>
+<p>**设计A*启发式算法使归结次数最少**</p></li>
+</ul></li>
 <li><p>2018:</p>
 <ul>
 <li><p>一阶谓词：胜者为王败者为寇</p>
 <p>很少有成绩好的学生特别喜欢玩游戏（模糊）</p>
-<p><strong>KB归结</strong></p>
-</li>
+<p><strong>KB归结</strong></p></li>
 <li><p>一阶谓词逻辑转化为CNF</p>
 <p>构造一个一阶谓词逻辑的知识库KB和句子a，使得KB到a的归结过程永远不会停止</p>
-<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211218180039194.png" alt="image-20211218180039194" style="zoom:50%;" /></li>
-</ul>
-</li>
+<p><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211218180039194.png" alt="image-20211218180039194" style="zoom:50%;" /></p></li>
+</ul></li>
 <li><p>2016:</p>
 <ul>
 <li><p><strong>使用语义网络表达事实</strong></p>
 <p>一阶谓词：胜者为王败者为寇</p>
 <p>很少有成绩好的学生特别喜欢玩游戏（模糊）</p>
-<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211218175642752.png" alt="image-20211218175642752" style="zoom:50%;" /></li>
+<p><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211218175642752.png" alt="image-20211218175642752" style="zoom:50%;" /></p></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h2 id="五、行为主义（群体智能）交互驱动的涌现智能"><a href="#五、行为主义（群体智能）交互驱动的涌现智能" class="headerlink" title="五、行为主义（群体智能）交互驱动的涌现智能"></a>五、行为主义（群体智能）交互驱动的涌现智能</h2><h3 id="5-1-演化计算"><a href="#5-1-演化计算" class="headerlink" title="5.1 演化计算"></a>5.1 演化计算</h3><ul>
+<h2
+id="五行为主义群体智能交互驱动的涌现智能">五、行为主义（群体智能）交互驱动的涌现智能</h2>
+<h3 id="演化计算">5.1 演化计算</h3>
+<ul>
 <li><p>群体智能：无智能或仅具有相对简单智能的主体通过合作涌现出更高智能行为的特性</p>
 <ul>
 <li><p>集群智能：众多无智能的个体，通过相互之间的简单合作所表现出来的智能行为</p>
 <p>特点：分布式、随机性、自适应、正反馈、自发涌现</p>
 <ul>
-<li><p>蚁群优化算法（Ant Colony Optimization，ACO）<strong>（基本原理、算法过程、适用范围）</strong></p>
+<li><p>蚁群优化算法（Ant Colony
+Optimization，ACO）<strong>（基本原理、算法过程、适用范围）</strong></p>
 <p>思想：局部随机搜索+自增强</p>
 <p>缺点：收敛速度慢、容易陷入局部最优、<strong>对于解空间为连续的优化问题不适用</strong></p>
-<p><strong>旅行商问题的蚁群优化算法求解</strong></p>
-</li>
-<li><p>粒子群优化算法（Particle Swarm Optimization，PSO）<strong>（基本原理、算法过程、适用范围）</strong></p>
+<p><strong>旅行商问题的蚁群优化算法求解</strong></p></li>
+<li><p>粒子群优化算法（Particle Swarm
+Optimization，PSO）<strong>（基本原理、算法过程、适用范围）</strong></p>
 <p>基于种群寻优的启发式搜索算法</p>
 <p>优点：易于实现、可调参数较少、所需种群或微粒群规模较小、计算效率高、收敛速度快</p>
 <p>缺点：和其他演化计算算法类似，不保证收敛到全局最优解</p>
-<p><strong>适用于求解连续空间的优化问题</strong></p>
-</li>
+<p><strong>适用于求解连续空间的优化问题</strong></p></li>
+</ul></li>
+<li><p>博弈：具备一定智能的理性个体，按照某种机制行动，在群体层面体现出的智能</p></li>
+<li><p>众包：设计合适的机制，激励个体参与，从而实现单个个体不具备的社会智能</p></li>
+</ul></li>
 </ul>
-</li>
-<li><p>博弈：具备一定智能的理性个体，按照某种机制行动，在群体层面体现出的智能</p>
-</li>
-<li><p>众包：设计合适的机制，激励个体参与，从而实现单个个体不具备的社会智能</p>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="5-2-强化学习"><a href="#5-2-强化学习" class="headerlink" title="5.2 强化学习"></a>5.2 强化学习</h3><ul>
+<h3 id="强化学习">5.2 强化学习</h3>
+<ul>
 <li><p>强化学习</p>
 <ul>
 <li><p>区别于监督学习：</p>
 <ul>
 <li>监督学习是从<strong>标注</strong>中学习，使用的是<strong>指导性反馈</strong>（直接给出某个状态下的正确行为）</li>
 <li>强化学习是从<strong>交互</strong>中学习，使用的是<strong>评价性反馈</strong>（当智能体采取某个行为时给出一个评价）</li>
-</ul>
-</li>
-<li><p>两大特性（用于判断一个问题是否适用于RL求解）：试错搜索&amp;延迟奖励</p>
-</li>
+</ul></li>
+<li><p>两大特性（用于判断一个问题是否适用于RL求解）：试错搜索&amp;延迟奖励</p></li>
 <li><p>主体：智能体&amp;环境</p>
 <p>状态、行为、奖励</p>
-<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211214150357240.png" alt="image-20211214150357240" style="zoom:30%;" />
-</li>
+<p><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211214150357240.png" alt="image-20211214150357240" style="zoom:30%;" /></p></li>
 <li><p>要素：</p>
 <ul>
 <li>策略（状态到行为的映射）</li>
 <li>奖励（关于状态和行为的函数）</li>
 <li>价值（累积奖励）</li>
 <li>环境模型（刻画环境对行为的反馈）</li>
-</ul>
-</li>
-</ul>
-</li>
+</ul></li>
+</ul></li>
 <li><p>多臂赌博机（<strong>无状态</strong>的学习）</p>
 <ul>
-<li><p>固定次数获得期望累积奖励最大</p>
-</li>
-<li><p>利用和探索的balance</p>
-</li>
-<li><p>贪心策略和$\epsilon$ 贪心策略</p>
-</li>
+<li><p>固定次数获得期望累积奖励最大</p></li>
+<li><p>利用和探索的balance</p></li>
+<li><p>贪心策略和<span class="math inline">\(\epsilon\)</span>
+贪心策略</p></li>
 <li><p>行为估值方法</p>
 <ul>
-<li><p>根据历史观测样本的均值对$q_{*}(a)$ 进行估计</p>
-<p>$Q_t(a)&#x3D;\frac{\sum_{i&#x3D;1}^{t-1}R_i\cdot\mathbb{1}<em>{A_i&#x3D;a}}{\sum</em>{i&#x3D;1}^{t-1}\mathbb{1}_{A_i&#x3D;a}}$</p>
-<p>约定：当分母等于0时，$Q_t(a)&#x3D;0$</p>
-<p>​			当分母趋于无穷大时，$Q_t(a)$ 收敛到$q_{*}(a)$ </p>
-</li>
+<li><p>根据历史观测样本的均值对<span
+class="math inline">\(q_{*}(a)\)</span> 进行估计</p>
+<p><span
+class="math inline">\(Q_t(a)=\frac{\sum_{i=1}^{t-1}R_i\cdot\mathbb{1}_{A_i=a}}{\sum_{i=1}^{t-1}\mathbb{1}_{A_i=a}}\)</span></p>
+<p>约定：当分母等于0时，<span
+class="math inline">\(Q_t(a)=0\)</span></p>
+<p>​ 当分母趋于无穷大时，<span class="math inline">\(Q_t(a)\)</span>
+收敛到<span class="math inline">\(q_{*}(a)\)</span></p></li>
 <li><p>增量实现</p>
-<p>​	$Q_{n+1}&#x3D;Q_n+\frac{1}{n}[R_n-Q_n]$</p>
-</li>
+<p>​ <span
+class="math inline">\(Q_{n+1}=Q_n+\frac{1}{n}[R_n-Q_n]\)</span></p></li>
 <li><p>更一般公式</p>
-<p>$NewEstimate \leftarrow OldEstimate + StepSize[ Target-OldEstimate]$</p>
-</li>
-<li><p>非平稳情形下（$q_{<em>}(a)$ 是关于时间的函数）的行为估值：*<em>指数带权平均</em></em></p>
-<p>$Q_{n+1} &#x3D; (1-\alpha)^nQ_1+\sum_{i&#x3D;1}^n\alpha(1-\alpha)^{n-i}R_i$</p>
-</li>
+<p><span class="math inline">\(NewEstimate \leftarrow OldEstimate +
+StepSize[ Target-OldEstimate]\)</span></p></li>
+<li><p>非平稳情形下（<span class="math inline">\(q_{*}(a)\)</span>
+是关于时间的函数）的行为估值：<strong>指数带权平均</strong></p>
+<p><span class="math inline">\(Q_{n+1} =
+(1-\alpha)^nQ_1+\sum_{i=1}^n\alpha(1-\alpha)^{n-i}R_i\)</span></p></li>
 <li><p>更新步长的选择</p>
 <p>收敛条件：</p>
-<p>$\sum_{n&#x3D;1}^\infin \alpha_n(a)&#x3D;\infin$ 和 $\sum_{n&#x3D;1}^\infin \alpha_n^2(a)\lt\infin$</p>
-</li>
-</ul>
-</li>
+<p><span class="math inline">\(\sum_{n=1}^\infin
+\alpha_n(a)=\infin\)</span> 和 <span
+class="math inline">\(\sum_{n=1}^\infin
+\alpha_n^2(a)\lt\infin\)</span></p></li>
+</ul></li>
 <li><p>行为选择策略</p>
 <ul>
 <li><p>乐观初值法</p>
-<p>根据非平稳情形下的行为估值公式可以看出：估值一定程度上受到初始值$Q_1$的影响，统计学中，这叫做被初值偏置了。初始预估值可以用来根据先验信息提供奖励的期望标准。此外，如果将初始值调高，还有着鼓励模型在早期更多地进行探索的作用。以贪心策略为例，一个很高的初始预期值（称为乐观初值），会诱使模型去选择这个 action ，然而事实上 reward 要比估计值差很多，误差值$ [R_n-Q_n]$ 会是一个较大的负数，导致模型对这个 action “失望”，评价降低，下一次，模型就会去主动尝试其他 action 。通过这一方法，达到了鼓励模型在早期多做探索的作用。</p>
-<p>但是乐观初值法的适用面很窄，它仅适用于固定分布的问题。我们知道模型只会在早期多做探索，后期基本上仍是以 Exploiting 为主，对于非稳定的情况，必然需要时刻探索收集信息，此时乐观初值法就不再适用。</p>
-</li>
+<p>根据非平稳情形下的行为估值公式可以看出：估值一定程度上受到初始值<span
+class="math inline">\(Q_1\)</span>的影响，统计学中，这叫做被初值偏置了。初始预估值可以用来根据先验信息提供奖励的期望标准。此外，如果将初始值调高，还有着鼓励模型在早期更多地进行探索的作用。以贪心策略为例，一个很高的初始预期值（称为乐观初值），会诱使模型去选择这个
+action ，然而事实上 reward 要比估计值差很多，误差值$ [R_n-Q_n]$
+会是一个较大的负数，导致模型对这个 action
+“失望”，评价降低，下一次，模型就会去主动尝试其他 action
+。通过这一方法，达到了鼓励模型在早期多做探索的作用。</p>
+<p>但是乐观初值法的适用面很窄，它仅适用于固定分布的问题。我们知道模型只会在早期多做探索，后期基本上仍是以
+Exploiting
+为主，对于非稳定的情况，必然需要时刻探索收集信息，此时乐观初值法就不再适用。</p></li>
 <li><p>UCB行为选择策略（Upper Confidence Bound置信区间上限）</p>
-<p>如果重复执行某个 action ，一直返回一个低回报，那么必须要动态调整探索策略，适当调低再探索这个 action 的概率，而要尽可能多去探索<strong>“潜力”</strong>更高的 action 。<br>$$<br>A_t&#x3D;\arg\max_a\left[Q_t(a)+c\sqrt\frac{\ln t}{N_t(a)}\right]<br>$$<br>其中，$N_t(a)$ 为第 t 步之前 action a 被选中的次数，新加入的 $c\sqrt\frac{\ln t}{N_t(a)}$ 反应对于估值的不确定性。更广义地讲，其意义为方差。</p>
-<p>对于更一般的强化学习问题，UCB 算法会遇到一些难点，不再那么适用，比如非稳定问题、大状态空间问题等。</p>
-</li>
-<li><p>梯度赌博机算法<br>$$<br>\Pr{A_t&#x3D;a}&#x3D;\frac{e^{H_t(a)}}{\sum_{b&#x3D;1}^ke^{H_t(b)}}&#x3D;\pi_t(a)<br>$$<br>其中，$H_t(a)$ 是action a的偏好值，使用随机梯度上升法更新偏好值</p>
-<p>$H_{t+1}(A_t)&#x3D;H_t(A_t)+\alpha(R_t-\overline{R_t})(1-\pi_t(A_t))$</p>
-<p>$H_{t+1}(a)&#x3D;H_t(a)-\alpha(R_t-\overline{R_t})\pi_t(a),\quad\forall a \neq A_t$</p>
+<p>如果重复执行某个 action
+，一直返回一个低回报，那么必须要动态调整探索策略，适当调低再探索这个
+action 的概率，而要尽可能多去探索<strong>“潜力”</strong>更高的 action 。
+<span class="math display">\[
+A_t=\arg\max_a\left[Q_t(a)+c\sqrt\frac{\ln t}{N_t(a)}\right]
+\]</span> 其中，<span class="math inline">\(N_t(a)\)</span> 为第 t
+步之前 action a 被选中的次数，新加入的 <span
+class="math inline">\(c\sqrt\frac{\ln t}{N_t(a)}\)</span>
+反应对于估值的不确定性。更广义地讲，其意义为方差。</p>
+<p>对于更一般的强化学习问题，UCB
+算法会遇到一些难点，不再那么适用，比如非稳定问题、大状态空间问题等。</p></li>
+<li><p>梯度赌博机算法 <span class="math display">\[
+\Pr\{A_t=a\}=\frac{e^{H_t(a)}}{\sum_{b=1}^ke^{H_t(b)}}=\pi_t(a)
+\]</span> 其中，<span class="math inline">\(H_t(a)\)</span> 是action
+a的偏好值，使用随机梯度上升法更新偏好值</p>
+<p><span
+class="math inline">\(H_{t+1}(A_t)=H_t(A_t)+\alpha(R_t-\overline{R_t})(1-\pi_t(A_t))\)</span></p>
+<p><span
+class="math inline">\(H_{t+1}(a)=H_t(a)-\alpha(R_t-\overline{R_t})\pi_t(a),\quad\forall
+a \neq A_t\)</span></p>
 <p>更一般通式：</p>
-<p>$H_{t+1}(a)&#x3D;H_t(a)+\alpha(R_t-)(\mathbf{1}_{a&#x3D;A_t}-\pi_t(A_t))$</p>
+<p><span
+class="math inline">\(H_{t+1}(a)=H_t(a)+\alpha(R_t-)(\mathbf{1}_{a=A_t}-\pi_t(A_t))\)</span></p>
 <p>优化目标：第t轮的期望奖励大小</p>
-<p>$\mathbb{E}[R_t]&#x3D;\sum_{b}\pi_t(b)q_*(b)$</p>
-<p><a href="https://zhuanlan.zhihu.com/p/48315705">证明随机梯度上升的等价性：</a></p>
-<p>![image-20211214171114346](&#x2F;Users&#x2F;Lexie&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20211214171114346.png)</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>马尔可夫决策过程</p>
-</li>
+<p><span
+class="math inline">\(\mathbb{E}[R_t]=\sum_{b}\pi_t(b)q_*(b)\)</span></p>
+<p><a
+href="https://zhuanlan.zhihu.com/p/48315705">证明随机梯度上升的等价性：</a></p>
+<figure>
+<img
+src="/Users/Lexie/Library/Application%20Support/typora-user-images/image-20211214171114346.png"
+alt="image-20211214171114346" />
+<figcaption aria-hidden="true">image-20211214171114346</figcaption>
+</figure></li>
+</ul></li>
+</ul></li>
+<li><p>马尔可夫决策过程</p></li>
 <li><p>策略学习</p>
 <ul>
-<li><p>动态规划方法</p>
-</li>
-<li><p>蒙特卡洛方法</p>
-</li>
-<li><p>时序差分方法</p>
-</li>
+<li><p>动态规划方法</p></li>
+<li><p>蒙特卡洛方法</p></li>
+<li><p>时序差分方法</p></li>
 <li><p>参数近似方法</p>
-<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211222111715426.png" alt="image-20211222111715426" style="zoom:50%;" /></li>
+<p><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211222111715426.png" alt="image-20211222111715426" style="zoom:50%;" /></p></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h3 id="5-3-博弈基础"><a href="#5-3-博弈基础" class="headerlink" title="5.3 博弈基础"></a>5.3 博弈基础</h3><ul>
-<li><p>局中人Player：在博弈中有权决定自己<strong>行动方案</strong>的博弈参加者</p>
-</li>
-<li><p>策略：博弈中可供局中人选择的<strong>行动方案</strong></p>
-</li>
-<li><p>策略集合Strategy Set：参加博弈的局中人$i$ 的策略集合$A_i$</p>
-</li>
-<li><p>局势：所有局中人的策略形成的策略组，记作$S	$ </p>
+<h3 id="博弈基础">5.3 博弈基础</h3>
 <ul>
-<li>多人博弈中，假定有$n$ 个局中人，每个局中人从自己的策略集合$A_i$ 中选择一个策略$s_i$ ，这样就形成了	一个局势$S&#x3D;{s_1,s_2,…,s_n}$</li>
-</ul>
-</li>
+<li><p>局中人Player：在博弈中有权决定自己<strong>行动方案</strong>的博弈参加者</p></li>
+<li><p>策略：博弈中可供局中人选择的<strong>行动方案</strong></p></li>
+<li><p>策略集合Strategy Set：参加博弈的局中人<span
+class="math inline">\(i\)</span> 的策略集合<span
+class="math inline">\(A_i\)</span></p></li>
+<li><p>局势：所有局中人的策略形成的策略组，记作$S $</p>
+<ul>
+<li>多人博弈中，假定有<span class="math inline">\(n\)</span>
+个局中人，每个局中人从自己的策略集合<span
+class="math inline">\(A_i\)</span> 中选择一个策略<span
+class="math inline">\(s_i\)</span> ，这样就形成了 一个局势<span
+class="math inline">\(S=\{s_1,s_2,...,s_n\}\)</span></li>
+</ul></li>
 <li><p>效用函数Payoff：</p>
 <ul>
-<li>通常用$U$ 表示</li>
+<li>通常用<span class="math inline">\(U\)</span> 表示</li>
 <li>每个参与博弈的局中人，都有一个相应的效用函数</li>
 <li>静态博弈中，一般是局势的函数</li>
 <li>动态博弈中，可能受其他因素影响，如：时间</li>
-</ul>
-</li>
+</ul></li>
 <li><p>纳什均衡</p>
 <ul>
 <li><p>最佳应对：</p>
-<p><strong>针对</strong>局中人2的策略$t$，若局中人1用策略$s$产生的收益大于或等于其任何其他策略，</p>
-<p>则称策略$s$是局中人1对局中人2的策略的$t$的最佳应对</p>
-</li>
+<p><strong>针对</strong>局中人2的策略<span
+class="math inline">\(t\)</span>，若局中人1用策略<span
+class="math inline">\(s\)</span>产生的收益大于或等于其任何其他策略，</p>
+<p>则称策略<span
+class="math inline">\(s\)</span>是局中人1对局中人2的策略的<span
+class="math inline">\(t\)</span>的最佳应对</p></li>
 <li><p>占优策略：</p>
 <p>如果一个局中人的某个策略<strong>对其他局中人</strong>的<strong>任何策略</strong>都是最佳应对，</p>
-<p>那么这个策略就是该局中人的占优策略</p>
-</li>
+<p>那么这个策略就是该局中人的占优策略</p></li>
 <li><p>纳什均衡（僵局，谁动谁吃亏）（石头剪刀布没有<strong>纯</strong>策略的纳什均衡，但有混合）</p>
 <p>如果一个局势下，<strong>每个</strong>局中人的策略都是相对其他局中人<strong>当前策略</strong>的最佳应对，</p>
-<p>则称该局势是一个纳什均衡</p>
-</li>
+<p>则称该局势是一个纳什均衡</p></li>
 <li><p>混合策略</p>
-<p>每个局中人以某个<strong>概率分布</strong>在其策略集合中选择策略</p>
-</li>
+<p>每个局中人以某个<strong>概率分布</strong>在其策略集合中选择策略</p></li>
 <li><p>混合策论下的纳什均衡</p>
-<p>必要条件：给定其他局中人的策略选择概率分布的情况下，当前局中人选择任意一个（纯）策略获得的期望效用相等</p>
-</li>
+<p>必要条件：给定其他局中人的策略选择概率分布的情况下，当前局中人选择任意一个（纯）策略获得的期望效用相等</p></li>
 <li><p>纳什定理</p>
-<p>任何<strong>有限</strong>博弈都至少存在一个纳什均衡（不一定是纯策略的）（寻找博弈的纳什均衡是困难的）</p>
-</li>
+<p>任何<strong>有限</strong>博弈都至少存在一个纳什均衡（不一定是纯策略的）（寻找博弈的纳什均衡是困难的）</p></li>
 <li><p>帕累托最优</p>
 <ul>
 <li>对于一组策略选择（局势）</li>
-<li>若不存在其他策略选择使<strong>所有</strong>参与者得到至少和目前一样高的回报，且<strong>至少一个</strong>参与者会得到严格<strong>较高</strong>的回报 </li>
+<li>若不存在其他策略选择使<strong>所有</strong>参与者得到至少和目前一样高的回报，且<strong>至少一个</strong>参与者会得到严格<strong>较高</strong>的回报</li>
 <li>则这组策略选择为帕累托最优</li>
-</ul>
-</li>
+</ul></li>
 <li><p>社会最优</p>
-<p>使参与者的回报之和最大的策略选择（局势）</p>
-</li>
-</ul>
-</li>
+<p>使参与者的回报之和最大的策略选择（局势）</p></li>
+</ul></li>
 <li><p>机制设计</p>
-<p>设计一个博弈，使其达到预期结果（比如实现社会最优）</p>
-</li>
+<p>设计一个博弈，使其达到预期结果（比如实现社会最优）</p></li>
 <li><p>案例：田忌赛马</p>
 <table>
 <thead>
-<tr>
-<th align="left"></th>
+<tr class="header">
+<th style="text-align: left;"></th>
 <th>第一场</th>
 <th>第二场</th>
 <th>第三场</th>
 <th>获胜方</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left">齐王</td>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">齐王</td>
 <td>上</td>
 <td>中</td>
 <td>下</td>
 <td></td>
 </tr>
-<tr>
-<td align="left">田忌1</td>
+<tr class="even">
+<td style="text-align: left;">田忌1</td>
 <td>上</td>
 <td>中</td>
 <td>下</td>
 <td>齐王</td>
 </tr>
-<tr>
-<td align="left">田忌2</td>
+<tr class="odd">
+<td style="text-align: left;">田忌2</td>
 <td>上</td>
 <td>下</td>
 <td>中</td>
 <td>齐王</td>
 </tr>
-<tr>
-<td align="left">田忌3</td>
+<tr class="even">
+<td style="text-align: left;">田忌3</td>
 <td>中</td>
 <td>上</td>
 <td>下</td>
 <td>齐王</td>
 </tr>
-<tr>
-<td align="left">田忌4</td>
+<tr class="odd">
+<td style="text-align: left;">田忌4</td>
 <td>中</td>
 <td>下</td>
 <td>上</td>
 <td>齐王</td>
 </tr>
-<tr>
-<td align="left"><strong>田忌5</strong></td>
+<tr class="even">
+<td style="text-align: left;"><strong>田忌5</strong></td>
 <td><strong>下</strong></td>
 <td><strong>上</strong></td>
 <td><strong>中</strong></td>
 <td><strong>田忌</strong></td>
 </tr>
-<tr>
-<td align="left">田忌6</td>
+<tr class="odd">
+<td style="text-align: left;">田忌6</td>
 <td>下</td>
 <td>中</td>
 <td>上</td>
 <td>齐王</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <ul>
-<li><p>局中人：田忌、齐王</p>
-</li>
-<li><p>策略集合：田忌的策略集合$A_田&#x3D;{上中下、上下中、中上下、中下上、下上中、下中上}$</p>
-<p>​					齐王的策略集合$A_齐&#x3D;{上中下、上下中、中上下、中下上、下上中、下中上}$</p>
-</li>
+<li><p>局中人：田忌、齐王</p></li>
+<li><p>策略集合：田忌的策略集合<span
+class="math inline">\(A_田=\{上中下、上下中、中上下、中下上、下上中、下中上\}\)</span></p>
+<p>​ 齐王的策略集合<span
+class="math inline">\(A_齐=\{上中下、上下中、中上下、中下上、下上中、下中上\}\)</span></p></li>
 <li><p>效用矩阵</p>
 <p>田忌</p>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th></th>
 <th>上中下</th>
 <th>上下中</th>
@@ -988,7 +1227,8 @@
 <th>下中上</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>上中下</td>
 <td>3，-3</td>
 <td>1，-1</td>
@@ -997,7 +1237,7 @@
 <td>-1，1</td>
 <td>1，-1</td>
 </tr>
-<tr>
+<tr class="even">
 <td>上下中</td>
 <td>1，-1</td>
 <td>3，-3</td>
@@ -1006,7 +1246,7 @@
 <td>1，-1</td>
 <td>-1，1</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>中上下</td>
 <td>1，-1</td>
 <td>-1，1</td>
@@ -1015,7 +1255,7 @@
 <td>1，-1</td>
 <td>1，-1</td>
 </tr>
-<tr>
+<tr class="even">
 <td>中下上</td>
 <td>-1，1</td>
 <td>1，-1</td>
@@ -1024,7 +1264,7 @@
 <td>1，-1</td>
 <td>1，-1</td>
 </tr>
-<tr>
+<tr class="odd">
 <td>下上中</td>
 <td>1，-1</td>
 <td>1，-1</td>
@@ -1033,7 +1273,7 @@
 <td>3，-3</td>
 <td>1，-1</td>
 </tr>
-<tr>
+<tr class="even">
 <td>下中上</td>
 <td>1，-1</td>
 <td>1，-1</td>
@@ -1042,200 +1282,229 @@
 <td>1，-1</td>
 <td>3，-3</td>
 </tr>
-</tbody></table>
-</li>
+</tbody>
+</table></li>
 <li><p>混合策略纳什均衡解&amp;期望得分</p>
-<p>假设齐王选择上述六个策略的概率依次为：$p_1,p_2,p_3,p_4,p_5,p_6$</p>
-<p>​		田忌选择上述六个策略的概率依次为：$q_1,q_2,q_3,q_4,q_5,q_6$</p>
+<p>假设齐王选择上述六个策略的概率依次为：<span
+class="math inline">\(p_1,p_2,p_3,p_4,p_5,p_6\)</span></p>
+<p>​ 田忌选择上述六个策略的概率依次为：<span
+class="math inline">\(q_1,q_2,q_3,q_4,q_5,q_6\)</span></p>
 <p>假设齐王的策略分布不变，田忌策略选择的效用为：</p>
-<p>​		上中下：$-3\times p_1 -1\times p_2 -1\times p_3 +1\times p_4 -1\times p_5 -1\times p_6$</p>
-<p>​		上下中：$-1\times p_1 -3\times p_2 +1\times p_3 -1\times p_4 -1\times p_5 -1\times p_6$</p>
-<p>​		中上下：$-1\times p_1 -1\times p_2 -3\times p_3 -1\times p_4 -1\times p_5 +1\times p_6$</p>
-<p>​		中下上：$-1\times p_1 -1\times p_2 -1\times p_3 -3\times p_4 +1\times p_5 -1\times p_6$</p>
-<p>​		下上中：$1\times p_1 -1\times p_2 -1\times p_3 -1\times p_4 -3\times p_5 -1\times p_6$</p>
-<p>​		下中上：$-1\times p_1 +1\times p_2 -1\times p_3 -1\times p_4 -1\times p_5 -3\times p_6$</p>
-<p>令田忌的各个策略的效用相等，且$p_1+p_2+p_3+p_4+p_5+p_6&#x3D;1$</p>
-<p>得到<br>$$<br>\begin{bmatrix}<br>p_1\<br>p_2\<br>p_3\<br>p_4\<br>p_5\<br>p_6<br>\end{bmatrix}&#x3D;<br>p_1<br>\begin{bmatrix}<br>1\<br>-1\<br>-1\<br>1\<br>1\<br>-1<br>\end{bmatrix}+<br>\frac{1}{3}<br>\begin{bmatrix}<br>0\<br>1\<br>1\<br>0\<br>0\<br>1<br>\end{bmatrix}<br>$$<br>同理可得<br>$$<br>\begin{bmatrix}q_1\q_2\q_3\q_4\q_5\q_6\end{bmatrix}<br>&#x3D;q_1\begin{bmatrix}1\-1\-1\1\1\-1\end{bmatrix}<br>+\frac{1}{3}\begin{bmatrix}0\1\1\0\0\1\end{bmatrix}<br>$$</p>
-</li>
+<p>​ 上中下：<span class="math inline">\(-3\times p_1 -1\times p_2
+-1\times p_3 +1\times p_4 -1\times p_5 -1\times p_6\)</span></p>
+<p>​ 上下中：<span class="math inline">\(-1\times p_1 -3\times p_2
++1\times p_3 -1\times p_4 -1\times p_5 -1\times p_6\)</span></p>
+<p>​ 中上下：<span class="math inline">\(-1\times p_1 -1\times p_2
+-3\times p_3 -1\times p_4 -1\times p_5 +1\times p_6\)</span></p>
+<p>​ 中下上：<span class="math inline">\(-1\times p_1 -1\times p_2
+-1\times p_3 -3\times p_4 +1\times p_5 -1\times p_6\)</span></p>
+<p>​ 下上中：<span class="math inline">\(1\times p_1 -1\times p_2
+-1\times p_3 -1\times p_4 -3\times p_5 -1\times p_6\)</span></p>
+<p>​ 下中上：<span class="math inline">\(-1\times p_1 +1\times p_2
+-1\times p_3 -1\times p_4 -1\times p_5 -3\times p_6\)</span></p>
+<p>令田忌的各个策略的效用相等，且<span
+class="math inline">\(p_1+p_2+p_3+p_4+p_5+p_6=1\)</span></p>
+<p>得到 <span class="math display">\[
+\begin{bmatrix}
+p_1\\
+p_2\\
+p_3\\
+p_4\\
+p_5\\
+p_6
+\end{bmatrix}=
+p_1
+\begin{bmatrix}
+1\\
+-1\\
+-1\\
+1\\
+1\\
+-1
+\end{bmatrix}+
+\frac{1}{3}
+\begin{bmatrix}
+0\\
+1\\
+1\\
+0\\
+0\\
+1
+\end{bmatrix}
+\]</span> 同理可得 <span class="math display">\[
+\begin{bmatrix}q_1\\q_2\\q_3\\q_4\\q_5\\q_6\end{bmatrix}
+=q_1\begin{bmatrix}1\\-1\\-1\\1\\1\\-1\end{bmatrix}
++\frac{1}{3}\begin{bmatrix}0\\1\\1\\0\\0\\1\end{bmatrix}
+\]</span></p></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<p>将$P、Q$ 代入效用的六个式子中任意一个，得到田忌、齐王期望得分分别为-1、1。		</p>
+<p>将<span class="math inline">\(P、Q\)</span>
+代入效用的六个式子中任意一个，得到田忌、齐王期望得分分别为-1、1。</p>
 <ul>
 <li><p>两个经济学的应用</p>
 <ul>
 <li><p>拍卖Bargaining：多个卖家、一个买家</p>
 <ul>
-<li><p>增价拍卖（英式）</p>
-</li>
-<li><p>减价拍卖（荷式）</p>
-</li>
+<li><p>增价拍卖（英式）</p></li>
+<li><p>减价拍卖（荷式）</p></li>
 <li><p>首价密封报价拍卖</p>
 <p>纳什均衡：每个竞拍者的报价低于其对商品的估价</p>
-<p>​					最优报价低于估价</p>
-<p>​					竞拍者越多，报价越接近于估价</p>
-</li>
+<p>​ 最优报价低于估价</p>
+<p>​ 竞拍者越多，报价越接近于估价</p></li>
 <li><p>次价密封报价拍卖</p>
-<p>纳什均衡：每个竞拍者会倾向于采用其对商品的估价进行报价</p>
-</li>
-<li><p>双方出价</p>
-</li>
-</ul>
-</li>
+<p>纳什均衡：每个竞拍者会倾向于采用其对商品的估价进行报价</p></li>
+<li><p>双方出价</p></li>
+</ul></li>
 <li><p>讨价Auction：一个卖家、多个买家</p>
 <ul>
 <li>讨价的对象：双方对商品估价之差</li>
 <li>take-it-or-leave-it</li>
 <li>take-it-or-counteroffer</li>
+</ul></li>
+</ul></li>
+<li><p>海盗分金币</p></li>
 </ul>
-</li>
-</ul>
-</li>
-<li><p>海盗分金币</p>
-</li>
-</ul>
-<h3 id="5-4-博弈应用"><a href="#5-4-博弈应用" class="headerlink" title="5.4 博弈应用"></a>5.4 博弈应用</h3><ul>
+<h3 id="博弈应用">5.4 博弈应用</h3>
+<ul>
 <li><p>maxmin策略</p>
-<p>最大化自己最坏情况时的效用<br>$$<br>\arg\max_{s_i}\min_{s_{-i}} u_i(s_i,s_{-i})<br>$$<br>最小化损失，控制风险，预防其他局中人的不理性给自己带来损失，把对方往坏了想</p>
-</li>
+<p>最大化自己最坏情况时的效用 <span class="math display">\[
+\arg\max_{s_i}\min_{s_{-i}} u_i(s_i,s_{-i})
+\]</span>
+最小化损失，控制风险，预防其他局中人的不理性给自己带来损失，把对方往坏了想</p></li>
 <li><p>minmax策略</p>
-<p>最小化对手的最大收益<br>$$<br>\arg\min_{s_i}\max_{s_j} u_j(s_i,s_j)<br>$$</p>
-</li>
-<li><p>零和博弈$\sum 收益 &#x3D;0$ 情况下：</p>
+<p>最小化对手的最大收益 <span class="math display">\[
+\arg\min_{s_i}\max_{s_j} u_j(s_i,s_j)
+\]</span></p></li>
+<li><p>零和博弈<span class="math inline">\(\sum 收益 =0\)</span>
+情况下：</p>
 <ul>
 <li>minmax和maxmin是对偶的</li>
 <li>minmax策略和maxmin策略等价于纳什均衡策略</li>
-</ul>
-</li>
+</ul></li>
 <li><p>匹配市场</p>
 <ul>
-<li><p>完全匹配</p>
-</li>
+<li><p>完全匹配</p></li>
 <li><p>受限集</p>
-<p>设$S$ 为二部图某部节点集的子集，</p>
-<p>$N(S)$ 是$S$ 的邻居节点集合（来自另一部）</p>
-<p>如果$|N(S)|&lt;|S|$ ，则称$S$ 为受限集</p>
-<p>受限集总是成对出现</p>
-</li>
+<p>设<span class="math inline">\(S\)</span>
+为二部图某部节点集的子集，</p>
+<p><span class="math inline">\(N(S)\)</span> 是<span
+class="math inline">\(S\)</span> 的邻居节点集合（来自另一部）</p>
+<p>如果<span class="math inline">\(|N(S)|&lt;|S|\)</span> ，则称<span
+class="math inline">\(S\)</span> 为受限集</p>
+<p>受限集总是成对出现</p></li>
 <li><p>匹配定理</p>
-<p>对于左右两部节点数相同的二部图，如果其不存在完全匹配，那么该二部图一定包含一个受限集</p>
-</li>
+<p>对于左右两部节点数相同的二部图，如果其不存在完全匹配，那么该二部图一定包含一个受限集</p></li>
 <li><p>最优匹配</p>
 <ul>
 <li>匹配的效用：成功匹配的估价之和</li>
 <li>最优匹配：效用最大的匹配</li>
-</ul>
-</li>
+</ul></li>
 <li><p>市场结清价格</p>
 <ul>
 <li><p>给定买方报价的情况下</p>
 <p>如果卖方的某种价格使得对应的买方偏好图中存在<strong>完全匹配</strong>（无受限集）</p>
-<p>则称<strong>卖方</strong>的这组价格为市场结清价格</p>
-</li>
-<li><p>寻找市场结清价格的过程：找一个买方受限集$S$，让$N(S)$中的每个卖家价格+1</p>
-</li>
-<li><p>价格能够引导市场优化配置</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
+<p>则称<strong>卖方</strong>的这组价格为市场结清价格</p></li>
+<li><p>寻找市场结清价格的过程：找一个买方受限集<span
+class="math inline">\(S\)</span>，让<span
+class="math inline">\(N(S)\)</span>中的每个卖家价格+1</p></li>
+<li><p>价格能够引导市场优化配置</p></li>
+</ul></li>
+</ul></li>
 <li><p>中介市场</p>
 <ul>
 <li><strong>中介与中介的博弈</strong></li>
-<li>均衡态<ul>
+<li>均衡态
+<ul>
 <li>竞争不充分：中介垄断价格</li>
 <li>竞争充分：中介收益趋近于0</li>
-</ul>
-</li>
-</ul>
-</li>
+</ul></li>
+</ul></li>
 <li><p>议价权</p>
 <ul>
-<li><p>找朋友游戏</p>
-</li>
+<li><p>找朋友游戏</p></li>
 <li><p>稳定结局</p>
-<p>未参与配对的边两端获得的收益之和大于等于1</p>
-</li>
+<p>未参与配对的边两端获得的收益之和大于等于1</p></li>
 <li><p>纳什议价解</p>
 <ul>
-<li><p>剩余价值$s&#x3D;1-x-y$</p>
-</li>
-<li><p>A的收益：$x+\frac{s}{2}&#x3D;\frac{1+x-y}{2}$</p>
-</li>
-<li><p>B的收益：$y+\frac{s}{2}&#x3D;\frac{1+y-x}{2}$</p>
-</li>
-</ul>
-</li>
+<li><p>剩余价值<span class="math inline">\(s=1-x-y\)</span></p></li>
+<li><p>A的收益：<span
+class="math inline">\(x+\frac{s}{2}=\frac{1+x-y}{2}\)</span></p></li>
+<li><p>B的收益：<span
+class="math inline">\(y+\frac{s}{2}=\frac{1+y-x}{2}\)</span></p></li>
+</ul></li>
 <li><p>均衡结局</p>
 <ul>
-<li><p>参与配对的边都满足纳什议价解</p>
-</li>
-<li><p>均衡结局一定是稳定结局</p>
-</li>
+<li><p>参与配对的边都满足纳什议价解</p></li>
+<li><p>均衡结局一定是稳定结局</p></li>
+</ul></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="六、统计中的因果推断"><a href="#六、统计中的因果推断" class="headerlink" title="六、统计中的因果推断"></a>六、统计中的因果推断</h2><h3 id="6-1-基础知识"><a href="#6-1-基础知识" class="headerlink" title="6.1 基础知识"></a>6.1 基础知识</h3><ul>
+<h2 id="六统计中的因果推断">六、统计中的因果推断</h2>
+<h3 id="基础知识">6.1 基础知识</h3>
+<ul>
 <li><p>辛普森悖论：</p>
 <ul>
-<li><p>总体数据上得出的统计结论和分组数据上的统计结论相反</p>
-</li>
-<li><p>原因：数据背后的<strong>产生机制</strong>不同</p>
-</li>
-</ul>
-</li>
-<li><p>结构因果模型SCM：Structural Causal Model 用于描述<strong>数据的产生机制</strong></p>
+<li><p>总体数据上得出的统计结论和分组数据上的统计结论相反</p></li>
+<li><p>原因：数据背后的<strong>产生机制</strong>不同</p></li>
+</ul></li>
+<li><p>结构因果模型SCM：Structural Causal Model
+用于描述<strong>数据的产生机制</strong></p>
 <ul>
-<li><p>外生变量集合:𝑼，不依赖于其他变量</p>
-</li>
-<li><p>内生变量集合:𝑽，至少依赖一个变量</p>
-</li>
+<li><p>外生变量集合:𝑼，不依赖于其他变量</p></li>
+<li><p>内生变量集合:𝑽，至少依赖一个变量</p></li>
 <li><p>确定内生变量取值的函数集合:𝑭</p>
-<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211222112154959.png" alt="image-20211222112154959" style="zoom:30%;" /></li>
-</ul>
-</li>
+<p><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211222112154959.png" alt="image-20211222112154959" style="zoom:30%;" /></p></li>
+</ul></li>
 <li><p>因果模型图</p>
 <ul>
-<li><p>有向无环图DAG，节点：变量，边：变量之间的依赖关系</p>
-</li>
-<li><p>刻画了变量间的关系，但没有给出依赖关系的具体形式$f_Z$</p>
-</li>
-<li><p>乘积分解法则：$P(x_1,x_2,…,x_n)&#x3D;\prod_iP(x_i|pa_i)$，其中$pa_i$ 表示变量$x_i$ 的所有父节点</p>
-<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211222112542512.png" alt="image-20211222112542512" style="zoom:30%;" />
-</li>
+<li><p>有向无环图DAG，节点：变量，边：变量之间的依赖关系</p></li>
+<li><p>刻画了变量间的关系，但没有给出依赖关系的具体形式<span
+class="math inline">\(f_Z\)</span></p></li>
+<li><p>乘积分解法则：<span
+class="math inline">\(P(x_1,x_2,...,x_n)=\prod_iP(x_i|pa_i)\)</span>，其中<span
+class="math inline">\(pa_i\)</span> 表示变量<span
+class="math inline">\(x_i\)</span> 的所有父节点</p>
+<p><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211222112542512.png" alt="image-20211222112542512" style="zoom:30%;" /></p></li>
 <li><p>独立性</p>
 <ul>
 <li>链结构</li>
 <li>分叉结构</li>
 <li>对撞结构</li>
-</ul>
-</li>
+</ul></li>
 <li><p>d-分离：用于确定因果模型图中任意一对节点是否独立</p>
 <p>一条路径p会被一组节点Z阻断，当且仅当：</p>
 <ul>
-<li>路径p包含链结构$A\rightarrow B \rightarrow C$ 或分叉结构$A\leftarrow B \rightarrow C$，且中间节点B在Z中</li>
-<li><strong>或</strong>路径p包含一个对撞结构$A\rightarrow B \leftarrow C$ ，且对撞节点B及其子孙都不在Z中</li>
+<li>路径p包含链结构<span class="math inline">\(A\rightarrow B
+\rightarrow C\)</span> 或分叉结构<span class="math inline">\(A\leftarrow
+B \rightarrow C\)</span>，且中间节点B在Z中</li>
+<li><strong>或</strong>路径p包含一个对撞结构<span
+class="math inline">\(A\rightarrow B \leftarrow C\)</span>
+，且对撞节点B及其子孙都不在Z中</li>
 </ul>
-<p>如果一组节点Z阻断了X和Y间的<strong>每一条路径</strong>，则X和Y在Z的条件下是d-分离的，即$X\perp Y \vert Z$</p>
-</li>
+<p>如果一组节点Z阻断了X和Y间的<strong>每一条路径</strong>，则X和Y在Z的条件下是d-分离的，即<span
+class="math inline">\(X\perp Y \vert Z\)</span></p></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h3 id="6-2-干预"><a href="#6-2-干预" class="headerlink" title="6.2 干预"></a>6.2 干预</h3><ul>
+<h3 id="干预">6.2 干预</h3>
+<ul>
 <li><p>干预与校正公式</p>
 <ul>
-<li><p>将变量固定为某个值，限制该变量随其他变量变化的自然趋势，记为 $do(X&#x3D;x)$ ，在因果模型图中取消所有指向X的边</p>
-</li>
-<li><p>校正公式（从观测数据中直接估计干预效果）<strong>（Z是X父节点）</strong><br>$$<br>\begin{align}<br>P(Y&#x3D;y\vert do(X&#x3D;x))&amp;&#x3D;P_m(Y&#x3D;y\vert X&#x3D;x)<br>\<br>&amp;&#x3D;\sum_ZP_m(Y&#x3D;y\vert X&#x3D;x,Z&#x3D;z)P_m(Z&#x3D;z\vert X&#x3D;x)<br>\<br>&amp;&#x3D;\sum_ZP_m(Y&#x3D;y\vert X&#x3D;x,Z&#x3D;z)P_m(Z&#x3D;z)<br>\<br>&amp;&#x3D;\sum_ZP(Y&#x3D;y\vert X&#x3D;x,Z&#x3D;z)P(Z&#x3D;z)</p>
-<p>\end{align}<br>$$</p>
-</li>
-<li><p>因果效应规则：舍变量X得父节点集合为PA，则X对Y的因果效应为（上式将Z换成PA）</p>
-</li>
-</ul>
-</li>
+<li><p>将变量固定为某个值，限制该变量随其他变量变化的自然趋势，记为
+<span class="math inline">\(do(X=x)\)</span>
+，在因果模型图中取消所有指向X的边</p></li>
+<li><p>校正公式（从观测数据中直接估计干预效果）<strong>（Z是X父节点）</strong>
+$$ <span class="math display">\[\begin{align}
+P(Y=y\vert do(X=x))&amp;=P_m(Y=y\vert X=x)
+\\
+&amp;=\sum_ZP_m(Y=y\vert X=x,Z=z)P_m(Z=z\vert X=x)
+\\
+&amp;=\sum_ZP_m(Y=y\vert X=x,Z=z)P_m(Z=z)
+\\
+&amp;=\sum_ZP(Y=y\vert X=x,Z=z)P(Z=z)
+
+\end{align}\]</span> $$</p></li>
+<li><p>因果效应规则：舍变量X得父节点集合为PA，则X对Y的因果效应为（上式将Z换成PA）</p></li>
+</ul></li>
 <li><p>后门准则（父节点变量不可观测时）</p>
 <ul>
 <li><p>给定因果模型图中一对有序变量（X，Y），若变量集合Z满足：</p>
@@ -1243,12 +1512,12 @@
 <li>Z阻断了X与Y之间的每条含有<strong>指向X</strong>的路径</li>
 <li>Z中没有X的后代节点</li>
 </ul>
-<p>则称Z满足关于（X，Y）的后门准则</p>
-</li>
-<li><p>后门校正<strong>（Z是后门）</strong><br>$$<br>P(Y&#x3D;y \vert do(X&#x3D;x))&#x3D;\sum_ZP(Y&#x3D;y\vert X&#x3D;x,Z&#x3D;z)P(Z&#x3D;z)<br>$$</p>
-</li>
-</ul>
-</li>
+<p>则称Z满足关于（X，Y）的后门准则</p></li>
+<li><p>后门校正<strong>（Z是后门）</strong> <span
+class="math display">\[
+P(Y=y \vert do(X=x))=\sum_ZP(Y=y\vert X=x,Z=z)P(Z=z)
+\]</span></p></li>
+</ul></li>
 <li><p>前门准则（后门准则也不满足时）</p>
 <ul>
 <li><p>给定因果模型图中一对有序变量（X，Y），若变量集合Z满足：</p>
@@ -1257,235 +1526,269 @@
 <li>X到Z没有后门路径</li>
 <li>所有Z到Y的后门路径都被X阻断</li>
 </ul>
-<p>则称Z满足关于（X，Y）的前门准则</p>
-</li>
-<li><p>前门校正<br>$$<br>P(Y&#x3D;y\vert do(X&#x3D;x))&#x3D;\sum_ZP(Z&#x3D;z\vert X&#x3D;x)\sum_{x’}P(Y&#x3D;y\vert X&#x3D;x’)P(X&#x3D;x’)<br>$$</p>
-</li>
+<p>则称Z满足关于（X，Y）的前门准则</p></li>
+<li><p>前门校正 <span class="math display">\[
+P(Y=y\vert do(X=x))=\sum_ZP(Z=z\vert X=x)\sum_{x&#39;}P(Y=y\vert
+X=x&#39;)P(X=x&#39;)
+\]</span></p></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h3 id="6-3-反事实"><a href="#6-3-反事实" class="headerlink" title="6.3 反事实"></a>6.3 反事实</h3><ul>
+<h3 id="反事实">6.3 反事实</h3>
+<ul>
 <li><p>确定性反事实计算</p>
-<p>给定观测$E&#x3D;e$ ，反事实$Y_{X&#x3D;x}$ 的三步法计算：</p>
+<p>给定观测<span class="math inline">\(E=e\)</span> ，反事实<span
+class="math inline">\(Y_{X=x}\)</span> 的三步法计算：</p>
 <ul>
-<li>溯因：用观测$E&#x3D;e$ <strong>（内生变量）</strong>确定当前个体&#x2F;环境，即$U$ 的值<strong>（外生变量）</strong></li>
-<li>作用：修改结构因果模型$M$，移除变量$X$出现在左边的方程，并用$X&#x3D;x$ 来替换它们，从而获得修正的模型$M_x$ </li>
-<li>预测：使用修正后的模型$M_x$ 和$U$ 的值来计算$Y$ 的值，即反事实结果</li>
-</ul>
-</li>
+<li>溯因：用观测<span class="math inline">\(E=e\)</span>
+<strong>（内生变量）</strong>确定当前个体/环境，即<span
+class="math inline">\(U\)</span> 的值<strong>（外生变量）</strong></li>
+<li>作用：修改结构因果模型<span
+class="math inline">\(M\)</span>，移除变量<span
+class="math inline">\(X\)</span>出现在左边的方程，并用<span
+class="math inline">\(X=x\)</span> 来替换它们，从而获得修正的模型<span
+class="math inline">\(M_x\)</span></li>
+<li>预测：使用修正后的模型<span class="math inline">\(M_x\)</span>
+和<span class="math inline">\(U\)</span> 的值来计算<span
+class="math inline">\(Y\)</span> 的值，即反事实结果</li>
+</ul></li>
 <li><p>非确定性反事实计算</p>
-<p>给定观测$E&#x3D;e$ ，反事实$E(Y_{X&#x3D;x}\vert E&#x3D;e)$ 的三步法计算：</p>
+<p>给定观测<span class="math inline">\(E=e\)</span> ，反事实<span
+class="math inline">\(E(Y_{X=x}\vert E=e)\)</span> 的三步法计算：</p>
 <ul>
-<li>溯因：用观测$E&#x3D;e$ <strong>（内生变量）</strong>更新$P(U)$，获得$P(U \vert E&#x3D;e)$<strong>（外生变量）</strong></li>
-<li>作用：修改结构因果模型$M$，移除变量$X$出现在左边的方程，并用$X&#x3D;x$ 来替换它们，从而获得修正的模型$M_x$ </li>
-<li>预测：使用修正后的模型$M_x$ 和 $P(U \vert E&#x3D;e)$的值来计算$Y$ 的期望，即反事实结果</li>
-</ul>
-</li>
-<li><p>后门的反事实定理</p>
-</li>
+<li>溯因：用观测<span class="math inline">\(E=e\)</span>
+<strong>（内生变量）</strong>更新<span
+class="math inline">\(P(U)\)</span>，获得<span class="math inline">\(P(U
+\vert E=e)\)</span><strong>（外生变量）</strong></li>
+<li>作用：修改结构因果模型<span
+class="math inline">\(M\)</span>，移除变量<span
+class="math inline">\(X\)</span>出现在左边的方程，并用<span
+class="math inline">\(X=x\)</span> 来替换它们，从而获得修正的模型<span
+class="math inline">\(M_x\)</span></li>
+<li>预测：使用修正后的模型<span class="math inline">\(M_x\)</span> 和
+<span class="math inline">\(P(U \vert E=e)\)</span>的值来计算<span
+class="math inline">\(Y\)</span> 的期望，即反事实结果</li>
+</ul></li>
+<li><p>后门的反事实定理</p></li>
 </ul>
 ]]></content>
+      <tags>
+        <tag>UCAS课程复习</tag>
+      </tags>
   </entry>
   <entry>
-    <title>深度学习复习</title>
+    <title>深度学习</title>
     <url>/2022/03/01/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h1 id=""><a href="#" class="headerlink" title=""></a></h1><h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1.Introduction"></a>1.Introduction</h2><h3 id="1-1-AI、ML、DL"><a href="#1-1-AI、ML、DL" class="headerlink" title="1.1 AI、ML、DL"></a>1.1 AI、ML、DL</h3><p>人工智能：研究、开发用于模拟、延伸和扩展人的智能的理论、方法、技术及应用系统的一门新兴学科</p>
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503131847862.png" alt="image-20220503131847862" style="zoom:33%;" />
-
+    <content><![CDATA[<h1 id="深度学习复习">深度学习复习</h1>
+<h2 id="introduction">1.Introduction</h2>
+<h3 id="aimldl">1.1 AI、ML、DL</h3>
+<p>人工智能：研究、开发用于模拟、延伸和扩展人的智能的理论、方法、技术及应用系统的一门新兴学科</p>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503131847862.png" alt="image-20220503131847862" style="zoom:33%;" /></p>
 <p>机器学习：让计算机具有像人一样的学习和思考能力的技术的总称。具体来说是从已知数据中获得规律，并利用规律对未知数据进行预测的技术</p>
 <ul>
-<li>有监督：分类&#x2F;回归</li>
-<li>无监督：聚类&#x2F;降维</li>
+<li>有监督：分类/回归</li>
+<li>无监督：聚类/降维</li>
 </ul>
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503131909022.png" alt="image-20220503131909022" style="zoom:33%;" />
-
-<h3 id="1-2-DL起源和发展"><a href="#1-2-DL起源和发展" class="headerlink" title="1.2 DL起源和发展"></a>1.2 DL起源和发展</h3><h3 id="1-3-DL研究机构和科学家"><a href="#1-3-DL研究机构和科学家" class="headerlink" title="1.3 DL研究机构和科学家"></a>1.3 DL研究机构和科学家</h3><h3 id="1-4-DL定义、理论和方法"><a href="#1-4-DL定义、理论和方法" class="headerlink" title="1.4 DL定义、理论和方法"></a>1.4 DL定义、理论和方法</h3><p>深度学习：一般是指通过训练多层网络结构对未知数据进行分类或回归</p>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503131909022.png" alt="image-20220503131909022" style="zoom:33%;" /></p>
+<h3 id="dl起源和发展">1.2 DL起源和发展</h3>
+<h3 id="dl研究机构和科学家">1.3 DL研究机构和科学家</h3>
+<h3 id="dl定义理论和方法">1.4 DL定义、理论和方法</h3>
+<p>深度学习：一般是指通过训练多层网络结构对未知数据进行分类或回归</p>
 <ul>
 <li><p>有监督学习方法（深度判别模型）：深度前馈网络、卷积神经网络、循环神经网络等</p>
 <ul>
-<li><p>深度前馈网络（<strong>Deep Feedforward Neural Network, D-FNN</strong>）</p>
-</li>
-<li><p>卷积神经网络（<strong>Convolutional Neural Network, CNN</strong>）</p>
-</li>
-<li><p>循环神经网络（<strong>Recurrent Neural Network, RNN</strong>）</p>
-</li>
-<li><p>胶囊网络（<strong>CapsuleNet</strong>）</p>
-</li>
-<li><p>深度森林（<strong>Deep Forest</strong>）</p>
-</li>
-</ul>
-</li>
+<li><p>深度前馈网络（<strong>Deep Feedforward Neural Network,
+D-FNN</strong>）</p></li>
+<li><p>卷积神经网络（<strong>Convolutional Neural Network,
+CNN</strong>）</p></li>
+<li><p>循环神经网络（<strong>Recurrent Neural Network,
+RNN</strong>）</p></li>
+<li><p>胶囊网络（<strong>CapsuleNet</strong>）</p></li>
+<li><p>深度森林（<strong>Deep Forest</strong>）</p></li>
+</ul></li>
 <li><p>无监督学习方法（深度生成模型）：深度信念网、深度玻尔兹曼机，深度自编码器等</p>
 <ul>
 <li>深度信念网络（<strong>Deep Belief Network, DBN</strong>）</li>
 <li>深度玻尔兹曼机（<strong>Deep Boltzmann Machine, DBM</strong>）</li>
 <li>深度自编码器（<strong>Deep Auto-Encoder, DAE</strong>）</li>
 <li>栈式自编码器（<strong>Stacked Auto-Encoder, SAE</strong>）</li>
-<li>生成对抗网络（<strong>Generative Adversarial Networks</strong>，<strong>GAN</strong>）</li>
-<li>非参数贝叶斯网络（<strong>Non-parametric Bayesian networks</strong>）</li>
+<li>生成对抗网络（<strong>Generative Adversarial
+Networks</strong>，<strong>GAN</strong>）</li>
+<li>非参数贝叶斯网络（<strong>Non-parametric Bayesian
+networks</strong>）</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503131938933.png" alt="image-20220503131938933" style="zoom:30%;" />
-
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503131938933.png" alt="image-20220503131938933" style="zoom:30%;" /></p>
 <p>ML是基于手工特征的，而DL可以自动提取特征</p>
-<h3 id="1-5-DL主要应用"><a href="#1-5-DL主要应用" class="headerlink" title="1.5 DL主要应用"></a>1.5 DL主要应用</h3><p>图像处理</p>
+<h3 id="dl主要应用">1.5 DL主要应用</h3>
+<p>图像处理</p>
 <p>语音识别</p>
 <p>自然语言处理</p>
 <p>综合应用</p>
-<p>![image-20220531143801180](&#x2F;Users&#x2F;lexie&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20220531143801180.png)</p>
-<h2 id="2-Foundations"><a href="#2-Foundations" class="headerlink" title="2.Foundations"></a>2.Foundations</h2><h3 id="2-1-数学基础"><a href="#2-1-数学基础" class="headerlink" title="2.1 数学基础"></a>2.1 数学基础</h3><p>线性代数：标量、向量、矩阵、张量Tensor</p>
+<figure>
+<img
+src="/Users/lexie/Library/Application%20Support/typora-user-images/image-20220531143801180.png"
+alt="image-20220531143801180" />
+<figcaption aria-hidden="true">image-20220531143801180</figcaption>
+</figure>
+<h2 id="foundations">2.Foundations</h2>
+<h3 id="数学基础">2.1 数学基础</h3>
+<p>线性代数：标量、向量、矩阵、张量Tensor</p>
 <p>概率和统计：随机变量、常见概率分布、多个随机变量概率分布</p>
 <p>信息论：熵、互信息、KL散度</p>
 <p>常见统计量：期望、方差</p>
 <p>最优化估计方法：最小二乘</p>
-<h3 id="2-2-ML基础"><a href="#2-2-ML基础" class="headerlink" title="2.2 ML基础"></a>2.2 ML基础</h3><p>数据集（训练集、验证集、测试集）</p>
+<h3 id="ml基础">2.2 ML基础</h3>
+<p>数据集（训练集、验证集、测试集）</p>
 <p>误差分析</p>
 <ul>
-<li><p>误差：训练误差、泛化误差、测试误差</p>
-</li>
+<li><p>误差：训练误差、泛化误差、测试误差</p></li>
 <li><p>过拟合、合适、欠拟合</p>
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503132818786.png" alt="image-20220503132818786" style="zoom:33%;" />
-</li>
-<li><p>泛化误差分析</p>
-</li>
-<li><p>交叉验证</p>
-</li>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503132818786.png" alt="image-20220503132818786" style="zoom:33%;" /></p></li>
+<li><p>泛化误差分析</p></li>
+<li><p>交叉验证</p></li>
 </ul>
-<h3 id="2-3-神经元模型"><a href="#2-3-神经元模型" class="headerlink" title="2.3 神经元模型"></a>2.3 神经元模型</h3><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503133031966.png" alt="image-20220503133031966" style="zoom:33%;" />
-
-<h3 id="2-4-感知器及MLP（多层感知器-x2F-前馈网络-x2F-正向传播网络）"><a href="#2-4-感知器及MLP（多层感知器-x2F-前馈网络-x2F-正向传播网络）" class="headerlink" title="2.4 感知器及MLP（多层感知器&#x2F;前馈网络&#x2F;正向传播网络）"></a>2.4 感知器及MLP（多层感知器&#x2F;前馈网络&#x2F;正向传播网络）</h3><p>与M-P 模型需要人为确定参数不同，感知器能够通过训练自动确定参数。训练方式为有监督学习，即需要设定训练样本和期望输出，然后调整实际输出和期望输出之差的方式（误差修正学习）</p>
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503133232831.png" alt="image-20220503133232831" style="zoom:33%;" />
-
+<h3 id="神经元模型">2.3 神经元模型</h3>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503133031966.png" alt="image-20220503133031966" style="zoom:33%;" /></p>
+<h3 id="感知器及mlp多层感知器前馈网络正向传播网络">2.4
+感知器及MLP（多层感知器/前馈网络/正向传播网络）</h3>
+<p>与M-P
+模型需要人为确定参数不同，感知器能够通过训练自动确定参数。训练方式为有监督学习，即需要设定训练样本和期望输出，然后调整实际输出和期望输出之差的方式（误差修正学习）</p>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503133232831.png" alt="image-20220503133232831" style="zoom:33%;" /></p>
 <p>单层感知器只能解决<strong>线性可分</strong>问题，而不能解决线性不可分问题，为了解决线性不可分问题，我们需要使用多层感知器</p>
-<h3 id="2-5-BP算法"><a href="#2-5-BP算法" class="headerlink" title="2.5 BP算法"></a>2.5 BP算法</h3><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503133637956.png" alt="image-20220503133637956" style="zoom:40%;" />
-
-<h2 id="3-CNN"><a href="#3-CNN" class="headerlink" title="3.CNN"></a>3.CNN</h2><p>卷积神经网络与普通神经网络的区别在于，卷积神经网络包含了一个由卷积层和子采样层（池化层）构成的特征抽取器。在卷积神经网络的卷积层中，一个神经元只与部分邻层神经元连接。在CNN的一个卷积层中，通常包含若干个特征图(featureMap)，每个特征图由一些矩形排列的的神经元组成，同一特征图的神经元共享权值，这里共享的权值就是卷积核。卷积核一般以随机小数矩阵的形式初始化，在网络的训练过程中卷积核将学习得到合理的权值。共享权值（卷积核）带来的直接好处是减少网络各层之间的连接，同时又降低了过拟合的风险。子采样也叫做池化（pooling），通常有均值子采样（mean pooling）和最大值子采样（max pooling）两种形式。子采样可以看作一种特殊的卷积过程。卷积和子采样大大简化了模型复杂度，减少了模型的参数。<br>————————————————<br>版权声明：本文为CSDN博主「CharlesOAO」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a href="https://blog.csdn.net/qq_42570457/article/details/81458077">https://blog.csdn.net/qq_42570457/article/details/81458077</a></p>
-<h3 id="3-1-卷积的基本概念"><a href="#3-1-卷积的基本概念" class="headerlink" title="3.1 卷积的基本概念"></a>3.1 卷积的基本概念</h3><h3 id="3-2-Hubel-Weisel实验-x2F-神经认知机"><a href="#3-2-Hubel-Weisel实验-x2F-神经认知机" class="headerlink" title="3.2 Hubel-Weisel实验&#x2F;神经认知机"></a>3.2 Hubel-Weisel实验&#x2F;神经认知机</h3><p>感受野</p>
-<h3 id="3-3-CNN基本原理"><a href="#3-3-CNN基本原理" class="headerlink" title="3.3 CNN基本原理"></a>3.3 CNN基本原理</h3><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503134912664.png" alt="image-20220503134912664" style="zoom:40%;" />
-
+<h3 id="bp算法">2.5 BP算法</h3>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503133637956.png" alt="image-20220503133637956" style="zoom:40%;" /></p>
+<h2 id="cnn">3.CNN</h2>
+<p>卷积神经网络与普通神经网络的区别在于，卷积神经网络包含了一个由卷积层和子采样层（池化层）构成的特征抽取器。在卷积神经网络的卷积层中，一个神经元只与部分邻层神经元连接。在CNN的一个卷积层中，通常包含若干个特征图(featureMap)，每个特征图由一些矩形排列的的神经元组成，同一特征图的神经元共享权值，这里共享的权值就是卷积核。卷积核一般以随机小数矩阵的形式初始化，在网络的训练过程中卷积核将学习得到合理的权值。共享权值（卷积核）带来的直接好处是减少网络各层之间的连接，同时又降低了过拟合的风险。子采样也叫做池化（pooling），通常有均值子采样（mean
+pooling）和最大值子采样（max
+pooling）两种形式。子采样可以看作一种特殊的卷积过程。卷积和子采样大大简化了模型复杂度，减少了模型的参数。
+————————————————
+版权声明：本文为CSDN博主「CharlesOAO」的原创文章，遵循CC 4.0
+BY-SA版权协议，转载请附上原文出处链接及本声明。
+原文链接：https://blog.csdn.net/qq_42570457/article/details/81458077</p>
+<h3 id="卷积的基本概念">3.1 卷积的基本概念</h3>
+<h3 id="hubel-weisel实验神经认知机">3.2 Hubel-Weisel实验/神经认知机</h3>
+<p>感受野</p>
+<h3 id="cnn基本原理">3.3 CNN基本原理</h3>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503134912664.png" alt="image-20220503134912664" style="zoom:40%;" /></p>
 <p>基本结构：</p>
 <ul>
 <li><p>卷积层</p>
 <ul>
 <li>卷积的<strong>步长(stride)</strong>: 卷积核移动的步长</li>
-<li>卷积的模式：<strong>Full</strong>, <strong>Same</strong>和<strong>Valid</strong></li>
+<li>卷积的模式：<strong>Full</strong>,
+<strong>Same</strong>和<strong>Valid</strong></li>
 </ul>
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503135022417.png" alt="image-20220503135022417" style="zoom:40%;" />
-
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503135022417.png" alt="image-20220503135022417" style="zoom:40%;" /></p>
 <ul>
-<li><p>数据填充</p>
-</li>
+<li><p>数据填充</p></li>
 <li><p>输出维度</p>
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503135521585.png" alt="image-20220503135521585" style="zoom:40%;" />
-</li>
-<li><p><strong>感受野计算</strong></p>
-</li>
-<li><p>卷积层的深度（卷积核个数）</p>
-</li>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503135521585.png" alt="image-20220503135521585" style="zoom:40%;" /></p></li>
+<li><p><strong>感受野计算</strong></p></li>
+<li><p>卷积层的深度（卷积核个数）</p></li>
 <li><p>特征图</p>
 <ul>
 <li>浅层卷积层：提取的是<strong>图像基本特征</strong>，如边缘、方向和纹理等特征</li>
 <li>深层卷积层：提取的是<strong>图像高阶特征</strong>，出现了高层语义模式，如“车轮”、“人脸”等特征</li>
-</ul>
-</li>
-</ul>
-</li>
+</ul></li>
+</ul></li>
 <li><p>激活函数</p>
 <ul>
-<li><p>激活函数是用来加入<strong>非线性因素</strong>，提高网络表达能力</p>
-</li>
-<li><p>卷积神经网络中最常用的是ReLU（使用较小的学习率防止神经元死亡），Sigmoid使用较少（sigmoid和tanh会梯度消失）</p>
-</li>
+<li><p>激活函数是用来加入<strong>非线性因素</strong>，提高网络表达能力</p></li>
+<li><p>卷积神经网络中最常用的是ReLU（使用较小的学习率防止神经元死亡），Sigmoid使用较少（sigmoid和tanh会梯度消失）</p></li>
 <li><p>常见激活函数总结：</p>
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503140400710.png" alt="image-20220503140400710" style="zoom:33%;" />
-</li>
-<li><p>ReLU失效时，可考虑Leaky ReLU、PReLU、ELU或Maxout</p>
-</li>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503140400710.png" alt="image-20220503140400710" style="zoom:33%;" /></p></li>
+<li><p>ReLU失效时，可考虑Leaky ReLU、PReLU、ELU或Maxout</p></li>
 <li><p>ReLU的优点：</p>
 <ul>
 <li>计算速度快，ReLU函数只有线性关系，比Sigmoid和Tanh要快很多</li>
 <li>输入为正数的时候，不存在梯度消失问题</li>
-</ul>
-</li>
+</ul></li>
 <li><p>ReLU的缺点：</p>
 <ul>
 <li>强制性把负值置为0，可能丢掉一些特征</li>
 <li>当输入为负数时，权重无法更新，导致“神经元死亡”（学习率不要太大）</li>
-</ul>
-</li>
-</ul>
-</li>
+</ul></li>
+</ul></li>
 <li><p>池化层</p>
 <ul>
-<li>池化操作使用某位置<strong>相邻</strong>输出的总体<strong>统计特征</strong>作为该位置的输出，常用最大池化**(max-pooling)<strong>和均值池化</strong>(average-pooling)**</li>
+<li>池化操作使用某位置<strong>相邻</strong>输出的总体<strong>统计特征</strong>作为该位置的输出，常用最大池化<strong>(max-pooling)</strong>和均值池化<strong>(average-pooling)</strong></li>
 <li>池化层不包含需要训练学习的参数，仅需指定池化操作的<strong>核大小</strong>、操作<strong>步幅</strong>以及<strong>池化类型</strong></li>
-<li>作用：<ul>
+<li>作用：
+<ul>
 <li>减少网络中的参数计算量，从而<strong>遏制过拟合</strong></li>
-<li>增强网络对输入图像中的小变形、扭曲、平移的<strong>鲁棒性</strong>(输入里的微小扭曲不会改变池化输出——因为我们在局部邻域已经取了最大值&#x2F;平均值)</li>
+<li>增强网络对输入图像中的小变形、扭曲、平移的<strong>鲁棒性</strong>(输入里的微小扭曲不会改变池化输出——因为我们在局部邻域已经取了最大值/平均值)</li>
 <li>帮助我们获得<strong>不因尺寸而改变的等效图片表征</strong>。这非常有用，因为这样我们就可以探测到图片里的物体，不管它在哪个位置</li>
+</ul></li>
+</ul></li>
+<li><p>全连接层</p></li>
+<li><p>输出层</p></li>
 </ul>
-</li>
-</ul>
-</li>
-<li><p>全连接层</p>
-</li>
-<li><p>输出层</p>
-</li>
-</ul>
-<h3 id="3-4-经典CNN"><a href="#3-4-经典CNN" class="headerlink" title="3.4 经典CNN"></a>3.4 经典CNN</h3><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503135106653.png" alt="image-20220503135106653" style="zoom:40%;" />
-
-
-
-<h3 id="3-5-CNN主要应用"><a href="#3-5-CNN主要应用" class="headerlink" title="3.5 CNN主要应用"></a>3.5 CNN主要应用</h3><p>CV：图像分类、物体检测、图像分割、图像回归</p>
+<h3 id="经典cnn">3.4 经典CNN</h3>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503135106653.png" alt="image-20220503135106653" style="zoom:40%;" /></p>
+<h3 id="cnn主要应用">3.5 CNN主要应用</h3>
+<p>CV：图像分类、物体检测、图像分割、图像回归</p>
 <p>语音识别</p>
 <p>NLP：情感分析</p>
-<h2 id="4-RNN"><a href="#4-RNN" class="headerlink" title="4.RNN"></a>4.RNN</h2><p><img src="https://img-blog.csdnimg.cn/20190117185815250.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hlbGxvd3V4aWE=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<p><img src="https://img-blog.csdnimg.cn/20190117185302437.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hlbGxvd3V4aWE=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h3 id="4-1-计算图"><a href="#4-1-计算图" class="headerlink" title="4.1 计算图"></a>4.1 计算图</h3><p>计算图：描述计算结构的一种图</p>
-<p>元素：节点（变量）、边（操作&#x2F;函数）</p>
+<h2 id="rnn">4.RNN</h2>
+<figure>
+<img
+src="https://img-blog.csdnimg.cn/20190117185815250.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hlbGxvd3V4aWE=,size_16,color_FFFFFF,t_70"
+alt="在这里插入图片描述" />
+<figcaption aria-hidden="true">在这里插入图片描述</figcaption>
+</figure>
+<figure>
+<img
+src="https://img-blog.csdnimg.cn/20190117185302437.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hlbGxvd3V4aWE=,size_16,color_FFFFFF,t_70"
+alt="在这里插入图片描述" />
+<figcaption aria-hidden="true">在这里插入图片描述</figcaption>
+</figure>
+<h3 id="计算图">4.1 计算图</h3>
+<p>计算图：描述计算结构的一种图</p>
+<p>元素：节点（变量）、边（操作/函数）</p>
 <p>链式法则</p>
 <p>参数共享</p>
-<h3 id="4-2-RNN（序列数据建模）"><a href="#4-2-RNN（序列数据建模）" class="headerlink" title="4.2 RNN（序列数据建模）"></a>4.2 RNN（序列数据建模）</h3><p>文本、语音、视频、时态数据</p>
+<h3 id="rnn序列数据建模">4.2 RNN（序列数据建模）</h3>
+<p>文本、语音、视频、时态数据</p>
 <p>RNN定义：循环神经网络是一种人工神经网络，它的节点间的连接形成一个<strong>遵循时间序列的有向图</strong></p>
 <p>RNN一般结构</p>
 <p>RNN示例</p>
 <p>训练算法：BPTT（BP Through Time）</p>
-<h3 id="4-3-LSTM"><a href="#4-3-LSTM" class="headerlink" title="4.3 LSTM"></a>4.3 LSTM</h3><p>RNN的<strong>梯度消失</strong>问题</p>
+<h3 id="lstm">4.3 LSTM</h3>
+<p>RNN的<strong>梯度消失</strong>问题</p>
 <p>原因：BPTT算法，激活函数Tanh</p>
 <p>解决方案：ReLU函数、门控RNN（LSTM）</p>
-<h3 id="4-4-其他典型RNN"><a href="#4-4-其他典型RNN" class="headerlink" title="4.4 其他典型RNN"></a>4.4 其他典型RNN</h3><ul>
-<li><p>GRU</p>
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503134036971.png" alt="image-20220503134036971" style="zoom:40%;" />
-</li>
-<li><p>Peephole LSTM等LSTM变种</p>
-</li>
-<li><p>双向RNN</p>
-</li>
-<li><p>Continuous Time RNN</p>
-</li>
-</ul>
-<h3 id="4-5-RNN主要应用"><a href="#4-5-RNN主要应用" class="headerlink" title="4.5 RNN主要应用"></a>4.5 RNN主要应用</h3><p>语言模型、语音识别、自动作曲、机器翻译、自动摘要、自动写作、图像描述</p>
-<h2 id="5-DGN"><a href="#5-DGN" class="headerlink" title="5.DGN"></a>5.DGN</h2><h3 id="5-1-深度生成模型概述"><a href="#5-1-深度生成模型概述" class="headerlink" title="5.1 深度生成模型概述"></a>5.1 深度生成模型概述</h3><h3 id="5-2-Hopfield神经网络"><a href="#5-2-Hopfield神经网络" class="headerlink" title="5.2 Hopfield神经网络"></a>5.2 Hopfield神经网络</h3><p>神经网络分类：</p>
+<h3 id="其他典型rnn">4.4 其他典型RNN</h3>
 <ul>
-<li><p>多层神经网络：模式识别</p>
-</li>
-<li><p>相互连接型网络：通过<strong>联想记忆</strong>去除数据中的噪声（<strong>Hopfield</strong>神经网络是最典型的相互连结型网络）</p>
-</li>
+<li><p>GRU</p>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503134036971.png" alt="image-20220503134036971" style="zoom:40%;" /></p></li>
+<li><p>Peephole LSTM等LSTM变种</p></li>
+<li><p>双向RNN</p></li>
+<li><p>Continuous Time RNN</p></li>
+</ul>
+<h3 id="rnn主要应用">4.5 RNN主要应用</h3>
+<p>语言模型、语音识别、自动作曲、机器翻译、自动摘要、自动写作、图像描述</p>
+<h2 id="dgn">5.DGN</h2>
+<h3 id="深度生成模型概述">5.1 深度生成模型概述</h3>
+<h3 id="hopfield神经网络">5.2 Hopfield神经网络</h3>
+<p>神经网络分类：</p>
+<ul>
+<li><p>多层神经网络：模式识别</p></li>
+<li><p>相互连接型网络：通过<strong>联想记忆</strong>去除数据中的噪声（<strong>Hopfield</strong>神经网络是最典型的相互连结型网络）</p></li>
 </ul>
 <p>Hopfield网络的优点：</p>
 <ul>
-<li>单元之间的连接权重对称（𝑤𝑖𝑗&#x3D;𝑤𝑗𝑖）</li>
-<li>每个单元没有到自身的连接（𝑤𝑖𝑖&#x3D;0）</li>
+<li>单元之间的连接权重对称（𝑤𝑖𝑗=𝑤𝑗𝑖）</li>
+<li>每个单元没有到自身的连接（𝑤𝑖𝑖=0）</li>
 <li>单元的状态采用<strong>随机异步更新方式</strong>，每次只有一个单元改变状态</li>
 <li><em>n</em>个二值单元做成的二值神经网络，每个单元的输出只能是0或1的两个值</li>
 </ul>
-<p>联想记忆：当输入模式为某种状态时，输出端要给出与之相应的输出模式（自联想记忆&#x2F;异联想记忆）</p>
+<p>联想记忆：当输入模式为某种状态时，输出端要给出与之相应的输出模式（自联想记忆/异联想记忆）</p>
 <p>Hopfield神经网络计算</p>
 <p>串扰：相互干扰、不能准确记忆的情况</p>
-<p>Hopfield神经网络能够记忆的模式数量有限，大约是网络单元数的**15%**左右，为了防止串扰，可以采用先把模式正交化再进行记忆等方法</p>
-<h3 id="5-3-玻尔兹曼机BM和受限玻尔兹曼机RBM"><a href="#5-3-玻尔兹曼机BM和受限玻尔兹曼机RBM" class="headerlink" title="5.3 玻尔兹曼机BM和受限玻尔兹曼机RBM"></a>5.3 玻尔兹曼机BM和受限玻尔兹曼机RBM</h3><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503141923827.png" alt="image-20220503141923827" style="zoom:50%;" />
-
+<p>Hopfield神经网络能够记忆的模式数量有限，大约是网络单元数的<strong>15%</strong>左右，为了防止串扰，可以采用先把模式正交化再进行记忆等方法</p>
+<h3 id="玻尔兹曼机bm和受限玻尔兹曼机rbm">5.3
+玻尔兹曼机BM和受限玻尔兹曼机RBM</h3>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503141923827.png" alt="image-20220503141923827" style="zoom:50%;" /></p>
 <p>BM：可以通过让每个单元按照一定的概率分布发生状态变化，来避免陷入局部最优解</p>
 <p>保持了Hopfield神经网络的假设：</p>
 <ul>
@@ -1494,8 +1797,7 @@
 <li>二值输出</li>
 </ul>
 <p>模拟退火算法</p>
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503142110735.png" alt="image-20220503142110735" style="zoom:43%;" />
-
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220503142110735.png" alt="image-20220503142110735" style="zoom:43%;" /></p>
 <p>BM训练过程</p>
 <p>RBM由可见单元和<strong>隐藏单元</strong>共同构成</p>
 <ul>
@@ -1505,916 +1807,1220 @@
 </ul>
 <p>Gibbs采样</p>
 <p>对比散度算法</p>
-<h3 id="5-4-深度玻尔兹曼机DBM和深度信念网络DBN"><a href="#5-4-深度玻尔兹曼机DBM和深度信念网络DBN" class="headerlink" title="5.4 深度玻尔兹曼机DBM和深度信念网络DBN"></a>5.4 深度玻尔兹曼机DBM和深度信念网络DBN</h3><p>深度玻尔兹曼机DBM（由受限玻尔兹曼机RBM堆叠组成）</p>
+<h3 id="深度玻尔兹曼机dbm和深度信念网络dbn">5.4
+深度玻尔兹曼机DBM和深度信念网络DBN</h3>
+<p>深度玻尔兹曼机DBM（由受限玻尔兹曼机RBM堆叠组成）</p>
 <ul>
 <li>采用对比散度算法训练，逐层调整连接权重和偏置（与多层神经网络不同）</li>
 <li>既可以当作生成模型又可以当成判别模型（顶层加softmax实现分类）</li>
 </ul>
 <p>深度信念网络DBN（RBM+最底层directed）</p>
 <p>完全非监督？</p>
-<h3 id="5-5-自编码器及其变种"><a href="#5-5-自编码器及其变种" class="headerlink" title="5.5 自编码器及其变种"></a>5.5 自编码器及其变种</h3><p>AutoEncoder</p>
+<h3 id="自编码器及其变种">5.5 自编码器及其变种</h3>
+<p>AutoEncoder</p>
 <ul>
-<li>是一种有效的数据维度压缩算法，主要应用：<ul>
+<li>是一种有效的数据维度压缩算法，主要应用：
+<ul>
 <li>构建一种能够<strong>重构输入</strong>样本并进行特征表达的神经网络</li>
 <li>训练多层神经网络时，通过自编码器训练样本得到<strong>参数初始值</strong></li>
-</ul>
-</li>
+</ul></li>
 <li>是一种基于无监督学习的神经网络，目的在于通过不断调整参数，重构经过维度压缩的输入样本</li>
-<li>训练：<ul>
+<li>训练：
+<ul>
 <li>权值共享，目的：尽可能重构输入</li>
-<li>BP，误差：最小二乘误差&#x2F;交叉熵代价</li>
-</ul>
-</li>
+<li>BP，误差：最小二乘误差/交叉熵代价</li>
+</ul></li>
 </ul>
 <p>降噪自编码器</p>
 <ul>
-<li>降噪自编码器把通过向训练样本中<strong>加入随机噪声</strong>得到的样本$\tilde{x}&#x3D;x+\epsilon$输入给输入层</li>
+<li>降噪自编码器把通过向训练样本中<strong>加入随机噪声</strong>得到的样本<span
+class="math inline">\(\tilde{x}=x+\epsilon\)</span>输入给输入层</li>
 <li>保持输入样本不变的条件下，能够更好地反映样本属性的特征</li>
 <li>消除输入样本中包含的噪声</li>
 </ul>
 <p>稀疏自编码器</p>
 <ul>
-<li>在多层自编码器中，中间层的单元数太少会导致神经网络很难重构输入样本，而单元数太多又会产生单元冗余，降低压缩效率。为了解决这个问题，人们将稀疏正则化引入到自编码器中，提出了稀疏自编码器（<strong>Sparse Autoencoder</strong>）</li>
+<li>在多层自编码器中，中间层的单元数太少会导致神经网络很难重构输入样本，而单元数太多又会产生单元冗余，降低压缩效率。为了解决这个问题，人们将稀疏正则化引入到自编码器中，提出了稀疏自编码器（<strong>Sparse
+Autoencoder</strong>）</li>
 <li>通过增加正则化项，大部分单元的输出都变成了0，就能利用少数单元完成压缩或重构</li>
 <li>平均激活度</li>
 </ul>
-<p>栈式自编码器（无监督的pre-training+有监督的fine tuning）逐层训练：</p>
+<p>栈式自编码器（无监督的pre-training+有监督的fine
+tuning）逐层训练：</p>
 <ul>
 <li>首先训练第一个自编码器，然后保留第一个自编码器的编码器部分</li>
 <li>把第一个自编码器的中间层作为第二个自编码器的输入层进行训练</li>
 <li>反复地把前一个自编码器的中间层作为后一个编码器的输入层，进行迭代训练</li>
 </ul>
-<h2 id="6-others"><a href="#6-others" class="headerlink" title="6.others"></a>6.others</h2><h3 id="6-1-生成对抗网络GAN"><a href="#6-1-生成对抗网络GAN" class="headerlink" title="6.1 生成对抗网络GAN"></a>6.1 生成对抗网络GAN</h3><h3 id="6-2-胶囊网络"><a href="#6-2-胶囊网络" class="headerlink" title="6.2 胶囊网络"></a>6.2 胶囊网络</h3><p>CNN现存问题：池化操作提供了<strong>局部不变性</strong>，错误解决了需要解决的<strong>等变性问题</strong>，从而丢失了位置等信息</p>
+<h2 id="others">6.others</h2>
+<h3 id="生成对抗网络gan">6.1 生成对抗网络GAN</h3>
+<h3 id="胶囊网络">6.2 胶囊网络</h3>
+<p>CNN现存问题：池化操作提供了<strong>局部不变性</strong>，错误解决了需要解决的<strong>等变性问题</strong>，从而丢失了位置等信息</p>
 <p>平移等变性：对于一个函数，如果对其输入施加的变换也会<strong>同样反应在输出上</strong>，那么这个函数就对该变换具有等变性</p>
 <p>平移不变性：对于一个函数，如果对其输入施加的某种操作丝毫<strong>不会影响到输出</strong>，那么这个函数就对该变换具有不变性</p>
 <p>CapsNet：</p>
-<h3 id="6-3-注意力机制Attention"><a href="#6-3-注意力机制Attention" class="headerlink" title="6.3 注意力机制Attention"></a>6.3 注意力机制Attention</h3><h3 id="6-4-记忆网络"><a href="#6-4-记忆网络" class="headerlink" title="6.4 记忆网络"></a>6.4 记忆网络</h3><h3 id="6-5-深度强化学习DRL"><a href="#6-5-深度强化学习DRL" class="headerlink" title="6.5 深度强化学习DRL"></a>6.5 深度强化学习DRL</h3><h3 id="6-6-深度森林"><a href="#6-6-深度森林" class="headerlink" title="6.6 深度森林"></a>6.6 深度森林</h3><h2 id="7-Generalization"><a href="#7-Generalization" class="headerlink" title="7.Generalization"></a>7.Generalization</h2><h3 id="7-1-正则化方法概述"><a href="#7-1-正则化方法概述" class="headerlink" title="7.1 正则化方法概述"></a>7.1 正则化方法概述</h3><h3 id="7-2-参数范数正则化"><a href="#7-2-参数范数正则化" class="headerlink" title="7.2 参数范数正则化"></a>7.2 参数范数正则化</h3><h3 id="7-3-数据增强"><a href="#7-3-数据增强" class="headerlink" title="7.3 数据增强"></a>7.3 数据增强</h3><h3 id="7-4-Batch-Normalization"><a href="#7-4-Batch-Normalization" class="headerlink" title="7.4 Batch Normalization"></a>7.4 Batch Normalization</h3><h3 id="7-5-Bagging"><a href="#7-5-Bagging" class="headerlink" title="7.5 Bagging"></a>7.5 Bagging</h3><h3 id="7-6-Dropout和DropConnect"><a href="#7-6-Dropout和DropConnect" class="headerlink" title="7.6 Dropout和DropConnect"></a>7.6 Dropout和DropConnect</h3><h3 id="7-7-提前终止"><a href="#7-7-提前终止" class="headerlink" title="7.7 提前终止"></a>7.7 提前终止</h3><h2 id="8-tools"><a href="#8-tools" class="headerlink" title="8.tools"></a>8.tools</h2><h3 id="8-1-深度学习平台概览"><a href="#8-1-深度学习平台概览" class="headerlink" title="8.1 深度学习平台概览"></a>8.1 深度学习平台概览</h3><h3 id="8-2-Tensorflow"><a href="#8-2-Tensorflow" class="headerlink" title="8.2 Tensorflow"></a>8.2 Tensorflow</h3><h3 id="8-3-PyTorch"><a href="#8-3-PyTorch" class="headerlink" title="8.3 PyTorch"></a>8.3 PyTorch</h3><h3 id="8-4-Keras"><a href="#8-4-Keras" class="headerlink" title="8.4 Keras"></a>8.4 Keras</h3><h3 id="8-5-PaddlePaddle"><a href="#8-5-PaddlePaddle" class="headerlink" title="8.5 PaddlePaddle"></a>8.5 PaddlePaddle</h3><h3 id="8-6-Huawei平台"><a href="#8-6-Huawei平台" class="headerlink" title="8.6 Huawei平台"></a>8.6 Huawei平台</h3><h2 id="9-Applications-in-CV"><a href="#9-Applications-in-CV" class="headerlink" title="9.Applications in CV"></a>9.Applications in CV</h2><h3 id="9-1-图像-x2F-视频处理"><a href="#9-1-图像-x2F-视频处理" class="headerlink" title="9.1 图像&#x2F;视频处理"></a>9.1 图像&#x2F;视频处理</h3><h3 id="9-2-图像-x2F-视频压缩"><a href="#9-2-图像-x2F-视频压缩" class="headerlink" title="9.2 图像&#x2F;视频压缩"></a>9.2 图像&#x2F;视频压缩</h3><h3 id="9-3-传统的计算机视觉处理"><a href="#9-3-传统的计算机视觉处理" class="headerlink" title="9.3 传统的计算机视觉处理"></a>9.3 传统的计算机视觉处理</h3><h3 id="9-4-图像分类"><a href="#9-4-图像分类" class="headerlink" title="9.4 图像分类"></a>9.4 图像分类</h3><h3 id="9-5-目标检测"><a href="#9-5-目标检测" class="headerlink" title="9.5 目标检测"></a>9.5 目标检测</h3><h3 id="9-6-图像分割"><a href="#9-6-图像分割" class="headerlink" title="9.6 图像分割"></a>9.6 图像分割</h3><h3 id="9-7-图像回归"><a href="#9-7-图像回归" class="headerlink" title="9.7 图像回归"></a>9.7 图像回归</h3><h2 id="2021试题"><a href="#2021试题" class="headerlink" title="2021试题"></a>2021试题</h2><p><img src="https://pic3.zhimg.com/80/v2-8dbbdd54cd3f8f2eb18daaff968b294a_1440w.jpg" alt="img"></p>
-<h2 id="一、名词解释"><a href="#一、名词解释" class="headerlink" title="一、名词解释"></a>一、名词解释</h2><h3 id="2021"><a href="#2021" class="headerlink" title="2021"></a>2021</h3><h4 id="1-CNN"><a href="#1-CNN" class="headerlink" title="1.CNN"></a>1.CNN</h4><p>卷积神经网络是一类包含卷积计算且具有深度结构的前馈神经网络，是深度学习的代表算法之一 。卷积神经网络具有表征学习能力，能够按其阶层结构对输入信息进行平移不变分类，因此也被称为“平移不变人工神经网络” </p>
-<h4 id="2-RNN"><a href="#2-RNN" class="headerlink" title="2.RNN"></a>2.RNN</h4><p>循环神经网络是一类以序列数据为输入，在序列的演进方向进行递归且所有节点（循环单元）按链式连接的递归神经网络。</p>
-<h4 id="3-SVD"><a href="#3-SVD" class="headerlink" title="3.SVD"></a>3.SVD</h4><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531143336688.png" alt="image-20220531143336688" style="zoom:30%;" />
-
+<h3 id="注意力机制attention">6.3 注意力机制Attention</h3>
+<h3 id="记忆网络">6.4 记忆网络</h3>
+<h3 id="深度强化学习drl">6.5 深度强化学习DRL</h3>
+<h3 id="深度森林">6.6 深度森林</h3>
+<h2 id="generalization">7.Generalization</h2>
+<h3 id="正则化方法概述">7.1 正则化方法概述</h3>
+<h3 id="参数范数正则化">7.2 参数范数正则化</h3>
+<h3 id="数据增强">7.3 数据增强</h3>
+<h3 id="batch-normalization">7.4 Batch Normalization</h3>
+<h3 id="bagging">7.5 Bagging</h3>
+<h3 id="dropout和dropconnect">7.6 Dropout和DropConnect</h3>
+<h3 id="提前终止">7.7 提前终止</h3>
+<h2 id="tools">8.tools</h2>
+<h3 id="深度学习平台概览">8.1 深度学习平台概览</h3>
+<h3 id="tensorflow">8.2 Tensorflow</h3>
+<h3 id="pytorch">8.3 PyTorch</h3>
+<h3 id="keras">8.4 Keras</h3>
+<h3 id="paddlepaddle">8.5 PaddlePaddle</h3>
+<h3 id="huawei平台">8.6 Huawei平台</h3>
+<h2 id="applications-in-cv">9.Applications in CV</h2>
+<h3 id="图像视频处理">9.1 图像/视频处理</h3>
+<h3 id="图像视频压缩">9.2 图像/视频压缩</h3>
+<h3 id="传统的计算机视觉处理">9.3 传统的计算机视觉处理</h3>
+<h3 id="图像分类">9.4 图像分类</h3>
+<h3 id="目标检测">9.5 目标检测</h3>
+<h3 id="图像分割">9.6 图像分割</h3>
+<h3 id="图像回归">9.7 图像回归</h3>
+<h2 id="试题">2021试题</h2>
+<figure>
+<img
+src="https://pic3.zhimg.com/80/v2-8dbbdd54cd3f8f2eb18daaff968b294a_1440w.jpg"
+alt="img" />
+<figcaption aria-hidden="true">img</figcaption>
+</figure>
+<h2 id="一名词解释">一、名词解释</h2>
+<h3 id="section">2021</h3>
+<h4 id="cnn-1">1.CNN</h4>
+<p>卷积神经网络是一类包含卷积计算且具有深度结构的前馈神经网络，是深度学习的代表算法之一
+。卷积神经网络具有表征学习能力，能够按其阶层结构对输入信息进行平移不变分类，因此也被称为“平移不变人工神经网络”</p>
+<h4 id="rnn-1">2.RNN</h4>
+<p>循环神经网络是一类以序列数据为输入，在序列的演进方向进行递归且所有节点（循环单元）按链式连接的递归神经网络。</p>
+<h4 id="svd">3.SVD</h4>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531143336688.png" alt="image-20220531143336688" style="zoom:30%;" /></p>
 <p>奇异值分解是线性代数中一种重要的矩阵分解，也是在机器学习领域广泛应用的算法，可用于降维算法中的特征分解、推荐系统和NLP领域</p>
-<h4 id="4-Cross-Entropy"><a href="#4-Cross-Entropy" class="headerlink" title="4.Cross Entropy"></a>4.Cross Entropy</h4><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531143304712.png" alt="image-20220531143304712" style="zoom:30%;" />
-
-<p>交叉熵（Cross Entropy）是Shannon信息论中一个重要概念，主要用于度量两个概率分布间的差异性信息。</p>
-<h4 id="5-DBN"><a href="#5-DBN" class="headerlink" title="5.DBN"></a>5.DBN</h4><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531143923247.png" alt="image-20220531143923247" style="zoom:30%;" />
-
-
-
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531143939320.png" alt="image-20220531143939320" style="zoom:30%;" />
-
-<h3 id="2020"><a href="#2020" class="headerlink" title="2020"></a>2020</h3><h4 id="1-DL"><a href="#1-DL" class="headerlink" title="1.DL"></a>1.DL</h4><p>深度学习是实现人工智能的一个工具或者技术手段</p>
+<h4 id="cross-entropy">4.Cross Entropy</h4>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531143304712.png" alt="image-20220531143304712" style="zoom:30%;" /></p>
+<p>交叉熵（Cross
+Entropy）是Shannon信息论中一个重要概念，主要用于度量两个概率分布间的差异性信息。</p>
+<h4 id="dbn">5.DBN</h4>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531143923247.png" alt="image-20220531143923247" style="zoom:30%;" /></p>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531143939320.png" alt="image-20220531143939320" style="zoom:30%;" /></p>
+<h3 id="section-1">2020</h3>
+<h4 id="dl">1.DL</h4>
+<p>深度学习是实现人工智能的一个工具或者技术手段</p>
 <p>深度学习：一般是指通过训练多层网络结构对未知数据进行分类或回归</p>
-<h4 id="2-稀疏自编码器（L5"><a href="#2-稀疏自编码器（L5" class="headerlink" title="2.稀疏自编码器（L5"></a>2.稀疏自编码器（L5</h4><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531144009257.png" alt="image-20220531144009257" style="zoom:30%;" />
-
-<h4 id="3-正则化"><a href="#3-正则化" class="headerlink" title="3.正则化"></a>3.正则化</h4><p>广泛应用于机器学习和深度学习中的技术</p>
+<h4 id="稀疏自编码器l5">2.稀疏自编码器（L5</h4>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531144009257.png" alt="image-20220531144009257" style="zoom:30%;" /></p>
+<h4 id="正则化">3.正则化</h4>
+<p>广泛应用于机器学习和深度学习中的技术</p>
 <p>可以改善过拟合，降低结构风险，提高模型的泛化能力</p>
 <p>在经验风险项后面加上正则罚项，使得通过最小化经验风险求解模型参数转变为通过最小化结构风险求解模型参数，进而选择经验风险小并且简单的模型</p>
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531144406947.png" alt="image-20220531144406947" style="zoom:40%;" />
-
-<h4 id="4-集成学习"><a href="#4-集成学习" class="headerlink" title="4.集成学习"></a>4.集成学习</h4><p><strong>集成学习（ensemble learning）</strong>，并不是一个单独的机器学习算法，而是通过构建并结合多个机器学习器（<strong>基学习器，Base learner</strong>）来完成学习任务。集成学习往往被视为一种<strong>元算法（meta-algorithm）</strong>。</p>
-<p>对于训练集数据，我们通过训练若干个个体<strong>弱学习器（weak learner）</strong>，通过一定的结合策略，就可以最终形成一个<strong>强学习器（strong learner）</strong>，以达到博采众长的目的。</p>
-<h4 id="5-Dropout"><a href="#5-Dropout" class="headerlink" title="5.Dropout"></a>5.Dropout</h4><p>Dropout可以比较有效的缓解过拟合的发生，在一定程度上达到正则化的效果</p>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531144406947.png" alt="image-20220531144406947" style="zoom:40%;" /></p>
+<h4 id="集成学习">4.集成学习</h4>
+<p><strong>集成学习（ensemble
+learning）</strong>，并不是一个单独的机器学习算法，而是通过构建并结合多个机器学习器（<strong>基学习器，Base
+learner</strong>）来完成学习任务。集成学习往往被视为一种<strong>元算法（meta-algorithm）</strong>。</p>
+<p>对于训练集数据，我们通过训练若干个个体<strong>弱学习器（weak
+learner）</strong>，通过一定的结合策略，就可以最终形成一个<strong>强学习器（strong
+learner）</strong>，以达到博采众长的目的。</p>
+<h4 id="dropout">5.Dropout</h4>
+<p>Dropout可以比较有效的缓解过拟合的发生，在一定程度上达到正则化的效果</p>
 <p>在每个训练批次中，通过忽略一半的特征检测器（让一半的隐层节点值为0），可以明显地减少过拟合现象。</p>
 <p>这种方式可以减少特征检测器（隐层节点）间的相互作用，检测器相互作用是指某些检测器依赖其他检测器才能发挥作用。</p>
 <p>Dropout说的简单一点就是：我们在前向传播的时候，让某个神经元的激活值以一定的概率p停止工作，这样可以使模型泛化性更强，因为它不会太依赖某些局部的特征，如图1所示。</p>
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531144513972.png" alt="image-20220531144513972" style="zoom:30%;" />
-
-<h2 id="二、简答"><a href="#二、简答" class="headerlink" title="二、简答"></a>二、简答</h2><h3 id="2021-1"><a href="#2021-1" class="headerlink" title="2021"></a>2021</h3><h4 id="1-BP，图-amp-公式（L2"><a href="#1-BP，图-amp-公式（L2" class="headerlink" title="1.BP，图&amp;公式（L2"></a>1.<strong>BP</strong>，图&amp;公式（L2</h4><p>BP算法就是通过比较实际输出和期望输出得到误差信号，把误差信号从输出层逐层向前传播得到各层的误差信号，再通过调整各层的连接权重以减小误差。权重的调整主要使用梯度下降法</p>
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531144947356.png" alt="image-20220531144947356" style="zoom:50%;" />
-
-
-
-<h4 id="2-过拟合-amp-欠拟合，解决（L2"><a href="#2-过拟合-amp-欠拟合，解决（L2" class="headerlink" title="2**.过拟合**&amp;欠拟合，解决（L2"></a>2**.过拟合**&amp;欠拟合，解决（L2</h4><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531144234431.png" alt="image-20220531144234431" style="zoom:30%;" />
-
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531144146763.png" alt="image-20220531144146763" style="zoom:30%;" />
-
-
-
-
-
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531144157984.png" alt="image-20220531144157984" style="zoom:30%;" />
-
-<h4 id="3-Yolo"><a href="#3-Yolo" class="headerlink" title="3.Yolo"></a>3.Yolo</h4><p>YOLO算法的朴素思想：特征图的每个元素也是对应原始图片的一个小方块，然后用每个元素来可以预测那些中心点在该小方格内的目标。</p>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531144513972.png" alt="image-20220531144513972" style="zoom:30%;" /></p>
+<h2 id="二简答">二、简答</h2>
+<h3 id="section-2">2021</h3>
+<h4 id="bp图公式l2">1.<strong>BP</strong>，图&amp;公式（L2</h4>
+<p>BP算法就是通过比较实际输出和期望输出得到误差信号，把误差信号从输出层逐层向前传播得到各层的误差信号，再通过调整各层的连接权重以减小误差。权重的调整主要使用梯度下降法</p>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531144947356.png" alt="image-20220531144947356" style="zoom:50%;" /></p>
+<h4
+id="过拟合欠拟合解决l2">2<strong>.过拟合</strong>&amp;欠拟合，解决（L2</h4>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531144234431.png" alt="image-20220531144234431" style="zoom:30%;" /></p>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531144146763.png" alt="image-20220531144146763" style="zoom:30%;" /></p>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531144157984.png" alt="image-20220531144157984" style="zoom:30%;" /></p>
+<h4 id="yolo">3.Yolo</h4>
+<p>YOLO算法的朴素思想：特征图的每个元素也是对应原始图片的一个小方块，然后用每个元素来可以预测那些中心点在该小方格内的目标。</p>
 <p>YOLO算法处理步骤：</p>
 <p>第一步，输入图像</p>
 <p>第二步，YOLO将图像划分为SxS的网格</p>
-<p>第三步，对每个网格应用图像分类和定位处理，获得预测对象的Bounding box及其对应的类概率</p>
-<h4 id="4-GRU，图-amp-公式"><a href="#4-GRU，图-amp-公式" class="headerlink" title="4.GRU，图&amp;公式"></a>4.GRU，图&amp;公式</h4><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531163109012.png" alt="image-20220531163109012" style="zoom:50%;" />
-
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531163101734.png" alt="image-20220531163101734" style="zoom:50%;" />
-
-<h4 id="5-胶囊网络，图-amp-公式"><a href="#5-胶囊网络，图-amp-公式" class="headerlink" title="5.胶囊网络，图&amp;公式"></a>5.<strong>胶囊网络</strong>，图&amp;公式</h4><p>胶囊网络是为了解决CNN存在的问题而提出的。不同于CNN用标量记录局部信息，胶囊网络使用向量特征状态的重要信息。</p>
-<img src="https://img-blog.csdnimg.cn/20210121165257957.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdHRsbGVfeWFu,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" style="zoom:70%;" />
-
-
-
-<img src="https://pic3.zhimg.com/80/v2-eb93e97a5bdd030b125ad3fea66e7832_1440w.jpg" alt="img" style="zoom:50%;" />
-
-
-
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531150003098.png" alt="image-20220531150003098" style="zoom:50%;" />
-
-
-
-<p>![image-20220531150020477](&#x2F;Users&#x2F;lexie&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20220531150020477.png)</p>
-<h4 id="6-GAN，公式"><a href="#6-GAN，公式" class="headerlink" title="6.GAN，公式"></a>6.<strong>GAN</strong>，公式</h4><p>![image-20220531162847298](&#x2F;Users&#x2F;lexie&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20220531162847298.png)</p>
+<p>第三步，对每个网格应用图像分类和定位处理，获得预测对象的Bounding
+box及其对应的类概率</p>
+<h4 id="gru图公式">4.GRU，图&amp;公式</h4>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531163109012.png" alt="image-20220531163109012" style="zoom:50%;" /></p>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531163101734.png" alt="image-20220531163101734" style="zoom:50%;" /></p>
+<h4 id="胶囊网络图公式">5.<strong>胶囊网络</strong>，图&amp;公式</h4>
+<p>胶囊网络是为了解决CNN存在的问题而提出的。不同于CNN用标量记录局部信息，胶囊网络使用向量特征状态的重要信息。</p>
+<p><img src="https://img-blog.csdnimg.cn/20210121165257957.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xpdHRsbGVfeWFu,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" style="zoom:70%;" /></p>
+<p><img src="https://pic3.zhimg.com/80/v2-eb93e97a5bdd030b125ad3fea66e7832_1440w.jpg" alt="img" style="zoom:50%;" /></p>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531150003098.png" alt="image-20220531150003098" style="zoom:50%;" /></p>
+<figure>
+<img
+src="/Users/lexie/Library/Application%20Support/typora-user-images/image-20220531150020477.png"
+alt="image-20220531150020477" />
+<figcaption aria-hidden="true">image-20220531150020477</figcaption>
+</figure>
+<h4 id="gan公式">6.<strong>GAN</strong>，公式</h4>
+<figure>
+<img
+src="/Users/lexie/Library/Application%20Support/typora-user-images/image-20220531162847298.png"
+alt="image-20220531162847298" />
+<figcaption aria-hidden="true">image-20220531162847298</figcaption>
+</figure>
 <p>generator 和 discriminator相互博弈：</p>
 <ul>
 <li>discrimiator最大化真实样例与generator样例之间的差异</li>
 <li>generator根据discriminator“反馈的指导信息”，更新参数，生成“更靠谱”的样例，减小与真实样例的差异</li>
 </ul>
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531162724628.png" alt="image-20220531162724628" style="zoom:50%;" />
-
-
-
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531162915321.png" alt="image-20220531162915321" style="zoom:50%;" />
-
-<h3 id="2020-1"><a href="#2020-1" class="headerlink" title="2020"></a>2020</h3><h4 id="1-BP（L2"><a href="#1-BP（L2" class="headerlink" title="1.BP（L2"></a>1.<strong>BP（L2</strong></h4><h4 id="2-CNN主要结构模块及功能"><a href="#2-CNN主要结构模块及功能" class="headerlink" title="2.CNN主要结构模块及功能"></a>2.CNN主要结构模块及功能</h4><p>**输入层(INPUT)**：用于数据的输入。模型需要输入的进行预处理操作，常见的输入层中预处理方式有：去均值、归一化、PCA&#x2F;SVD降维等。</p>
-<p>**卷积层(CONV)**：使用卷积核进行特征提取和特征映射。</p>
-<ol>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531162724628.png" alt="image-20220531162724628" style="zoom:50%;" /></p>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531162915321.png" alt="image-20220531162915321" style="zoom:50%;" /></p>
+<h3 id="section-3">2020</h3>
+<h4 id="bpl2">1.<strong>BP（L2</strong></h4>
+<h4 id="cnn主要结构模块及功能">2.CNN主要结构模块及功能</h4>
+<p><strong>输入层(INPUT)</strong>：用于数据的输入。模型需要输入的进行预处理操作，常见的输入层中预处理方式有：去均值、归一化、PCA/SVD降维等。</p>
+<p><strong>卷积层(CONV)</strong>：使用卷积核进行特征提取和特征映射。</p>
+<ol type="1">
 <li>提取图像的特征，并且卷积核的权重是可以学习的，由此可以猜测，在高层神经网络中，卷积操作能突破传统滤波器的限制，根据目标函数提取出想要的特征。</li>
 <li>“局部感知，参数共享”的特点大大降低了网络参数，保证了网络的稀疏性，防止过拟合，之所以可以“参数共享”，是因为样本存在局部相关的特性。</li>
 </ol>
-<p>**激励函数(RELU)**：由于卷积也是一种线性运算，因此需要增加非线性映射。</p>
-<p>如果不用激励函数（其实就相当于激励函数是f(x)&#x3D;x），这种情况下，每一层的输出都是上一层输入的线性函数。容易得出，无论有多少神经网络层，输出都是输入的线性组合，与没有隐层的效果是一样的，这就是最原始的感知机了。</p>
-<p>**池化层(POOL)**：进行下采样，对特征图稀疏处理，减少数据运算量。<br>池化，也称为欠采样或下采样。要用于特征降维，压缩数据和参数的数量，减小过拟合，同时提高模型的容错性。</p>
+<p><strong>激励函数(RELU)</strong>：由于卷积也是一种线性运算，因此需要增加非线性映射。</p>
+<p>如果不用激励函数（其实就相当于激励函数是f(x)=x），这种情况下，每一层的输出都是上一层输入的线性函数。容易得出，无论有多少神经网络层，输出都是输入的线性组合，与没有隐层的效果是一样的，这就是最原始的感知机了。</p>
+<p><strong>池化层(POOL)</strong>：进行下采样，对特征图稀疏处理，减少数据运算量。
+池化，也称为欠采样或下采样。要用于特征降维，压缩数据和参数的数量，减小过拟合，同时提高模型的容错性。</p>
 <p>根据计算出来的值不一样就分为均值池化层与最大值池化层，<strong>一般常见的多为最大值池化层</strong>。池化的时候同样需要提供filter的大小、步长。</p>
 <p>pooling池化的作用则体现在降采样：保留显著特征、降低特征维度，增大kernel的感受野。另外一点值得注意：pooling也可以提供一些旋转不变性。</p>
 <p>池化层可对提取到的特征信息进行降维，一方面使特征图变小，简化网络计算复杂度并在一定程度上避免过拟合的出现；一方面进行特征压缩，提取主要特征。</p>
-<p>**全连接层(FC)**：也称它为输出层，用于输出卷积计算后的结果。<br>经过前面若干次卷积+激励+池化后，终于来到了输出层，模型会将学到的一个高质量的特征图片全连接层。其实在全连接层之前，如果神经元数目过大，学习能力强，有可能出现过拟合。因此，可以引入dropout操作，来随机删除神经网络中的部分神经元，来解决此问题。还可以进行局部归一化（LRN）、数据增强等操作，来增加鲁棒性。</p>
-<h4 id="3-LSTM，为什么能够解决长时依赖问题"><a href="#3-LSTM，为什么能够解决长时依赖问题" class="headerlink" title="3.LSTM，为什么能够解决长时依赖问题"></a>3.LSTM，为什么能够解决长时依赖问题</h4><p><strong>LSTM</strong>依靠贯穿隐藏层的细胞状态实现隐藏单元之间的信息传递，其中只有少量的线性操作</p>
+<p><strong>全连接层(FC)</strong>：也称它为输出层，用于输出卷积计算后的结果。
+经过前面若干次卷积+激励+池化后，终于来到了输出层，模型会将学到的一个高质量的特征图片全连接层。其实在全连接层之前，如果神经元数目过大，学习能力强，有可能出现过拟合。因此，可以引入dropout操作，来随机删除神经网络中的部分神经元，来解决此问题。还可以进行局部归一化（LRN）、数据增强等操作，来增加鲁棒性。</p>
+<h4
+id="lstm为什么能够解决长时依赖问题">3.LSTM，为什么能够解决长时依赖问题</h4>
+<p><strong>LSTM</strong>依靠贯穿隐藏层的细胞状态实现隐藏单元之间的信息传递，其中只有少量的线性操作</p>
 <p><strong>LSTM</strong>引入了“门”机制对细胞状态信息进行添加或删除，由此实现长程记忆</p>
-<h4 id="4-DL中常见避免过拟合的方法（L2"><a href="#4-DL中常见避免过拟合的方法（L2" class="headerlink" title="4.DL中常见避免过拟合的方法（L2"></a>4.DL中常见避免<strong>过拟合</strong>的方法（L2</h4><h4 id="5-GAN及其训练过程"><a href="#5-GAN及其训练过程" class="headerlink" title="5.GAN及其训练过程"></a>5.<strong>GAN</strong>及其训练过程</h4><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531164149448.png" alt="image-20220531164149448" style="zoom:50%;" />
-
-
-
-<img src="https://img-blog.csdnimg.cn/2019102714070227.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xhbmdzaW1pbmc=,size_16,color_FFFFFF,t_70" alt="img" style="zoom:50%;" />
-
-<h4 id="6-胶囊网络"><a href="#6-胶囊网络" class="headerlink" title="6.胶囊网络"></a>6.<strong>胶囊网络</strong></h4><h2 id="三、计算"><a href="#三、计算" class="headerlink" title="三、计算"></a>三、计算</h2><h2 id="四、设计"><a href="#四、设计" class="headerlink" title="四、设计"></a>四、设计</h2><h3 id="2021-2"><a href="#2021-2" class="headerlink" title="2021"></a>2021</h3><p>姿态估计</p>
+<h4
+id="dl中常见避免过拟合的方法l2">4.DL中常见避免<strong>过拟合</strong>的方法（L2</h4>
+<h4 id="gan及其训练过程">5.<strong>GAN</strong>及其训练过程</h4>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531164149448.png" alt="image-20220531164149448" style="zoom:50%;" /></p>
+<p><img src="https://img-blog.csdnimg.cn/2019102714070227.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xhbmdzaW1pbmc=,size_16,color_FFFFFF,t_70" alt="img" style="zoom:50%;" /></p>
+<h4 id="胶囊网络-1">6.<strong>胶囊网络</strong></h4>
+<h2 id="三计算">三、计算</h2>
+<h2 id="四设计">四、设计</h2>
+<h3 id="section-4">2021</h3>
+<p>姿态估计</p>
 <p>图像描述</p>
-<h3 id="2020-2"><a href="#2020-2" class="headerlink" title="2020"></a>2020</h3><p>机器阅读理解</p>
+<h3 id="section-5">2020</h3>
+<p>机器阅读理解</p>
 <p>对大量图像进行目标检测</p>
 <p><strong>循环神经网络的Dropout：</strong></p>
 <p>通过dropout可以让卷积神经网络更加健壮。类似，再循环神经网络中使用dropout也有同样的功能。</p>
 <p>如果模型的<strong>参数太多，而训练样本又太少</strong>，训练出来的模型很容易产生过拟合的现象。Dropout可以<strong>有效的缓解过拟合</strong>的发生，在一定程度上达到正则化的效果。</p>
 <p>Dropout可以作为训练深度神经网络的一种trick供选择。<strong>在每个训练批次中，通过忽略一半的特征检测器（让一半的隐层节点值为0）</strong>，可以明显地减少过拟合现象。这种方式可以<strong>减少隐层结点间的相互作用</strong>，<strong>隐层节点相互作用是指某些隐层结点依赖其他隐层结点才能发挥作用</strong>。</p>
 <p>Dropout通俗讲，即：在前向传播的时候，<strong>让某个神经元的激活值以一定的概率p停止工作</strong>，这样可以使模型泛化性更强，因为它不会太依赖某些局部的特征，</p>
-<p>类似卷积神经网络只在全连接层中使用dropout，循环神经网络一般只在<strong>不同层循环体结构之间使用dropout</strong>，<strong>不在同一层循环结构之间使用</strong>。即：<strong>从时刻t-1传递到时刻t，循环神经网络不会进行状态的dropout</strong>；而在<strong>同一时刻t中，不同层循环体之间会使用dropout</strong>。<br><img src="https://img-blog.csdnimg.cn/2019011810431060.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hlbGxvd3V4aWE=,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h3 id="CNN参数计算："><a href="#CNN参数计算：" class="headerlink" title="CNN参数计算："></a>CNN参数计算：</h3><h4 id="一、卷积层"><a href="#一、卷积层" class="headerlink" title="一、卷积层"></a>一、卷积层</h4><p>CNN中，每一层都有两种参数：权重和偏差</p>
-<img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531160535066.png" alt="image-20220531160535066" style="zoom:50%;" />
-
-<h4 id="二、最大池化层"><a href="#二、最大池化层" class="headerlink" title="二、最大池化层"></a>二、最大池化层</h4><p>没有与最大池化层相关联的参数。池的大小、步长和填充都是超参数。</p>
-<h4 id="三、全连接（FC）层"><a href="#三、全连接（FC）层" class="headerlink" title="三、全连接（FC）层"></a>三、全连接（FC）层</h4><p>在CNN中有两种完全连接的层。</p>
+<p>类似卷积神经网络只在全连接层中使用dropout，循环神经网络一般只在<strong>不同层循环体结构之间使用dropout</strong>，<strong>不在同一层循环结构之间使用</strong>。即：<strong>从时刻t-1传递到时刻t，循环神经网络不会进行状态的dropout</strong>；而在<strong>同一时刻t中，不同层循环体之间会使用dropout</strong>。
+<img
+src="https://img-blog.csdnimg.cn/2019011810431060.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2hlbGxvd3V4aWE=,size_16,color_FFFFFF,t_70"
+alt="在这里插入图片描述" /></p>
+<h3 id="cnn参数计算">CNN参数计算：</h3>
+<h4 id="一卷积层">一、卷积层</h4>
+<p>CNN中，每一层都有两种参数：权重和偏差</p>
+<p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220531160535066.png" alt="image-20220531160535066" style="zoom:50%;" /></p>
+<h4 id="二最大池化层">二、最大池化层</h4>
+<p>没有与最大池化层相关联的参数。池的大小、步长和填充都是超参数。</p>
+<h4 id="三全连接fc层">三、全连接（FC）层</h4>
+<p>在CNN中有两种完全连接的层。</p>
 <p>第一种是该全连接层的前面连接着最后一个卷积层（Conv-FC）</p>
-<p>![image-20220531160918231](&#x2F;Users&#x2F;lexie&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20220531160918231.png)</p>
+<figure>
+<img
+src="/Users/lexie/Library/Application%20Support/typora-user-images/image-20220531160918231.png"
+alt="image-20220531160918231" />
+<figcaption aria-hidden="true">image-20220531160918231</figcaption>
+</figure>
 <p>第二种是该全连接层的前面连接着其他全连接层（FC-FC）</p>
-<p>![image-20220531160930274](&#x2F;Users&#x2F;lexie&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20220531160930274.png)</p>
+<figure>
+<img
+src="/Users/lexie/Library/Application%20Support/typora-user-images/image-20220531160930274.png"
+alt="image-20220531160930274" />
+<figcaption aria-hidden="true">image-20220531160930274</figcaption>
+</figure>
 ]]></content>
+      <tags>
+        <tag>UCAS课程复习</tag>
+      </tags>
   </entry>
   <entry>
-    <title>模式识别复习</title>
-    <url>/2022/03/01/%E6%A8%A1%E5%BC%8F%E8%AF%86%E5%88%AB%E5%A4%8D%E4%B9%A0%E6%96%87%E6%A1%A3/</url>
-    <content><![CDATA[<h1 id="模式识别复习"><a href="#模式识别复习" class="headerlink" title="模式识别复习"></a>模式识别复习</h1><h2 id="一、绪论"><a href="#一、绪论" class="headerlink" title="一、绪论"></a>一、绪论</h2><h3 id="1-什么是模式识别"><a href="#1-什么是模式识别" class="headerlink" title="1.什么是模式识别"></a>1.什么是模式识别</h3><ul>
+    <title>模式识别</title>
+    <url>/2021/12/01/%E6%A8%A1%E5%BC%8F%E8%AF%86%E5%88%AB%E5%A4%8D%E4%B9%A0%E6%96%87%E6%A1%A3/</url>
+    <content><![CDATA[<h1 id="模式识别复习">模式识别复习</h1>
+<h2 id="一绪论">一、绪论</h2>
+<h3 id="什么是模式识别">1.什么是模式识别</h3>
+<ul>
 <li><p>人类智能：<strong>感知</strong>、学习、思维、语言理解与对话、行为</p>
-<p>人工智能研究内容：<strong>机器感知（模式识别）</strong>、机器学习、机器思维（问题求解）、自然语言处理、只能行为</p>
-</li>
+<p>人工智能研究内容：<strong>机器感知（模式识别）</strong>、机器学习、机器思维（问题求解）、自然语言处理、只能行为</p></li>
 <li><p>模式识别：使计算机模仿人的感知能力，从感知数据中提取信息的过程。</p>
-<p>​                    非结构化数据—&gt;结构化知识</p>
-</li>
-<li><p>模式识别相关问题：数据预处理、模式分割、运动分析、<strong>模式描述与分类（特征提取&#x2F;选择、模式分类、聚类、机器学习）</strong>、模式识别应用研究</p>
-</li>
+<p>​ 非结构化数据—&gt;结构化知识</p></li>
+<li><p>模式识别相关问题：数据预处理、模式分割、运动分析、<strong>模式描述与分类（特征提取/选择、模式分类、聚类、机器学习）</strong>、模式识别应用研究</p></li>
 </ul>
-<h3 id="2-模式识别发展简史"><a href="#2-模式识别发展简史" class="headerlink" title="2.模式识别发展简史"></a>2.模式识别发展简史</h3><ul>
+<h3 id="模式识别发展简史">2.模式识别发展简史</h3>
+<ul>
 <li>80年代：多层神经网络，BP算法；卷积神经网络</li>
 <li>90年代：SVM；多分类器系统（Ensemble）；半监督学习；多标签学习；多任务学习</li>
 <li>21世纪初：概率图模型（马尔可夫随机场、隐马尔可夫模型、条件随机场）；迁移学习；深度学习</li>
-<li>ML&#x2F;PR&#x2F;DM主要方法：分类&#x2F;聚类&#x2F;特征提取<ul>
+<li>ML/PR/DM主要方法：分类/聚类/特征提取
+<ul>
 <li>ML：从数据、经验中获取知识、规则、模型、参数的过程，主要研究通用理论算法，大部分针对分类</li>
 <li>DM：针对各种数据中的信息提取和知识发现</li>
 <li>PR：主要研究分类识别方法，面向感知应用</li>
 <li>CV：模仿人类视觉系统，实现视觉信息高层理解</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h3 id="3-模式识别形式化"><a href="#3-模式识别形式化" class="headerlink" title="3.模式识别形式化"></a>3.模式识别形式化</h3><ul>
+<h3 id="模式识别形式化">3.模式识别形式化</h3>
+<ul>
 <li>模式的两个层次：样本&amp;类别</li>
 <li>模式识别核心技术：模式分类</li>
-<li>模式的计算机表示：<ul>
+<li>模式的计算机表示：
+<ul>
 <li>识别对象的表示（特征）：特征矢量、特征空间</li>
 <li>分类器表示：类别模型、判别函数、决策面</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h3 id="4-模式识别系统流程"><a href="#4-模式识别系统流程" class="headerlink" title="4.模式识别系统流程"></a>4.模式识别系统流程</h3><p>训练&#x2F;测试过程中的模式预处理和特征提取必须完全一致</p>
-<h3 id="5-模式分类器设计"><a href="#5-模式分类器设计" class="headerlink" title="5.模式分类器设计"></a>5.模式分类器设计</h3><ul>
-<li>数据划分的两个层次<ul>
+<h3 id="模式识别系统流程">4.模式识别系统流程</h3>
+<p>训练/测试过程中的模式预处理和特征提取必须完全一致</p>
+<h3 id="模式分类器设计">5.模式分类器设计</h3>
+<ul>
+<li>数据划分的两个层次
+<ul>
 <li>性能评价：Training+Test</li>
 <li>模型选择：Estimation+Validation</li>
-</ul>
-</li>
+</ul></li>
 <li>泛化性能（Bias-Variance Tradeoff图）</li>
 </ul>
-<h3 id="6-模式识别方法分类"><a href="#6-模式识别方法分类" class="headerlink" title="6.模式识别方法分类"></a>6.模式识别方法分类</h3><ul>
-<li>按模式&#x2F;模型表示方法分类<ul>
+<h3 id="模式识别方法分类">6.模式识别方法分类</h3>
+<ul>
+<li>按模式/模型表示方法分类
+<ul>
 <li>统计方法：需要大量数据训练，解释性差，与人类认知的相关性低</li>
 <li>结构方法：小样本情况下性能良好，大样本训练困难，对outlier鲁棒</li>
-</ul>
-</li>
-<li>学习方法分类<ul>
+</ul></li>
+<li>学习方法分类
+<ul>
 <li>监督学习</li>
 <li>无监督学习</li>
 <li>半监督学习</li>
 <li>强化学习</li>
 <li>领域自适应（迁移学习）：测试样本分布发生变化，分类器参数自适应</li>
 <li>增量学习、在线学习：数据顺序出现（且过去数据不能保存），学新不忘旧</li>
-</ul>
-</li>
-<li>生成&#x2F;判别（都属于统计模式识别方法？）<ul>
+</ul></li>
+<li>生成/判别（都属于统计模式识别方法？）
+<ul>
 <li>生成模型Generative：表示各个类别内部结构或特征分布，不同类别分别学习。</li>
 <li>判别模型Discriminative：表示不同类别之间的区别，一般为判别函数、边界函数或后验概率。所有类别样本同时学习</li>
-<li>混合模型的几种方式<ul>
+<li>混合模型的几种方式
+<ul>
 <li>生成模型+判别学习</li>
-<li>混合模型  $f_1(x,\theta_1)+f_2(x,\theta_2)$</li>
-<li>混合学习准则 $l_1(x,\theta_1)+l_2(x,\theta_2)$</li>
+<li>混合模型 <span
+class="math inline">\(f_1(x,\theta_1)+f_2(x,\theta_2)\)</span></li>
+<li>混合学习准则 <span
+class="math inline">\(l_1(x,\theta_1)+l_2(x,\theta_2)\)</span></li>
+</ul></li>
+</ul></li>
 </ul>
-</li>
+<h2 id="二贝叶斯决策生成模型">二、贝叶斯决策(生成模型)</h2>
+<h3 id="分类问题的表示">1.分类问题的表示</h3>
+<ul>
+<li>类别： <span class="math inline">\(\omega_i,i=1,...,c\)</span></li>
+<li>特征矢量： <span class="math inline">\(x=[x_1,...,x_d] \in
+R^d\)</span></li>
+<li>先验概率： <span
+class="math inline">\(P(\omega_i)\quad\textstyle\sum_{i=1}^c
+P(\omega_i)=1\)</span></li>
+<li>概率密度函数（条件概率）：<span
+class="math inline">\(p(x|\omega_i)\)</span></li>
+<li>后验概率：<span
+class="math inline">\(P(\omega_i|x)=\frac{p(x|\omega_i)P(\omega_i)}{p(x)}=\frac{p(x|\omega_i)P(\omega_i)}{\sum^{c}_{j=1}p(x|\omega_j)P(\omega_j)}
+\quad \sum^c_{i=1}P(w_i|x)=1\)</span></li>
 </ul>
-</li>
-</ul>
-<h2 id="二、贝叶斯决策-生成模型"><a href="#二、贝叶斯决策-生成模型" class="headerlink" title="二、贝叶斯决策(生成模型)"></a>二、贝叶斯决策(生成模型)</h2><h3 id="1-分类问题的表示"><a href="#1-分类问题的表示" class="headerlink" title="1.分类问题的表示"></a>1.分类问题的表示</h3><ul>
-<li>类别：        $\omega_i,i&#x3D;1,…,c$</li>
-<li>特征矢量： $x&#x3D;[x_1,…,x_d] \in R^d$</li>
-<li>先验概率： $P(\omega_i)\quad\textstyle\sum_{i&#x3D;1}^c P(\omega_i)&#x3D;1$</li>
-<li>概率密度函数（条件概率）：$p(x|\omega_i)$</li>
-<li>后验概率：$P(\omega_i|x)&#x3D;\frac{p(x|\omega_i)P(\omega_i)}{p(x)}&#x3D;\frac{p(x|\omega_i)P(\omega_i)}{\sum^{c}<em>{j&#x3D;1}p(x|\omega_j)P(\omega_j)} \quad \sum^c</em>{i&#x3D;1}P(w_i|x)&#x3D;1$</li>
-</ul>
-<h3 id="3-最小风险决策（贝叶斯决策的一般形式）"><a href="#3-最小风险决策（贝叶斯决策的一般形式）" class="headerlink" title="3.最小风险决策（贝叶斯决策的一般形式）"></a>3.最小风险决策（贝叶斯决策的一般形式）</h3><ul>
-<li><p>风险函数 $\lambda(\alpha_i|\omega_j)$ 描述类别状态为$\omega_j$ 时采取行动$\alpha_i$ 的风险</p>
-</li>
-<li><p>条件风险$R(\alpha_i|x)&#x3D;\sum_{j&#x3D;1}^c \lambda(\alpha_i|\omega_j)P(\omega_j|x)$ </p>
-</li>
-<li><p>为了最小化总风险$R&#x3D;\int R(\alpha(x)|x)p(x)dx$ ，</p>
-<p>对所有$i&#x3D;1,…,a$ 计算条件风险$R(\alpha_i|x)&#x3D;\sum_{j&#x3D;1}^c \lambda(\alpha_i|\omega_j)P(\omega_j|x)$ ，</p>
-<p>并且选择行为$\alpha_i $使$R(\alpha_i|x)$ 最小化。</p>
-</li>
+<h3
+id="最小风险决策贝叶斯决策的一般形式">3.最小风险决策（贝叶斯决策的一般形式）</h3>
+<ul>
+<li><p>风险函数 <span
+class="math inline">\(\lambda(\alpha_i|\omega_j)\)</span>
+描述类别状态为<span class="math inline">\(\omega_j\)</span>
+时采取行动<span class="math inline">\(\alpha_i\)</span> 的风险</p></li>
+<li><p>条件风险<span class="math inline">\(R(\alpha_i|x)=\sum_{j=1}^c
+\lambda(\alpha_i|\omega_j)P(\omega_j|x)\)</span></p></li>
+<li><p>为了最小化总风险<span class="math inline">\(R=\int
+R(\alpha(x)|x)p(x)dx\)</span> ，</p>
+<p>对所有<span class="math inline">\(i=1,...,a\)</span>
+计算条件风险<span class="math inline">\(R(\alpha_i|x)=\sum_{j=1}^c
+\lambda(\alpha_i|\omega_j)P(\omega_j|x)\)</span> ，</p>
+<p>并且选择行为$_i <span class="math inline">\(使\)</span>R(_i|x)$
+最小化。</p></li>
 <li><p>两类分类问题</p>
 <ul>
-<li><p>简化 $\lambda_{ij}&#x3D;\lambda(\alpha_i|\omega_j)$ 表示当实际类别为$\omega_j$ 却误判为$\omega_i$ 所引起的损失。</p>
-<p>$R(\alpha_1|x)&#x3D;\lambda_{11}P(\omega_1|x)+\lambda_{12}P(\omega_2|x)$</p>
-<p>$R(\alpha_2|x)&#x3D;\lambda_{21}P(\omega_1|x)+\lambda_{22}P(\omega_2|x)$</p>
-</li>
+<li><p>简化 <span
+class="math inline">\(\lambda_{ij}=\lambda(\alpha_i|\omega_j)\)</span>
+表示当实际类别为<span class="math inline">\(\omega_j\)</span>
+却误判为<span class="math inline">\(\omega_i\)</span> 所引起的损失。</p>
+<p><span
+class="math inline">\(R(\alpha_1|x)=\lambda_{11}P(\omega_1|x)+\lambda_{12}P(\omega_2|x)\)</span></p>
+<p><span
+class="math inline">\(R(\alpha_2|x)=\lambda_{21}P(\omega_1|x)+\lambda_{22}P(\omega_2|x)\)</span></p></li>
 <li><p>最小风险决策基本规则（表示1）：</p>
-<p>如果$R(\alpha_1|x)&lt;R(\alpha_2|x)$ ，则判为$\omega_1$</p>
-</li>
+<p>如果<span
+class="math inline">\(R(\alpha_1|x)&lt;R(\alpha_2|x)\)</span>
+，则判为<span class="math inline">\(\omega_1\)</span></p></li>
 <li><p>用后验概率形式表述为（表示2）：</p>
-<p>如果$(\lambda_{21}-\lambda_{11})P(\omega_1|x)&gt;(\lambda_{12}-\lambda_{22})P(\omega_2|x)$ ，则判为$\omega_1$</p>
-</li>
+<p>如果<span
+class="math inline">\((\lambda_{21}-\lambda_{11})P(\omega_1|x)&gt;(\lambda_{12}-\lambda_{22})P(\omega_2|x)\)</span>
+，则判为<span class="math inline">\(\omega_1\)</span></p></li>
 <li><p>利用贝叶斯公式，用先验概率和条件密度来表示后验概率，等价规则为（表示3）：</p>
-<p>如果$(\lambda_{21}-\lambda_{11})p(x|\omega_1)P(\omega_1)&gt;(\lambda_{12}-\lambda_{22})p(x|\omega_2)P(\omega_2)$ ，则判为$\omega_1$</p>
-</li>
-<li><p>通常，一次错误判决所造成的损失比正确判决要大，所以可以合理假设$\lambda_{21}-\lambda_{11}$ 和$\lambda_{12}-\lambda_{22}$ 都是正的，等价规则为（表示4）：</p>
-<p>如果$\frac{p(x|\omega_1)}{p(x|\omega_2)}&gt;\frac{\lambda_{12}-\lambda_{22}}{\lambda_{21}-\lambda_{11}} \frac{P(\omega_2)}{P(\omega_1}$  ，则判为$\omega_1$</p>
-<p>考虑$p(x|\omega_j)$ 作为$\omega_j $的函数（似然函数），等式左边的式子构成似然比。因此贝叶斯决策规则可以解释成如果似然比超过某个不依赖观测值$x$的阈值，那么可判决为$\omega_1$。</p>
-</li>
+<p>如果<span
+class="math inline">\((\lambda_{21}-\lambda_{11})p(x|\omega_1)P(\omega_1)&gt;(\lambda_{12}-\lambda_{22})p(x|\omega_2)P(\omega_2)\)</span>
+，则判为<span class="math inline">\(\omega_1\)</span></p></li>
+<li><p>通常，一次错误判决所造成的损失比正确判决要大，所以可以合理假设<span
+class="math inline">\(\lambda_{21}-\lambda_{11}\)</span> 和<span
+class="math inline">\(\lambda_{12}-\lambda_{22}\)</span>
+都是正的，等价规则为（表示4）：</p>
+<p>如果<span
+class="math inline">\(\frac{p(x|\omega_1)}{p(x|\omega_2)}&gt;\frac{\lambda_{12}-\lambda_{22}}{\lambda_{21}-\lambda_{11}}
+\frac{P(\omega_2)}{P(\omega_1}\)</span> ，则判为<span
+class="math inline">\(\omega_1\)</span></p>
+<p>考虑<span class="math inline">\(p(x|\omega_j)\)</span> 作为$_j <span
+class="math inline">\(的函数（似然函数），等式左边的式子构成似然比。因此贝叶斯决策规则可以解释成如果似然比超过某个不依赖观测值\)</span>x<span
+class="math inline">\(的阈值，那么可判决为\)</span>_1$。</p></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h3 id="3-最小误差率分类（最大后验概率决策）"><a href="#3-最小误差率分类（最大后验概率决策）" class="headerlink" title="3.最小误差率分类（最大后验概率决策）"></a>3.最小误差率分类（最大后验概率决策）</h3><ul>
+<h3
+id="最小误差率分类最大后验概率决策">3.最小误差率分类（最大后验概率决策）</h3>
+<ul>
 <li>损失函数（“对称损失”或“0-1损失”函数）：</li>
 </ul>
-<p>$$<br>\lambda(\alpha_i|\omega_j)&#x3D;<br>\begin{cases}<br>0, \quad i&#x3D;j \<br>1, \quad i\neq j<br>\end{cases}<br>\qquad i,j&#x3D;1,…,c<br>$$</p>
+<p><span class="math display">\[
+\lambda(\alpha_i|\omega_j)=
+\begin{cases}
+0, \quad i=j \\
+1, \quad i\neq j
+\end{cases}
+\qquad i,j=1,...,c
+\]</span></p>
 <ul>
 <li>这个损失函数对应的风险（平均误差概率）：</li>
 </ul>
-<p>$$<br>R(\alpha_i|x) &amp;&#x3D;\sum_{j&#x3D;1}^c \lambda_{ij}P(\omega_j|x)<br>\ &amp;&#x3D;\sum_{j \neq i} P(\omega_j|x)<br>\ &amp;&#x3D; 1-  P(\omega_i|x)<br>$$</p>
+<p><span class="math display">\[
+R(\alpha_i|x) &amp;=\sum_{j=1}^c \lambda_{ij}P(\omega_j|x)
+\\ &amp;=\sum_{j \neq i} P(\omega_j|x)
+\\ &amp;= 1-  P(\omega_i|x)
+\]</span></p>
 <ul>
 <li><p>最小化平均误差概率条件下的贝叶斯决策规则：（后验概率最大）</p>
-<p>对任给$j \neq i$， 如果$P(\omega_i|x)\gt P(\omega_j|x)$  ，则判决为$\omega_i $</p>
-</li>
+<p>对任给<span class="math inline">\(j \neq i\)</span>， 如果<span
+class="math inline">\(P(\omega_i|x)\gt P(\omega_j|x)\)</span>
+，则判决为$_i $</p></li>
 </ul>
-<h3 id="3-5-带拒识的决策（c-1-classes"><a href="#3-5-带拒识的决策（c-1-classes" class="headerlink" title="3.5. 带拒识的决策（c+1 classes)"></a>3.5. 带拒识的决策（c+1 classes)</h3><ul>
+<h3 id="带拒识的决策c1-classes">3.5. 带拒识的决策（c+1 classes)</h3>
+<ul>
 <li><p>损失函数</p>
-<p>$$<br>\lambda(\alpha_i|\omega_j)&#x3D;<br>\begin{cases}<br>0,                     &amp; i&#x3D;j \<br>\lambda_s,    &amp; i\neq j \<br>\lambda_r,     &amp; reject<br>\end{cases}<br>$$</p>
-</li>
+<p><span class="math display">\[
+\lambda(\alpha_i|\omega_j)=
+\begin{cases}
+0,                     &amp; i=j \\
+\lambda_s,    &amp; i\neq j \\
+\lambda_r,     &amp; reject
+\end{cases}
+\]</span></p></li>
 <li><p>风险函数</p>
-<p>$$<br>R(\alpha_i|x) &#x3D;\sum_{j&#x3D;1}^c \lambda_{ij}P(\omega_j|x)<br>$$</p>
-<p>$$<br>R_i(x)&#x3D;<br>\begin{cases}<br>\lambda_s[1-P(\omega_i|x)],&amp;i&#x3D;1,…,c    \<br>\lambda_r,&amp;reject<br>\end{cases}<br>$$</p>
-</li>
-<li><h6 id="决策规则"><a href="#决策规则" class="headerlink" title="决策规则"></a>决策规则</h6><p>$$<br>\arg\min_i R_i(x)&#x3D;<br>\begin{cases}<br>\arg\max_i P(\omega_i|x), &amp;if \max_i P(\omega_i|x) \gt 1-\lambda_r&#x2F;\lambda_s \<br>reject, &amp;otherwise<br>\end{cases}<br>$$</p>
-<p> 最大后验概率小于阈值$1-\lambda_r&#x2F;\lambda_s$时，拒识。</p>
-</li>
+<p><span class="math display">\[
+R(\alpha_i|x) =\sum_{j=1}^c \lambda_{ij}P(\omega_j|x)
+\]</span></p>
+<p><span class="math display">\[
+R_i(x)=
+\begin{cases}
+\lambda_s[1-P(\omega_i|x)],&amp;i=1,...,c    \\
+\lambda_r,&amp;reject
+\end{cases}
+\]</span></p></li>
+<li><h6 id="决策规则">决策规则</h6>
+<p><span class="math display">\[
+\arg\min_i R_i(x)=
+\begin{cases}
+\arg\max_i P(\omega_i|x), &amp;if \max_i P(\omega_i|x) \gt
+1-\lambda_r/\lambda_s \\
+reject, &amp;otherwise
+\end{cases}
+\]</span></p>
+<p>最大后验概率小于阈值<span
+class="math inline">\(1-\lambda_r/\lambda_s\)</span>时，拒识。</p></li>
 </ul>
-<h3 id="4-判别函数和决策面"><a href="#4-判别函数和决策面" class="headerlink" title="4.判别函数和决策面"></a>4.判别函数和决策面</h3><ul>
+<h3 id="判别函数和决策面">4.判别函数和决策面</h3>
+<ul>
 <li><p>判别函数：</p>
-<p>表征模式属于每一类的广义似然度$g_i(x),i&#x3D;1,…,c$</p>
-<p>分类决策 $\arg\max_i g_i(x)$</p>
+<p>表征模式属于每一类的广义似然度<span
+class="math inline">\(g_i(x),i=1,...,c\)</span></p>
+<p>分类决策 <span class="math inline">\(\arg\max_i g_i(x)\)</span></p>
 <p>例如：</p>
 <ul>
-<li>条件风险：$g_i(x)&#x3D;-R(\alpha_i|x)$</li>
-<li>后验概率：$g_i(x)&#x3D;P(\omega_i|x)$</li>
-<li>似然函数：$g_i(x)&#x3D;\log p (x|\omega_i)+\log P(\omega_i)$</li>
+<li>条件风险：<span
+class="math inline">\(g_i(x)=-R(\alpha_i|x)\)</span></li>
+<li>后验概率：<span
+class="math inline">\(g_i(x)=P(\omega_i|x)\)</span></li>
+<li>似然函数：<span class="math inline">\(g_i(x)=\log p
+(x|\omega_i)+\log P(\omega_i)\)</span></li>
+</ul></li>
+<li><p>决策面：特征空间中两类判别函数相等的点的集合</p></li>
 </ul>
-</li>
-<li><p>决策面：特征空间中两类判别函数相等的点的集合</p>
-</li>
-</ul>
-<h3 id="5-0-贝叶斯决策用于模式分类"><a href="#5-0-贝叶斯决策用于模式分类" class="headerlink" title="5.0. 贝叶斯决策用于模式分类"></a>5.0. 贝叶斯决策用于模式分类</h3><ul>
-<li>贝叶斯决策的关键：<ul>
+<h3 id="贝叶斯决策用于模式分类">5.0. 贝叶斯决策用于模式分类</h3>
+<ul>
+<li>贝叶斯决策的关键：
+<ul>
 <li>类条件概率密度估计</li>
 <li>先验概率：从训练样本估计或假设等概率</li>
-<li>决策代价$[\lambda_{ij}]$ ，一般为0-1代价</li>
+<li>决策代价<span class="math inline">\([\lambda_{ij}]\)</span>
+，一般为0-1代价</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h3 id="5-高斯概率密度"><a href="#5-高斯概率密度" class="headerlink" title="5.高斯概率密度"></a>5.高斯概率密度</h3><ul>
+<h3 id="高斯概率密度">5.高斯概率密度</h3>
+<ul>
 <li>单变量高斯密度函数（正态分布）</li>
 </ul>
-<p>$$<br>p(x)&#x3D;\frac{1}{\sqrt{2\pi}\sigma}\exp[-\frac{1}{2}(\frac{x-\mu}{\sigma})^2]<br>\<br>\mu \equiv \varepsilon[x] &#x3D; \int_{-\infty}^{\infty}  xp(x)dx<br>\<br>\sigma^2  \equiv \varepsilon[(x-\mu)^2]&#x3D; \int_{-\infty}^{\infty} (x-\mu)^2p(x)dx<br>$$</p>
+<p><span class="math display">\[
+p(x)=\frac{1}{\sqrt{2\pi}\sigma}\exp[-\frac{1}{2}(\frac{x-\mu}{\sigma})^2]
+\\
+\mu \equiv \varepsilon[x] = \int_{-\infty}^{\infty}  xp(x)dx
+\\
+\sigma^2  \equiv \varepsilon[(x-\mu)^2]= \int_{-\infty}^{\infty}
+(x-\mu)^2p(x)dx
+\]</span></p>
 <ul>
 <li>多元密度函数</li>
 </ul>
-<p>$$<br>p(x)&#x3D;\frac{1}{(2\pi)^{d&#x2F;2}\abs{\Sigma}^{1&#x2F;2}}\exp[-\frac{1}{2}(x-\mu)^t\Sigma^{-1}(x-\mu)]<br>\<br>\mu \equiv \varepsilon[x] &#x3D; \int xp(x)dx \quad \mu_i&#x3D;\varepsilon[x_i]<br>\<br>\Sigma  \equiv \varepsilon[(x-\mu)(x-\mu)^t]&#x3D; \int (x-\mu)(x-\mu)^t p(x)dx \quad \<br>\sigma_{ij}&#x3D;\varepsilon[(x_i-\mu_i)(x_j-\mu_j)] \quad 若x_i与x_j独立，则\sigma_{ij}&#x3D;0<br>$$</p>
+<p><span class="math display">\[
+p(x)=\frac{1}{(2\pi)^{d/2}\abs{\Sigma}^{1/2}}\exp[-\frac{1}{2}(x-\mu)^t\Sigma^{-1}(x-\mu)]
+\\
+\mu \equiv \varepsilon[x] = \int xp(x)dx \quad \mu_i=\varepsilon[x_i]
+\\
+\Sigma  \equiv \varepsilon[(x-\mu)(x-\mu)^t]= \int (x-\mu)(x-\mu)^t
+p(x)dx \quad \\
+\sigma_{ij}=\varepsilon[(x_i-\mu_i)(x_j-\mu_j)] \quad
+若x_i与x_j独立，则\sigma_{ij}=0
+\]</span></p>
 <ul>
-<li><p>协方差矩阵$\Sigma$ 的性质</p>
+<li><p>协方差矩阵<span class="math inline">\(\Sigma\)</span> 的性质</p>
 <ul>
-<li><p>实对称</p>
-</li>
-<li><p>特征值分解，特征向量构成的矩阵$\Phi$是正交的</p>
-</li>
-<li><p>可对角化 $\Phi^T \Sigma \Phi &#x3D;\Lambda$</p>
-</li>
-<li><p>应用：PCA</p>
-</li>
-<li><p>服从正态分布的随机变量的线性组合（独立或非独立的都可以）也是一个正态分布。定义白化变换$A_w&#x3D;\Phi\Lambda^{-t1&#x2F;2}$ ，可以产生一个圆轴对称的高斯分布。</p>
-<p>$$<br>\begin{align*}<br>A^t_w\Sigma A_w&amp;&#x3D;\Lambda^{-1&#x2F;2}\Phi^t\Sigma\Phi\Lambda^{-1&#x2F;2}\<br>&amp;&#x3D;\Lambda^{-1&#x2F;2}\Lambda\Lambda^{1&#x2F;2}\<br>&amp;&#x3D;I<br>\end{align*}<br>$$</p>
-</li>
+<li><p>实对称</p></li>
+<li><p>特征值分解，特征向量构成的矩阵<span
+class="math inline">\(\Phi\)</span>是正交的</p></li>
+<li><p>可对角化 <span class="math inline">\(\Phi^T \Sigma \Phi
+=\Lambda\)</span></p></li>
+<li><p>应用：PCA</p></li>
+<li><p>服从正态分布的随机变量的线性组合（独立或非独立的都可以）也是一个正态分布。定义白化变换<span
+class="math inline">\(A_w=\Phi\Lambda^{-t1/2}\)</span>
+，可以产生一个圆轴对称的高斯分布。</p>
+<p><span class="math display">\[
+\begin{align*}
+A^t_w\Sigma A_w&amp;=\Lambda^{-1/2}\Phi^t\Sigma\Phi\Lambda^{-1/2}\\
+&amp;=\Lambda^{-1/2}\Lambda\Lambda^{1/2}\\
+&amp;=I
+\end{align*}
+\]</span></p></li>
+</ul></li>
 </ul>
-</li>
+<h3
+id="高斯密度下的判别函数ldfqdf">6.高斯密度下的判别函数（LDF&amp;QDF）</h3>
+<ul>
+<li><p>二、4中由类似然函数相等得到的判别函数：<span
+class="math inline">\(g_i(x)=\log p (x|\omega_i)+\log
+P(\omega_i)\)</span></p>
+<p>如果密度函数<span class="math inline">\(p(x|\omega_i)\)</span>
+是多元正态分布，则可得到判别函数：</p></li>
 </ul>
-<h3 id="6-高斯密度下的判别函数（LDF-amp-QDF）"><a href="#6-高斯密度下的判别函数（LDF-amp-QDF）" class="headerlink" title="6.高斯密度下的判别函数（LDF&amp;QDF）"></a>6.高斯密度下的判别函数（LDF&amp;QDF）</h3><ul>
-<li><p>二、4中由类似然函数相等得到的判别函数：$g_i(x)&#x3D;\log p (x|\omega_i)+\log P(\omega_i)$ </p>
-<p>如果密度函数$p(x|\omega_i)$ 是多元正态分布，则可得到判别函数：</p>
-</li>
-</ul>
-<p>$$<br>g_i(x)&#x3D;-\frac{1}{2}(x-\mu_i)^t\Sigma_i^{-1}(x-\mu_i)-\frac{d}{2}\ln{2\pi}-\frac{1}{2}\ln{\abs{\Sigma_i}}+\ln{P(\omega_i)}<br>$$</p>
+<p><span class="math display">\[
+g_i(x)=-\frac{1}{2}(x-\mu_i)^t\Sigma_i^{-1}(x-\mu_i)-\frac{d}{2}\ln{2\pi}-\frac{1}{2}\ln{\abs{\Sigma_i}}+\ln{P(\omega_i)}
+\]</span></p>
 <ul>
 <li><p>特殊情况讨论：</p>
 <ul>
-<li><p>$\Sigma_i&#x3D;\sigma^2I$ </p>
+<li><p><span class="math inline">\(\Sigma_i=\sigma^2I\)</span></p>
 <ul>
-<li><p>各特征统计独立，且每个特征具有相同的$\sigma^2$</p>
-</li>
+<li><p>各特征统计独立，且每个特征具有相同的<span
+class="math inline">\(\sigma^2\)</span></p></li>
 <li><p>等价的线性判别函数：</p>
-<p>$$<br>g_i(x)&#x3D;w_i^tx+w_{i0}\<br>w_i&#x3D;\frac{1}{\sigma^2}\mu_i\<br>w_{i0}&#x3D;-\frac{1}{2\sigma^2}\mu_i^t\mu_i+\ln{P(\omega_i)}<br>$$</p>
-</li>
+<p><span class="math display">\[
+g_i(x)=w_i^tx+w_{i0}\\
+w_i=\frac{1}{\sigma^2}\mu_i\\
+w_{i0}=-\frac{1}{2\sigma^2}\mu_i^t\mu_i+\ln{P(\omega_i)}
+\]</span></p></li>
 <li><p>决策面：</p>
 <p>$$</p>
 <p>$$</p>
-<p>$$<br>x_0&#x3D;\frac{1}{2}(\mu_i+\mu_j)-\frac{\sigma^2}{\norm{\mu_i-\mu_j}^2}\ln{\frac{P(\omega_i)}{P(\omega_j)}}(\mu_i-\mu_j)<br>$$</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>$\Sigma_i&#x3D;\Sigma$    <strong>（LDF）</strong></p>
+<p><span class="math display">\[
+x_0=\frac{1}{2}(\mu_i+\mu_j)-\frac{\sigma^2}{\norm{\mu_i-\mu_j}^2}\ln{\frac{P(\omega_i)}{P(\omega_j)}}(\mu_i-\mu_j)
+\]</span></p></li>
+</ul></li>
+</ul></li>
+<li><p><span class="math inline">\(\Sigma_i=\Sigma\)</span>
+<strong>（LDF）</strong></p>
 <ul>
-<li><p>所有类的协方差矩阵都相等，但各自的均值向量是任意的</p>
-</li>
+<li><p>所有类的协方差矩阵都相等，但各自的均值向量是任意的</p></li>
 <li><p>等价的线性判别函数：</p>
-<p>$$<br>g_i(x)&#x3D;w_i^tx+w_{i0}\<br>w_i&#x3D;\Sigma^{-1}\mu_i\<br>w_{i0}&#x3D;-\frac{1}{2}\mu_i^t\Sigma^{-1}\mu_i+\ln{P(\omega_i)}<br>$$</p>
+<p><span class="math display">\[
+g_i(x)=w_i^tx+w_{i0}\\
+w_i=\Sigma^{-1}\mu_i\\
+w_{i0}=-\frac{1}{2}\mu_i^t\Sigma^{-1}\mu_i+\ln{P(\omega_i)}
+\]</span></p>
 <ul>
 <li><p>决策面：</p>
-<p>$$<br>x_0&#x3D;\frac{1}{2}(\mu_i+\mu_j)-\frac{1}{(\mu_i-\mu_j)^t\Sigma^{-1}(\mu_i-\mu_j)}\ln{\frac{P(\omega_i)}{P(\omega_j)}}(\mu_i-\mu_j)<br>$$</p>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>$\Sigma_i&#x3D;任意$ <strong>（QDF）</strong></p>
+<p><span class="math display">\[
+x_0=\frac{1}{2}(\mu_i+\mu_j)-\frac{1}{(\mu_i-\mu_j)^t\Sigma^{-1}(\mu_i-\mu_j)}\ln{\frac{P(\omega_i)}{P(\omega_j)}}(\mu_i-\mu_j)
+\]</span></p></li>
+</ul></li>
+</ul></li>
+<li><p><span class="math inline">\(\Sigma_i=任意\)</span>
+<strong>（QDF）</strong></p>
 <ul>
-<li><p>每一类的协方差矩阵是不同的</p>
-</li>
+<li><p>每一类的协方差矩阵是不同的</p></li>
 <li><p>等价的线性判别函数：</p>
-<p>$$<br>g_i(x)&#x3D;x^tW_ix+w_i^tx+w_{i0}\<br>W_i&#x3D;-\frac{1}{2}\Sigma_i^{-1}\<br>w_i&#x3D;\Sigma_i^{-1}\mu_i\<br>w_{i0}&#x3D;-\frac{1}{2}\mu_i^t\Sigma_i^{-1}\mu_i-\frac{1}{2}\ln{\abs{\Sigma_i}}+\ln{P(\omega_i)}<br>$$</p>
-</li>
+<p><span class="math display">\[
+g_i(x)=x^tW_ix+w_i^tx+w_{i0}\\
+W_i=-\frac{1}{2}\Sigma_i^{-1}\\
+w_i=\Sigma_i^{-1}\mu_i\\
+w_{i0}=-\frac{1}{2}\mu_i^t\Sigma_i^{-1}\mu_i-\frac{1}{2}\ln{\abs{\Sigma_i}}+\ln{P(\omega_i)}
+\]</span></p></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h3 id="7-分类错误率"><a href="#7-分类错误率" class="headerlink" title="7.分类错误率"></a>7.分类错误率</h3><ul>
+<h3 id="分类错误率">7.分类错误率</h3>
+<ul>
 <li>2类的情况</li>
 </ul>
-<p>$$<br>\begin{align*}<br>P(error)&amp;&#x3D;P(x \in \mathcal{R}_2,\omega_1)+P(x \in \mathcal{R}_1,\omega_2)\<br>&amp;&#x3D;P(x \in \mathcal{R}_2|\omega_1)P(\omega_1)+P(x \in \mathcal{R}<em>1|\omega_2)P(\omega_2)\<br>&amp;&#x3D;\int\limits</em>{\mathcal{R}<em>2}p(x|\omega_1)P(\omega_1)dx+\int\limits</em>{\mathcal{R}_1}p(x|\omega_2)P(\omega_2)dx<br>\end{align*}<br>$$</p>
+<p><span class="math display">\[
+\begin{align*}
+P(error)&amp;=P(x \in \mathcal{R}_2,\omega_1)+P(x \in
+\mathcal{R}_1,\omega_2)\\
+&amp;=P(x \in \mathcal{R}_2|\omega_1)P(\omega_1)+P(x \in
+\mathcal{R}_1|\omega_2)P(\omega_2)\\
+&amp;=\int\limits_{\mathcal{R}_2}p(x|\omega_1)P(\omega_1)dx+\int\limits_{\mathcal{R}_1}p(x|\omega_2)P(\omega_2)dx
+\end{align*}
+\]</span></p>
 <ul>
 <li><p>一般情况</p>
-<p>$$<br>\begin{align*}<br>P(correct)&amp;&#x3D;\sum_{i&#x3D;1}^c P(x\in \mathcal{R}<em>i,\omega_i)\<br>&amp;&#x3D;\sum</em>{i&#x3D;1}^cP(x\in\mathcal{R}<em>i|\omega_i)P(\omega_i)\<br>&amp;&#x3D;\sum</em>{i&#x3D;1}^c\int\limits_{\mathcal{R}_i}p(x|\omega_i)P(\omega_i)dx<br>\end{align*}<br>$$</p>
-</li>
+<p><span class="math display">\[
+\begin{align*}
+P(correct)&amp;=\sum_{i=1}^c P(x\in \mathcal{R}_i,\omega_i)\\
+&amp;=\sum_{i=1}^cP(x\in\mathcal{R}_i|\omega_i)P(\omega_i)\\
+&amp;=\sum_{i=1}^c\int\limits_{\mathcal{R}_i}p(x|\omega_i)P(\omega_i)dx
+\end{align*}
+\]</span></p></li>
 <li><p>最大后验概率决策（MAP）的情况</p>
-<p>$$<br>\begin{align*}<br>P(correct)&amp;&#x3D;\int\limits_x \max_i P(x|\omega_i)P(\omega_i)dx\<br>&amp;&#x3D;\int\limits_x \max_i P(\omega_i|x)P(x)dx\<br>\end{align*}<br>$$</p>
-<p>$$<br>P(error)&#x3D;\int\limits_x[1-\max_i P(\omega_i|x)]P(x)dx<br>$$</p>
-</li>
+<p><span class="math display">\[
+\begin{align*}
+P(correct)&amp;=\int\limits_x \max_i P(x|\omega_i)P(\omega_i)dx\\
+&amp;=\int\limits_x \max_i P(\omega_i|x)P(x)dx\\
+\end{align*}
+\]</span></p>
+<p><span class="math display">\[
+P(error)=\int\limits_x[1-\max_i P(\omega_i|x)]P(x)dx
+\]</span></p></li>
 </ul>
-<h3 id="8-离散变量的贝叶斯决策"><a href="#8-离散变量的贝叶斯决策" class="headerlink" title="8.离散变量的贝叶斯决策"></a>8.离散变量的贝叶斯决策</h3><h3 id="9-复合模式分类"><a href="#9-复合模式分类" class="headerlink" title="9.复合模式分类"></a>9.复合模式分类</h3><h3 id="10-往年试题"><a href="#10-往年试题" class="headerlink" title="10.往年试题"></a>10.往年试题</h3><ul>
-<li>2018年<ul>
+<h3 id="离散变量的贝叶斯决策">8.离散变量的贝叶斯决策</h3>
+<h3 id="复合模式分类">9.复合模式分类</h3>
+<h3 id="往年试题">10.往年试题</h3>
+<ul>
+<li>2018年
+<ul>
 <li>贝叶斯最小风险决策和最小错误率决策的决策规则（6分）</li>
-<li>d维空间，c类分类，每一类条件概率密度为高斯分布<ul>
+<li>d维空间，c类分类，每一类条件概率密度为高斯分布
+<ul>
 <li>写出最小错误率决策的判别函数，并说明在什么条件下判别函数为线性判别函数（5分）</li>
-<li>c&#x3D;2，高斯密度条件下线性判别的决策面函数，说明类先验概率如何影响决策面的位置，并说明在什么情况下决策面与两个类中心差向量$\mu_1-\mu_2$ 垂直（举例说明两种情况即可）（6分）</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>2017年<ul>
+<li>c=2，高斯密度条件下线性判别的决策面函数，说明类先验概率如何影响决策面的位置，并说明在什么情况下决策面与两个类中心差向量<span
+class="math inline">\(\mu_1-\mu_2\)</span>
+垂直（举例说明两种情况即可）（6分）</li>
+</ul></li>
+</ul></li>
+<li>2017年
+<ul>
 <li>贝叶斯最小风险决策和最小错误率决策的决策规则（5分）</li>
 <li>引入拒识，最小损失决策的决策规则（5分）</li>
-<li>2维空间，2类，概率密度为高斯分布，给出均值、协方差和先验概率<ul>
+<li>2维空间，2类，概率密度为高斯分布，给出均值、协方差和先验概率
+<ul>
 <li>分类误差最小的贝叶斯决策的决策面函数，并写出贝叶斯错误率（积分形式）（6分）</li>
-<li>当$\lambda_{11}&#x3D;\lambda_{22}&#x3D;0,\lambda_{12}&#x3D;2\lambda_{21}$ ，请给出损失最小的贝叶斯决策的决策面函数（4分）</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>2016年<ul>
+<li>当<span
+class="math inline">\(\lambda_{11}=\lambda_{22}=0,\lambda_{12}=2\lambda_{21}\)</span>
+，请给出损失最小的贝叶斯决策的决策面函数（4分）</li>
+</ul></li>
+</ul></li>
+<li>2016年
+<ul>
 <li>贝叶斯最小风险决策和最小错误率决策的决策规则（8分）</li>
-<li>d维空间，c类分类，假设各类先验概率相等，每一类条件概率密度为高斯分布<ul>
+<li>d维空间，c类分类，假设各类先验概率相等，每一类条件概率密度为高斯分布
+<ul>
 <li>类协方差矩阵不等和相等两种情况下的最小错误率决策判别函数（6分）</li>
-<li>c&#x3D;2，$P(\omega_1)&#x3D;P(\omega_2)$ ，两类概率密度均为高斯分布且协方差矩阵相等，写出贝叶斯分类决策面和贝叶斯错误率的公式（6分）</li>
+<li>c=2，<span class="math inline">\(P(\omega_1)=P(\omega_2)\)</span>
+，两类概率密度均为高斯分布且协方差矩阵相等，写出贝叶斯分类决策面和贝叶斯错误率的公式（6分）</li>
+</ul></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-<h2 id="三、参数估计"><a href="#三、参数估计" class="headerlink" title="三、参数估计"></a>三、参数估计</h2><ul>
-<li><p>给定分类器结构&#x2F;函数形式，从训练样本估计参数</p>
-</li>
+<h2 id="三参数估计">三、参数估计</h2>
+<ul>
+<li><p>给定分类器结构/函数形式，从训练样本估计参数</p></li>
 <li><p>统计生成模型的参数估计（概率密度）</p>
 <ul>
 <li><p>1.最大似然估计</p>
-<p>假设参数为确定值，最优估计：似然度最大MLE</p>
-</li>
+<p>假设参数为确定值，最优估计：似然度最大MLE</p></li>
 <li><p>2.贝叶斯估计</p>
-<p>假设参数为随机变量，估计其后验分布MAP</p>
-</li>
+<p>假设参数为随机变量，估计其后验分布MAP</p></li>
+</ul></li>
+<li><p>统计判别模型的参数估计（判别函数）</p></li>
 </ul>
-</li>
-<li><p>统计判别模型的参数估计（判别函数）</p>
-</li>
-</ul>
-<h3 id="1-最大似然估计"><a href="#1-最大似然估计" class="headerlink" title="1.最大似然估计"></a>1.最大似然估计</h3><ul>
-<li><p>假设概率密度函数$p(x|\omega_i,\theta_i)$， 估计$\theta_i$</p>
-</li>
-<li><p>样本数据$D_1,…,D_c$</p>
+<h3 id="最大似然估计">1.最大似然估计</h3>
 <ul>
-<li>$D_i$ 中的样本独立同分布</li>
-<li>$D_i$ 用来估计$\theta_i$</li>
-</ul>
-</li>
+<li><p>假设概率密度函数<span
+class="math inline">\(p(x|\omega_i,\theta_i)\)</span>， 估计<span
+class="math inline">\(\theta_i\)</span></p></li>
+<li><p>样本数据<span class="math inline">\(D_1,...,D_c\)</span></p>
+<ul>
+<li><span class="math inline">\(D_i\)</span> 中的样本独立同分布</li>
+<li><span class="math inline">\(D_i\)</span> 用来估计<span
+class="math inline">\(\theta_i\)</span></li>
+</ul></li>
 <li><p>估计一类模型的参数</p>
 <ul>
-<li><p>似然函数：$p(\mathcal{D}|\theta)&#x3D;\prod_{k&#x3D;1}^np(x_k|\theta)$</p>
-</li>
-<li><p>最大化似然函数：$\max_\theta p(D|\theta)\leftrightarrow \gradient_\theta p(D|\theta)&#x3D;0$</p>
-</li>
+<li><p>似然函数：<span
+class="math inline">\(p(\mathcal{D}|\theta)=\prod_{k=1}^np(x_k|\theta)\)</span></p></li>
+<li><p>最大化似然函数：<span class="math inline">\(\max_\theta
+p(D|\theta)\leftrightarrow \gradient_\theta
+p(D|\theta)=0\)</span></p></li>
 <li><p>p维参数空间上的梯度向量：</p>
-<p>$$<br>\gradient_\theta \equiv<br>\begin{bmatrix}<br>\frac{\partial}{\partial\theta_1}        \<br>\vdots\<br>\frac{\partial}{\partial\theta_p}<br>\end{bmatrix}<br>$$</p>
-</li>
-<li><p>$\gradient_\theta p(D|\theta)&#x3D;0$ 的解可能有解析解，也可能需要迭代求解（如梯度下降）</p>
-</li>
-<li><p>对数似然函数：$l(\theta)\equiv\ln{p(\mathcal{D}|\theta)} \quad l(\theta)&#x3D;\sum_{k&#x3D;1}^n\ln{p(x_k|\theta)}$</p>
-<p>最大似然估计：$\hat{\theta}&#x3D;\arg\max_\theta l(\theta)$</p>
-<p>​                            $\gradient_\theta l &#x3D;\sum_{k&#x3D;1}^n\gradient_\theta\ln{p(x_k|\theta)}&#x3D;0$</p>
-<p>​                            $\frac{\partial l}{\partial \theta_j}&#x3D;0,\quad j&#x3D;1,..,p$</p>
-</li>
+<p><span class="math display">\[
+\gradient_\theta \equiv
+\begin{bmatrix}
+\frac{\partial}{\partial\theta_1}        \\
+\vdots\\
+\frac{\partial}{\partial\theta_p}
+\end{bmatrix}
+\]</span></p></li>
+<li><p><span class="math inline">\(\gradient_\theta
+p(D|\theta)=0\)</span>
+的解可能有解析解，也可能需要迭代求解（如梯度下降）</p></li>
+<li><p>对数似然函数：<span
+class="math inline">\(l(\theta)\equiv\ln{p(\mathcal{D}|\theta)} \quad
+l(\theta)=\sum_{k=1}^n\ln{p(x_k|\theta)}\)</span></p>
+<p>最大似然估计：<span
+class="math inline">\(\hat{\theta}=\arg\max_\theta
+l(\theta)\)</span></p>
+<p>​ <span class="math inline">\(\gradient_\theta l
+=\sum_{k=1}^n\gradient_\theta\ln{p(x_k|\theta)}=0\)</span></p>
+<p>​ <span class="math inline">\(\frac{\partial l}{\partial
+\theta_j}=0,\quad j=1,..,p\)</span></p></li>
 <li><p>讨论当训练样本服从多元正态分布时的情况</p>
 <ul>
-<li><p>$\mu$ 未知</p>
-<p>$\hat{\mu}&#x3D;\frac{1}{n}\sum_{k&#x3D;1}^n x_k$</p>
-</li>
-<li><p>$\mu$ 和$\Sigma$ 均未知</p>
-<p>$\hat{\mu}&#x3D;\frac{1}{n}\sum_{k&#x3D;1}^n x_k$<br>$\hat{\Sigma}&#x3D;\frac{1}{n}\sum_{k&#x3D;1}^n(x_k-\hat{\mu})(x_k-\hat{\mu})^t$</p>
-</li>
+<li><p><span class="math inline">\(\mu\)</span> 未知</p>
+<p><span class="math inline">\(\hat{\mu}=\frac{1}{n}\sum_{k=1}^n
+x_k\)</span></p></li>
+<li><p><span class="math inline">\(\mu\)</span> 和<span
+class="math inline">\(\Sigma\)</span> 均未知</p>
+<p><span class="math inline">\(\hat{\mu}=\frac{1}{n}\sum_{k=1}^n
+x_k\)</span> <span
+class="math inline">\(\hat{\Sigma}=\frac{1}{n}\sum_{k=1}^n(x_k-\hat{\mu})(x_k-\hat{\mu})^t\)</span></p></li>
+</ul></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="2-贝叶斯估计"><a href="#2-贝叶斯估计" class="headerlink" title="2.贝叶斯估计"></a>2.贝叶斯估计</h3><h3 id="2-5最大似然估计和贝叶斯估计对比"><a href="#2-5最大似然估计和贝叶斯估计对比" class="headerlink" title="*2.5最大似然估计和贝叶斯估计对比"></a>*2.5最大似然估计和贝叶斯估计对比</h3><ul>
+<h3 id="贝叶斯估计">2.贝叶斯估计</h3>
+<h3
+id="最大似然估计和贝叶斯估计对比">*2.5最大似然估计和贝叶斯估计对比</h3>
+<ul>
 <li>当训练样本量趋近于无穷时，ML和BL的效果是一样的</li>
-<li>计算复杂度：<ul>
+<li>计算复杂度：
+<ul>
 <li>ML计算简单，只涉及一些微分运算或梯度搜索技术</li>
 <li>BL可能要求计算非常复杂的多重积分</li>
-</ul>
-</li>
-<li>可理解性：<ul>
+</ul></li>
+<li>可理解性：
+<ul>
 <li>ML易理解，得到的结果是基于样本的最佳解答</li>
 <li>BL难于直观理解，得到的结果是许多可行解答的加权平均值，反映出对各种可行解答的不确定程度</li>
-</ul>
-</li>
-<li>对初始先验知识的信任程度：<ul>
-<li>ML得到的结果$p(x|\hat{\theta})$ 的形式与初始假设的形式一致</li>
-<li>BL得到的结果$p(x|\hat{\theta})$ 的形式与初始假设的形式不一定相同</li>
-<li>通过使用全部$p(\theta|\mathcal{D})$ 中的信息，BL比ML能够利用更多有用的信息</li>
-<li>如果没有特别的先验知识（$\theta$ 均匀分布），BL和ML是相似的。</li>
-</ul>
-</li>
+</ul></li>
+<li>对初始先验知识的信任程度：
+<ul>
+<li>ML得到的结果<span class="math inline">\(p(x|\hat{\theta})\)</span>
+的形式与初始假设的形式一致</li>
+<li>BL得到的结果<span class="math inline">\(p(x|\hat{\theta})\)</span>
+的形式与初始假设的形式不一定相同</li>
+<li>通过使用全部<span
+class="math inline">\(p(\theta|\mathcal{D})\)</span>
+中的信息，BL比ML能够利用更多有用的信息</li>
+<li>如果没有特别的先验知识（<span class="math inline">\(\theta\)</span>
+均匀分布），BL和ML是相似的。</li>
+</ul></li>
 <li>样本点很少的情况下，ML的效果并不好</li>
-<li>ML估计的是$\theta$ 空间中的一个点，而BL估计的则是一个概率分布</li>
+<li>ML估计的是<span class="math inline">\(\theta\)</span>
+空间中的一个点，而BL估计的则是一个概率分布</li>
 </ul>
-<h3 id="3-特征维数问题"><a href="#3-特征维数问题" class="headerlink" title="3.特征维数问题"></a>3.特征维数问题</h3><h3 id="4-期望最大法"><a href="#4-期望最大法" class="headerlink" title="4.期望最大法"></a>4.期望最大法</h3><p>数据缺失情况下的参数估计</p>
-<h3 id="5-隐马尔可夫模型"><a href="#5-隐马尔可夫模型" class="headerlink" title="5.隐马尔可夫模型"></a>5.隐马尔可夫模型</h3><h3 id="6-往年试题"><a href="#6-往年试题" class="headerlink" title="6.往年试题"></a>6.往年试题</h3><ul>
-<li>2018年<ul>
+<h3 id="特征维数问题">3.特征维数问题</h3>
+<h3 id="期望最大法">4.期望最大法</h3>
+<p>数据缺失情况下的参数估计</p>
+<h3 id="隐马尔可夫模型">5.隐马尔可夫模型</h3>
+<h3 id="往年试题-1">6.往年试题</h3>
+<ul>
+<li>2018年
+<ul>
 <li>2维空间，2个类别分别4个样本，两类都服从高斯分布，求最大似然估计参数值。进一步假设两个类别先验概率相等，写出分类决策面公式（6分）</li>
-</ul>
-</li>
-<li>2016年<ul>
+</ul></li>
+<li>2016年
+<ul>
 <li>2维空间，2个类别分别4个样本，两类都服从高斯分布，求最大似然估计参数值。进一步假设两个类别先验概率相等，写出分类决策面公式（8分）</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h2 id="四、非参数方法"><a href="#四、非参数方法" class="headerlink" title="四、非参数方法"></a>四、非参数方法</h2><h3 id="1-密度估计"><a href="#1-密度估计" class="headerlink" title="1.密度估计"></a>1.密度估计</h3><h3 id="2-Parzen窗方法"><a href="#2-Parzen窗方法" class="headerlink" title="2.Parzen窗方法"></a>2.Parzen窗方法</h3><h3 id="2-5-Parzen窗估计和k-近邻估计的区别"><a href="#2-5-Parzen窗估计和k-近邻估计的区别" class="headerlink" title="*2.5.Parzen窗估计和k-近邻估计的区别"></a>*2.5.Parzen窗估计和k-近邻估计的区别</h3><h3 id="3-K近邻估计"><a href="#3-K近邻估计" class="headerlink" title="3.K近邻估计"></a>3.K近邻估计</h3><h3 id="4-最近邻规则"><a href="#4-最近邻规则" class="headerlink" title="4.最近邻规则"></a>4.最近邻规则</h3><h3 id="5-距离度量"><a href="#5-距离度量" class="headerlink" title="5.距离度量"></a>5.距离度量</h3><h3 id="6-Approximation-by-Series-Expansion"><a href="#6-Approximation-by-Series-Expansion" class="headerlink" title="6.Approximation by Series Expansion"></a>6.Approximation by Series Expansion</h3><h3 id="7-往年试题"><a href="#7-往年试题" class="headerlink" title="7.往年试题"></a>7.往年试题</h3><ul>
-<li>2018年<ul>
+<h2 id="四非参数方法">四、非参数方法</h2>
+<h3 id="密度估计">1.密度估计</h3>
+<h3 id="parzen窗方法">2.Parzen窗方法</h3>
+<h3
+id="parzen窗估计和k-近邻估计的区别">*2.5.Parzen窗估计和k-近邻估计的区别</h3>
+<h3 id="k近邻估计">3.K近邻估计</h3>
+<h3 id="最近邻规则">4.最近邻规则</h3>
+<h3 id="距离度量">5.距离度量</h3>
+<h3 id="approximation-by-series-expansion">6.Approximation by Series
+Expansion</h3>
+<h3 id="往年试题-2">7.往年试题</h3>
+<ul>
+<li>2018年
+<ul>
 <li>说明Parzen窗估计和k-近邻估计的区别（4分）</li>
-<li>给定2维空间三个样本点，写出概率密度函数$p(x)$ 的最近邻(1-NN)估计密度公式（这种情况下V为圆形面积）（4分）</li>
+<li>给定2维空间三个样本点，写出概率密度函数<span
+class="math inline">\(p(x)\)</span>
+的最近邻(1-NN)估计密度公式（这种情况下V为圆形面积）（4分）</li>
 <li>对于c个类别，基于k-NN密度估计进行贝叶斯分类，写出各个类别的后验概率并证明（4分）</li>
-</ul>
-</li>
-<li>2017年<ul>
+</ul></li>
+<li>2017年
+<ul>
 <li>说明Parzen窗估计和k-近邻估计的区别（5分）</li>
-<li>已知$\varphi(u)$ 写出概率密度函数的Parzen窗估计$p_n(x)$ （5分）</li>
-<li>给定2维空间三个样本点，写出概率密度函数$p(x)$ 的最近邻(1-NN)估计并画出概率密度函数曲线图（5分）</li>
-</ul>
-</li>
-<li>2016年<ul>
+<li>已知<span class="math inline">\(\varphi(u)\)</span>
+写出概率密度函数的Parzen窗估计<span
+class="math inline">\(p_n(x)\)</span> （5分）</li>
+<li>给定2维空间三个样本点，写出概率密度函数<span
+class="math inline">\(p(x)\)</span>
+的最近邻(1-NN)估计并画出概率密度函数曲线图（5分）</li>
+</ul></li>
+<li>2016年
+<ul>
 <li>说明Parzen窗估计和k-近邻估计的区别（5分）</li>
 <li>对于c个类别，基于k-NN密度估计进行贝叶斯分类，写出各个类别的后验概率并证明（5分）</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h2 id="五、线性判别函数"><a href="#五、线性判别函数" class="headerlink" title="五、线性判别函数"></a>五、线性判别函数</h2><ul>
-<li><p>假定用于分类的判别函数的形式已知，直接从样本来估计判别函数的参数</p>
-</li>
+<h2 id="五线性判别函数">五、线性判别函数</h2>
+<ul>
+<li><p>假定用于分类的判别函数的形式已知，直接从样本来估计判别函数的参数</p></li>
 <li><p>模式分类的途径：</p>
 <ul>
-<li>估计类条件概率密度函数：<ul>
+<li>估计类条件概率密度函数：
+<ul>
 <li>利用贝叶斯公式求出后验概率</li>
 <li>核心步骤：概率密度估计（参数估计和非参数估计）</li>
-</ul>
-</li>
+</ul></li>
 <li>直接估计后验概率（K近邻）</li>
 <li>直接计算判别函数</li>
-</ul>
-</li>
+</ul></li>
 <li><p>利用样本直接设计分类器的方法分类：</p>
 <ul>
 <li>线性判别函数、SVM、Fisher线性判别函数</li>
 <li>广义线性判别函数、非线性判别函数、核学习机</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h3 id="1-线性判别函数与决策面"><a href="#1-线性判别函数与决策面" class="headerlink" title="1.线性判别函数与决策面"></a>1.线性判别函数与决策面</h3><ul>
-<li><p>基本形式：$g(x)&#x3D;w^Tx+w_0$ </p>
-</li>
+<h3 id="线性判别函数与决策面">1.线性判别函数与决策面</h3>
+<ul>
+<li><p>基本形式：<span
+class="math inline">\(g(x)=w^Tx+w_0\)</span></p></li>
 <li><p>两类情形的决策规则：</p>
-<p>$$<br>\begin{cases}<br>x \in \omega_1,                     &amp; if\quad  g(x) \gt 0\<br>x \in \omega_2,                     &amp; if \quad g(x) \lt 0\<br>uncertain,                     &amp; if\quad g(x) &#x3D; 0<br>\end{cases}<br>$$</p>
-</li>
+<p><span class="math display">\[
+\begin{cases}
+x \in \omega_1,                     &amp; if\quad  g(x) \gt 0\\
+x \in \omega_2,                     &amp; if \quad g(x) \lt 0\\
+uncertain,                     &amp; if\quad g(x) = 0
+\end{cases}
+\]</span></p></li>
 <li><p>两类情形的决策面：</p>
-<p>超平面$H：g(x)&#x3D;0$ ，位于该平面的任意向量与$w$ 垂直。</p>
-</li>
-<li><p>多类情形：</p>
-</li>
+<p>超平面<span class="math inline">\(H：g(x)=0\)</span>
+，位于该平面的任意向量与<span class="math inline">\(w\)</span>
+垂直。</p></li>
+<li><p>多类情形：</p></li>
 </ul>
-<h3 id="2-广义线性判别函数"><a href="#2-广义线性判别函数" class="headerlink" title="2.广义线性判别函数"></a>2.广义线性判别函数</h3><h3 id="3-感知准则函数"><a href="#3-感知准则函数" class="headerlink" title="3.感知准则函数"></a>3.感知准则函数</h3><h3 id="4-松弛方法"><a href="#4-松弛方法" class="headerlink" title="4.松弛方法"></a>4.松弛方法</h3><h3 id="5-最小平方误差（MSE）准则函数"><a href="#5-最小平方误差（MSE）准则函数" class="headerlink" title="5.最小平方误差（MSE）准则函数"></a>5.最小平方误差（MSE）准则函数</h3><h3 id="6-Ho-Kashyap方法"><a href="#6-Ho-Kashyap方法" class="headerlink" title="6.Ho-Kashyap方法"></a>6.Ho-Kashyap方法</h3><h3 id="7-往年试题-1"><a href="#7-往年试题-1" class="headerlink" title="7.往年试题"></a>7.往年试题</h3><ul>
-<li>2018年<ul>
+<h3 id="广义线性判别函数">2.广义线性判别函数</h3>
+<h3 id="感知准则函数">3.感知准则函数</h3>
+<h3 id="松弛方法">4.松弛方法</h3>
+<h3 id="最小平方误差mse准则函数">5.最小平方误差（MSE）准则函数</h3>
+<h3 id="ho-kashyap方法">6.Ho-Kashyap方法</h3>
+<h3 id="往年试题-3">7.往年试题</h3>
+<ul>
+<li>2018年
+<ul>
 <li>简述感知器（感知准则函数）算法的基本思想，并给出一种感知器学习算法（5分）</li>
-</ul>
-</li>
-<li>2017年<ul>
+</ul></li>
+<li>2017年
+<ul>
 <li>one-vs-all技巧，3类，3个判别函数，画出分类决策面（6分）</li>
 <li>简述感知器（感知准则函数）算法的基本思想，并给出一种感知器学习算法（5分）</li>
-</ul>
-</li>
-<li>2016年<ul>
+</ul></li>
+<li>2016年
+<ul>
 <li>四个样本，两个类别，二维空间，批处理感知器算法求权向量（10分）</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h2 id="六、神经网络"><a href="#六、神经网络" class="headerlink" title="六、神经网络"></a>六、神经网络</h2><h3 id="1-人工神经元"><a href="#1-人工神经元" class="headerlink" title="1.人工神经元"></a>1.人工神经元</h3><h3 id="2-拓扑结构"><a href="#2-拓扑结构" class="headerlink" title="2.拓扑结构"></a>2.拓扑结构</h3><h3 id="3-网络训练"><a href="#3-网络训练" class="headerlink" title="3.网络训练"></a>3.网络训练</h3><ul>
+<h2 id="六神经网络">六、神经网络</h2>
+<h3 id="人工神经元">1.人工神经元</h3>
+<h3 id="拓扑结构">2.拓扑结构</h3>
+<h3 id="网络训练">3.网络训练</h3>
+<ul>
 <li>Hebb训练方法（经验方法）：两结点的连接权重按它们的输出值之积来改变</li>
-<li>$\delta$ 训练方法（分析方法）：梯度下降法</li>
+<li><span class="math inline">\(\delta\)</span>
+训练方法（分析方法）：梯度下降法</li>
 <li>随机训练方法：随机改变一个权重，计算改变后产生的最终能量，并按如下准则来确定是否接受此改变，模拟退火算法</li>
 <li>Kohonen训练方法（无监督）：<strong>自组织</strong>竞争型神经网络</li>
 </ul>
-<h3 id="4-单层前馈神经网络（单层感知机）"><a href="#4-单层前馈神经网络（单层感知机）" class="headerlink" title="4.单层前馈神经网络（单层感知机）"></a>4.单层前馈神经网络（单层感知机）</h3><p>单样本随机更新算法：适用于超大规模数据</p>
+<h3
+id="单层前馈神经网络单层感知机">4.单层前馈神经网络（单层感知机）</h3>
+<p>单样本随机更新算法：适用于超大规模数据</p>
 <p>批量更新算法：所有样本完成之后再更新</p>
-<h3 id="5-多层感知器"><a href="#5-多层感知器" class="headerlink" title="5.多层感知器"></a>5.多层感知器</h3><h3 id="6-BP算法"><a href="#6-BP算法" class="headerlink" title="6.BP算法"></a>6.BP算法</h3><p>经典问题：</p>
+<h3 id="多层感知器">5.多层感知器</h3>
+<h3 id="bp算法">6.BP算法</h3>
+<p>经典问题：</p>
 <ul>
 <li><p>完全难以训练</p>
 <ul>
-<li><p>网络的麻痹现象：$f’(net)\rightarrow 0$ 时，$\delta \rightarrow 0$ ，从而$\delta w_{ij} \rightarrow 0$ ，相当于调节过程几乎停顿下来。梯度更新将在S型函数的饱和区域进行，即处在其导数$f’(net)$ 非常小的区域内(平坦区域)。</p>
-<p>![image-20220102170556841](&#x2F;Users&#x2F;Lexie&#x2F;Library&#x2F;Application Support&#x2F;typora-user-images&#x2F;image-20220102170556841.png)</p>
-</li>
+<li><p>网络的麻痹现象：<span
+class="math inline">\(f&#39;(net)\rightarrow 0\)</span> 时，<span
+class="math inline">\(\delta \rightarrow 0\)</span> ，从而<span
+class="math inline">\(\delta w_{ij} \rightarrow 0\)</span>
+，相当于调节过程几乎停顿下来。梯度更新将在S型函数的饱和区域进行，即处在其导数<span
+class="math inline">\(f&#39;(net)\)</span>
+非常小的区域内(平坦区域)。</p>
+<figure>
+<img
+src="/Users/Lexie/Library/Application%20Support/typora-user-images/image-20220102170556841.png"
+alt="image-20220102170556841" />
+<figcaption aria-hidden="true">image-20220102170556841</figcaption>
+</figure></li>
 <li><p>梯度消失</p>
-<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20220102170608637.png" alt="image-20220102170608637" style="zoom:33%;" />
-</li>
+<p><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20220102170608637.png" alt="image-20220102170608637" style="zoom:33%;" /></p></li>
 <li><p>局部最小</p>
-<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20220102170650804.png" alt="image-20220102170650804" style="zoom:30%;" /></li>
-</ul>
-</li>
+<p><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20220102170650804.png" alt="image-20220102170650804" style="zoom:30%;" /></p></li>
+</ul></li>
 <li><p>训练时间过长</p>
 <ul>
 <li>复杂问题需要很长时间训练</li>
-<li>可能选取了不恰当的训练速率$\eta$</li>
+<li>可能选取了不恰当的训练速率<span
+class="math inline">\(\eta\)</span></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h3 id="7-径向基函数网络"><a href="#7-径向基函数网络" class="headerlink" title="7.径向基函数网络"></a>7.径向基函数网络</h3><h3 id="8-反馈神经网络"><a href="#8-反馈神经网络" class="headerlink" title="8.反馈神经网络"></a>8.反馈神经网络</h3><h3 id="9-自组织映射"><a href="#9-自组织映射" class="headerlink" title="9.自组织映射"></a>9.自组织映射</h3><h3 id="10-卷积神经网络CNN"><a href="#10-卷积神经网络CNN" class="headerlink" title="10.卷积神经网络CNN"></a>10.卷积神经网络CNN</h3><h3 id="11-自编码器"><a href="#11-自编码器" class="headerlink" title="11.自编码器"></a>11.自编码器</h3><h3 id="12-Recurrent-NN"><a href="#12-Recurrent-NN" class="headerlink" title="12.Recurrent NN"></a>12.Recurrent NN</h3><p>权重是共享的，因此简单地采用现有BP方法显得效率不高。</p>
+<h3 id="径向基函数网络">7.径向基函数网络</h3>
+<h3 id="反馈神经网络">8.反馈神经网络</h3>
+<h3 id="自组织映射">9.自组织映射</h3>
+<h3 id="卷积神经网络cnn">10.卷积神经网络CNN</h3>
+<h3 id="自编码器">11.自编码器</h3>
+<h3 id="recurrent-nn">12.Recurrent NN</h3>
+<p>权重是共享的，因此简单地采用现有BP方法显得效率不高。</p>
 <p>Back Propagation Through Time（BPTT）算法</p>
-<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20220102181448271.png" alt="image-20220102181448271" style="zoom:33%;" />
-
-<img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20220102181509343.png" alt="image-20220102181509343" style="zoom:33%;" />
-
-<h3 id="13-LSTM"><a href="#13-LSTM" class="headerlink" title="13.LSTM"></a>13.LSTM</h3><h3 id="14-往年试题"><a href="#14-往年试题" class="headerlink" title="14.往年试题"></a>14.往年试题</h3><ul>
+<p><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20220102181448271.png" alt="image-20220102181448271" style="zoom:33%;" /></p>
+<p><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20220102181509343.png" alt="image-20220102181509343" style="zoom:33%;" /></p>
+<h3 id="lstm">13.LSTM</h3>
+<h3 id="往年试题-4">14.往年试题</h3>
+<ul>
 <li><p>2018（15分）</p>
-<p>d维空间，n个样本，c个类别，三层前向神经网络（输入层、隐含层、输出层），平方损失函数作为目标函数，写出权重$w_{ih}$ 和权重$w_{hj}$ 的更新公式，并简明扼要地给出其推导过程。</p>
-</li>
+<p>d维空间，n个样本，c个类别，三层前向神经网络（输入层、隐含层、输出层），平方损失函数作为目标函数，写出权重<span
+class="math inline">\(w_{ih}\)</span> 和权重<span
+class="math inline">\(w_{hj}\)</span>
+的更新公式，并简明扼要地给出其推导过程。</p></li>
 <li><p>2017（15分）</p>
-<p>d维空间，n个样本，c个类别，三层前向神经网络（输入层、隐含层、输出层），交叉熵损失函数作为目标函数，推导误差反向传播算法，并写出具体的推导过程。</p>
-</li>
+<p>d维空间，n个样本，c个类别，三层前向神经网络（输入层、隐含层、输出层），交叉熵损失函数作为目标函数，推导误差反向传播算法，并写出具体的推导过程。</p></li>
 <li><p>2016（15分）</p>
 <ul>
 <li>针对多层前馈神经网络，请给出误差反向传播算法（即BP算法）的原理；结合三层网络给出有关权重更新的公式，并用文字描述所述公式的含义。（9）</li>
 <li>请描述自组织映射网络的构造原理；针对网络训练，请给出自组织算法的主要计算步骤。（6）</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h2 id="七、特征提取与选择"><a href="#七、特征提取与选择" class="headerlink" title="七、特征提取与选择"></a>七、特征提取与选择</h2><p>线性特征变换通常维度更低：PCA、LDA、ICA</p>
+<h2 id="七特征提取与选择">七、特征提取与选择</h2>
+<p>线性特征变换通常维度更低：PCA、LDA、ICA</p>
 <p>非线性特征变换通常性能更好：KPCA、KLDA、Isomap、LLE、HLLE、LSTA</p>
-<h3 id="1-特征提取"><a href="#1-特征提取" class="headerlink" title="1.特征提取"></a>1.特征提取</h3><p>特征提取的最终形式都是使用向量来表示数据样本，便于分析</p>
+<h3 id="特征提取">1.特征提取</h3>
+<p>特征提取的最终形式都是使用向量来表示数据样本，便于分析</p>
 <ul>
-<li>语音特征提取<ul>
+<li>语音特征提取
+<ul>
 <li>技术路线：预处理、分帧、加窗处理、特定数学运算得到低维向量作为提取的特征</li>
 <li>MFCCs特征（Mel Frequency Cepstral Coefficients梅尔倒谱系数）</li>
-</ul>
-</li>
-<li>文本特征提取<ul>
+</ul></li>
+<li>文本特征提取
+<ul>
 <li>词频-逆向文档频率（TF-IDF）</li>
 <li>Word2Vec（主要模型：连续词袋模型CBOW，跳字模型Skip Gram）</li>
-</ul>
-</li>
-<li>视觉特征提取<ul>
+</ul></li>
+<li>视觉特征提取
+<ul>
 <li>局部二值模式（LBP）：应用于人脸识别</li>
 <li>Gabor特征提取</li>
-<li>尺度不变特征变化（SIFT）：<ul>
+<li>尺度不变特征变化（SIFT）：
+<ul>
 <li>局部方法：对图像中的局部区域进行分析</li>
 <li>特征点检测+特征点描述</li>
 <li>技术路线：高斯尺度空间构建GSS，高斯差分尺度空间构建DoGSS，极值点检测，特征点精细定位，特征点主方向计算，特征描述子生成</li>
 <li>基于SIFT的图像匹配算法</li>
-</ul>
-</li>
-<li>视觉词袋（Bag of Visual Words）<ul>
+</ul></li>
+<li>视觉词袋（Bag of Visual Words）
+<ul>
 <li>技术路线：提取特征，学习视觉词汇，用视觉词汇量化特征，用视觉单词的频率表达图像</li>
-</ul>
-</li>
-<li>哈尔特征（Haar）：应用于人脸识别<ul>
+</ul></li>
+<li>哈尔特征（Haar）：应用于人脸识别
+<ul>
 <li>一个Haar特征由一组方形滤波器组成，响应值为白色滤波器相应值-灰色滤波器相应值</li>
 <li>通过比较Haar特征值是否超过某个阈值来判断是否为人脸，需要集成大量haar特征的判定结果来判断（Adaboost）</li>
 <li>积分图快速计算</li>
-</ul>
-</li>
-<li>梯度方向直方图（HoG）：最早用于行人检测，后来发展成面向一般物体检测<ul>
+</ul></li>
+<li>梯度方向直方图（HoG）：最早用于行人检测，后来发展成面向一般物体检测
+<ul>
 <li>技术路线：预处理（颜色转换、Gamma校正），计算图像梯度信息，划分图像区域成若干个cell，统计每个cell的梯度方向直方图，将相邻区域内的cell组成block串联起来进行归一化得到block特征，将block特征串联起来组成图像HoG特征</li>
 <li>特征维度比较高，通常结合线性SVM进行分类</li>
+</ul></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="2-特征变换"><a href="#2-特征变换" class="headerlink" title="2.特征变换"></a>2.特征变换</h3><ul>
-<li><p>线性降维</p>
-<p>不同方法的差异：对低维子空间的性质有不同的要求，即对变换矩阵$W \in R^{d\times m}$施加不同的约束</p>
+<h3 id="特征变换">2.特征变换</h3>
 <ul>
-<li>PCA<ul>
+<li><p>线性降维</p>
+<p>不同方法的差异：对低维子空间的性质有不同的要求，即对变换矩阵<span
+class="math inline">\(W \in R^{d\times m}\)</span>施加不同的约束</p>
+<ul>
+<li>PCA
+<ul>
 <li>目标：寻找一组方差较大的方向，将样本在该方向进行投影</li>
 <li>求解过程：</li>
 <li>算法步骤：</li>
-</ul>
-</li>
-<li>LDA<ul>
+</ul></li>
+<li>LDA
+<ul>
 <li>目标：寻找一组投影方向，使样本在投影之后类内样本点尽可能靠近，类间样本点尽可能互相远离，提升样本表示的分类鉴别能力</li>
 <li>求解过程：</li>
 <li>算法步骤：</li>
-<li>局部线性判别分析（Neighborhood constraints&#x2F;Locally weighting）</li>
-</ul>
-</li>
-<li>多维缩放MDS<ul>
+<li>局部线性判别分析（Neighborhood constraints/Locally weighting）</li>
+</ul></li>
+<li>多维缩放MDS
+<ul>
 <li>目标：降维后的样本仍保持两两之间的距离</li>
-</ul>
-</li>
-<li>其他维数缩减方法<ul>
+</ul></li>
+<li>其他维数缩减方法
+<ul>
 <li>经典方法：<strong>独立成分分析ICA</strong>，<strong>典型关联分析CCA</strong>，2DPCA，2DLAD，KPCA</li>
 <li>流形学习方法：LLE，Isomap，LE，LTSA</li>
 <li>深度学习方法：PCANet，RBM，DBN，DBM，AutoEncoder，Deep CCA</li>
-</ul>
-</li>
-</ul>
-</li>
+</ul></li>
+</ul></li>
 <li><p>流形学习</p>
 <ul>
-<li><p>在数学上，流形用于描述一个几何体，他在<strong>局部</strong>具有欧式空间的性质</p>
-</li>
-<li><p>基本思想：高维空间相似的数据点映射到低维空间距离也是相似的</p>
-</li>
-<li><p>方法：对于给定数据集，通过最近邻等方式构造一个数据图。然后在每一个局部区域，高维空间中的某种相似度&#x2F;距离在低维空间中得以保持</p>
-</li>
-<li><p>几乎所有的流形学习方法都需要首先构建一个关于数据的图</p>
-</li>
+<li><p>在数学上，流形用于描述一个几何体，他在<strong>局部</strong>具有欧式空间的性质</p></li>
+<li><p>基本思想：高维空间相似的数据点映射到低维空间距离也是相似的</p></li>
+<li><p>方法：对于给定数据集，通过最近邻等方式构造一个数据图。然后在每一个局部区域，高维空间中的某种相似度/距离在低维空间中得以保持</p></li>
+<li><p>几乎所有的流形学习方法都需要首先构建一个关于数据的图</p></li>
 <li><p>经典算法：</p>
 <ul>
 <li><p>LLE局部线性嵌入：保持样本线性重构关系</p>
 <p>最优线性表示系数：</p>
 <p>全局嵌入学习模型：</p>
 <p><strong>计算流程：1.线性表示，2.保持表示，3.全局误差，4.低维嵌入</strong></p>
-<p>算法步骤：</p>
-</li>
+<p>算法步骤：</p></li>
 <li><p>Isomap等距映射：保持样本对之间的测地距离</p>
-<p>算法步骤：</p>
-</li>
+<p>算法步骤：</p></li>
 <li><p>LE拉普拉斯特征映射：保持样本对之间的亲合度</p>
 <p>学习模型：</p>
-<p>算法步骤：</p>
-</li>
-<li><p>LTSA局部切空间对齐</p>
-</li>
-<li><p>LSE局部样条嵌入</p>
-</li>
+<p>算法步骤：</p></li>
+<li><p>LTSA局部切空间对齐</p></li>
+<li><p>LSE局部样条嵌入</p></li>
 <li><p>LPP局部保持投影</p>
-<p>学习模型：</p>
-</li>
-</ul>
-</li>
+<p>学习模型：</p></li>
+</ul></li>
 <li><p>统一的学习模型：</p>
 <ul>
 <li>目标：通过非线性变换寻找给定高维数据的低维表示</li>
+</ul></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="3-特征选择"><a href="#3-特征选择" class="headerlink" title="3.特征选择"></a>3.特征选择</h3><ul>
+<h3 id="特征选择">3.特征选择</h3>
+<ul>
 <li><p>最优特征选择方法</p>
 <ul>
-<li><p>穷举法</p>
-</li>
-<li><p>分支定界法</p>
-</li>
-</ul>
-</li>
+<li><p>穷举法</p></li>
+<li><p>分支定界法</p></li>
+</ul></li>
 <li><p>特征选择的次优方法（贪心策略）</p>
 <ul>
-<li>过滤式特征选择方法：“选择”与“学习”独立<ul>
+<li>过滤式特征选择方法：“选择”与“学习”独立
+<ul>
 <li>单独特征选择法</li>
 <li>顺序前进特征选择法</li>
 <li>顺序后退特征选择法</li>
 <li>增l减r特征选择法</li>
 <li>启发式选择方法：Relief方法</li>
-</ul>
-</li>
+</ul></li>
 <li>包裹式特征选择方法：“选择”依赖“学习”</li>
 <li>嵌入式特征选择方法：“选择”与“学习”同时进行</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h3 id="4-往年试题"><a href="#4-往年试题" class="headerlink" title="4.往年试题"></a>4.往年试题</h3><ul>
+<h3 id="往年试题-5">4.往年试题</h3>
+<ul>
 <li><p>2018（8分）</p>
 <ul>
 <li>简述并比较PCA、CCA、LDA、ICA的区别和适用场景</li>
 <li>详细阐述一种实现非线性数据降维的方式</li>
-</ul>
-</li>
+</ul></li>
 <li><p>2017（12分）</p>
 <ul>
-<li><p>简述PCA（主成分分析）的主要思想及其求解过程</p>
-</li>
-<li><p>比较PCA、CCA、LDA、ICA的区别和适用场景</p>
-</li>
-<li><p>解释LDA（线性判别分析）所基于的数据分布假设，并阐述其不足之处</p>
-</li>
-</ul>
-</li>
+<li><p>简述PCA（主成分分析）的主要思想及其求解过程</p></li>
+<li><p>比较PCA、CCA、LDA、ICA的区别和适用场景</p></li>
+<li><p>解释LDA（线性判别分析）所基于的数据分布假设，并阐述其不足之处</p></li>
+</ul></li>
 <li><p>2016（12分）</p>
 <ul>
 <li>简述LDA（线性判别分析）的主要思想</li>
 <li>基于上述思想，给出两类问题的LDA目标函数</li>
 <li>最优化上述目标函数，得到LDA结果</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h2 id="八、模型选择"><a href="#八、模型选择" class="headerlink" title="八、模型选择"></a>八、模型选择</h2><h3 id="1-引言"><a href="#1-引言" class="headerlink" title="1.引言"></a>1.引言</h3><ul>
+<h2 id="八模型选择">八、模型选择</h2>
+<h3 id="引言">1.引言</h3>
+<ul>
 <li><p>机器学习</p>
 <ul>
-<li><p>学习&#x3D;表示+评价+优化</p>
+<li><p>学习=表示+评价+优化</p>
 <ul>
-<li><p>表示：为学习器选择一种表示就以为选择一个特定的分类器集合。该集合被称为学习器的假设空间</p>
-</li>
-<li><p><img src="/Users/Lexie/Desktop/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%A1%A8%E7%A4%BA.png"></p>
-</li>
+<li><p>表示：为学习器选择一种表示就以为选择一个特定的分类器集合。该集合被称为学习器的假设空间</p></li>
+<li><p><img src="/Users/Lexie/Desktop/机器学习表示.png" /></p></li>
+</ul></li>
+</ul></li>
 </ul>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="2-模型选择原则"><a href="#2-模型选择原则" class="headerlink" title="2.模型选择原则"></a>2.模型选择原则</h3><h3 id="3-模型评价标准"><a href="#3-模型评价标准" class="headerlink" title="3.模型评价标准"></a>3.模型评价标准</h3><ul>
-<li>训练样本的划分<ul>
+<h3 id="模型选择原则">2.模型选择原则</h3>
+<h3 id="模型评价标准">3.模型评价标准</h3>
+<ul>
+<li>训练样本的划分
+<ul>
 <li>刀切法（留一法）：每次从样本集中删除一个或者多个样本</li>
 <li>自助法（Bootstrap）：每次有放回地随机抽取n个样本</li>
 <li>保持方法（Holdout）：一部分用于训练，一部分用于<strong>测试</strong></li>
 <li><strong>交叉验证（cross-validation）</strong>：将数据平分为k个子集，用k-1个子集进行训练，余下的部分用于<strong>验证</strong>，并计算验证误差。重复这一过程k次，得到k次结果的平均。（常用于模型参数选择）</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<h3 id="4-分类器集成"><a href="#4-分类器集成" class="headerlink" title="4.分类器集成"></a>4.分类器集成</h3><ul>
+<h3 id="分类器集成">4.分类器集成</h3>
+<ul>
 <li><p>集成学习的有效条件：</p>
 <ul>
 <li>每个单一的学习器错误率都应当低于0.5</li>
 <li>进行集成学习的每个分类器应当各不相同</li>
-</ul>
-</li>
+</ul></li>
 <li><p>集成学习的常用技术手段：</p>
 <ul>
 <li><strong>通过处理训练数据（bagging，boosting）</strong>：对训练样本进行随机分组，对错分样本进行加权</li>
 <li>通过处理特征：每次只选择一部分特征来训练</li>
 <li>通过处理类别标号：对多类问题，一对一策略、一对多策略</li>
 <li>通过改进学习方法：变更学习参数、模型结构</li>
-</ul>
-</li>
+</ul></li>
 <li><p>算法分类<strong>（按训练数据处理方式）</strong></p>
 <ul>
-<li><p>Bagging</p>
-</li>
-<li><p>Random subspace</p>
-</li>
-<li><p>Boosting&#x2F;adaboost</p>
-</li>
-<li><p>随机森林</p>
-</li>
+<li><p>Bagging</p></li>
+<li><p>Random subspace</p></li>
+<li><p>Boosting/adaboost</p></li>
+<li><p>随机森林</p></li>
+</ul></li>
 </ul>
-</li>
+<h3 id="层叠泛化stacked-generalization">5.层叠泛化Stacked
+Generalization</h3>
+<ul>
+<li>采用多层结构，第一层的学习器配置不同的学习算法<span
+class="math inline">\(L_1,L_2,..,L_T\)</span>，第一层的输出作为第二层的输入，<strong>第二层学习层称为元学习器L</strong></li>
 </ul>
-<h3 id="5-层叠泛化Stacked-Generalization"><a href="#5-层叠泛化Stacked-Generalization" class="headerlink" title="5.层叠泛化Stacked Generalization"></a>5.层叠泛化Stacked Generalization</h3><ul>
-<li>采用多层结构，第一层的学习器配置不同的学习算法$L_1,L_2,..,L_T$，第一层的输出作为第二层的输入，<strong>第二层学习层称为元学习器L</strong></li>
-</ul>
-<h3 id="6-样本装袋Bagging"><a href="#6-样本装袋Bagging" class="headerlink" title="6.样本装袋Bagging"></a>6.样本装袋Bagging</h3><ul>
+<h3 id="样本装袋bagging">6.样本装袋Bagging</h3>
+<ul>
 <li>训练一组基分类器，每个基分类器通过一个bootstrap训练样本集（通过有放回地随机抽样）来训练</li>
 <li>获得基本分类器之后，通过投票进行统计</li>
 </ul>
-<h3 id="7-随机子空间Random-Subspace"><a href="#7-随机子空间Random-Subspace" class="headerlink" title="7.随机子空间Random Subspace"></a>7.随机子空间Random Subspace</h3><ul>
+<h3 id="随机子空间random-subspace">7.随机子空间Random Subspace</h3>
+<ul>
 <li>通常也被称为<strong>属性装袋</strong>（attribute bagging）</li>
 <li>基分类器通常由线性分类器、支持向量机等组成</li>
 </ul>
-<h3 id="8-Adaboost"><a href="#8-Adaboost" class="headerlink" title="8.Adaboost"></a>8.Adaboost</h3><h3 id="9-对Adaboost的理论解释"><a href="#9-对Adaboost的理论解释" class="headerlink" title="9.对Adaboost的理论解释"></a>9.对Adaboost的理论解释</h3><h3 id="10-基于Adaboost的人脸检测"><a href="#10-基于Adaboost的人脸检测" class="headerlink" title="10.基于Adaboost的人脸检测"></a>10.基于Adaboost的人脸检测</h3><h3 id="11-往年试题"><a href="#11-往年试题" class="headerlink" title="11.往年试题"></a>11.往年试题</h3><ul>
+<h3 id="adaboost">8.Adaboost</h3>
+<h3 id="对adaboost的理论解释">9.对Adaboost的理论解释</h3>
+<h3 id="基于adaboost的人脸检测">10.基于Adaboost的人脸检测</h3>
+<h3 id="往年试题-6">11.往年试题</h3>
+<ul>
 <li><p>2018年</p>
-<p>针对两类分类问题简述Adaboost算法的基本计算过程（5分）</p>
-</li>
+<p>针对两类分类问题简述Adaboost算法的基本计算过程（5分）</p></li>
 </ul>
-<h2 id="九、聚类"><a href="#九、聚类" class="headerlink" title="九、聚类"></a>九、聚类</h2><h3 id="1-引言-1"><a href="#1-引言-1" class="headerlink" title="1.引言"></a>1.引言</h3><h3 id="2-距离与相似性度量"><a href="#2-距离与相似性度量" class="headerlink" title="2.距离与相似性度量"></a>2.距离与相似性度量</h3><h3 id="3-K-means"><a href="#3-K-means" class="headerlink" title="3.K-means"></a>3.K-means</h3><h3 id="4-Gaussian-Mixture-Models"><a href="#4-Gaussian-Mixture-Models" class="headerlink" title="4.Gaussian Mixture Models"></a>4.Gaussian Mixture Models</h3><h3 id="5-Hierachical-Clustring"><a href="#5-Hierachical-Clustring" class="headerlink" title="5.Hierachical Clustring"></a>5.Hierachical Clustring</h3><h3 id="6-Spectral-Clustering"><a href="#6-Spectral-Clustering" class="headerlink" title="6.Spectral Clustering"></a>6.Spectral Clustering</h3><h3 id="7-Kernel-Clustering"><a href="#7-Kernel-Clustering" class="headerlink" title="7.Kernel Clustering"></a>7.Kernel Clustering</h3><h3 id="8-Deep-Clustering"><a href="#8-Deep-Clustering" class="headerlink" title="8.Deep Clustering"></a>8.Deep Clustering</h3><h3 id="9-往年试题"><a href="#9-往年试题" class="headerlink" title="9.往年试题"></a>9.往年试题</h3><ul>
+<h2 id="九聚类">九、聚类</h2>
+<h3 id="引言-1">1.引言</h3>
+<h3 id="距离与相似性度量">2.距离与相似性度量</h3>
+<h3 id="k-means">3.K-means</h3>
+<h3 id="gaussian-mixture-models">4.Gaussian Mixture Models</h3>
+<h3 id="hierachical-clustring">5.Hierachical Clustring</h3>
+<h3 id="spectral-clustering">6.Spectral Clustering</h3>
+<h3 id="kernel-clustering">7.Kernel Clustering</h3>
+<h3 id="deep-clustering">8.Deep Clustering</h3>
+<h3 id="往年试题-7">9.往年试题</h3>
+<ul>
 <li><p>2018年</p>
 <ul>
-<li><p>简述谱聚类算法的基本思想，并指出可能影响谱聚类性能的因素（5分）</p>
-</li>
-<li><p>按最小距离准则对六个样本进行分级聚类，并画出聚类系统树图（10分）</p>
-</li>
-</ul>
-</li>
+<li><p>简述谱聚类算法的基本思想，并指出可能影响谱聚类性能的因素（5分）</p></li>
+<li><p>按最小距离准则对六个样本进行分级聚类，并画出聚类系统树图（10分）</p></li>
+</ul></li>
 <li><p>2017年</p>
 <ul>
 <li>从混合高斯密度函数估计的角度，简述K-Means聚类算法的原理（4分）</li>
 <li>按最小距离准则对六个样本进行分级聚类，并画出聚类系统树图（8分）</li>
-</ul>
-</li>
+</ul></li>
 <li><p>2016年</p>
 <ul>
 <li>K-menas对八个二维空间样本聚类的计算过程和结果（6分）</li>
 <li>对GMM进行参数估计的过程中，哪些条件下可以导出K-means聚类算法（4分）</li>
+</ul></li>
 </ul>
-</li>
+<h2 id="十支持向量机与核方法">十、支持向量机与核方法</h2>
+<h3 id="结构风险最小化">1.结构风险最小化</h3>
+<h3 id="vc维">2.VC维</h3>
+<h3 id="hard-margin-svm">3.Hard-Margin SVM</h3>
+<h3 id="soft-margin-svm">4.Soft-Margin SVM</h3>
+<h3 id="dual-problem">5.Dual Problem</h3>
+<h3 id="kernel-methods">6.Kernel Methods</h3>
+<h3 id="模型选择">7.模型选择</h3>
+<p><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211231090348534.png" alt="image-20211231090348534" style="zoom:50%;" /></p>
+<h3 id="往年试题-8">8.往年试题</h3>
+<ul>
+<li><h2 id="年">2018年</h2></li>
+<li><h2 id="年-1">2017年</h2></li>
+<li><h2 id="年-2">2016年</h2></li>
 </ul>
-<h2 id="十、支持向量机与核方法"><a href="#十、支持向量机与核方法" class="headerlink" title="十、支持向量机与核方法"></a>十、支持向量机与核方法</h2><h3 id="1-结构风险最小化"><a href="#1-结构风险最小化" class="headerlink" title="1.结构风险最小化"></a>1.结构风险最小化</h3><h3 id="2-VC维"><a href="#2-VC维" class="headerlink" title="2.VC维"></a>2.VC维</h3><h3 id="3-Hard-Margin-SVM"><a href="#3-Hard-Margin-SVM" class="headerlink" title="3.Hard-Margin SVM"></a>3.Hard-Margin SVM</h3><h3 id="4-Soft-Margin-SVM"><a href="#4-Soft-Margin-SVM" class="headerlink" title="4.Soft-Margin SVM"></a>4.Soft-Margin SVM</h3><h3 id="5-Dual-Problem"><a href="#5-Dual-Problem" class="headerlink" title="5.Dual Problem"></a>5.Dual Problem</h3><h3 id="6-Kernel-Methods"><a href="#6-Kernel-Methods" class="headerlink" title="6.Kernel Methods"></a>6.Kernel Methods</h3><h3 id="7-模型选择"><a href="#7-模型选择" class="headerlink" title="7.模型选择"></a>7.模型选择</h3><img src="/Users/Lexie/Library/Application Support/typora-user-images/image-20211231090348534.png" alt="image-20211231090348534" style="zoom:50%;" />
-
-
-
-<h3 id="8-往年试题"><a href="#8-往年试题" class="headerlink" title="8.往年试题"></a>8.往年试题</h3><ul>
-<li><h2 id="2018年"><a href="#2018年" class="headerlink" title="2018年"></a>2018年</h2></li>
-<li><h2 id="2017年"><a href="#2017年" class="headerlink" title="2017年"></a>2017年</h2></li>
-<li><h2 id="2016年"><a href="#2016年" class="headerlink" title="2016年"></a>2016年</h2></li>
-</ul>
-<h2 id="十一、决策树方法"><a href="#十一、决策树方法" class="headerlink" title="十一、决策树方法"></a>十一、决策树方法</h2><h3 id="1-信息增益算法"><a href="#1-信息增益算法" class="headerlink" title="1.信息增益算法"></a>1.信息增益算法</h3><h3 id="2-ID3"><a href="#2-ID3" class="headerlink" title="2.ID3"></a>2.ID3</h3><h3 id="3-C4-5"><a href="#3-C4-5" class="headerlink" title="3.C4.5"></a>3.C4.5</h3><h3 id="4-CART"><a href="#4-CART" class="headerlink" title="4.CART"></a>4.CART</h3><h3 id="5-过拟合"><a href="#5-过拟合" class="headerlink" title="5.过拟合"></a>5.过拟合</h3><h3 id="6-随机森林"><a href="#6-随机森林" class="headerlink" title="6.随机森林"></a>6.随机森林</h3><h3 id="7-往年试题-2"><a href="#7-往年试题-2" class="headerlink" title="7.往年试题"></a>7.往年试题</h3><ul>
+<h2 id="十一决策树方法">十一、决策树方法</h2>
+<h3 id="信息增益算法">1.信息增益算法</h3>
+<h3 id="id3">2.ID3</h3>
+<h3 id="c4.5">3.C4.5</h3>
+<h3 id="cart">4.CART</h3>
+<h3 id="过拟合">5.过拟合</h3>
+<h3 id="随机森林">6.随机森林</h3>
+<h3 id="往年试题-9">7.往年试题</h3>
+<ul>
 <li><p>2018年</p>
 <ul>
 <li>描述ID3、C4.5、CART三种决策树方法的区别（4分）</li>
 <li>阐述随机森林（Random Forests）的核心思想（4分）</li>
-</ul>
-</li>
+</ul></li>
 </ul>
 ]]></content>
+      <tags>
+        <tag>UCAS课程复习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>统计</title>
+    <url>/2023/01/26/%E7%BB%9F%E8%AE%A1/</url>
+    <content><![CDATA[<h1 id="统计">统计</h1>
+]]></content>
+      <tags>
+        <tag>数据分析</tag>
+      </tags>
   </entry>
 </search>
