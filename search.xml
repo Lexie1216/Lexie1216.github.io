@@ -11,9 +11,9 @@ id="一csdn-seir模型_seir模型到底是什么五分钟带你理解并代码�
 id="二csdn-基于python的新冠肺炎seir简易模型-202006">二、CSDN-基于python的新冠肺炎SEIR简易模型-202006</h4>
 <p><img src="/Users/lexie/Library/Application Support/typora-user-images/image-20220308104927443.png" alt="image-20220308104927443" style="zoom:40%;" /></p>
 ]]></content>
-      <tags>
-        <tag>传染病建模</tag>
-      </tags>
+      <categories>
+        <category>传染病建模</category>
+      </categories>
   </entry>
   <entry>
     <title>强化学习</title>
@@ -604,9 +604,9 @@ class="math inline">\(\pi_\theta(s,a)\)</span></p>
 <h3 id="基于价值的博弈理论强化学习">2. 基于价值的博弈理论强化学习</h3>
 <h3 id="基于策略的博弈理论强化学习">3. 基于策略的博弈理论强化学习</h3>
 ]]></content>
-      <tags>
-        <tag>UCAS课程复习</tag>
-      </tags>
+      <categories>
+        <category>UCAS课程复习</category>
+      </categories>
   </entry>
   <entry>
     <title>高级人工智能</title>
@@ -1571,9 +1571,9 @@ class="math inline">\(Y\)</span> 的期望，即反事实结果</li>
 <li><p>后门的反事实定理</p></li>
 </ul>
 ]]></content>
-      <tags>
-        <tag>UCAS课程复习</tag>
-      </tags>
+      <categories>
+        <category>UCAS课程复习</category>
+      </categories>
   </entry>
   <entry>
     <title>深度学习</title>
@@ -2047,9 +2047,9 @@ alt="image-20220531160930274" />
 <figcaption aria-hidden="true">image-20220531160930274</figcaption>
 </figure>
 ]]></content>
-      <tags>
-        <tag>UCAS课程复习</tag>
-      </tags>
+      <categories>
+        <category>UCAS课程复习</category>
+      </categories>
   </entry>
   <entry>
     <title>模式识别</title>
@@ -3010,17 +3010,17 @@ class="math inline">\(L_1,L_2,..,L_T\)</span>，第一层的输出作为第二�
 </ul></li>
 </ul>
 ]]></content>
-      <tags>
-        <tag>UCAS课程复习</tag>
-      </tags>
+      <categories>
+        <category>UCAS课程复习</category>
+      </categories>
   </entry>
   <entry>
     <title>统计</title>
     <url>/2023/01/26/%E7%BB%9F%E8%AE%A1/</url>
     <content><![CDATA[<h1 id="统计">统计</h1>
 ]]></content>
-      <tags>
-        <tag>数据分析</tag>
-      </tags>
+      <categories>
+        <category>数据分析</category>
+      </categories>
   </entry>
 </search>
