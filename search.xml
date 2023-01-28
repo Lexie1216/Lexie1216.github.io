@@ -3066,4 +3066,55 @@ iPhone14</li>
         <category>数据分析</category>
       </categories>
   </entry>
+  <entry>
+    <title>一些SQL</title>
+    <url>/2023/01/28/%E4%B8%80%E4%BA%9BSQL/</url>
+    <content><![CDATA[<h2 id="sql复习">SQL复习</h2>
+<h3 id="一窗口函数">一、窗口函数</h3>
+<p><strong>窗口函数</strong>也称为OLAP（Online Anallytical
+Processing）函数，意思是对数据库数据进行实时分析处理。</p>
+<p>窗口函数就是为了实现OLAP而添加的标准SQL功能。</p>
+<p>窗口函数基本语法：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;窗口函数&gt; over (partition by &lt;用于分组的列名&gt;  </span><br><span class="line">                order by &lt;用于排序的列名&gt;) </span><br></pre></td></tr></table></figure>
+<h4 id="分类">1.分类：</h4>
+<ul>
+<li><p>序号函数：row_number() / rank() / dense_rank()</p>
+<ul>
+<li>ROW_NUMBER()不考虑并列，1、2、3、4</li>
+<li>RANK()考虑并列，并列之后和ROW_NUMBER一样，1、2、2、4</li>
+<li>DENSE_RANK()考虑并列，并列之后按下一个名次来，1、2、2、3</li>
+</ul></li>
+<li><p>分布函数：percent_rank() / cume_dist()</p>
+<ul>
+<li>percent_rank() ：rank()/rows</li>
+<li>cume_dist()：累积分布，表示值小于或等于行的值除以总行数的行数</li>
+</ul></li>
+<li><p>前后函数：lag(n) 前/ lead(n)后</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">select *,</span><br><span class="line">lead(某个指标,offset,default_value) over(partition by 某个属性 order by 某个属性 desc) as lead_val</span><br><span class="line">from 表</span><br></pre></td></tr></table></figure>
+<p>offset默认为1，default_value不设置就是NULL</p></li>
+<li><p>头尾函数：first_val(expr) /
+last_val(expr)，得到分区中的第一个/最后一个（截至当前条记录）指定参数的值。</p></li>
+<li><p>其他函数：nth_value(expr, n)，返回窗口中第N个expr的值</p></li>
+<li><p>原有的聚合函数：sum()，avg()，count()，max()，min()</p></li>
+</ul>
+<h4 id="应用">2.应用：</h4>
+<ul>
+<li><p>topN</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">select *</span><br><span class="line">from(select *,</span><br><span class="line">     row_number() over(partition by 某个属性 order by 排序属性 desc)as ranking </span><br><span class="line">     from 表) as a </span><br><span class="line">where ranking &lt;=n</span><br></pre></td></tr></table></figure></li>
+<li><p>累计求和</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">select *,</span><br><span class="line">sum(某个指标) over(oder by 某个属性) as current_sum</span><br><span class="line">from 表</span><br></pre></td></tr></table></figure></li>
+<li><p>滑动平均</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">select *,</span><br><span class="line">avg(某个指标) over(order by 某个属性 rows 2 preceding) as current_avg</span><br><span class="line">from 表;</span><br></pre></td></tr></table></figure>
+<p>使用 rows 和 preceding
+这两个关键字，是“之前~行”的意思。得到的结果是自身纪录及前2行的平均。</p></li>
+</ul>
+<p>参考：</p>
+<h3 id="二日期处理">二、日期处理</h3>
+<h3 id="三行和列的转换">三、行和列的转换</h3>
+<h3 id="四题目">四、题目</h3>
+]]></content>
+      <categories>
+        <category>数据分析</category>
+      </categories>
+  </entry>
 </search>
