@@ -2948,7 +2948,7 @@ testing）是指从对总体参数所做的一个假设开始，然后搜集样�
 <p>常用的假设检验方法有Z检验、T检验、卡方检验、F检验等</p>
 <p>第一类错误&amp;第二类错误：</p>
 <figure>
-<img src="/.io//ABtest/image-20230128201117888.png" alt="image-20230128201117888">
+<img src="/.io//image-20230128201117888.png" alt="image-20230128201117888">
 <figcaption aria-hidden="true">image-20230128201117888</figcaption>
 </figure>
 <h2 id="二ab-test">二、AB-test</h2>
