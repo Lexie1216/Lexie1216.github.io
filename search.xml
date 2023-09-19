@@ -80,6 +80,13 @@ testing）是指从对总体参数所做的一个假设开始，然后搜集样�
 <li>原因：数据背后的<strong>产生机制</strong>不同，数据的总体和部分在结构上呈现较大的差异（第一次测试和第二次测试），而且存在潜在变量或混杂因素的影响（男女性别变量）</li>
 <li>如何避免：<strong>注意各组数据的权重</strong>（即各组数据在整体评价中占的比例），<strong>可以一定的系数去消除分组资料基数差异造成的影响</strong>（如对占总体少数的样本加以更高的权重，即“逆概加权”,权重为该子群体在总群体中出现的概率的倒数），同时留意是否有潜在变量的影响，仔细分析因果关系。</li>
 </ul>
+<p>避免发生：
+在分析之前，一定要注意<strong>各组数据的权重</strong>，尽可能<strong>消除分组差异带来的影响</strong>
+留意是否还有<strong>更多变量</strong>可用，从更多维度去分析因果关系
+发生之后：
+当样本量足够大，有统计意义时<strong>，以局部的信息为准</strong>，毕竟数据分析的本质就是要<strong>下钻剖析</strong>。
+计算的时候可以<strong>用算术平均来替代加权平均</strong>。
+最后用辛普森悖论的核心思想总结：简单的将分组资料相加汇总，不一定能反映真实情况。不论是工作，还是生活都是如此。</p>
 ]]></content>
       <categories>
         <category>数据分析</category>
@@ -3388,6 +3395,22 @@ X=x&#39;)P(X=x&#39;)
 <h4 id="执行解决方案">3.2执行解决方案</h4>
 <h4 id="监控数据变化及时评估效果做出下一轮反应">3.3监控数据变化，及时评估效果，做出下一轮反应</h4>
 <h4 id="section"></h4>
+]]></content>
+      <categories>
+        <category>数据分析</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Sql知识点</title>
+    <url>/2023/02/24/sql%E7%9F%A5%E8%AF%86%E7%82%B9/</url>
+    <content><![CDATA[<p>1.where和having的区别</p>
+<ul>
+<li>where不能用聚合函数，having可以</li>
+<li>where对数据表中数据直接过滤，having是根据已经查询出来的数据过滤（having不能过滤没选的字段）</li>
+<li>where先过滤后分组，having先分组后过滤</li>
+<li>where不能用字段别名，having可以</li>
+</ul>
+<p>2.字符串匹配</p>
 ]]></content>
       <categories>
         <category>数据分析</category>
