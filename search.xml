@@ -898,9 +898,9 @@ REINFORCE算法（蒙特卡洛策略梯度算法）</h3>
     <url>/2022/03/01/SEIR%E6%A8%A1%E5%9E%8B/</url>
     <content><![CDATA[<h2 id="seir模型">SEIR模型</h2>
 <h4 id="一csdn-seir模型_seir模型到底是什么五分钟带你理解并代码实现-202012">一、CSDN-seir模型_SEIR模型到底是什么？五分钟带你理解并代码实现-202012</h4>
-<p><img src="/2022/03/01/SEIR%E6%A8%A1%E5%9E%8B/image-20220308104913464.png" alt="image-20220308104913464" style="zoom:40%;"></p>
+<p><img src="/images/image-20220308104913464.png" alt="image-20220308104913464" style="zoom:40%;"></p>
 <h4 id="二csdn-基于python的新冠肺炎seir简易模型-202006">二、CSDN-基于python的新冠肺炎SEIR简易模型-202006</h4>
-<p><img src="/2022/03/01/SEIR%E6%A8%A1%E5%9E%8B/image-20220308104927443.png" alt="image-20220308104927443" style="zoom:40%;"></p>
+<p><img src="/images/image-20220308104927443.png" alt="image-20220308104927443" style="zoom:40%;"></p>
 ]]></content>
       <categories>
         <category>传染病建模</category>
